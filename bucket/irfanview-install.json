@@ -1,0 +1,63 @@
+{
+    "version": "4.54",
+    "description": "A fast, compact and innovative graphic viewer",
+    "homepage": "https://www.irfanview.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.irfanview.com/eula.htm"
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://www.irfanview.info/files/iview454_x64_setup.exe#/setup.exe",
+                "https://www.irfanview.info/files/iview454_plugins_x64_setup.exe#/pluginsetup.exe"
+            ],
+            "hash": [
+                "ceef2253c343902c3ce7e7cac305f12e1123cf203660985159d9ae5b18ceab57",
+                "a71a52136a5e3321eaf6e68f9f76aaf340fee90eca00ccfc65c32dc3141e9fa5"
+            ]
+        },
+        "32bit": {
+            "url": [
+                "https://www.irfanview.info/files/iview454_setup.exe#/setup.exe",
+                "https://www.irfanview.info/files/iview454a_plugins_setup.exe#/pluginsetup.exe"
+            ],
+            "hash": [
+                "027531994c0d95836328fe7c39390fa9f85061f79660c093e1d6df7874d8b44b",
+                "24e38400bc5ca151f6d48936894d7f8a9057d57940f807f3c2e6e5a1a84a3388"
+            ]
+        }
+    },
+    "installer": {
+        "script": [
+            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/silent', '/desktop=0', '/thumbs=0', '/group=1', '/allusers=1', '/assoc=0') -RunAs | Out-Null",
+            "Invoke-ExternalCommand \"$dir\\pluginsetup.exe\" -ArgumentList @('/silent') -RunAs | Out-Null"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "& \"$ProgramFilesPath\\IrfanView\\iv_uninstall.exe\" /silent"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.irfanview.com/",
+        "re": ">\\s*version\\s+([\\d\\.-]+)\\s*<"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://www.irfanview.info/files/iview$dirtyVersion_x64_setup.exe#/setup.exe",
+                    "https://www.irfanview.info/files/iview$dirtyVersion_plugins_x64_setup.exe#/pluginsetup.exe"
+                ]
+            },
+            "32bit": {
+                "url": [
+                    "https://www.irfanview.info/files/iview$dirtyVersion_setup.exe#/setup.exe",
+                    "https://www.irfanview.info/files/iview$dirtyVersion_plugins_setup.exe#/pluginsetup.exe"
+                ]
+            }
+        }
+    }
+}
