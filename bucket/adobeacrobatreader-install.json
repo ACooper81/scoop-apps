@@ -1,0 +1,28 @@
+{
+    "version": "19.021.20058",
+    "description": "Not only view, but print, sign, and annotate PDFs with the free Adobe Acrobat Reader DC.",
+    "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
+    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_en_US.exe#/setup.exe",
+    "hash": "6bd68fea89cd6994715fe769717cc269fee78429fc12430e1a93a1cf7bb64b81",
+    "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/rs', '/msi', '/qn', '/norestart', 'EULA_ACCEPT=YES') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\setup.exe\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Acrobat Reader DC.lnk\") {Remove-Item \"$CommonDesktopPath\\Acrobat Reader DC.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$id = wmic product where \"\"\"name like 'Adobe Acrobat Reader DC%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn\" -Verb RunAs"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousdec2019.html",
+        "re": "<title>([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/$dirtyVersion/AcroRdrDC$dirtyVersion_en_US.exe#/setup.exe"
+    }
+}
