@@ -1,0 +1,38 @@
+{
+    "version": "6.1.0",
+    "description": "Powerful x86 and AMD64/Intel64 virtualization product for enterprise as well as home use.",
+    "homepage": "https://www.virtualbox.org/",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.virtualbox.org/virtualbox/6.1.0/VirtualBox-6.1.0-135406-Win.exe#/VBoxSetup.exe",
+            "hash": "66dddf8871ba10d9b3f88728dd2180af5e404c484fccddace6fc352aa29bab89"
+        }
+    },
+    "installer": {
+        "script": [
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\VBoxSetup.exe`\" --msiparams VBOX_START=0 VBOX_INSTALLDESKTOPSHORTCUT=0 VBOX_INSTALLQUICKLAUNCHSHORTCUT=0 REBOOT=ReallySuppress --silent\" -Verb RunAs",
+            "Remove-Item \"$dir\\VBoxSetup.exe\""
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "$id = wmic product where \"\"\"name like 'Oracle VM VirtualBox%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn\" -Verb RunAs"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.virtualbox.org/wiki/Downloads",
+        "regex": "VirtualBox-(?<version>[\\d.]+)-(?<revision>[\\d]+)-Win.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.virtualbox.org/virtualbox/$version/VirtualBox-$version-$matchRevision-Win.exe#/VBoxSetup.exe"
+            }
+        },
+        "hash": {
+            "url": "https://www.virtualbox.org/download/hashes/$version/SHA256SUMS"
+        }
+    }
+}
