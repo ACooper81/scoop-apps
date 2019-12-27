@@ -1,0 +1,33 @@
+{
+    "version": "15.1.3937",
+    "description": "Software for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.",
+    "homepage": "https://www.teamviewer.com",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.teamviewer.com/en/eula/"
+    },
+    "url": "https://dl.teamviewer.com/download/TeamViewer_Setup.exe#/setup.exe",
+    "hash": "ce747724dfafd01ff1e8c559a954892d8f58d5b0b80b50d5b58df0bc482a18ff",
+    "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\setup.exe\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\TeamViewer.lnk\") {Remove-Item \"$CommonDesktopPath\\TeamViewer.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "taskkill /F /IM teamviewer.exe /FI 'status eq running'",
+            "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "Invoke-ExternalCommand \"$ProgramFilesX86Path\\TeamViewer\\uninstall.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.teamviewer.com/en/download/windows/",
+        "re": ">\\s*([\\d.]+)\\s*<"
+    },
+    "autoupdate": {
+        "url": "https://dl.teamviewer.com/download/TeamViewer_Setup.exe#/setup.exe"
+    }
+}
