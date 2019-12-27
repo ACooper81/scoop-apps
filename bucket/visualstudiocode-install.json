@@ -1,0 +1,42 @@
+{
+    "homepage": "https://code.visualstudio.com/",
+    "version": "1.41.1",
+    "description": "Visual Studio Code is a lightweight but powerful source code editor.",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://code.visualstudio.com/License/"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://update.code.visualstudio.com/1.41.1/win32-x64/stable#/setup.exe",
+            "hash": "cfde2bc9e601d3d1ab4a1f43c4a5d8c352b41a82cc97732a0c07ccaed3d2c086"
+        },
+        "32bit": {
+            "url": "https://update.code.visualstudio.com/1.41.1/win32/stable#/setup.exe",
+            "hash": "d72dfa1e4644e0bbe7ebe7243a2ac59f51b2d2ca261bb24936f2879ad1d6aac3"
+        }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/MERGETASKS=!runcode,!desktopicon,!quicklaunchicon,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath') -RunAs | Out-Null"
+    },
+    "uninstaller": {
+        "script": [
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "& \"$ProgramFilesPath\\Microsoft VS Code\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+        ]
+    },
+    "checkver": {
+        "url": "https://code.visualstudio.com/sha?build=stable",
+        "jp": "$.products[?(@.platform.os == 'win32-x64-archive')].name"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://update.code.visualstudio.com/$version/win32-x64/stable#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://update.code.visualstudio.com/$version/win32/stable#/setup.exe"
+            }
+        }
+    }
+}
