@@ -1,0 +1,40 @@
+{
+    "version": "6.1.0",
+    "description": "Adds support for USB 2.0 and USB 3.0 devices, VirtualBox RDP, disk encryption, NVMe and PXE boot for Intel cards in Virtualbox.",
+    "homepage": "https://www.virtualbox.org/",
+    "depends": [
+        "virtualbox-install"
+    ],
+    "license": "Personal Use and Evaluation License (PUEL)",
+    "architecture": {
+        "64bit": {
+            "url": "https://download.virtualbox.org/virtualbox/6.1.0/Oracle_VM_VirtualBox_Extension_Pack-6.1.0.vbox-extpack#/Oracle_VM_VirtualBox_Extension_Pack-6.1.0.vbox-extpack",
+            "hash": "b907e69a5bad4dcd8e831416a2118b744bad1656918712a2d2131e595357cad4"
+        }
+    },
+    "installer": {
+        "script": [
+            "$command = @'",
+            "cmd.exe /c \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" extpack install --replace \"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack\" --accept-license=715c7246dc0f779ceab39446812362b2f9bf64a55ed5d3a905f053cfab36da9e",
+            "'@",
+            "Invoke-Expression -Command:$command"
+        ]
+    },
+    "uninstaller": {
+        "script": "$id = wmic product where \"\"\"name like 'Oracle VM VirtualBox%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\""
+    },
+    "checkver": {
+        "url": "https://www.virtualbox.org/wiki/Downloads",
+        "regex": "Oracle_VM_VirtualBox_Extension_Pack-(?<version>[\\d.]+).vbox-extpack"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack#/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack"
+            }
+        },
+        "hash": {
+            "url": "https://www.virtualbox.org/download/hashes/$version/SHA256SUMS"
+        }
+    }
+}
