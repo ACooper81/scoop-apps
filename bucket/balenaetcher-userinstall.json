@@ -1,0 +1,48 @@
+{
+    "version": "1.5.70",
+    "description": "Flash OS images to SD cards & USB drives, safely and easily.",
+    "homepage": "https://www.balena.io/etcher/",
+    "license": "Apache-2.0",
+    "url": "https://github.com/balena-io/etcher/releases/download/v1.5.70/balenaEtcher-Setup-1.5.70.exe#/setup.exe",
+    "hash": "b37704580647bb0549165ab557b3d67d73ca537a7df68805f5f9b546efe62de6",
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
+            },
+            "uninstaller": {
+                "script": [
+                    "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
+                    "& \"$LocalApplicationData\\Programs\\balena-etcher\\Uninstall balenaEtcher.exe\" /S"
+                ]
+            },
+            "post_install": [
+                "Remove-Item \"$dir\\setup.exe\"",
+                "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
+                "if (Test-Path \"$DesktopPath\\balenaEtcher.lnk\") {Remove-Item \"$DesktopPath\\balenaEtcher.lnk\" -Force}"
+            ]
+        },
+        "32bit": {
+            "installer": {
+                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
+            },
+            "uninstaller": {
+                "script": [
+                    "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
+                    "& \"$LocalApplicationData\\Programs\\balena-etcher\\Uninstall balenaEtcher.exe\" /S"
+                ]
+            },
+            "post_install": [
+                "Remove-Item \"$dir\\setup.exe\"",
+                "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
+                "if (Test-Path \"$DesktopPath\\balenaEtcher.lnk\") {Remove-Item \"$DesktopPath\\balenaEtcher.lnk\" -Force}"
+            ]
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/balena-io/etcher"
+    },
+    "autoupdate": {
+        "url": "https://github.com/balena-io/etcher/releases/download/v$version/balenaEtcher-Setup-$version.exe#/setup.exe"
+    }
+}
