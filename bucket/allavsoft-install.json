@@ -1,0 +1,52 @@
+{
+    "version": "3.22.0.7300",
+    "description": "Download free videos from 100+ sites and convert to popular video and audio format.",
+    "homepage": "https://www.allavsoft.com/index.html",
+    "license": {
+        "identifier": ""
+    },
+    "notes": "",
+    "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
+    "hash": "6a186090c17026654dd882bbece44747583b10dd44fa4a1ee19de9010610f9de",
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-') -RunAs | Out-Null"
+            },
+            "uninstaller": {
+                "script": [
+                    "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+                    "& \"$ProgramFilesX86Path\\Allavsoft\\Video Downloader Converter\\unins001.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+                ]
+            },
+            "post_install": [
+                "Remove-Item \"$dir\\setup.exe\"",
+                "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+                "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
+            ]
+        },
+        "32bit": {
+            "installer": {
+                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-') -RunAs | Out-Null"
+            },
+            "uninstaller": {
+                "script": [
+                    "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+                    "& \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+                ]
+            },
+            "post_install": [
+                "Remove-Item \"$dir\\setup.exe\"",
+                "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+                "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
+            ]
+        }
+    },
+    "checkver": {
+        "url": "http://kcsoftwares.com/sumo/view.php?prot=2&ProductName=video+downloader+converter&Company=Allavsoft%20Corporation",
+        "re": ">\\s*v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe"
+    }
+}
