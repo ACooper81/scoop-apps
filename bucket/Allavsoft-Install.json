@@ -5,7 +5,7 @@
     "license": {
         "identifier": ""
     },
-    "notes": "",
+    "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
     "architecture": {
         "64bit": {
