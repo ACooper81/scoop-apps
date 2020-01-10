@@ -13,9 +13,8 @@
                 "args": [
                     "/S",
                     "/x64",
-                    "/uiAccess=0",
-                    "/IsHostApp=1",
-                    "/D=$dir"
+                    "/uiAccess=1",
+                    "/IsHostApp=1"
                 ],
                 "keep": true
             },
@@ -39,9 +38,8 @@
                 "args": [
                     "/S",
                     "/U32",
-                    "/uiAccess=0",
-                    "/IsHostApp=1",
-                    "/D=$dir"
+                    "/uiAccess=1",
+                    "/IsHostApp=1"
                 ],
                 "keep": true
             },
