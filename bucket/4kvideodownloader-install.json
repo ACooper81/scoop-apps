@@ -17,9 +17,7 @@
         }
     },
     "installer": {
-        "script": [
-            "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
-        ]
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
     },
     "post_install": [
         "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
@@ -43,5 +41,4 @@
             }
         }
     }
-    
 }
