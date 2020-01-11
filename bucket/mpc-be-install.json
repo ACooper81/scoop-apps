@@ -34,7 +34,7 @@
             "uninstaller": {
                 "script": [
                     "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-                    "& \"$ProgramFilesPath\\MPC-BE x64\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+                    "& \"$ProgramFilesPath\\MPC-BE x86\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
                 ]
             }
         }
