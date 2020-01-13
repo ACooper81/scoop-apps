@@ -16,6 +16,24 @@
     "post_install": [
         "Remove-Item \"$dir\\autoit-v3-setup.exe\""
     ],
+    "architecture": {
+        "64bit": {
+            "uninstaller": {
+                "script": [
+                    "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+                    "& \"$ProgramFilesX86Path\\AutoIt3\\Uninstall.exe\" /S"
+                ]
+            }
+        },
+        "32bit": {
+            "uninstaller": {
+                "script": [
+                    "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+                    "& \"$ProgramFilesX86Path\\AutoIt3\\Uninstall.exe\" /S"
+                ]
+            }
+        }
+    },
     "uninstaller": {
         "script": [
             ""
