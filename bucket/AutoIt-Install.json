@@ -21,7 +21,7 @@
             "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "& \"$ProgramFilesX86Path\\AutoIt3\\Uninstall.exe\" /S",
             "$CommonStartMenuPath = [Environment]::GetFolderPath(\"CommonStartMenu\")",
-            "Remove-Item –path \"$CommonStartMenuPath\" –recurse"
+            "Remove-Item –path \"$CommonStartMenuPath\\Programs\\AutoIt v3\" –recurse"
         ]
     },
     "checkver": {
