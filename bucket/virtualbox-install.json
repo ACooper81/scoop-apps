@@ -18,7 +18,7 @@
     "uninstaller": {
         "script": [
             "$id = wmic product where \"\"\"name like 'Oracle VM VirtualBox%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn\" -Verb RunAs"
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
         ]
     },
     "checkver": {
