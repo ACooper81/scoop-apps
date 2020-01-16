@@ -1,15 +1,13 @@
 {
-    "version": "6.1.0",
+    "version": "6.1.2",
     "description": "Adds support for USB 2.0 and USB 3.0 devices, VirtualBox RDP, disk encryption, NVMe and PXE boot for Intel cards in Virtualbox.",
     "homepage": "https://www.virtualbox.org/",
-    "depends": [
-        "virtualbox-install"
-    ],
+    "depends": "virtualbox-install",
     "license": "Personal Use and Evaluation License (PUEL)",
     "architecture": {
         "64bit": {
-            "url": "https://download.virtualbox.org/virtualbox/6.1.0/Oracle_VM_VirtualBox_Extension_Pack-6.1.0.vbox-extpack#/Oracle_VM_VirtualBox_Extension_Pack-6.1.0.vbox-extpack",
-            "hash": "b907e69a5bad4dcd8e831416a2118b744bad1656918712a2d2131e595357cad4"
+            "url": "https://download.virtualbox.org/virtualbox/6.1.2/Oracle_VM_VirtualBox_Extension_Pack-6.1.2.vbox-extpack#/Oracle_VM_VirtualBox_Extension_Pack-6.1.2.vbox-extpack",
+            "hash": "54047312d836c17ef0939410f755cb5a23e3037ec402198cc97f755181b25632"
         }
     },
     "installer": {
