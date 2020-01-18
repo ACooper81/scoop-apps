@@ -1,0 +1,40 @@
+{
+    "version": "79.0.309.68",
+    "description": "",
+    "homepage": "https://www.microsoft.com/en-us/edge/business/download",
+    "license": "",
+    "architecture": {
+        "64bit": {
+            "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
+            "hash": "4e680c5c531e27b3f46d6e377d346a5b4488ac34cd1655cf59c9399c611265eb"
+        },
+        "32bit": {
+            "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
+            "hash": "25478a9a37a43ca4678c5508013a4c26d49bddaa89d22863ad2565b4df017cd3"
+        }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Google Chrome.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+    },
+    "checkver": {
+        "url": "https://en.wikipedia.org/wiki/Microsoft_Edge",
+        "regex": "Windows 10</th><td>([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_"
+            },
+            "32bit": {
+                "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_"
+            }
+        }
+    }
+}
