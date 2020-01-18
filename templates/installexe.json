@@ -1,0 +1,44 @@
+{
+    "version": "",
+    "description": "",
+    "homepage": "",
+    "license": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://website/filename.exe#/setup.exe",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "https://website/filename.exe#/setup.exe",
+            "hash": ""
+        }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Google Chrome.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "taskkill /F /IM program.exe /FI 'status eq running'",
+            "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "Invoke-ExternalCommand \"$ProgramFilesX86Path\\Program\\uninstall.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://website",
+        "regex": "(starttext[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://website/filename.exe#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://website/filename.exe#/setup.exe"
+            }
+        }
+    }
+}
