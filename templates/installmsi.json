@@ -1,0 +1,40 @@
+{
+    "version": "",
+    "description": "",
+    "homepage": "",
+    "license": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://website/filename.msi#/setup.msi_",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "https://website/filename.msi#/setup.msi_",
+            "hash": ""
+        }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Google Chrome.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+    },
+    "checkver": {
+        "url": "https://website",
+        "regex": "(starttext[\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://website/filename.msi#/setup.msi_"
+            },
+            "32bit": {
+                "url": "https://website/filename.msi#/setup.msi_"
+            }
+        }
+    }
+}
