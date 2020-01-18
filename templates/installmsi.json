@@ -21,7 +21,10 @@
         "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
     ],
     "uninstaller": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/x', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+        "script": [
+            "$id = wmic product where \"\"\"name like 'Program Name%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
+        ]
     },
     "checkver": {
         "url": "https://website",
