@@ -28,7 +28,7 @@
     },
     "checkver": {
         "url": "https://website",
-        "regex": "(starttext[\\d.]+)"
+        "regex": "starttext([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
