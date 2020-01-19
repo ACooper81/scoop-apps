@@ -2,10 +2,27 @@
     "version": "19.021.20058",
     "description": "Not only view, but print, sign, and annotate PDFs with the free Adobe Acrobat Reader DC.",
     "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
-    "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_en_US.exe#/setup.exe",
-    "hash": "6bd68fea89cd6994715fe769717cc269fee78429fc12430e1a93a1cf7bb64b81",
+    "url": [
+        "http://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120061/AcroRdrDCUpd1902120061_MUI.msp#/setup.msp_"
+    ],
+    "hash": [
+        "fc14bf84ada5c52c0025a77edf8cb6466dc24b3f25ea1bedd5c02e61d4fddef6"
+    ],
     "installer": {
-        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/rs', '/msi', '/qn', '/norestart', 'EULA_ACCEPT=YES') -RunAs | Out-Null"
+        "script": [
+            "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "if (Test-Path \"$ProgramFilesX86Path\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe\")",
+            "{",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msp_\", '/qn') -RunAs | Out-Null",
+            "}",
+            "else",
+            "{",
+            "   (New-Object System.Net.WebClient).DownloadFile(http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_en_US.exe, $dir\\setup.exe)",
+            "   Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/rs', '/msi', '/qn', '/norestart', 'EULA_ACCEPT=YES') -RunAs | Out-Null",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msp_\", '/qn') -RunAs | Out-Null",
+            "}",
+            "Remove-Item \"$dir\\setup.msp_\""
+        ]
     },
     "post_install": [
         "Remove-Item \"$dir\\setup.exe\"",
@@ -19,10 +36,12 @@
         ]
     },
     "checkver": {
-        "url": "https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousdec2019.html",
-        "re": "<title>([\\d.]+)"
+        "url": "https://en.wikipedia.org/wiki/Adobe_Acrobat",
+        "re": "Windows, continuous track</th><td>([\\d.]+)"
     },
     "autoupdate": {
-        "url": "http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/$dirtyVersion/AcroRdrDC$dirtyVersion_en_US.exe#/setup.exe"
+        "url": [
+            "http://ftp.adobe.com/pub/adobe/reader/win/AcrobatDC/$dirtyVersion/AcroRdrDCUpd$dirtyVersion_MUI.msp#/setup.msp_"
+        ]
     }
 }
