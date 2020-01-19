@@ -1,0 +1,52 @@
+{
+    "version": "72.0.1",
+    "description": "Popular open source web browser.",
+    "homepage": "https://www.mozilla.org/firefox/",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://archive.mozilla.org/pub/firefox/releases/72.0.1/win64/en-US/Firefox%20Setup%2072.0.1.exe",
+            "hash": "sha512:4e8084bf8fc1b1fdcf12f72bd386f78606897f63889a24ee7cc74833b136948bd89b28dcdce54c245cac2bab8fec749f5037f082104cd804e249456b1266ace5"
+        },
+        "32bit": {
+            "url": "https://archive.mozilla.org/pub/firefox/releases/72.0.1/win32/en-US/Firefox%20Setup%2072.0.1.exe",
+            "hash": "sha512:c04ae94d9596951b4741057c85f5bc68e41e1293c001cc6cf6dfd5fd032940ddfa642885e3d661780863c8fc99f7fc788d38ad255df04ad193a85769d9dc9158"
+        }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('-ms') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "taskkill /F /IM firefox.exe /FI 'status eq running'",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "Invoke-ExternalCommand \"$ProgramFilesPath\\Mozilla Firefox\\uninstall\\helper.exe\" -ArgumentList @('-ms') -RunAs | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.mozilla.org/en-US/firefox/notes/",
+        "regex": "<div class=\"c-release-version\">([\\d.]+)</div>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://archive.mozilla.org/pub/firefox/releases/$version/win64/en-US/Firefox%20Setup%20$version.exe",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/firefox/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win64/en-US/$basename"
+                }
+            },
+            "32bit": {
+                "url": "https://archive.mozilla.org/pub/firefox/releases/$version/win32/en-US/Firefox%20Setup%20$version.exe",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/firefox/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win32/en-US/$basename"
+                }
+            }
+        }
+    }
+}
