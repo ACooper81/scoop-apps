@@ -28,7 +28,7 @@
     },
     "checkver": {
         "url": "https://en.wikipedia.org/wiki/Microsoft_Edge",
-        "regex": "Windows 10</th><td>([\\d.]+)"
+        "regex": "Windows 7, 8, 8.1 &amp; 10</th><td>([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
