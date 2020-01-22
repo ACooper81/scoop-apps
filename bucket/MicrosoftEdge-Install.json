@@ -1,16 +1,16 @@
 {
-    "version": "79.0.309.68",
+    "version": "79.0.309.71",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
     "homepage": "https://www.microsoft.com/en-us/edge",
     "license": "",
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "4e680c5c531e27b3f46d6e377d346a5b4488ac34cd1655cf59c9399c611265eb"
+            "hash": "7e91f560469806f3842b16e185241bbae82714a86808507fa23a4312ea1e0c11"
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "25478a9a37a43ca4678c5508013a4c26d49bddaa89d22863ad2565b4df017cd3"
+            "hash": "8a131f249e28d5e1cb0bb7b9156ba0fb93f5d7a2896bb5e3ce5df6c80c39e372"
         }
     },
     "installer": {
