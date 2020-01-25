@@ -1,0 +1,31 @@
+{
+    "version": "32.0.0.321",
+    "description": "Adobe Flash Player PPAPI Plugin for Opera and Chromium based browsers",
+    "homepage": "https://get.adobe.com/flashplayer/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.adobe.com/content/dam/acom/en/legal/licenses-terms/pdf/Flash_Player_32_0.pdf"
+    },
+    "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.321/install_flash_player_32_ppapi.msi#/setup.msi_",
+    "hash": "e20d8f5fd414a0fca6c5c4ccd2f651022fbddf0941e0863711c12f6ce37fb3b3",
+    "installer": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/quiet', '/norestart', 'REMOVE_PREVIOUS=YES') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$id = wmic product where \"\"\"name like 'Adobe Flash Player 32 PPAPI%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.adobe.com/support/flashplayer/debug_downloads.html",
+        "regex": "The latest versions are <span>([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download.macromedia.com/pub/flashplayer/pdc/$version/install_flash_player_32_ppapi.msi#/setup.msi_"
+    }
+}
