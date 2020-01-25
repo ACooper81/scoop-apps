@@ -7,7 +7,7 @@
         "url": "https://www.adobe.com/content/dam/acom/en/legal/licenses-terms/pdf/Flash_Player_32_0.pdf"
     },
     "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.321/install_flash_player_32_ppapi.msi#/setup.msi_",
-    "hash": "e20d8f5fd414a0fca6c5c4ccd2f651022fbddf0941e0863711c12f6ce37fb3b3",
+    "hash": "b7165d561c0fda6da6ba05fbb34199ef6de6911c3483b84c6a97ac66e5faaef9",
     "installer": {
         "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/quiet', '/norestart', 'REMOVE_PREVIOUS=YES') -RunAs | Out-Null"
     },
