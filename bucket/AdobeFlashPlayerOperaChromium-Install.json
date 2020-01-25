@@ -12,8 +12,9 @@
         "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/quiet', '/norestart', 'REMOVE_PREVIOUS=YES') -RunAs | Out-Null"
     },
     "post_install": [
-        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+        "SchTasks /Change /Disable /TN \"Adobe Flash Player Updater\" | Out-Null",
+        "Stop-Service \"AdobeFlashPlayerUpdateSvc\" -force | Out-Null",
+        "Set-Service \"AdobeFlashPlayerUpdateSvc\" -StartupType Disabled | Out-Null"
     ],
     "uninstaller": {
         "script": [
