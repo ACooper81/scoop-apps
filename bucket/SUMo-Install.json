@@ -1,0 +1,32 @@
+{
+    "version": "5.10.7.442",
+    "description": "Detecting and updating outdated software",
+    "homepage": "https://www.kcsoftwares.com/?sumo",
+    "license": {
+        "identifier": "Freeware",
+        "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
+    },
+    "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
+    "hash": "58B9248447ED65C792BAA9131ADF19D645D05146DA5B6D989581DD91D68D18EE",
+    "installer": {
+        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "taskkill /F /IM program.exe /FI 'status eq running'",
+            "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "Invoke-ExternalCommand \"$ProgramFilesX86Path\\Program\\uninstall.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.kcsoftwares.com/?download",
+        "regex": "(?sm)<h3>SUMo</h3>\\n\\t+\\n\\t+<small>Version : <code>([\\d.]+)</code>"
+    },
+    "autoupdate": {
+        "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe"
+    }
+}
