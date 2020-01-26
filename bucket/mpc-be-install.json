@@ -20,7 +20,9 @@
             "uninstaller": {
                 "script": [
                     "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-                    "& \"$ProgramFilesPath\\MPC-BE x64\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+                    "& \"$ProgramFilesPath\\MPC-BE x64\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+                    "$CommonStartMenu = [Environment]::GetFolderPath(\"CommonStartMenu\")",
+                    "if (Test-Path \"$CommonStartMenu\\Programs\\MPC-BE x64.lnk\") {Remove-Item \"$CommonStartMenu\\Programs\\MPC-BE x64.lnk\" -Force}"
                 ]
             }
         },
@@ -40,7 +42,9 @@
             "uninstaller": {
                 "script": [
                     "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-                    "& \"$ProgramFilesPath\\MPC-BE x86\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+                    "& \"$ProgramFilesPath\\MPC-BE x86\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
+                    "$CommonStartMenu = [Environment]::GetFolderPath(\"CommonStartMenu\")",
+                    "if (Test-Path \"$CommonStartMenu\\Programs\\MPC-BE x86.lnk\") {Remove-Item \"$CommonStartMenu\\Programs\\MPC-BE x86.lnk\" -Force}"
                 ]
             }
         }
@@ -52,16 +56,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x64-installer.zip#/setup.zip",
-                "installer": {
-                    "script": "Invoke-ExternalCommand \"$dir\\MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x64.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
-                }
+                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x64-installer.zip#/setup.zip"
             },
             "32bit": {
-                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x86-installer.zip#/setup.zip",
-                "installer": {
-                    "script": "Invoke-ExternalCommand \"$dir\\MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x86.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
-                }
+                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x86-installer.zip#/setup.zip"
             }
         }
     }
