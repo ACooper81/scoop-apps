@@ -12,8 +12,8 @@
         "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
     },
     "post_install": [
-        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+        "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
+        "if (Test-Path \"$DesktopPath\\SUMo.lnk\") {Remove-Item \"$DesktopPath\\SUMo.lnk\" -Force}"
     ],
     "uninstaller": {
         "script": [
