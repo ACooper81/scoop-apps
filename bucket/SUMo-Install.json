@@ -17,9 +17,9 @@
     ],
     "uninstaller": {
         "script": [
-            "taskkill /F /IM program.exe /FI 'status eq running'",
+            "taskkill /F /IM SUMo.exe /FI 'status eq running'",
             "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "Invoke-ExternalCommand \"$ProgramFilesX86Path\\Program\\uninstall.exe\" -ArgumentList @('/S', '/norestart') -RunAs | Out-Null"
+            "& \"$ProgramFilesX86Path\\Allavsoft\\Video Downloader Converter\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
         ]
     },
     "checkver": {
