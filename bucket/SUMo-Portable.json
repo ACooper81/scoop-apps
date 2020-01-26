@@ -16,7 +16,6 @@
             "SUMo - Software Update Monitor"
         ]
     ],
-    "persist": "settings.ini",
     "checkver": {
         "url": "https://www.kcsoftwares.com/?download",
         "regex": "(?sm)<h3>SUMo</h3>\\n\\t+\\n\\t+<small>Version : <code>([\\d.]+)</code>"
