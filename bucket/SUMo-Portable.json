@@ -1,15 +1,15 @@
 {
-    "homepage": "https://www.kcsoftwares.com/?dumo",
+    "version": "5.10.7.442",
     "description": "Detecting and updating outdated software",
-    "version": "2.20.2.101",
+    "homepage": "https://www.kcsoftwares.com/?dumo",
     "license": {
         "identifier": "Freeware",
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo.zip",
     "hash": "EAA95A37425D9803BAD28ECE93442080F81FEC5E89CAF3560DA77E7343C3B0F4",
-    "extract_dir": "dumo",
-    "bin": "DUMo.exe",
+    "extract_dir": "dsumo",
+    "bin": "SUMo.exe",
     "shortcuts": [
         [
             "SUMo.exe",
