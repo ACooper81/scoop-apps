@@ -1,14 +1,14 @@
 {
     "version": "5.10.7.442",
     "description": "Detecting and updating outdated software",
-    "homepage": "https://www.kcsoftwares.com/?dumo",
+    "homepage": "https://www.kcsoftwares.com/?sumo",
     "license": {
         "identifier": "Freeware",
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo.zip",
     "hash": "EAA95A37425D9803BAD28ECE93442080F81FEC5E89CAF3560DA77E7343C3B0F4",
-    "extract_dir": "dsumo",
+    "extract_dir": "sumo",
     "bin": "SUMo.exe",
     "shortcuts": [
         [
@@ -19,7 +19,7 @@
     "persist": "settings.ini",
     "checkver": {
         "url": "https://www.kcsoftwares.com/?download",
-        "regex": "(?sm)<h3>SUMo</h3>\\n\\t+<small>Version : <code>([\\d.]+)</code>"
+        "regex": "(?sm)<h3>SUMo</h3>\\n\\n\\t+<small>Version : <code>([\\d.]+)</code>"
     },
     "autoupdate": {
         "url": "https://www.kcsoftwares.com/files/sumo.zip"
