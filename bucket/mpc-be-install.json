@@ -9,8 +9,8 @@
             "hash": "sha1:ba0a641204276a377e976eadd6d02911c938962f",
             "installer": {
                 "script": [
-                    "$InstallFile = Get-ChildItem -Path \"$dir\" -Include *.exe -File -Recurse -ErrorAction SilentlyContinue",
-                    "Invoke-ExternalCommand \"$dir\\$InstallFile\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+                    "$InstallFile = dir -Path \"$dir\" -Filter *.exe | %{$_.FullName}",
+                    "Invoke-ExternalCommand \"$InstallFile\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
                 ]
             },
             "post_install": [
@@ -29,8 +29,8 @@
             "hash": "sha1:073f3ed713b0b1184fa6cf573f0ffff1911d08d4",
             "installer": {
                 "script": [
-                    "$InstallFile = Get-ChildItem -Path \"$dir\" -Include *.exe -File -Recurse -ErrorAction SilentlyContinue",
-                    "Invoke-ExternalCommand \"$dir\\$InstallFile\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+                    "$InstallFile = dir -Path \"$dir\" -Filter *.exe | %{$_.FullName}",
+                    "Invoke-ExternalCommand \"$InstallFile\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
                 ]
             },
             "post_install": [
