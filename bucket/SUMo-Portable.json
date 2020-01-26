@@ -19,7 +19,7 @@
     "persist": "settings.ini",
     "checkver": {
         "url": "https://www.kcsoftwares.com/?download",
-        "regex": "(?sm)<h3>SUMo</h3>\\n\\n\\t+<small>Version : <code>([\\d.]+)</code>"
+        "regex": "(?sm)<h3>SUMo</h3>\\n\\t+\\n\\t+<small>Version : <code>([\\d.]+)</code>"
     },
     "autoupdate": {
         "url": "https://www.kcsoftwares.com/files/sumo.zip"
