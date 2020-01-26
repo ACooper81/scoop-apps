@@ -40,21 +40,21 @@
         }
     },
     "checkver": {
-        "url": "https://sourceforge.net/p/mpcbe/code/HEAD/tree/",
-        "regex": "(?sm)tags<.*?\\[r(?<build>[\\d]+)\\].*?MPC-BE v([\\d.]+)"
+        "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/",
+        "regex": "<span class=\"sub-label\">MPC-BE.([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$version/MPC-BE.$version.x64-installer.zip#/setup.zip",
+                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x64-installer.zip#/setup.zip",
                 "installer": {
-                    "script": "Invoke-ExternalCommand \"$dir\\MPC-BE.$version.$matchBuild.x64.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+                    "script": "Invoke-ExternalCommand \"$dir\\MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x64.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
                 }
             },
             "32bit": {
-                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$version/MPC-BE.$version.x86-installer.zip#/setup.zip",
+                "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x86-installer.zip#/setup.zip",
                 "installer": {
-                    "script": "Invoke-ExternalCommand \"$dir\\MPC-BE.$version.$matchBuild.x86.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+                    "script": "Invoke-ExternalCommand \"$dir\\MPC-BE.$majorVersion.$minorVersion.$patchVersion.$buildVersion.x86.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
                 }
             }
         }
