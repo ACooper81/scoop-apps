@@ -19,7 +19,7 @@
         "script": [
             "taskkill /F /IM SUMo.exe /FI 'status eq running'",
             "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "& \"$ProgramFilesX86Path\\KC Software\\SUMo\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+            "& \"$ProgramFilesX86Path\\KC Softwares\\SUMo\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
         ]
     },
     "checkver": {
