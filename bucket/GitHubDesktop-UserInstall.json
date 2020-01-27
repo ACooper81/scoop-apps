@@ -1,0 +1,37 @@
+{
+    "version": "2.2.4",
+    "description": "Extend your GitHub workflow beyond your browser.",
+    "homepage": "https://desktop.github.com/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/setup.msi_",
+            "hash": "603D84A9CC5439C04CAD201130610250B654555FB057B0A8AE80A5685E1D024E"
+        }
+    },
+    "installer": {
+        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+    },
+    "post_install": [
+        "$DesktopDirectory = [Environment]::GetFolderPath(\"DesktopDirectory\")",
+        "if (Test-Path \"$DesktopDirectory\\GitHub Desktop.lnk\") {Remove-Item \"$DesktopDirectory\\GitHub Desktop.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$id = wmic product where \"\"\"name like 'GitHub Desktop%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
+        ]
+    },
+    "checkver": {
+        "url": "https://central.github.com/api/deployments/desktop/desktop/latest/RELEASES",
+        "regex": "GitHubDesktop-([\\d.]+)-full.nupkg",
+        "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/setup.msi_"
+            }
+        }
+    }
+}
