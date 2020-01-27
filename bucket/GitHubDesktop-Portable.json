@@ -1,7 +1,7 @@
 {
-    "homepage": "https://desktop.github.com/",
-    "description": "Extend your GitHub workflow beyond your browser.",
     "version": "2.2.4",
+    "description": "Extend your GitHub workflow beyond your browser.",
+    "homepage": "https://desktop.github.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
