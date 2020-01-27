@@ -48,14 +48,14 @@
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://www.irfanview.info/files/iview$dirtyVersion_x64_setup.exe#/setup.exe",
-                    "https://www.irfanview.info/files/iview$dirtyVersion_plugins_x64_setup.exe#/pluginsetup.exe"
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_x64_setup.exe#/setup.exe",
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_plugins_x64_setup.exe#/pluginsetup.exe"
                 ]
             },
             "32bit": {
                 "url": [
-                    "https://www.irfanview.info/files/iview$dirtyVersion_setup.exe#/setup.exe",
-                    "https://www.irfanview.info/files/iview$dirtyVersion_plugins_setup.exe#/pluginsetup.exe"
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_setup.exe#/setup.exe",
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_plugins_setup.exe#/pluginsetup.exe"
                 ]
             }
         }
