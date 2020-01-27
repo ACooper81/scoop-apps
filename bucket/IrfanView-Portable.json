@@ -72,5 +72,21 @@
     "checkver": {
         "url": "https://www.irfanview.com/",
         "re": ">\\s*version\\s+([\\d\\.-]+)\\s*<"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": [
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_x64.zip",
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_plugins_x64.zip"
+                ]
+            },
+            "32bit": {
+                "url": [
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion.zip",
+                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_plugins.zip"
+                ]
+            }
+        }
     }
 }
