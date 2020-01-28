@@ -6,6 +6,7 @@
 Website - https://scoop.sh/  
 GitHub - https://github.com/lukesampson/scoop  
 Apps - https://scoop.netlify.com/apps/  
+Search Apps - https://scoop-docs.now.sh/apps/  
 Awsome Scoop - https://github.com/ScoopInstaller/Awesome  
 
 # Help URL's
