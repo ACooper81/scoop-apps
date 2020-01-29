@@ -21,7 +21,7 @@
     "installer": {
         "script": [
             "$command = @'",
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call echo y | `\"$ProgramFilesPath\\Oracle\\VirtualBox\\VBoxManage.exe`\" extpack install --replace `\"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack`\"\" -Verb RunAs",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c echo y | `\"$ProgramFilesPath\\Oracle\\VirtualBox\\VBoxManage.exe`\" extpack install --replace `\"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack`\"\" -Verb RunAs",
             "'@",
             "Invoke-Expression -Command:$command"
         ]
