@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.hwinfo.com/",
-    "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS.",
     "version": "6.20-4030",
+    "description": "Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS.",
+    "homepage": "https://www.hwinfo.com/",
     "license": "Unknown",
     "architecture": {
         "64bit": {
