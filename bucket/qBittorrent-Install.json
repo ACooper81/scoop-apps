@@ -37,9 +37,10 @@
     "uninstaller": {
         "script": [
             "$processname = \"qbittorrent.exe\"",
-            "$programname = \"qbittorrent*\"",
+            "$uninstallpath = \"[Environment]::GetFolderPath(\"ProgramFiles\")\\qBittorrent\\uninst.exe\"",
+            "$uninstallargs = \"'/S'\"",
             "taskkill /F /IM $processname /FI 'status eq running'",
-            "Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue | Uninstall-Package"
+            "Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null"
         ]
     },
     "checkver": {
