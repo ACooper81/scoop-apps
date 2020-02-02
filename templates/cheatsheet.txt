@@ -4,17 +4,32 @@ Uninstall-Package -Name NuGet.Core
 Get-Package -Name NuGet.Core -RequiredVersion 2.14.0 | Uninstall-Package
 Uninstall-Package -InputObject ( Get-Package -Name NuGet.Core -RequiredVersion 2.14.0 )
 
-
+==================================================
+Install Scripts
+==================================================
     "installer": {
         "script": [
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "$programname = \"qbittorrent*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
             "}",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "exit 1",
             "}",
             "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+
+==================================================
+Uninstall Scripts
+==================================================
+    "uninstaller": {
+        "script": [
+            "$processname = \"qbittorrent.exe\"",
+            "taskkill /F /IM $processname /FI 'status eq running'",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "Invoke-ExternalCommand \"$ProgramFilesPath\\qBittorrent\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
         ]
     },
