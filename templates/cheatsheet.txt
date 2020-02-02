@@ -3,3 +3,18 @@ Get-Package -Provider Programs -IncludeWindowsInstaller -Name "7-Zip*" -MinimumV
 Uninstall-Package -Name NuGet.Core
 Get-Package -Name NuGet.Core -RequiredVersion 2.14.0 | Uninstall-Package
 Uninstall-Package -InputObject ( Get-Package -Name NuGet.Core -RequiredVersion 2.14.0 )
+
+
+    "installer": {
+        "script": [
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
+            "}",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "exit 1",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
