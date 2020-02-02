@@ -27,7 +27,7 @@
         "script": [
             "taskkill /F /IM qbittorrent.exe /FI 'status eq running'",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "Invoke-ExternalCommand \"$ProgramFilesPath\\Program\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
+            "Invoke-ExternalCommand \"$ProgramFilesPath\\qBittorrent\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
         ]
     },
     "checkver": {
