@@ -18,14 +18,16 @@
     },
     "installer": {
         "script": [
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "$programname = \"qbittorrent*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
             "}",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "exit 1",
-            "}"
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
     "post_install": [
