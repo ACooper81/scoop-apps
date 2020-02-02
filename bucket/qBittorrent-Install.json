@@ -19,9 +19,11 @@
     "installer": {
         "script": [
             "$programname = \"qbittorrent*\"",
+            "$installpath = \"$dir\\setup.exe\"",
+            "$installargs = '/S'",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
+            "Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
             "}",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
