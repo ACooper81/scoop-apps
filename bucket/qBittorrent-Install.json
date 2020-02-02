@@ -36,9 +36,10 @@
     ],
     "uninstaller": {
         "script": [
-            "taskkill /F /IM qbittorrent.exe /FI 'status eq running'",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "Invoke-ExternalCommand \"$ProgramFilesPath\\qBittorrent\\uninst.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
+            "$processname = \"qbittorrent.exe\"",
+            "$programname = \"qbittorrent*\"",
+            "taskkill /F /IM $processname /FI 'status eq running'",
+            "Uninstall-Package -Name $programname"
         ]
     },
     "checkver": {
