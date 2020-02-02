@@ -10,9 +10,11 @@ Install Scripts
     "installer": {
         "script": [
             "$programname = \"qbittorrent*\"",
+            "$installpath = \"$dir\\setup.exe\"",
+            "$installargs = '/S'",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null",
+            "Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
             "}",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
@@ -25,6 +27,17 @@ Install Scripts
 ==================================================
 Uninstall Scripts
 ==================================================
+    "uninstaller": {
+        "script": [
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$processname = \"qbittorrent.exe\"",
+            "$uninstallpath = \"$ProgramFilesPath\\qBittorrent\\uninst.exe\"",
+            "$uninstallargs = '/S'",
+            "taskkill /F /IM $processname /FI 'status eq running'",
+            "Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null"
+        ]
+    },
+
     "uninstaller": {
         "script": [
             "$processname = \"qbittorrent.exe\"",
