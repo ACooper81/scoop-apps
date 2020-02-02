@@ -39,7 +39,7 @@
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$processname = \"qbittorrent.exe\"",
             "$uninstallpath = \"$ProgramFilesPath\\qBittorrent\\uninst.exe\"",
-            "$uninstallargs = \"'/S'\"",
+            "$uninstallargs = '/S'",
             "taskkill /F /IM $processname /FI 'status eq running'",
             "Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null"
         ]
