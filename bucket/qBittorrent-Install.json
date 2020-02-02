@@ -17,7 +17,7 @@
         }
     },
     "installer": {
-        "script": "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version | Out-Null)){Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null}"
+        "script": "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"qbittorrent*\" -RequiredVersion $version -ErrorAction SilentlyContinue)){Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null}"
     },
     "post_install": [
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
