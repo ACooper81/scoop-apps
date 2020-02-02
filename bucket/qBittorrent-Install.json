@@ -39,7 +39,7 @@
             "$processname = \"qbittorrent.exe\"",
             "$programname = \"qbittorrent*\"",
             "taskkill /F /IM $processname /FI 'status eq running'",
-            "Uninstall-Package -Name $programname"
+            "Uninstall-Package -Name \"$programname\""
         ]
     },
     "checkver": {
