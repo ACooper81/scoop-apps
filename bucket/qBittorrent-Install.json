@@ -38,6 +38,7 @@
     ],
     "uninstaller": {
         "script": [
+            "$programname = \"qbittorrent*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$processname = \"qbittorrent.exe\"",
             "$uninstallpath = \"$ProgramFilesPath\\qBittorrent\\uninst.exe\"",
