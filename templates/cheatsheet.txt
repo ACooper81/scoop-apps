@@ -25,8 +25,36 @@ Install Scripts
     },
 
 ==================================================
+Post_Install Scripts
+==================================================
+
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
+    ],
+
+==================================================
 Uninstall Scripts
 ==================================================
+    "uninstaller": {
+        "script": [
+            "$programname = \"qbittorrent*\"",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$processname = \"qbittorrent.exe\"",
+            "$uninstallpath = \"$ProgramFilesPath\\qBittorrent\\uninst.exe\"",
+            "$uninstallargs = '/S'",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "taskkill /F /IM $processname /FI 'status eq running'",
+            "Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null",
+            "}",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "exit 1",
+            "}"
+        ]
+    },
+
     "uninstaller": {
         "script": [
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
