@@ -42,8 +42,15 @@
             "$processname = \"qbittorrent.exe\"",
             "$uninstallpath = \"$ProgramFilesPath\\qBittorrent\\uninst.exe\"",
             "$uninstallargs = '/S'",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
             "taskkill /F /IM $processname /FI 'status eq running'",
-            "Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null"
+            "Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null",
+            "}",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "exit 1",
+            "}"
         ]
     },
     "checkver": {
