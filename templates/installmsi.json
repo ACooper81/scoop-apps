@@ -35,11 +35,12 @@
     "uninstaller": {
         "script": [
             "$programname = \"programname*\"",
+            "$msiprogramname = \"programname\"",
             "$processname = \"filename.exe\"",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   $id = wmic product where \"\"\"name like '$programname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
             "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
             "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "   {",
