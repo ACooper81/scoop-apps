@@ -9,7 +9,19 @@
     "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.321/install_flash_player_32_ppapi.msi#/setup.msi_",
     "hash": "b7165d561c0fda6da6ba05fbb34199ef6de6911c3483b84c6a97ac66e5faaef9",
     "installer": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/quiet', '/norestart', 'REMOVE_PREVIOUS=YES') -RunAs | Out-Null"
+        "script": [
+            "$programname = \"Adobe Flash Player 32 PPAPI*\"",
+            "$installpath = \"$dir\\setup.msi_\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.msi_\" -Force"
+        ]
     },
     "post_install": [
         "SchTasks /Change /Disable /TN \"Adobe Flash Player Updater\" | Out-Null",
@@ -18,8 +30,17 @@
     ],
     "uninstaller": {
         "script": [
-            "$id = wmic product where \"\"\"name like 'Adobe Flash Player 32 PPAPI%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
+            "$programname = \"Adobe Flash Player 32 PPAPI*\"",
+            "$msiprogramname = \"Adobe Flash Player 32 PPAPI\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
