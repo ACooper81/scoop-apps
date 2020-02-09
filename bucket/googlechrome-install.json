@@ -37,9 +37,9 @@
     ],
     "uninstaller": {
         "script": [
-            "$programname = Google Chrome*",
+            "$programname = \"Google Chrome*\"",
             "$processname = \"chrome.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name $programname -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
             "   $id = wmic product where \"\"\"name like '$programname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
