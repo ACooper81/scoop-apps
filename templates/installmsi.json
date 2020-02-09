@@ -5,25 +5,48 @@
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "https://website/filename.msi#/setup.msi_",
+            "url": "https://website/filename.exe#/setup.msi_",
             "hash": ""
         },
         "32bit": {
-            "url": "https://website/filename.msi#/setup.msi_",
+            "url": "https://website/filename.exe#/setup.msi_",
             "hash": ""
         }
     },
     "installer": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+        "script": [
+            "$programname = \"programname*\"",
+            "$installpath = \"$dir\\setup.msi_\"",
+            "$installargs = ''",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn' $installargs) -RunAs | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
     },
     "post_install": [
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$CommonDesktopPath\\Program.lnk\") {Remove-Item \"$CommonDesktopPath\\Program.lnk\" -Force}"
+        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
     ],
     "uninstaller": {
         "script": [
-            "$id = wmic product where \"\"\"name like 'Program Name%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
+            "$programname = \"programname*\"",
+            "$processname = \"filename.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   $id = wmic product where \"\"\"name like '$programname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
@@ -33,10 +56,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://website/filename.msi#/setup.msi_"
+                "url": "https://website/filename.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://website/filename.msi#/setup.msi_"
+                "url": "https://website/filename.exe#/setup.exe"
             }
         }
     }
