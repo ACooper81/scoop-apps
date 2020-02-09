@@ -37,7 +37,7 @@
     ],
     "uninstaller": {
         "script": [
-            "$programname = \"Google Chrome*\"",
+            "$programname = Google Chrome*",
             "$processname = \"chrome.exe\"",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
