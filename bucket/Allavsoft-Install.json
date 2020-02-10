@@ -7,38 +7,43 @@
     },
     "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
-    "architecture": {
-        "64bit": {
-            "installer": {
-                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-') -RunAs | Out-Null"
-            },
-            "uninstaller": {
-                "script": [
-                    "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-                    "& \"$ProgramFilesX86Path\\Allavsoft\\Video Downloader Converter\\unins001.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
-                ]
-            },
-            "post_install": [
-                "Remove-Item \"$dir\\setup.exe\"",
-                "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-                "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
-            ]
-        },
-        "32bit": {
-            "installer": {
-                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-') -RunAs | Out-Null"
-            },
-            "uninstaller": {
-                "script": [
-                    "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-                    "& \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
-                ]
-            },
-            "post_install": [
-                "Remove-Item \"$dir\\setup.exe\"",
-                "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-                "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
-            ]
-        }
+    "installer": {
+        "script": [
+            "$programname = \"Allavsoft*\"",
+            "$installpath = \"$dir\\setup.exe\"",
+            "$installargs = '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-'",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion '' -ErrorAction SilentlyContinue))",
+            "{",
+            "   Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion '' -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\setup.exe\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$programname = \"Allavsoft*\"",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$processname = \"videodownloader.exe\"",
+            "$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\"",
+            "$uninstallargs = '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART'",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
+        ]
     }
 }
