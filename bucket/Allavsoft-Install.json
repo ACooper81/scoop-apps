@@ -32,7 +32,7 @@
             "$programname = \"Allavsoft*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "$processname = \"videodownloader.exe\"",
-            "$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\"",
+            "$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins00*.exe\"",
             "$uninstallargs = '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART'",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
             "{",
