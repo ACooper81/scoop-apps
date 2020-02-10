@@ -24,7 +24,6 @@
         ]
     },
     "post_install": [
-        "Remove-Item \"$dir\\setup.exe\"",
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
     ],
