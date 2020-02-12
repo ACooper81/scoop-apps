@@ -27,8 +27,8 @@
         ]
     },
     "checkver": {
-        "url": "https://en.wikipedia.org/wiki/Microsoft_Edge",
-        "regex": "Windows 7, 8, 8.1 &amp; 10</th><td>([\\d.]+)"
+        "url": "https://www.whatismybrowser.com/guides/the-latest-version/edge",
+        "regex": "            <td>([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
