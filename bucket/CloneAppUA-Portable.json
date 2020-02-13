@@ -1,10 +1,10 @@
 {
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "CloneApp Universal Apps. Backs up All Windows Universal Apps settings.",
     "homepage": "https://www.getclone.app/ua",
     "license": "Freeware",
-    "url": "https://www.mirinsoft.com/ua/send/13-ca-ua/47-cloneapp-ua#/cosi.zip",
-    "hash": "md5:2ffd8eee332363db6306d30c90ab650b",
+    "url": "https://github.com/mirinsoft/CloneApp-UA/releases/download/0.8.1/cloneapp_ua.zip#/cosi.zip",
+    "hash": "5321a21536b4317d7a4b26ca6f027ef36d3522f2f14caa9cce314e436c76da81",
     "pre_install": [
         "$file = 'Data\\cloneapp.ini'",
         "if (-not (Test-Path \"$persist_dir\\$file\")) {",
@@ -22,14 +22,9 @@
     ],
     "persist": "Data",
     "checkver": {
-        "url": "https://www.getclone.app/downloads/ca_update/changelog_ua.txt",
-        "regex": "Changelog v([\\d.]+)"
+        "github": "https://github.com/mirinsoft/CloneApp-UA"
     },
     "autoupdate": {
-        "url": "https://www.mirinsoft.com/ua/send/13-ca-ua/47-cloneapp-ua#/cosi.zip",
-        "hash": {
-            "url": "https://www.getclone.app/ua",
-            "regex": "MD5 Checksum: $md5"
-        }
+        "url": "https://github.com/mirinsoft/CloneApp-UA/releases/download/$version/cloneapp_ua.zip#/cosi.zip"
     }
 }
