@@ -1,6 +1,6 @@
 {
     "homepage": "https://code.visualstudio.com/",
-    "version": "1.42.0",
+    "version": "1.42.1",
     "description": "Visual Studio Code is a lightweight but powerful source code editor.",
     "license": {
         "identifier": "Freeware",
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://update.code.visualstudio.com/1.42.0/win32-x64/stable#/setup.exe",
-            "hash": "84dd3851d480797a0635572f2d190b68718a01cd436b75bfc0a4c87fec7fba26"
+            "url": "https://update.code.visualstudio.com/1.42.1/win32-x64/stable#/setup.exe",
+            "hash": "b6d1891b50e9f5effcf62de9a2f82f304c6c737b2048c3c8314ded92fee84b51"
         },
         "32bit": {
-            "url": "https://update.code.visualstudio.com/1.42.0/win32/stable#/setup.exe",
-            "hash": "59505e402f9b0598a6ed8ae30e0e67c2c9ef28cec850f35acc8c5d76eb0707a1"
+            "url": "https://update.code.visualstudio.com/1.42.1/win32/stable#/setup.exe",
+            "hash": "bde7fa1020bc26f8d954d86b7a44c05a89308d74e7b1dbb2382ae2ef7b751406"
         }
     },
     "installer": {
