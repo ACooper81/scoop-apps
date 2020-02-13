@@ -1,5 +1,5 @@
 {
-    "version": "4.53",
+    "version": "4.54",
     "description": "A fast, compact and innovative graphic viewer",
     "license": {
         "identifier": "Freeware",
@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://www.irfanview.info/files/iview453_x64.zip",
+                "https://www.irfanview.info/files/iview454_x64.zip",
                 "https://www.irfanview.info/files/iview453_plugins_x64.zip"
             ],
             "hash": [
-                "941056da4f50df44eeef46ca875255bd3d09c3aaf1bdfffad5f65de0a515ff02",
+                "735bc1dd67de2882c729fa6f144e6dcfd237e90981a1ae8792ce48c1500d740b",
                 "d5e8ae1734264287e7b442fc062899c206c54bbd423304e125c4b1d1c58d28b1"
             ],
             "shortcuts": [
@@ -31,11 +31,11 @@
         },
         "32bit": {
             "url": [
-                "https://www.irfanview.info/files/iview453.zip",
+                "https://www.irfanview.info/files/iview454.zip",
                 "https://www.irfanview.info/files/iview453_plugins.zip"
             ],
             "hash": [
-                "89c0d29424299f9b0d36248884059baf815f0b5d4adc9c3b426f61fe68f1444a",
+                "d17228fb23919eec7f139db6827a998737ec981cc0f718c8681e692c53742aef",
                 "1ec241d26a0f061aa5499c606967690de8979c82fdce4a5724b4e18daa099de3"
             ],
             "shortcuts": [
@@ -76,16 +76,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": [
-                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_x64.zip",
-                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_plugins_x64.zip"
-                ]
+                "url": "https://www.irfanview.info/files/iview$cleanVersion_x64.zip"
             },
             "32bit": {
-                "url": [
-                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion.zip",
-                    "https://www.irfanview.info/files/iview$majorVersion$minorVersion_plugins.zip"
-                ]
+                "url": "https://www.irfanview.info/files/iview$cleanVersion.zip"
             }
         }
     }
