@@ -54,8 +54,8 @@
         ]
     },
     "checkver": {
-        "url": "https://en.wikipedia.org/wiki/Adobe_Acrobat",
-        "re": "Windows, continuous track</th><td>([\\d.]+)"
+        "url": "https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html#installers",
+        "re": "<em>([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/$cleanVersion/AcroRdrDCUpd$cleanVersion.msp#/setup.msp_"
