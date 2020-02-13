@@ -1,13 +1,13 @@
 {
-    "version": "32.0.0.321",
+    "version": "32.0.0.330",
     "description": "Adobe Flash Player PPAPI Plugin for Opera and Chromium based browsers",
     "homepage": "https://get.adobe.com/flashplayer/",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.adobe.com/content/dam/acom/en/legal/licenses-terms/pdf/Flash_Player_32_0.pdf"
     },
-    "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.321/install_flash_player_32_ppapi.msi#/setup.msi_",
-    "hash": "b7165d561c0fda6da6ba05fbb34199ef6de6911c3483b84c6a97ac66e5faaef9",
+    "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.330/install_flash_player_32_ppapi.msi#/setup.msi_",
+    "hash": "7ab1dc4cc30b14fe22068a11572dfe6f49969388416c8bc657287e52d32035fd",
     "installer": {
         "script": [
             "$programname = \"Adobe Flash Player 32 PPAPI*\"",
