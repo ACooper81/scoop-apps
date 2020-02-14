@@ -14,7 +14,19 @@
         }
     },
     "installer": {
-        "script": "Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null"
+        "script": [
+            "$programname = \"Microsoft Edge*\"",
+            "$installpath = \"$dir\\setup.msi_\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.msi_\" -Force"
+        ]
     },
     "post_install": [
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
@@ -22,8 +34,19 @@
     ],
     "uninstaller": {
         "script": [
-            "$id = wmic product where \"\"\"name like 'Microsoft Edge%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
+            "$programname = \"Microsoft Edge*\"",
+            "$msiprogramname = \"Microsoft Edge\"",
+            "$processname = \"msedge.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
+            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
