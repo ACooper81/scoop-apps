@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi#/setup.msi_",
-            "hash": "7ca56698c0c2a5d33ed2680937e4c607b09d262f559b05f914e50cf16da279ab"
+            "hash": "29fbea3997af98a7ec3615bded8b46da6c507dc698d93689454debf0a9471ce7"
         },
         "32bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi#/setup.msi_",
-            "hash": "c83a65e2e164c147024aa904455892b00e399d6567f25d0fb86153c99f438a09"
+            "hash": "7488cfc8976b0d0b7c896bc3742de9d2e81505fb826e5504cd2d213b9d76554a"
         }
     },
     "installer": {
