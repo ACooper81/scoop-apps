@@ -38,7 +38,7 @@
         ]
     },
     "checkver": {
-        "url": "https://update.virtualbox.org/query.php?platform=WINDOWS_64BITS_GENERIC&version=6.1.0",
+        "url": "https://www.virtualbox.org/wiki/Downloads",
         "regex": "VirtualBox-(?<version>[\\d.]+)-(?<revision>[\\d]+)-Win.exe"
     },
     "autoupdate": {
