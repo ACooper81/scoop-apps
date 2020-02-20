@@ -17,7 +17,7 @@
         "script": [
             "$programname = \"programname*\"",
             "$installpath = \"$dir\\setup.exe\"",
-            "$installargs = '/S'",
+            "$installargs = \"'/S'\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
@@ -39,7 +39,7 @@
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$processname = \"filename.exe\"",
             "$uninstallpath = \"$ProgramFilesPath\\program\\uninstall.exe\"",
-            "$uninstallargs = '/S'",
+            "$uninstallargs = \"'/S'\"",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
