@@ -2,7 +2,7 @@
     "version": "6.1.4",
     "description": "Adds support for USB 2.0 and USB 3.0 devices, VirtualBox RDP, disk encryption, NVMe and PXE boot for Intel cards in Virtualbox.",
     "homepage": "https://www.virtualbox.org/",
-    "depends": "virtualbox-install",
+    "depends": "scoop-apps/virtualbox-install",
     "license": {
         "identifier": "GPL-2.0-only|Freeware",
         "url": "https://www.virtualbox.org/wiki/VirtualBox_PUEL"
