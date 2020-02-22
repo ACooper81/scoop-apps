@@ -29,8 +29,8 @@
         ]
     },
     "post_install": [
-        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$CommonDesktopPath\\Microsoft Edge.lnk\") {Remove-Item \"$CommonDesktopPath\\Microsoft Edge.lnk\" -Force}"
+        "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
+        "if (Test-Path \"$DesktopPath\\Microsoft Edge.lnk\") {Remove-Item \"$DesktopPath\\Microsoft Edge.lnk\" -Force}"
     ],
     "uninstaller": {
         "script": [
