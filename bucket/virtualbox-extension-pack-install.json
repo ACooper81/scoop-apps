@@ -20,10 +20,9 @@
     },
     "installer": {
         "script": [
-            "$command = @'",
-            "cmd.exe /c \"C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe\" extpack install --replace \"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack\" --accept-license=715c7246dc0f779ceab39446812362b2f9bf64a55ed5d3a905f053cfab36da9e",
-            "'@",
-            "Invoke-Expression -Command:$command"
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call echo y | `\"$ProgramFilesPath\\Oracle\\VirtualBox\\VBoxManage.exe`\" extpack install --replace `\"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack`\"\" -Verb RunAs",
+            "Remove-Item \"$dir\\VBoxSetup.exe\""
         ]
     },
     "uninstaller": {
