@@ -12,17 +12,17 @@
     "installer": {
         "script": [
             "$programname = \"GitHub Desktop*\"",
-            "$installpath = \"$dir\\setup.msi_\"",
+            "$installpath = \"$dir\\GitHubDesktop.exe\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
-            "   &\"$dir\\GitHubDesktop.exe\" -s | Out-Null",
+            "   &\"$installpath\" -s | Out-Null",
             "   Start-Sleep -s 30",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.msi_\" -Force"
+            "Remove-Item \"$dir\\GitHubDesktop.exe\" -Force"
         ]
     },
     "post_install": [
