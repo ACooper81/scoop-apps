@@ -32,6 +32,7 @@
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
             "   & \"$LocalApplicationData\\Programs\\balena-etcher\\Uninstall balenaEtcher.exe\" /S",
+            "   Start-Sleep -s 10",
             "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "   {",
             "       exit 1",
