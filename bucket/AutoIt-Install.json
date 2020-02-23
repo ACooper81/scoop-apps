@@ -6,22 +6,37 @@
         "identifier": "Freeware",
         "url": "https://www.autoitscript.com/autoit3/docs/license.htm"
     },
-    "url": "https://www.autoitscript.com/files/autoit3/autoit-v3-setup.exe",
+    "url": "https://www.autoitscript.com/files/autoit3/autoit-v3-setup.exe#/setup.exe",
     "hash": "e102238100a8b97d22559065e3b19379757aeda932c36916d2c84a4178921854",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\autoit-v3-setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
+            "$programname = \"AutoIt v*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
-    "post_install": [
-        "Remove-Item \"$dir\\autoit-v3-setup.exe\""
-    ],
     "uninstaller": {
         "script": [
-            "$ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "& \"$ProgramFilesX86Path\\AutoIt3\\Uninstall.exe\" /S",
-            "$CommonStartMenuPath = [Environment]::GetFolderPath(\"CommonStartMenu\")",
-            "Remove-Item –path \"$CommonStartMenuPath\\Programs\\AutoIt v3\" –recurse"
+            "$programname = \"AutoIt v*\"",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$processname = \"AutoIt3.exe\"",
+            "$processname = \"AutoIt3_x64.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   &\"$ProgramFilesPath\\program\\uninstall.exe\" /S | Out-Null",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
@@ -29,6 +44,6 @@
         "re": "<td>v([\\d.]+)</td>"
     },
     "autoupdate": {
-        "url": "https://www.autoitscript.com/files/autoit3/autoit-v3-setup.exe"
+        "url": "https://www.autoitscript.com/files/autoit3/autoit-v3-setup.exe#/setup.exe"
     }
 }
