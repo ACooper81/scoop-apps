@@ -9,8 +9,17 @@
             "hash": "sha1:ba0a641204276a377e976eadd6d02911c938962f",
             "installer": {
                 "script": [
+                    "$programname = \"MPC-BE*\"",
                     "$InstallFile = dir -Path \"$dir\" -Filter *.exe | %{$_.FullName}",
-                    "Invoke-ExternalCommand \"$InstallFile\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "{",
+                    "   &\"$installfile\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
+                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "   {",
+                    "       exit 1",
+                    "   }",
+                    "}",
+                    "Remove-Item \"$dir\\setup.exe\" -Force"
                 ]
             },
             "post_install": [
@@ -19,10 +28,18 @@
             ],
             "uninstaller": {
                 "script": [
+                    "$programname = \"MPC-BE*\"",
                     "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-                    "& \"$ProgramFilesPath\\MPC-BE x64\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
-                    "$CommonStartMenu = [Environment]::GetFolderPath(\"CommonStartMenu\")",
-                    "if (Test-Path \"$CommonStartMenu\\Programs\\MPC-BE x64.lnk\") {Remove-Item \"$CommonStartMenu\\Programs\\MPC-BE x64.lnk\" -Force}"
+                    "$processname = \"mpc-be64.exe\"",
+                    "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+                    "{",
+                    "   taskkill /F /IM $processname /FI 'status eq running'",
+                    "& \"$ProgramFilesPath\\MPC-BE x64\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
+                    "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+                    "   {",
+                    "       exit 1",
+                    "   }",
+                    "}"
                 ]
             }
         },
@@ -31,8 +48,17 @@
             "hash": "sha1:073f3ed713b0b1184fa6cf573f0ffff1911d08d4",
             "installer": {
                 "script": [
+                    "$programname = \"MPC-BE*\"",
                     "$InstallFile = dir -Path \"$dir\" -Filter *.exe | %{$_.FullName}",
-                    "Invoke-ExternalCommand \"$InstallFile\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
+                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "{",
+                    "   &\"$installfile\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
+                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "   {",
+                    "       exit 1",
+                    "   }",
+                    "}",
+                    "Remove-Item \"$dir\\setup.exe\" -Force"
                 ]
             },
             "post_install": [
@@ -41,10 +67,18 @@
             ],
             "uninstaller": {
                 "script": [
+                    "$programname = \"MPC-BE*\"",
                     "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-                    "& \"$ProgramFilesPath\\MPC-BE x86\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART",
-                    "$CommonStartMenu = [Environment]::GetFolderPath(\"CommonStartMenu\")",
-                    "if (Test-Path \"$CommonStartMenu\\Programs\\MPC-BE x86.lnk\") {Remove-Item \"$CommonStartMenu\\Programs\\MPC-BE x86.lnk\" -Force}"
+                    "$processname = \"mpc-be86.exe\"",
+                    "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+                    "{",
+                    "   taskkill /F /IM $processname /FI 'status eq running'",
+                    "& \"$ProgramFilesPath\\MPC-BE x86\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
+                    "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+                    "   {",
+                    "       exit 1",
+                    "   }",
+                    "}"
                 ]
             }
         }
