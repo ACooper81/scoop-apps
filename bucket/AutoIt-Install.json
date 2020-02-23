@@ -31,7 +31,7 @@
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\program\\uninstall.exe\" /S | Out-Null",
+            "   &\"$ProgramFilesPath\\AutoIt3\\uninstall.exe\" /S | Out-Null",
             "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "   {",
             "       exit 1",
