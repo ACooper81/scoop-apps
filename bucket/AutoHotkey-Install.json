@@ -15,7 +15,7 @@
                     "$installargs = \"/S /x64 /uiAccess=1 /IsHostApp=1\"",
                     "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
                     "{",
-                    "   &\"$installpath\" $installargs | Out-Null",
+                    "   &\"$dir\\setup.exe\" /S /x64 /uiAccess=1 /IsHostApp=1 | Out-Null",
                     "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
                     "   {",
                     "       exit 1",
