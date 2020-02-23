@@ -15,7 +15,7 @@
                     "$installargs = \"'/S', '/x64', '/uiAccess=1', '/IsHostApp=1'\"",
                     "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
                     "{",
-                    "   Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
+                    "   Invoke-ExternalCommand \"$installpath\" -ArgumentList @('/S', '/x64', '/uiAccess=1', '/IsHostApp=1') -RunAs | Out-Null",
                     "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
                     "   {",
                     "       exit 1",
