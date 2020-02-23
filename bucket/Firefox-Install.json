@@ -14,7 +14,18 @@
         }
     },
     "installer": {
-        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('-ms') -RunAs | Out-Null"
+        "script": [
+            "$programname = \"Mozilla Firefox*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" -ms | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
     },
     "post_install": [
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
@@ -22,9 +33,18 @@
     ],
     "uninstaller": {
         "script": [
-            "taskkill /F /IM firefox.exe /FI 'status eq running'",
+            "$programname = \"Mozilla Firefox*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "Invoke-ExternalCommand \"$ProgramFilesPath\\Mozilla Firefox\\uninstall\\helper.exe\" -ArgumentList @('-ms') -RunAs | Out-Null"
+            "$processname = \"firefox.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   &\"$ProgramFilesPath\\Mozilla Firefox\\uninstall\\helper.exe\" -ms | Out-Null",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
