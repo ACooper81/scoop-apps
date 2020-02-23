@@ -18,7 +18,7 @@
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
-            "   &\"$ProgramFilesPath\\GitHub Desktop Installer\\GitHubDesktop.exe\" -checkInstall | Out-Null",
+            "   &\"$ProgramFilesPath\\GitHub Desktop Installer\\GitHubDesktop.exe\" --checkInstall | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue) -AND !(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname2\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
