@@ -25,7 +25,7 @@
                 "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
                 "if (Test-Path \"$DesktopPath\\MPC-BE x64.lnk\") {Remove-Item \"$DesktopPath\\MPC-BE x64.lnk\" -Force}",
                 "Start-Sleep -s 10",
-                "Remove-Item \"$InstallFile\" -Force"
+                "Remove-Item \"$dir\\*.exe\" -Force"
             ],
             "uninstaller": {
                 "script": [
@@ -65,7 +65,7 @@
                 "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
                 "if (Test-Path \"$DesktopPath\\MPC-BE x86.lnk\") {Remove-Item \"$DesktopPath\\MPC-BE x86.lnk\" -Force}",
                 "Start-Sleep -s 10",
-                "Remove-Item \"$InstallFile\" -Force"
+                "Remove-Item \"$dir\\*.exe\" -Force"
             ],
             "uninstaller": {
                 "script": [
