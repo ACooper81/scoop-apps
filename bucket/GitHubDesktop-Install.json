@@ -11,7 +11,7 @@
     },
     "installer": {
         "script": [
-            "$programname = \"GitHub Desktop Machine Wide Install*\"",
+            "$programname = \"GitHub Desktop Machine-Wide Installer*\"",
             "$programname2 = \"GitHub Desktop\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
@@ -34,8 +34,8 @@
     ],
     "uninstaller": {
         "script": [
-            "$programname = \"GitHub Desktop Machine Wide Install*\"",
-            "$msiprogramname = \"GitHub Desktop Machine Wide Install\"",
+            "$programname = \"GitHub Desktop Machine-Wide Installer*\"",
+            "$msiprogramname = \"GitHub Desktop Machine-Wide Installer\"",
             "$processname = \"GitHubDesktop.exe\"",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
