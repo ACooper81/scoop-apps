@@ -18,14 +18,32 @@
     },
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/silent', '/desktop=0', '/thumbs=0', '/group=1', '/allusers=1', '/assoc=0') -RunAs | Out-Null",
-            "Remove-Item \"$dir\\setup.exe\""
+            "$programname = \"IrfanView*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /silent /desktop=0 /thumbs=0 /group=1 /allusers=1 /assoc=0 | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
     "uninstaller": {
         "script": [
+            "$programname = \"IrfanView*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "& \"$ProgramFilesPath\\IrfanView\\iv_uninstall.exe\" /silent"
+            "$processname = \"i_view64.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   & \"$ProgramFilesPath\\IrfanView\\iv_uninstall.exe\" /silent",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
