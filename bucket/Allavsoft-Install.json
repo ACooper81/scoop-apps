@@ -12,7 +12,6 @@
             "$programname = \"Allavsoft*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "{",
-            "   Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "   {",
