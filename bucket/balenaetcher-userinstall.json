@@ -5,39 +5,40 @@
     "license": "Apache-2.0",
     "url": "https://github.com/balena-io/etcher/releases/download/v1.5.79/balenaEtcher-Setup-1.5.79.exe#/setup.exe",
     "hash": "64d6700b0dadcb61a4468f407ada2f73e9a297475dbec88e03bc58909c240441",
-    "architecture": {
-        "64bit": {
-            "installer": {
-                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
-            },
-            "uninstaller": {
-                "script": [
-                    "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
-                    "& \"$LocalApplicationData\\Programs\\balena-etcher\\Uninstall balenaEtcher.exe\" /S"
-                ]
-            },
-            "post_install": [
-                "Remove-Item \"$dir\\setup.exe\"",
-                "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
-                "if (Test-Path \"$DesktopPath\\balenaEtcher.lnk\") {Remove-Item \"$DesktopPath\\balenaEtcher.lnk\" -Force}"
-            ]
-        },
-        "32bit": {
-            "installer": {
-                "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/S') -RunAs | Out-Null"
-            },
-            "uninstaller": {
-                "script": [
-                    "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
-                    "& \"$LocalApplicationData\\Programs\\balena-etcher\\Uninstall balenaEtcher.exe\" /S"
-                ]
-            },
-            "post_install": [
-                "Remove-Item \"$dir\\setup.exe\"",
-                "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
-                "if (Test-Path \"$DesktopPath\\balenaEtcher.lnk\") {Remove-Item \"$DesktopPath\\balenaEtcher.lnk\" -Force}"
-            ]
-        }
+    "installer": {
+        "script": [
+            "$programname = \"balenaEtcher*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "Remove-Item \"$dir\\setup.exe\"",
+        "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
+        "if (Test-Path \"$DesktopPath\\balenaEtcher.lnk\") {Remove-Item \"$DesktopPath\\balenaEtcher.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$programname = \"balenaEtcher*\"",
+            "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
+            "$processname = \"balenaEtcher.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   & \"$LocalApplicationData\\Programs\\balena-etcher\\Uninstall balenaEtcher.exe\" /S",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
+        ]
     },
     "checkver": {
         "github": "https://github.com/balena-io/etcher"
