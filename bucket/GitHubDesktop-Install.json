@@ -19,7 +19,7 @@
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
             "   Start-Sleep -s 10",
-            "   &\"$ProgramFilesPath\\GitHub Desktop Installer\\GitHubDesktop.exe\" --checkInstall | Out-Null",
+            "   &\"$ProgramFilesPath\\GitHub Desktop Installer\\GitHubDesktop.exe\" -s | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue) -AND !(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname2\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
