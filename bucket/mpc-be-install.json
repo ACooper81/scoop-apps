@@ -18,14 +18,14 @@
                     "   {",
                     "       exit 1",
                     "   }",
-                    "}",
-                    "Start-Sleep -s 10",
-                    "Remove-Item \"$InstallFile\" -Force"
+                    "}"
                 ]
             },
             "post_install": [
                 "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
-                "if (Test-Path \"$DesktopPath\\MPC-BE x64.lnk\") {Remove-Item \"$DesktopPath\\MPC-BE x64.lnk\" -Force}"
+                "if (Test-Path \"$DesktopPath\\MPC-BE x64.lnk\") {Remove-Item \"$DesktopPath\\MPC-BE x64.lnk\" -Force}",
+                "Start-Sleep -s 10",
+                "Remove-Item \"$InstallFile\" -Force"
             ],
             "uninstaller": {
                 "script": [
@@ -58,14 +58,14 @@
                     "   {",
                     "       exit 1",
                     "   }",
-                    "}",
-                    "Start-Sleep -s 10",
-                    "Remove-Item \"$InstallFile\" -Force"
+                    "}"
                 ]
             },
             "post_install": [
                 "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
-                "if (Test-Path \"$DesktopPath\\MPC-BE x86.lnk\") {Remove-Item \"$DesktopPath\\MPC-BE x86.lnk\" -Force}"
+                "if (Test-Path \"$DesktopPath\\MPC-BE x86.lnk\") {Remove-Item \"$DesktopPath\\MPC-BE x86.lnk\" -Force}",
+                "Start-Sleep -s 10",
+                "Remove-Item \"$InstallFile\" -Force"
             ],
             "uninstaller": {
                 "script": [
