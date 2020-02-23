@@ -14,7 +14,7 @@
             "$programname = \"GitHub Desktop Machine Wide Install*\"",
             "$programname2 = \"GitHub Desktop\"",
             "$installpath = \"$dir\\setup.msi_\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
