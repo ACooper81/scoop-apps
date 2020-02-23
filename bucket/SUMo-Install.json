@@ -1,5 +1,5 @@
 {
-    "version": "5.10.8.443",
+    "version": "5.10.9.445",
     "description": "Detecting and updating outdated software",
     "homepage": "https://www.kcsoftwares.com/?sumo",
     "license": {
@@ -7,7 +7,7 @@
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
-    "hash": "f5771e06b273d558b3f9807622e80019a4af3299e484fef669d0d297c410ffcb",
+    "hash": "eed8031516cbdcb7555d25c0d297a4fe574ae5ec679e8c0ebed6eecfbf315784",
     "installer": {
         "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/SP-') -RunAs | Out-Null"
     },
