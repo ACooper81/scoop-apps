@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/setup.msi_",
+            "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/dl.7z",
             "hash": "2dfc4b89ffcac733deae35b9afa14cd877662d59b779d8b0621f75657cc95538"
         }
     },
@@ -15,7 +15,8 @@
             "$installpath = \"$dir\\setup.msi_\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
-            "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
+            "   &\"$dir\\GitHubDesktop.exe\" -s | Out-Null",
+            "   Start-Sleep -s 30",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
@@ -31,13 +32,12 @@
     "uninstaller": {
         "script": [
             "$programname = \"GitHub Desktop*\"",
-            "$msiprogramname = \"GitHub Desktop\"",
             "$processname = \"GitHubDesktop.exe\"",
+            "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
+            "   &\"$LocalApplicationData\\GitHubDesktop\\Update.exe\" --uninstall -s | Out-Null",
             "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "   {",
             "       exit 1",
@@ -53,7 +53,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/setup.msi_"
+                "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/dl.7z"
             }
         }
     }
