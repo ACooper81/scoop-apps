@@ -10,11 +10,10 @@
     "installer": {
         "script": [
             "$programname = \"Allavsoft*\"",
-            "$installpath = \"$dir\\setup.exe\"",
-            "$installargs = '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-'",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "{",
             "   Invoke-ExternalCommand \"$installpath\" -ArgumentList @($installargs) -RunAs | Out-Null",
+            "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
@@ -42,6 +41,7 @@
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
             "{",
             "   Invoke-ExternalCommand \"$uninstallpath\" -ArgumentList @($uninstallargs) -RunAs | Out-Null",
+            "   &\"$uninstallpath\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
             "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
             "   {",
             "       exit 1",
