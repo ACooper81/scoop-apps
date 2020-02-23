@@ -19,7 +19,7 @@
                     "       exit 1",
                     "   }",
                     "}",
-                    "Remove-Item \"$dir\\setup.exe\" -Force"
+                    "Remove-Item \"$InstallFile\" -Force"
                 ]
             },
             "post_install": [
@@ -58,7 +58,7 @@
                     "       exit 1",
                     "   }",
                     "}",
-                    "Remove-Item \"$dir\\setup.exe\" -Force"
+                    "Remove-Item \"$InstallFile\" -Force"
                 ]
             },
             "post_install": [
