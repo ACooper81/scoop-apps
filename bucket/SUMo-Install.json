@@ -22,7 +22,7 @@
             "}",
             "Remove-Item \"$dir\\setup.exe\" -Force",
             "while ((Get-Process -Name $processname -ErrorAction SilentlyContinue).Count -eq 0) {",
-            "   Start-Sleep -Miliseconds 400",
+            "   Start-Sleep -Milliseconds 400",
             "}",
             "taskkill /F /IM $processname /FI 'status eq running'"
         ]
