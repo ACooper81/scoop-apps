@@ -10,7 +10,7 @@
     "hash": "eed8031516cbdcb7555d25c0d297a4fe574ae5ec679e8c0ebed6eecfbf315784",
     "installer": {
         "script": [
-            "$programname = \"SUMo*\"",
+            "$programname = \"KC Softwares SUMo*\"",
             "$processname = \"SUMo.exe\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
@@ -21,7 +21,7 @@
             "   }",
             "}",
             "Remove-Item \"$dir\\setup.exe\" -Force",
-            "while ((Get-Process -Name $processname -ErrorAction SilentlyContinue).Count -eq 1) {",
+            "while ((Get-Process -Name $processname -ErrorAction SilentlyContinue).Count -eq 0) {",
             "   Start-Sleep -Miliseconds 400",
             "}",
             "taskkill /F /IM $processname /FI 'status eq running'"
@@ -33,7 +33,7 @@
     ],
     "uninstaller": {
         "script": [
-            "$programname = \"SUMo*\"",
+            "$programname = \"KC Softwares SUMo*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "$processname = \"SUMo.exe\"",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
