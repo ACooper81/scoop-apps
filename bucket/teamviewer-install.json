@@ -35,6 +35,7 @@
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
             "   &\"$ProgramFilesPath\\TeamViewer\\uninstall.exe\" /S /norestart | Out-Null",
+            "   Start-Sleep -s 10",
             "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
             "   {",
             "       exit 1",
