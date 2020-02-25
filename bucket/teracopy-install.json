@@ -6,19 +6,36 @@
     "hash": "5b667ff25a5f2ecf810e2f60dd079dc68fce6eafa174e6de835b8aed919e12f3",
     "installer": {
         "script": [
-            "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/verysilent', '/nocancel', '/norestart') -RunAs | Out-Null"
+            "$programname = \"TeraCopy*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /verysilent /nocancel /norestart | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
     "post_install": [
-        "Remove-Item \"$dir\\setup.exe\"",
         "$CommonStartMenuPath = [Environment]::GetFolderPath(\"CommonStartMenu\")",
         "if (Test-Path \"$CommonStartMenuPath\\TeraCopy.lnk\") {Move-Item -Path \"$CommonStartMenuPath\\TeraCopy.lnk\" -Destination \"$CommonStartMenuPath\\Programs\\TeraCopy.lnk\" -Force}"
     ],
     "uninstaller": {
         "script": [
-            "& \"$Env:Programfiles\\TeraCopy\\unins000.exe\" /verysilent /nocancel /norestart",
-            "$CommonStartMenuPath = [Environment]::GetFolderPath(\"CommonStartMenu\")",
-            "if (Test-Path \"$CommonStartMenuPath\\Programs\\TeraCopy.lnk\") {Remove-Item \"$CommonStartMenuPath\\Programs\\TeraCopy.lnk\" -Force}"
+            "$programname = \"TeraCopy*\"",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$processname = \"TeraCopy.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   &\"$ProgramFilesPath\\TeraCopy\\unins000.exe\" /verysilent /nocancel /norestart | Out-Null",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
