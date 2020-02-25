@@ -7,7 +7,7 @@
     "hash": "f9b205b73e3891dfd6d3aa455f2c922da0803af2f84fd73ea9bcef520d48d006",
     "installer": {
         "script": [
-            "$programname = \"Toms Hash Explorer*\"",
+            "$programname = \"Tom's Hash Explorer*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
@@ -21,7 +21,7 @@
     },
     "uninstaller": {
         "script": [
-            "$programname = \"Toms Hash Explorer*\"",
+            "$programname = \"Tom's Hash Explorer*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$processname = \"Toms Hash Explorer.exe\"",
             "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
