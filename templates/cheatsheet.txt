@@ -1,8 +1,11 @@
-Get-Package -Provider Programs -IncludeWindowsInstaller -Name "7-Zip*" -RequiredVersion 19.00
-Get-Package -Provider Programs -IncludeWindowsInstaller -Name "7-Zip*" -MinimumVersion 19.00
-Uninstall-Package -Name NuGet.Core
-Get-Package -Name NuGet.Core -RequiredVersion 2.14.0 | Uninstall-Package
-Uninstall-Package -InputObject ( Get-Package -Name NuGet.Core -RequiredVersion 2.14.0 )
+==================================================
+Process Wait Then Close
+==================================================
+
+            "while ((Get-Process -Name 'SUMo' -ErrorAction SilentlyContinue).Count -eq 0) {",
+            "   Start-Sleep -Milliseconds 50",
+            "}",
+            "taskkill /F /IM $processname /FI 'status eq running'"
 
 ==================================================
 Install Scripts
