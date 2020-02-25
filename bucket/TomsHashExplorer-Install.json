@@ -6,12 +6,33 @@
     "url": "http://www.mannerud.org/tom-andreas/downloads/Toms_Hash_Explorer_v1.2.zip",
     "hash": "f9b205b73e3891dfd6d3aa455f2c922da0803af2f84fd73ea9bcef520d48d006",
     "installer": {
-        "script": "Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', '/CLOSEAPPLICATIONS', '/SP-') -RunAs | Out-Null"
+        "script": [
+            "$programname = \"Toms Hash Explorer*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
     },
     "uninstaller": {
         "script": [
+            "$programname = \"Toms Hash Explorer*\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "& \"$ProgramFilesPath\\Toms Hash Explorer\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART"
+            "$processname = \"Toms Hash Explorer.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   &\"$ProgramFilesPath\\Toms Hash Explorer\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
         ]
     },
     "checkver": {
