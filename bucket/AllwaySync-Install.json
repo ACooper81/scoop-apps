@@ -1,0 +1,64 @@
+{
+    "version": "19.1.5",
+    "description": "Allway Sync is backup and file synchronization software.",
+    "homepage": "https://allwaysync.com/",
+    "license": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://allwaysync.com/content/download/allwaysync-x64.exe#/setup.exe",
+            "hash": "5e6faf4e74759242ed6c92d852123fbcdb019dccd3bf0d2b15f3ef687b245c24"
+        },
+        "32bit": {
+            "url": "https://allwaysync.com/content/download/allwaysync.exe#/setup.exe",
+            "hash": "e7549ab6a57a8453c0ab35a5f874436a661151d28a7d33bcc1fbfab30064529b"
+        }
+    },
+    "installer": {
+        "script": [
+            "$programname = \"Allway Sync version*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /verysilent /norestart | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Allway Sync.lnk\") {Remove-Item \"$CommonDesktopPath\\Allway Sync.lnk\" -Force}"
+    ],
+    "uninstaller": {
+        "script": [
+            "$programname = \"Allway Sync version*\"",
+            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$processname = \"syncappw.exe\"",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "{",
+            "   taskkill /F /IM $processname /FI 'status eq running'",
+            "   &\"$ProgramFilesPath\\Allway Sync\\unins000.exe\" /VERYSILENT | Out-Null",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}"
+        ]
+    },
+    "checkver": {
+        "url": "https://allwaysync.com/download/",
+        "regex": "<p>Latest version: <strong>([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://allwaysync.com/content/download/allwaysync-x64.exe#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://allwaysync.com/content/download/allwaysync.exe#/setup.exe"
+            }
+        }
+    }
+}
