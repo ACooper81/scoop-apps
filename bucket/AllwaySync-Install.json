@@ -15,11 +15,11 @@
     },
     "installer": {
         "script": [
-            "$programname = \"Allway Sync version*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "$programname = \"Allway Sync version $version\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /verysilent /norestart | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
@@ -33,14 +33,14 @@
     ],
     "uninstaller": {
         "script": [
-            "$programname = \"Allway Sync version*\"",
+            "$programname = \"Allway Sync version $version\"",
             "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$processname = \"syncappw.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
             "{",
             "   taskkill /F /IM $processname /FI 'status eq running'",
             "   &\"$ProgramFilesPath\\Allway Sync\\unins000.exe\" /VERYSILENT | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
+            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
             "   {",
             "       exit 1",
             "   }",
