@@ -54,10 +54,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://allwaysync.com/content/download/allwaysync-x64.exe#/setup.exe"
+                "url": "https://allwaysync.com/content/download/allwaysync-x64-$dashVersion.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://allwaysync.com/content/download/allwaysync.exe#/setup.exe"
+                "url": "https://allwaysync.com/content/download/allwaysync-$dashVersion.exe#/setup.exe"
             }
         }
     }
