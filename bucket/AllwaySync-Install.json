@@ -1,16 +1,16 @@
 {
-    "version": "19.1.5",
+    "version": "20.0.3",
     "description": "Allway Sync is backup and file synchronization software.",
     "homepage": "https://allwaysync.com/",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "https://allwaysync.com/content/download/allwaysync-x64.exe#/setup.exe",
-            "hash": "5e6faf4e74759242ed6c92d852123fbcdb019dccd3bf0d2b15f3ef687b245c24"
+            "url": "https://allwaysync.com/content/download/allwaysync-x64-20-0-3.exe#/setup.exe",
+            "hash": "4d115e06f423b6e6e41e34b27d251f35f1f75e6e7d9b3ef6ea9c58419970822c"
         },
         "32bit": {
-            "url": "https://allwaysync.com/content/download/allwaysync.exe#/setup.exe",
-            "hash": "e7549ab6a57a8453c0ab35a5f874436a661151d28a7d33bcc1fbfab30064529b"
+            "url": "https://allwaysync.com/content/download/allwaysync-20-0-3.exe#/setup.exe",
+            "hash": "a5d79972f963780048880f74febfcd9c956f37da60bd58d265ed9c8ce8e32471"
         }
     },
     "installer": {
