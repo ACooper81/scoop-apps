@@ -1,7 +1,8 @@
 {
-    "version": "20.006.20042",
-    "description": "Not only view, but print, sign, and annotate PDFs with the free Adobe Acrobat Reader DC.",
+    "version": "1",
+    "description": "This manifest only uninstalls Adobe Acrobat Reader. To install run 'scoop install AdobeAcrobatReader-Install -global'",
     "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
+    "url": "https://github.com/ACooper81/scoop-apps/blob/master/null",
     "notes": "This manifest only uninstalls Adobe Acrobat Reader. To install run 'scoop install AdobeAcrobatReader-Install -global'",
     "installer": {
         "script": [
