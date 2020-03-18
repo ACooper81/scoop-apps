@@ -17,10 +17,8 @@
             "}"
         ]
     },
-    "post_installer": {
-        "script": [
-            "scoop uninstall AdobeAcrobatReader-Uninstall",
-            "scoop uninstall AdobeAcrobatReader-Uninstall -global"
-        ]
-    }
+    "post_installer": [
+        "scoop uninstall AdobeAcrobatReader-Uninstall",
+        "scoop uninstall AdobeAcrobatReader-Uninstall -global"
+    ]
 }
