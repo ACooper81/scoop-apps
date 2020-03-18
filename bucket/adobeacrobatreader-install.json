@@ -2,6 +2,7 @@
     "version": "20.006.20042",
     "description": "Not only view, but print, sign, and annotate PDFs with the free Adobe Acrobat Reader DC.",
     "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
+    "notes": "This manifest only installs and updates the install. To uninstall run 'scoop install AdobeAcrobatReader-Uninstall'",
     "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2000620042/AcroRdrDCUpd2000620042.msp#/setup.msp_",
     "hash": "18353a8a564bcb1b795456135fa4a781336f212f0466a5bb0ac1cace9f6f35b8",
     "installer": {
@@ -36,23 +37,6 @@
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\Acrobat Reader DC.lnk\") {Remove-Item \"$CommonDesktopPath\\Acrobat Reader DC.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"Adobe Acrobat Reader DC*\"",
-            "$msiprogramname = \"Adobe Acrobat Reader DC\"",
-            "$processname = \"AcroRd32.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html#installers",
         "re": "<em>([\\d.]+)"
