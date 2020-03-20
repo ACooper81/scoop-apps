@@ -2,6 +2,7 @@
     "version": "19.00",
     "description": "A multi-format file archiver with high compression ratios",
     "homepage": "https://www.7-zip.org/",
+    "notes": "This manifest only installs and updates 7-Zip",
     "license": {
         "identifier": "Freeware,LGPL-2.0-only,BSD-3-Clause",
         "url": "https://www.7-zip.org/license.txt"
@@ -29,23 +30,6 @@
             "   }",
             "}",
             "Remove-Item \"$dir\\setup.msi_\" -Force"
-        ]
-    },
-    "uninstaller": {
-        "script": [
-            "$programname = \"7-Zip*\"",
-            "$msiprogramname = \"7-Zip\"",
-            "$processname = \"7zFM.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
         ]
     },
     "checkver": {
