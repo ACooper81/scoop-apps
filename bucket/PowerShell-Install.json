@@ -1,0 +1,46 @@
+{
+    "version": "7.0.0",
+    "description": "PowerShell Core, the cross-platform task automation and configuration management framework/tool.",
+    "homepage": "https://github.com/PowerShell/PowerShell",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0/PowerShell-7.0.0-win-x64.msi#/setup.msi_",
+            "hash": "cda2ca2227fbec2c753aa760859667b02007d14646a831bd908b8f749cbcc687"
+        },
+        "32bit": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.0.0/PowerShell-7.0.0-win-x86.msi#/setup.msi_",
+            "hash": "f33e852f7721e61ff3bae9fc04f1dfa48ce7b10cd59d649126d5ba9bfad9aecd"
+        }
+    },
+    "installer": {
+        "script": [
+            "$programname = \"PowerShell*\"",
+            "$installpath = \"$dir\\setup.msi_\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1') -RunAs | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.msi_\" -Force"
+        ]
+    },
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x64.msi#/setup.msi_"
+            },
+            "32bit": {
+                "url": "https://github.com/PowerShell/PowerShell/releases/download/v$version/PowerShell-$version-win-x86.msi#/setup.msi_"
+            }
+        },
+        "hash": {
+            "url": "https://github.com/PowerShell/PowerShell/releases/tag/v$version/",
+            "find": "$basename\\s*<ul>\\s*<li>([A-Fa-f\\d]{64})"
+        }
+    }
+}
