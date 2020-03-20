@@ -36,23 +36,6 @@
         "if (Test-Path \"$DesktopPath\\4K Video Downloader.lnk\") {Remove-Item \"$DesktopPath\\4K Video Downloader.lnk\" -Force}",
         "Move-Item -Path \"$env:USERPROFILE\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\4K Video Downloader.lnk\" -Destination \"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\4K Video Downloader.lnk\" -Force"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"4K Video Downloader*\"",
-            "$msiprogramname = \"4K Video Downloader\"",
-            "$processname = \"4kvideodownloader.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.4kdownload.com/products/product-videodownloader",
         "re": "'Download', 'videodownloader_([\\d.]+)"
