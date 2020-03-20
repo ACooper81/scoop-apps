@@ -1,5 +1,5 @@
 {
-    "version": "7.0.0",
+    "version": "6.0.0",
     "description": "PowerShell Core, the cross-platform task automation and configuration management framework/tool.",
     "homepage": "https://github.com/PowerShell/PowerShell",
     "license": "MIT",
