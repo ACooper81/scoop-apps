@@ -2,6 +2,7 @@
     "version": "32.0.0.330",
     "description": "Adobe Flash Player PPAPI Plugin for Opera and Chromium based browsers",
     "homepage": "https://get.adobe.com/flashplayer/",
+    "notes": "This manifest only installs and updates Adobe Flash Player for Opera/Chromium",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.adobe.com/content/dam/acom/en/legal/licenses-terms/pdf/Flash_Player_32_0.pdf"
@@ -28,21 +29,6 @@
         "Stop-Service \"AdobeFlashPlayerUpdateSvc\" -force | Out-Null",
         "Set-Service \"AdobeFlashPlayerUpdateSvc\" -StartupType Disabled | Out-Null"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"Adobe Flash Player 32 PPAPI*\"",
-            "$msiprogramname = \"Adobe Flash Player 32 PPAPI\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   $id = wmic product where \"\"\"name like '$msiprogramname%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.adobe.com/support/flashplayer/debug_downloads.html",
         "regex": "The latest versions are <span>([\\d.]+)"
