@@ -29,22 +29,6 @@
         "$DesktopDirectory = [Environment]::GetFolderPath(\"DesktopDirectory\")",
         "if (Test-Path \"$DesktopDirectory\\GitHub Desktop.lnk\") {Remove-Item \"$DesktopDirectory\\GitHub Desktop.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"GitHub Desktop*\"",
-            "$processname = \"GitHubDesktop.exe\"",
-            "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$LocalApplicationData\\GitHubDesktop\\Update.exe\" --uninstall -s | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://central.github.com/api/deployments/desktop/desktop/latest/RELEASES",
         "regex": "GitHubDesktop-([\\d.]+)-full.nupkg",
