@@ -2,10 +2,10 @@
     "version": "webversion",
     "description": "Download free videos from 100+ sites and convert to popular video and audio format.",
     "homepage": "https://www.allavsoft.com/index.html",
+    "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
     "license": {
         "identifier": ""
     },
-    "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
     "installer": {
         "script": [
@@ -24,27 +24,5 @@
     "post_install": [
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
-    ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"Allavsoft*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$processname = \"videodownloader.exe\"",
-            "if (Test-Path \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins000.exe\") {$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins000.exe\"}",
-            "if (Test-Path \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\") {$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\"}",
-            "if (Test-Path \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\") {$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins002.exe\"}",
-            "if (Test-Path \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\") {$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins003.exe\"}",
-            "if (Test-Path \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\") {$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins004.exe\"}",
-            "if (Test-Path \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins001.exe\") {$uninstallpath = \"$ProgramFilesPath\\Allavsoft\\Video Downloader Converter\\unins005.exe\"}",
-            "$uninstallargs = '/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART'",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
-            "{",
-            "   &\"$uninstallpath\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    }
+    ]
 }
