@@ -25,9 +25,6 @@
             "Remove-Item \"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack\""
         ]
     },
-    "uninstaller": {
-        "script": "$id = wmic product where \"\"\"name like 'Oracle VM VirtualBox%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\""
-    },
     "checkver": {
         "url": "https://www.virtualbox.org/wiki/Downloads",
         "regex": "Oracle_VM_VirtualBox_Extension_Pack-(?<version>[\\d.]+).vbox-extpack"
