@@ -31,22 +31,6 @@
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\Firefox.lnk\") {Remove-Item \"$CommonDesktopPath\\Firefox.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"Mozilla Firefox*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$processname = \"firefox.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\Mozilla Firefox\\uninstall\\helper.exe\" -ms | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.mozilla.org/en-US/firefox/notes/",
         "regex": "<div class=\"c-release-version\">([\\d.]+)</div>"
