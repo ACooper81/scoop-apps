@@ -34,22 +34,6 @@
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"qbittorrent*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$processname = \"qbittorrent.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\qBittorrent\\uninst.exe\" /S | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.qbittorrent.org/download.php",
         "regex": "Latest:\\s+v([\\d.]+)"
