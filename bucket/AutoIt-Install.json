@@ -22,23 +22,6 @@
             "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
-    "uninstaller": {
-        "script": [
-            "$programname = \"AutoIt v*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$processname = \"AutoIt3.exe\"",
-            "$processname = \"AutoIt3_x64.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\AutoIt3\\uninstall.exe\" /S | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.autoitscript.com/site/autoit/downloads/",
         "re": "<td>v([\\d.]+)</td>"
