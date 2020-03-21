@@ -31,22 +31,6 @@
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\Allway Sync.lnk\") {Remove-Item \"$CommonDesktopPath\\Allway Sync.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"Allway Sync version $version\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$processname = \"syncappw.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\Allway Sync\\unins000.exe\" /VERYSILENT | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://allwaysync.com/download/",
         "regex": "<p>Latest version: <strong>([\\d.]+)"
