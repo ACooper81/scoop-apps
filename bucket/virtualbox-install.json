@@ -18,12 +18,6 @@
             "Remove-Item \"$dir\\VBoxSetup.exe\""
         ]
     },
-    "uninstaller": {
-        "script": [
-            "$id = wmic product where \"\"\"name like 'Oracle VM VirtualBox%'\"\"\" get IdentifyingNumber | find /i \"\"\"-\"\"\"",
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c msiexec /x $id /qn /norestart\" -Verb RunAs"
-        ]
-    },
     "checkver": {
         "url": "https://www.virtualbox.org/wiki/Downloads",
         "regex": "VirtualBox-(?<version>[\\d.]+)-(?<revision>[\\d]+)-Win.exe"
