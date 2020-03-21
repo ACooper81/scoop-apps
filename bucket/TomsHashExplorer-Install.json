@@ -19,22 +19,6 @@
             "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
-    "uninstaller": {
-        "script": [
-            "$programname = \"Tom's Hash Explorer*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$processname = \"Toms Hash Explorer.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\Toms Hash Explorer\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.mannerud.org/tom-andreas/software/toms-hash-explorer/",
         "re": ", Version ([\\d.]+2)"
