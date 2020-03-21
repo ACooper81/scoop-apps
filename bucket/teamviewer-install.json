@@ -26,23 +26,6 @@
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\TeamViewer.lnk\") {Remove-Item \"$CommonDesktopPath\\TeamViewer.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"Teamviewer*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$processname = \"teamviewer.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\TeamViewer\\uninstall.exe\" /S /norestart | Out-Null",
-            "   Start-Sleep -s 10",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.teamviewer.com/en/download/windows/",
         "re": ">\\s*([\\d.]+)\\s*<"
