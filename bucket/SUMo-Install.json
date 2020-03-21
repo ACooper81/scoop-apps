@@ -31,22 +31,6 @@
         "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
         "if (Test-Path \"$DesktopPath\\SUMo.lnk\") {Remove-Item \"$DesktopPath\\SUMo.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"KC Softwares SUMo*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$processname = \"SUMo.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\KC Softwares\\SUMo\\unins000.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.kcsoftwares.com/?download",
         "regex": "(?sm)<h3>SUMo</h3>\\n\\t+\\n\\t+<small>Version : <code>([\\d.]+)</code>"
