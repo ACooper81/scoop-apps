@@ -22,22 +22,6 @@
         "$CommonStartMenuPath = [Environment]::GetFolderPath(\"CommonStartMenu\")",
         "if (Test-Path \"$CommonStartMenuPath\\TeraCopy.lnk\") {Move-Item -Path \"$CommonStartMenuPath\\TeraCopy.lnk\" -Destination \"$CommonStartMenuPath\\Programs\\TeraCopy.lnk\" -Force}"
     ],
-    "uninstaller": {
-        "script": [
-            "$programname = \"TeraCopy*\"",
-            "$ProgramFilesPath = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$processname = \"TeraCopy.exe\"",
-            "if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "{",
-            "   taskkill /F /IM $processname /FI 'status eq running'",
-            "   &\"$ProgramFilesPath\\TeraCopy\\unins000.exe\" /verysilent /nocancel /norestart | Out-Null",
-            "   if(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue)",
-            "   {",
-            "       exit 1",
-            "   }",
-            "}"
-        ]
-    },
     "checkver": {
         "url": "https://www.codesector.com/downloads",
         "re": "TeraCopy ([\\d.]+)</td>\\n[\\t ]+<td>Windows"
