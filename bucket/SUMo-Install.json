@@ -7,7 +7,7 @@
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
-    "hash": "e9bacd4fa9e36c035be5ae4fb39fcfd192be057b59af5c098483db9e352d305b",
+    "hash": "404be4fea5a61a74ef5c46256b199b66248d5797e63065231cc04f30ded2cdb7",
     "installer": {
         "script": [
             "$programname = \"KC Softwares SUMo*\"",
