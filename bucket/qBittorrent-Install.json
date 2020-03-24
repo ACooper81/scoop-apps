@@ -8,11 +8,11 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.2.2/qbittorrent_4.2.2_x64_setup.exe#/cosi.7z",
+            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.2.2/qbittorrent_4.2.2_x64_setup.exe#/setup.exe",
             "hash": "b6f84e27ce676b8068d96953063b166510c2660f4e146d1639f279d317fbe9b7"
         },
         "32bit": {
-            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.2.2/qbittorrent_4.2.2_setup.exe#/cosi.7z",
+            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.2.2/qbittorrent_4.2.2_setup.exe#/setup.exe",
             "hash": "a4285ef7161caf8c782c0aac9cd0c90a19ca881e18646ec7797c2d3b93c5ee9a"
         }
     },
@@ -21,7 +21,7 @@
             "$programname = \"qbittorrent*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
-            "   & \"$dir\\setup.exe\" /S | Out-Null",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
@@ -41,14 +41,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_x64_setup.exe#/cosi.7z",
+                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_x64_setup.exe#/setup.exe",
                 "hash": {
                     "url": "https://www.qbittorrent.org/download.php",
                     "regex": "(?sm)td>64-bit Installer.*?<code>$sha256</code>"
                 }
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_setup.exe#/cosi.7z",
+                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_setup.exe#/setup.exe",
                 "hash": {
                     "url": "https://www.qbittorrent.org/download.php",
                     "regex": "(?sm)td>32-bit Installer.*?<code>$sha256</code>"
