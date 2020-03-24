@@ -1,0 +1,51 @@
+{
+    "version": "4.2.1",
+    "description": "qBittorrent BitTorrent client with anti-leech enhancement.",
+    "homepage": "https://github.com/c0re100/qBittorrent-Enhanced-Edition",
+    "license": {
+        "identifier": "GPL-2.0-only",
+        "url": "https://github.com/qbittorrent/qBittorrent/blob/master/COPYING"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.2.1.10/qbittorrent_4.2.1.10_x64_setup.exe#/setup.exe",
+            "hash": "c8967317520daf96ddd248774799c8540f4776119645638b31967e8fd7071870"
+        },
+        "32bit": {
+            "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-4.2.1.10/qbittorrent_4.2.1.10_setup.exe#/setup.exe",
+            "hash": "df7f8f26b284b0719c570b3976f37cbe02bcb5330d6e64f146d9ebcb9b093f0e"
+        }
+    },
+    "installer": {
+        "script": [
+            "$programname = \"qbittorrent*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
+    ],
+    "checkver": {
+        "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/latest",
+        "regex": "/releases/tag/release-([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_$version_x64_setup.exe#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_$version_setup.exe#/setup.exe"
+            }
+        }
+    }
+}
