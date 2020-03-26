@@ -10,6 +10,10 @@
         [
             "TinyNvidiaUpdateChecker.exe",
             "TinyNvidiaUpdateChecker"
+        ],
+        [
+            "TinyNvidiaUpdateChecker.exe --confirm-dl --quiet",
+            "TinyNvidiaUpdateChecker - AutoUpdate"
         ]
     ],
     "checkver": "github",
