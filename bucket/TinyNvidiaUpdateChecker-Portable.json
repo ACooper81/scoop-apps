@@ -12,7 +12,8 @@
             "TinyNvidiaUpdateChecker"
         ],
         [
-            "TinyNvidiaUpdateChecker.exe --confirm-dl --quiet",
+            "TinyNvidiaUpdateChecker.exe",
+            "--confirm-dl --quiet",
             "TinyNvidiaUpdateChecker - AutoUpdate"
         ]
     ],
