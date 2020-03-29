@@ -27,10 +27,6 @@
             "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
-    "post_install": [
-        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
-    ],
     "checkver": {
         "url": "https://chocolatey.org/packages/microsoft-teams",
         "regex": "Microsoft Teams Desktop App ([\\d.]+)"
