@@ -30,8 +30,8 @@
         "Set-Service \"AdobeFlashPlayerUpdateSvc\" -StartupType Disabled | Out-Null"
     ],
     "checkver": {
-        "url": "https://www.adobe.com/support/flashplayer/debug_downloads.html",
-        "regex": "The latest versions are <span>([\\d.]+)"
+        "url": "https://get3.adobe.com/flashplayer/update/plugin/",
+        "regex": "<strong>Version ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download.macromedia.com/pub/flashplayer/pdc/$version/install_flash_player_32_plugin.msi#/setup.msi_"
