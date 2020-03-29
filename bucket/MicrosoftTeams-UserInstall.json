@@ -15,11 +15,11 @@
     },
     "installer": {
         "script": [
-            "$programname = \"programname*\"",
+            "$programname = \"Microsoft Teams*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" --silent | Out-Null",
-            "   Start-Sleep 60",
+            "   Start-Sleep 5",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
