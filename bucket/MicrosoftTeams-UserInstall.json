@@ -31,7 +31,7 @@
     "post_install": [
         "$programname = \"Microsoft Teams\"",
         "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
-        "if (Test-Path \"DesktopPath\\$programname.lnk\") {Remove-Item \"DesktopPath\\$programname.lnk\" -Force}"
+        "if (Test-Path \"$DesktopPath\\$programname.lnk\") {Remove-Item \"$DesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
         "url": "https://chocolatey.org/packages/microsoft-teams",
