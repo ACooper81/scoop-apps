@@ -30,8 +30,8 @@
         "Set-Service \"AdobeFlashPlayerUpdateSvc\" -StartupType Disabled | Out-Null"
     ],
     "checkver": {
-        "url": "https://get3.adobe.com/flashplayer/update/plugin/",
-        "regex": "<strong>Version ([\\d.]+)"
+        "url": "https://get.adobe.com/flashplayer/about/",
+        "regex": "<td>Opera, Chromium-based browsers - PPAPI</td>\\n\\s+\\n\\s+<td>([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download.macromedia.com/pub/flashplayer/pdc/$version/install_flash_player_32_ppapi.msi#/setup.msi_"
