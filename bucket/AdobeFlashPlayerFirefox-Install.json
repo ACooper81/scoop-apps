@@ -1,5 +1,5 @@
 {
-    "version": "32.0.0.330",
+    "version": "32.0.0.344",
     "description": "Adobe Flash Player NPAPI Plugin for Firefox based browsers",
     "homepage": "https://get.adobe.com/flashplayer/",
     "notes": "This manifest only installs and updates Adobe Flash Player for Firefox",
@@ -7,8 +7,8 @@
         "identifier": "Freeware",
         "url": "https://www.adobe.com/content/dam/acom/en/legal/licenses-terms/pdf/Flash_Player_32_0.pdf"
     },
-    "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.330/install_flash_player_32_plugin.msi#/setup.msi_",
-    "hash": "5804e8b948e630444c3de91b7a9bbf3b5defedf4eb3b43e5c12955b7347b6c71",
+    "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.344/install_flash_player_32_plugin.msi#/setup.msi_",
+    "hash": "1dc3bfdc911bfb83d8a15fb15a11a2ed52d1c1ff5933dfaaa799c3ec421b040a",
     "installer": {
         "script": [
             "$programname = \"Adobe Flash Player 32 NPAPI*\"",
