@@ -1,16 +1,16 @@
 {
     "version": "80.0.361.69",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
-    "homepage": "https://www.microsoft.com/en-us/edge",
+    "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/9dd4c786-d34b-4bdf-90f7-dae7618ba8b4/MicrosoftEdgeEnterpriseX64.msi#/setup.msi_",
-            "hash": "8AB8030701240C8C71A2E657A306C73BF476B3839CD93368A6C8D777C46E82AF"
+            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/812c141f-8680-4aaa-83d2-f99316588162/MicrosoftEdgeEnterpriseX64.msi#/setup.msi_",
+            "hash": "A8BEC701783CF031B4D3D0C4E0476DE5461CF9D1482E462E630F3164B3F50E94"
         },
         "32bit": {
-            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/72dd1c44-5a4c-47ef-88e5-5768b38b6eb2/MicrosoftEdgeEnterpriseX86.msi#/setup.msi_",
-            "hash": "8053FE71E44B9EB41AFE58DEC45C9D4761B824B1BA2411070DD44158DCAFAC2E"
+            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/70874dc1-b23c-4634-ba85-84788783a1c4/MicrosoftEdgeEnterpriseX86.msi#/setup.msi_",
+            "hash": "0C1CA1C2A75E8E08DA598195EAD4ECD74BDAB9507468F7541BACF3A04926CC2B"
         }
     },
     "installer": {
@@ -31,5 +31,9 @@
     "post_install": [
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\Microsoft Edge.lnk\") {Remove-Item \"$CommonDesktopPath\\Microsoft Edge.lnk\" -Force}"
-    ]
+    ],
+    "checkver": {
+        "url": "https://www.whatismybrowser.com/guides/the-latest-version/edge",
+        "regex": "<td>Edge on <strong>Windows 10</strong></td>\\n\\s+<td>([\\d.]+)"
+    }
 }
