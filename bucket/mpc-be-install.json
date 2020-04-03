@@ -35,10 +35,10 @@
                 "script": [
                     "$programname = \"MPC-BE*\"",
                     "$InstallFile = dir -Path \"$dir\" -Filter *.exe | %{$_.FullName}",
-                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
                     "{",
                     "   &\"$installfile\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
-                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
                     "   {",
                     "       exit 1",
                     "   }",
