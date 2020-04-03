@@ -13,10 +13,10 @@
         "script": [
             "$programname = \"Adobe Flash Player 32 NPAPI*\"",
             "$installpath = \"$dir\\setup.msi_\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
