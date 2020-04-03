@@ -1,0 +1,49 @@
+{
+    "version": "3.0.8",
+    "description": "A free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
+    "homepage": "https://www.videolan.org/",
+    "license": "GPL-2.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.8/win64/vlc-3.0.8-win64.exe#/setup.exe",
+            "hash": "0CC54E69016E3D5A80E229C768AC37A02AEA3A973A5447593C0132281E383942"
+        },
+        "32bit": {
+            "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.8/win32/vlc-3.0.8-win32.exe#/setup.exe",
+            "hash": "F286E25D5C52BFE7F392FB3F4E28E711225D1773E3C43281CB901145DED34DEF"
+        }
+    },
+    "installer": {
+        "script": [
+            "$programname = \"VLC media player*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "$programname = \"programname\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
+    ],
+    "checkver": {
+        "url": "https://www.videolan.org/vlc/download-windows.html",
+        "regex": "\\s+([\\d.]+)</span>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.8/win32/vlc-3.0.8-win64.exe#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.8/win32/vlc-3.0.8-win32.exe#/setup.exe"
+            }
+        }
+    }
+}
