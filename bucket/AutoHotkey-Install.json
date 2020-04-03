@@ -11,10 +11,10 @@
             "installer": {
                 "script": [
                     "$programname = \"AutoHotkey*\"",
-                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
                     "{",
                     "   &\"$dir\\setup.exe\" /S /x64 /uiAccess=1 /IsHostApp=1 | Out-Null",
-                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
                     "   {",
                     "       exit 1",
                     "   }",
@@ -29,10 +29,10 @@
             "installer": {
                 "script": [
                     "$programname = \"AutoHotkey*\"",
-                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
                     "{",
                     "   &\"$dir\\setup.exe\" /S /U32 /uiAccess=1 /IsHostApp=1 | Out-Null",
-                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+                    "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
                     "   {",
                     "       exit 1",
                     "   }",
