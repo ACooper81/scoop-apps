@@ -14,7 +14,15 @@
     },
     "installer": {
         "script": [
-            "Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\VBoxSetup.exe`\" --msiparams VBOX_START=0 VBOX_INSTALLDESKTOPSHORTCUT=0 VBOX_INSTALLQUICKLAUNCHSHORTCUT=0 REBOOT=ReallySuppress --silent\" -Verb RunAs",
+            "$programname = \"Oracle VM VirtualBoxe*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   Start-Process -Wait -WindowStyle Hidden cmd \"/c call `\"$dir\\VBoxSetup.exe`\" --msiparams VBOX_START=0 VBOX_INSTALLDESKTOPSHORTCUT=0 VBOX_INSTALLQUICKLAUNCHSHORTCUT=0 REBOOT=ReallySuppress --silent\" -Verb RunAs",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
             "Remove-Item \"$dir\\VBoxSetup.exe\""
         ]
     },
