@@ -9,7 +9,7 @@
         "script": [
             "$programname = \"Adobe Acrobat Reader DC*\"",
             "$installpath = \"$dir\\setup.msi_\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   $ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "   if (Test-Path \"$ProgramFilesX86Path\\Adobe\\Acrobat Reader DC\\Reader\\AcroRd32.exe\")",
@@ -25,7 +25,7 @@
             "      Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msp_\", '/qn') -RunAs | Out-Null",
             "       Remove-Item \"$dir\\setup.exe\"",
             "   }",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -RequiredVersion $version -ErrorAction SilentlyContinue))",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
