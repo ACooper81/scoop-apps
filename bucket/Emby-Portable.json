@@ -1,0 +1,34 @@
+{
+    "version": "4.4.0.40",
+    "description": "Emby. Media server for personal streaming",
+    "homepage": "https://emby.media",
+    "license": {
+        "identifier": "GPL-2.0-only",
+        "url": "https://emby.media/license.html"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/MediaBrowser/Emby.Releases/releases/download/4.4.0.40/embyserver-win-x64-4.4.0.40.7z",
+            "hash": "fe63ecf3acb32792e72955da8d3b9dc87e6fc542fae75297f18b238dc226dc12"
+        },
+        "32bit": {
+            "url": "https://github.com/MediaBrowser/Emby.Releases/releases/download/4.4.0.40/embyserver-win-x86-4.4.0.40.7z",
+            "hash": "84b70859eca85601b663f30ab73551c8a0491f8601a6018e9da0ff249d323510"
+        }
+    },
+    "bin": "system\\EmbyServer.exe",
+    "persist": "programdata",
+    "checkver": {
+        "github": "https://github.com/MediaBrowser/Emby.Releases"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/MediaBrowser/Emby.Releases/releases/download/$version/embyserver-win-x64-$version.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/MediaBrowser/Emby.Releases/releases/download/$version/embyserver-win-x86-$version.7z"
+            }
+        }
+    }
+}
