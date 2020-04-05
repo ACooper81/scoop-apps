@@ -3,7 +3,7 @@
     "description": "The NV Updater program is used to update the driver for Geforce graphics cards from Nvidia. No NVIDIA account is required and the additional tool Geforce Experience is not installed.",
     "homepage": "https://www.sys-worx.net/nv-updater-eng/",
     "license": "Freeware",
-    "notes": "",
+    "notes": "To run at startup you need to right click on the tray icon and click Options then select the 'Autorun NV Updater at Windows startup'.",
     "url": "https://www.sys-worx.net/attachment/47-nv-updater-0-6-0-0-nosetup-zip/nv_updater_0.6.0.0_noSetup.zip#/setup.zip",
     "hash": "E96EE5154A6919D2EA7FE1CD3B7294B227DE6CBA051692B7747AC731E837F989",
     "bin": "nv_updater.exe",
