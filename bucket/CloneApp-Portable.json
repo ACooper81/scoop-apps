@@ -33,8 +33,7 @@
         "Data\\cloneapp.ini"
     ],
     "checkver": {
-        "url": "https://www.mirinsoft.com/downloads/ca_update/changelog.txt",
-        "regex": "Changelog v([\\d.]+)"
+        "github": "https://github.com/mirinsoft/CloneApp"
     },
     "autoupdate": {
         "url": "https://www.mirinsoft.com/ca/send/2-cloneapp/19-cloneapp#/cosi.zip",
