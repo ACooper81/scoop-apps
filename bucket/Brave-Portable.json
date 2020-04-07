@@ -29,8 +29,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://raw.githubusercontent.com/brave/brave-browser/master/CHANGELOG.md",
-        "regex": "\\[([\\d\\.]+)\\]"
+        "url": "https://brave.com/latest",
+        "regex": ">V([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
