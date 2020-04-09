@@ -15,11 +15,11 @@
     },
     "installer": {
         "script": [
-            "$programname = \"Allway Sync version $version\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
+            "$programname = \"Allway Sync\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /verysilent /norestart | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
