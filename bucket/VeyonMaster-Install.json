@@ -1,0 +1,44 @@
+{
+    "version": "4.3.4.0",
+    "description": "Computer monitoring and classroom management software.",
+    "homepage": "https://veyon.io/",
+    "license": "GPL-2.0-or-later",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/veyon/veyon/releases/download/v4.3.4/veyon-4.3.4.0-win64-setup.exe#/setup.exe",
+            "hash": "76b8861bf0cece296576a9e0bcd0406bc419aec632e146b1e98250469d7358ed"
+        },
+        "32bit": {
+            "url": "https://github.com/veyon/veyon/releases/download/v4.3.4/veyon-4.3.4.0-win32-setup.exe#/setup.exe",
+            "hash": "d61a6fdb1cd1c5e0d429a8d6b9b6a8fbbc5c6edead37f288ac51d40644907370"
+        }
+    },
+    "installer": {
+        "script": [
+            "$programname = \"Veyon*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "checkver": {
+        "url": "https://veyon.io/download/",
+        "regex": "veyon-([\\d.]+)-win64-setup.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/veyon/veyon/releases/download/v$majorVersion.$minorVersion.$patchVersion/veyon-$version-win64-setup.exe#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/veyon/veyon/releases/download/v$majorVersion.$minorVersion.$patchVersion/veyon-$version-win32-setup.exe#/setup.exe"
+            }
+        }
+    }
+}
