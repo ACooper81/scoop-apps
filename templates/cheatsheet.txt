@@ -1,4 +1,13 @@
 ==================================================
+Variables
+==================================================
+
+"$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")"
+"$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")"
+"$ProgramFiles = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles\')"
+"$ProgramFilesX86 = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles(x86)\')"
+
+==================================================
 Process Wait Then Close
 ==================================================
 
