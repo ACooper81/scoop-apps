@@ -2,13 +2,14 @@
 Variables
 ==================================================
 
+https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?view=netframework-4.8
 "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")"
 "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")"
+"$LocalAppData = [Environment]::GetFolderPath(\"LocalApplicationData\")"
 "$ProgramFiles = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles\')"
 "$ProgramFilesX86 = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles(x86)\')"
 
 [version]"81.0.4044.92" -ge [version]"81.0.4044"
-
 $a = "3.0.2.2.0"
 $b = "3.0.2.3.0"
 ([version]('{0}.{1}.{2}.{3}' -f $a.split('.')) -ge [version]('{0}.{1}.{2}.{3}' -f $b.split('.')))
@@ -21,6 +22,20 @@ Process Wait Then Close
             "   Start-Sleep -Milliseconds 50",
             "}",
             "taskkill /F /IM $processname /FI 'status eq running'"
+
+==================================================
+Pre_Install Scripts
+==================================================
+
+    "pre_install": [
+        "$processname = \"code\"",
+        "$programname = \"Microsoft Visual Studio Code*\"",
+        "if (Get-Process \"$processname\" -ErrorAction SilentlyContinue)",
+        "{",
+        "Write-Host Please close $programname windows before install/update. -ForegroundColor Cyan",
+        "Exit 0",
+        "}"
+    ],
 
 ==================================================
 Install Scripts
