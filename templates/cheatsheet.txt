@@ -7,6 +7,8 @@ Variables
 "$ProgramFiles = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles\')"
 "$ProgramFilesX86 = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles(x86)\')"
 
+[version]"81.0.4044.92" -gt [version]"81.0.4044"
+
 ==================================================
 Process Wait Then Close
 ==================================================
