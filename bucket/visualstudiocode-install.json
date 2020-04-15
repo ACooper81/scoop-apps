@@ -16,6 +16,15 @@
             "hash": "f33612e1134c8004e3a76f210b868078d4a779911fccc9d09ff2cdaf259efa46"
         }
     },
+    "pre_install": [
+        "$processname = \"code\"",
+        "$programname = \"Microsoft Visual Studio Code*\"",
+        "if (Get-Process \"$processname\" -ErrorAction SilentlyContinue)",
+        "{",
+        "Write-Host Please close $programname windows before install/update. -ForegroundColor Cyan",
+        "Exit 0",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Microsoft Visual Studio Code*\"",
