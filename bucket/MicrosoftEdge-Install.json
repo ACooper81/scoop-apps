@@ -1,16 +1,16 @@
 {
-    "version": "80.0.361.109",
+    "version": "81.0.416.53",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/812c141f-8680-4aaa-83d2-f99316588162/MicrosoftEdgeEnterpriseX64.msi#/setup.msi_",
-            "hash": "A8BEC701783CF031B4D3D0C4E0476DE5461CF9D1482E462E630F3164B3F50E94"
+            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/48139845-89ac-44b5-af5b-ef7d2ac92c93/MicrosoftEdgeEnterpriseX64.msi#/setup.msi_",
+            "hash": "932BE382DB229D3AB4FF2DCA9CE5CBB9DED5B05E60958FD5B2D388EEB82E7152"
         },
         "32bit": {
-            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/70874dc1-b23c-4634-ba85-84788783a1c4/MicrosoftEdgeEnterpriseX86.msi#/setup.msi_",
-            "hash": "0C1CA1C2A75E8E08DA598195EAD4ECD74BDAB9507468F7541BACF3A04926CC2B"
+            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/6794ee13-fa11-4363-856f-02157a15cb66/MicrosoftEdgeEnterpriseX86.msi#/setup.msi_",
+            "hash": "F0C4C2139104B9DC6C6F4447F217D9D7BBD8DCFE346CFAA13DA81322D23C6105"
         }
     },
     "installer": {
