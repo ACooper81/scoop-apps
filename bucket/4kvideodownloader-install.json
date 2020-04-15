@@ -16,6 +16,15 @@
             "hash": "17381640d005722b2467ab96ee8b4def76c28906a8b73b63434ac7a35e4dbeb2"
         }
     },
+    "pre_install": [
+        "$processname = \"4kvideodownloader\"",
+        "$programname = \"4K Video Downloader\"",
+        "if (Get-Process \"$processname\" -ErrorAction SilentlyContinue)",
+        "{",
+        "Write-Host Please close $programname windows before install/update. -ForegroundColor Cyan",
+        "Exit 0",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"4K Video Downloader*\"",
