@@ -1,16 +1,16 @@
 {
-    "version": "1.3.00.4461",
+    "version": "1.3.00.8663",
     "description": "DescriptionMicrosoft Teams is a unified communication and collaboration platform that combines persistent workplace chat, video meetings, file storage, and application integration",
     "homepage": "https://products.office.com/en-AU/microsoft-teams/group-chat-software",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.4461/Teams_windows_x64.exe#/setup.exe",
-            "hash": "712F139D71E56BFB306E4A7B739B0E1109ABB662DFA164192A5CFD6ADB24A4E1"
+            "url": "https://statics.teams.cdn.office.net/production-windows-x64/1.3.00.8663/Teams_windows_x64.exe#/setup.exe",
+            "hash": "cdba3edbefbb338dc8570434cea7e33f29f8a34b25da5fe50537e0075f003a19"
         },
         "32bit": {
-            "url": "https://statics.teams.cdn.office.net/production-windows/1.3.00.4461/Teams_windows.exe#/setup.exe",
-            "hash": "41EACD14DB537ED2CF558A766BA0D33C0F842E2CD02FB201219295DF9B746445"
+            "url": "https://statics.teams.cdn.office.net/production-windows/1.3.00.8663/Teams_windows.exe#/setup.exe",
+            "hash": "8c67eda0b9166b3f0ec92bac5d1c9cd68fc921ce7a9c9763973ec1db39f28c0c"
         }
     },
     "installer": {
