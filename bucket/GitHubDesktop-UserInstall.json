@@ -1,12 +1,12 @@
 {
-    "version": "2.4.1",
+    "version": "2.4.2",
     "description": "Extend your GitHub workflow beyond your browser.",
     "homepage": "https://desktop.github.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/dl.7z",
-            "hash": "19beee02d64291cf5f1a9709f4c16b3f691d4c052a31282163ac86e220649d9d"
+            "hash": "f200412bd40564335b32fdaee03a8eed8e6ad7d56781804cf83ccf2db3603b83"
         }
     },
     "installer": {
