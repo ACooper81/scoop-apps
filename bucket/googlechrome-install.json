@@ -1,5 +1,5 @@
 {
-    "version": "81.0.4044.113",
+    "version": "81.0.4044.122",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
     "license": {
@@ -9,11 +9,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi#/setup.msi_",
-            "hash": "d887e53caae3c72a96d04ab8ba61d8a59459538a2a95337ab98deb29a9acd292"
+            "hash": "7e5ae23a217026bfbcd03cd41f8650179ddab441b7ec568fb6b776f9d553604d"
         },
         "32bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi#/setup.msi_",
-            "hash": "d9ab55360275cd34a9b7ab210df18f624485d84718adab66f318ed9e8a904cc8"
+            "hash": "d596c15015cb72ab87eda027130c151d27703f412fe8bd898a17c522033a9c54"
         }
     },
     "installer": {
