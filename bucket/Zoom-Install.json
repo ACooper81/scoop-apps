@@ -1,0 +1,29 @@
+{
+    "version": "4.6.20613.421",
+    "description": "Zoom provides videotelephony and online chat services through a cloud-based peer-to-peer software platform and is used for teleconferencing, telecommuting, distance education, and social relations.",
+    "homepage": "https://zoom.us/",
+    "license": "Proprietary",
+    "url": "https://zoom.us/client/latest/ZoomInstallerFull.msi#/setup.msi_",
+    "installer": {
+        "script": [
+            "$programname = \"programname*\"",
+            "$installpath = \"$dir\\setup.msi_\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $majorVersion.$minorVersion.$patchVersion -ErrorAction SilentlyContinue))",
+            "{",
+            "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn', '/norestart', 'MSIRESTARTMANAGERCONTROL=”Disable”', 'ZoomAutoUpdate=\"true\"') -RunAs | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $majorVersion.$minorVersion.$patchVersion -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.msi_\" -Force"
+        ]
+    },
+    "checkver": {
+        "url": "https://ninite.com/applist/pro.html",
+        "regex": "<td>Video Conference ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://zoom.us/client/latest/ZoomInstallerFull.msi#/setup.msi_"
+    }
+}
