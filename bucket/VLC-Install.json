@@ -13,6 +13,18 @@
             "hash": "F286E25D5C52BFE7F392FB3F4E28E711225D1773E3C43281CB901145DED34DEF"
         }
     },
+    "pre_install": [
+        "$processname = \"VLC\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"VLC media player*\"",
