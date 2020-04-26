@@ -15,7 +15,18 @@
             "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.2.5/qbittorrent_4.2.5_setup.exe#/setup.exe",
             "hash": "7d5ec6993bde912ad35d98e2bb523c6d6022766b058bef0626bd41c8c00b81ff"
         }
-    },
+    },"pre_install": [
+        "$processname = \"qbitorrent\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"qbittorrent*\"",
