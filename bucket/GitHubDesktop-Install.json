@@ -9,6 +9,18 @@
             "hash": "f200412bd40564335b32fdaee03a8eed8e6ad7d56781804cf83ccf2db3603b83"
         }
     },
+    "pre_install": [
+        "$processname = \"GitHubDesktop\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"GitHub Desktop Machine-Wide Installer*\"",
