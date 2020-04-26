@@ -8,6 +8,18 @@
     },
     "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
     "hash": "8d74a7ee803cb03e4397580a0cf490a8811e478d3dcd2649777523bb4f3ac009",
+    "pre_install": [
+        "$processname = \"SUMo\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"KC Softwares SUMo*\"",
