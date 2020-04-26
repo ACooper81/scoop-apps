@@ -13,6 +13,18 @@
             "hash": "caedee947cc60067497b9ee3502e28872688d3c55216429a21ee0be7770865fd"
         }
     },
+    "pre_install": [
+        "$processname = \"veyon-master\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Veyon*\"",
