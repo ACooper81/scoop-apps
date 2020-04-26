@@ -5,6 +5,18 @@
     "notes": "This manifest only installs and updates Adobe Acrobat Reader DC",
     "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2000620042/AcroRdrDCUpd2000620042.msp#/setup.msp_",
     "hash": "18353a8a564bcb1b795456135fa4a781336f212f0466a5bb0ac1cace9f6f35b8",
+    "pre_install": [
+        "$processname = \"AcroRd32\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Adobe Acrobat Reader DC*\"",
