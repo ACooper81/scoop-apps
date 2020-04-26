@@ -28,12 +28,15 @@ Pre_Install Scripts
 ==================================================
 
     "pre_install": [
-        "$processname = \"code\"",
-        "$programname = \"Microsoft Visual Studio Code*\"",
-        "if (Get-Process \"$processname\" -ErrorAction SilentlyContinue)",
-        "{",
-        "Write-Host Please close $programname windows before install/update. -ForegroundColor Cyan",
-        "Exit 0",
+        "$processname = \"processname\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
         "}"
     ],
 
