@@ -10,6 +10,18 @@
             "hash": "18D427DB32A412B2B89C191FA9662FF58C6E8157C325DDE08708BFF0EF894E22"
         }
     },
+    "pre_install": [
+        "$processname = \"PerfTune\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Intel(R) Extreme Tuning Utility*\"",
