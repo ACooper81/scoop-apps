@@ -16,6 +16,18 @@
             "hash": "9b4dcebddaf0c60eaa243d3de668f57e200647ddf278f5ee5ecbd294213eeb00"
         }
     },
+    "pre_install": [
+        "$processname = \"qbittorrent\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"qbittorrent*\"",
