@@ -13,6 +13,18 @@
             "hash": "c0e8cbe16eda134385d499881e6e0f2784bcb4d26cbe42ed5b81e29eec37b3da"
         }
     },
+    "pre_install": [
+        "$processname = \"pwsh\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"PowerShell*\"",
