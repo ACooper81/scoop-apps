@@ -3,6 +3,18 @@
     "description": "Media Player Classic - BE is a free and open source audio and video player for Windows",
     "homepage": "https://mpcbe.sourceforge.io/",
     "license": "GPL-3.0-only",
+    "pre_install": [
+        "$processname = \"MPC-BE*\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.4/MPC-BE.1.5.4.4969.x64-installer.zip#/setup.zip",
