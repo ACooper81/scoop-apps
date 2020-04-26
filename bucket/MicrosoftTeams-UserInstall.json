@@ -13,6 +13,18 @@
             "hash": "8c67eda0b9166b3f0ec92bac5d1c9cd68fc921ce7a9c9763973ec1db39f28c0c"
         }
     },
+    "pre_install": [
+        "$processname = \"Teams\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Microsoft Teams*\"",
