@@ -13,6 +13,18 @@
             "hash": "3784bbb9d8c041566af2a923da24c597ca519be424ca69f358927a5c09205f6d"
         }
     },
+    "pre_install": [
+        "$processname = \"syncappw\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Allway Sync\"",
