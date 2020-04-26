@@ -18,11 +18,13 @@
     },
     "pre_install": [
         "$processname = \"4kvideodownloader\"",
-        "$programname = \"4K Video Downloader\"",
-        "if (Get-Process \"$processname\" -ErrorAction SilentlyContinue)",
-        "{",
-        "Write-Host Please close $programname windows before install/update. -ForegroundColor Cyan",
-        "Exit 0",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 30",
+        "   if (!$process.HasExited) {",
+        "       $process | Stop-Process -Force",
+        "   }",
         "}"
     ],
     "installer": {
