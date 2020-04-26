@@ -16,7 +16,7 @@
             "hash": "7d5ec6993bde912ad35d98e2bb523c6d6022766b058bef0626bd41c8c00b81ff"
         }
     },"pre_install": [
-        "$processname = \"qbitorrent\"",
+        "$processname = \"qbittorrent\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
         "if ($process) {",
         "   $process.CloseMainWindow()",
