@@ -12,6 +12,18 @@
             "hash": "b3fcbf2b403f14d4e0d2f34703854032f76c125f3a8859d4778e6700293e2815"
         }
     },
+    "pre_install": [
+        "$processname = \"virtualbox\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Oracle VM VirtualBoxe*\"",
