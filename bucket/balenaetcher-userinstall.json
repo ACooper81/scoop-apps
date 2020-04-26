@@ -5,6 +5,18 @@
     "license": "Apache-2.0",
     "url": "https://github.com/balena-io/etcher/releases/download/v1.5.81/balenaEtcher-Setup-1.5.81.exe#/setup.exe",
     "hash": "00e6918664bb1fb712b1c9bcec37d6cf64b07a570230abeed9b3f5e2bf822301",
+    "pre_install": [
+        "$processname = \"balenaEtcher\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"balenaEtcher*\"",
