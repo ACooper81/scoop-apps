@@ -7,6 +7,18 @@
         "identifier": ""
     },
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
+    "pre_install": [
+        "$processname = \"videodownloader\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"Allavsoft*\"",
