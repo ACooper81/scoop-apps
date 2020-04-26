@@ -16,6 +16,18 @@
             "hash": "027531994c0d95836328fe7c39390fa9f85061f79660c093e1d6df7874d8b44b"
         }
     },
+    "pre_install": [
+        "$processname = \"i_view*\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"IrfanView*\"",
