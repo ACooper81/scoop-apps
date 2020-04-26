@@ -8,6 +8,18 @@
     },
     "url": "https://www.autoitscript.com/files/autoit3/autoit-v3-setup.exe#/setup.exe",
     "hash": "e102238100a8b97d22559065e3b19379757aeda932c36916d2c84a4178921854",
+    "pre_install": [
+        "$processname = \"AutoIt\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "installer": {
         "script": [
             "$programname = \"AutoIt v*\"",
