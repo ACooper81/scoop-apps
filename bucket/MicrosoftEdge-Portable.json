@@ -1,0 +1,39 @@
+{
+    "version": "81.0.416.64",
+    "description": "See what's new on the latest version of the Microsoft Edge browser.",
+    "homepage": "https://www.microsoft.com/en-us/edge",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://api.shuax.com/v2/download/edge/stable/x64#/dl.7z",
+            "hash": "fa900445d4a8c87d8f2b71b00f23d9770fc1ffec7772104237cde3ed3ba37e51"
+        },
+        "32bit": {
+            "url": "https://api.shuax.com/v2/download/edge/stable/x86#/dl.7z",
+            "hash": "087748ca5855061cbf2df161c68ed64c561449fc5831a38a53f694c26a4c081f"
+        }
+    },
+    "installer": {
+        "script": "Expand-7zipArchive -Path \"$dir\\MSEDGE.7z\" -ExtractDir \"Chrome-bin\" -Removal"
+    },
+    "shortcuts": [
+        [
+            "msedge.exe",
+            "Microsoft Edge"
+        ]
+    ],
+    "checkver": {
+        "url": "https://scoop-services.azurewebsites.net/checkver?app=microsoftedge",
+        "jsonpath": "$.stable.x64.version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://api.shuax.com/v2/download/edge/stable/x64#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://api.shuax.com/v2/download/edge/stable/x86#/dl.7z"
+            }
+        }
+    }
+}
