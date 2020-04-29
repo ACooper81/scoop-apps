@@ -32,7 +32,7 @@
     "persist": "portable",
     "checkver": {
         "url": "https://www.videolan.org/vlc/download-windows.html",
-        "regex": "\\s+([\\d.]+)</span>"
+        "regex": "downloadVersion'>\\s*([\\d.]+)</span>"
     },
     "autoupdate": {
         "architecture": {
