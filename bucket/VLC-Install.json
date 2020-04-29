@@ -1,16 +1,16 @@
 {
-    "version": "3.0.8",
+    "version": "3.0.10",
     "description": "A free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVDs, Audio CDs, VCDs, and various streaming protocols.",
     "homepage": "https://www.videolan.org/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.8/win64/vlc-3.0.8-win64.exe#/setup.exe",
-            "hash": "0CC54E69016E3D5A80E229C768AC37A02AEA3A973A5447593C0132281E383942"
+            "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.10/win64/vlc-3.0.10-win64.exe#/setup.exe",
+            "hash": "e0a0883cd6c29aee23ecfc63573bc09e09f78de0da78a6f55ab13fab1c65850b"
         },
         "32bit": {
-            "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.8/win32/vlc-3.0.8-win32.exe#/setup.exe",
-            "hash": "F286E25D5C52BFE7F392FB3F4E28E711225D1773E3C43281CB901145DED34DEF"
+            "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/3.0.10/win32/vlc-3.0.10-win32.exe#/setup.exe",
+            "hash": "ccfb91146cba92a3ec5274fee90d2cee35cfda7fd38240b3f65da26d53d28a0b"
         }
     },
     "pre_install": [
