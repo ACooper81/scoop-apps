@@ -51,7 +51,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/$version/win32/vlc-$version-win64.exe#/setup.exe"
+                "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/$version/win64/vlc-$version-win64.exe#/setup.exe"
             },
             "32bit": {
                 "url": "https://mirror.aarnet.edu.au/pub/videolan/vlc/$version/win32/vlc-$version-win32.exe#/setup.exe"
