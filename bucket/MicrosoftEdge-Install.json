@@ -37,15 +37,17 @@
     ],
     "checkver": {
         "url": "https://chocolatey.org/packages/microsoft-edge",
-        "regex": "(?sm)Microsoft Edge ([\\d.]+)|url32 = &#39;(?<url32>[.*])&#39;"
+        "regex": "(?sm)Microsoft Edge ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "$matchUrl32#/setup.msi_"
+                "url": "$matchUrl64#/setup.msi_",
+                "regex": "(?sm)url64 = '(?<url64>[.*])'"
             },
             "32bit": {
-                "url": "$matchUrl32#/setup.msi_"
+                "url": "$matchUrl32#/setup.msi_",
+                "regex": "(?sm)url32 = '(?<url32>[.*])'"
             }
         }
     }
