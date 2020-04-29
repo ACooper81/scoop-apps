@@ -37,7 +37,7 @@
     ],
     "checkver": {
         "url": "https://chocolatey.org/packages/microsoft-edge",
-        "regex": "(?sm)Microsoft Edge ([\\d.]+).*filestreamingservice/files/(?<url32>[*])-"
+        "regex": "(?sm)Microsoft Edge ([\\d.]+)|url32 = &#39;(?<url32>[.*])&#39;"
     },
     "autoupdate": {
         "architecture": {
