@@ -36,7 +36,17 @@
         "if (Test-Path \"$CommonDesktopPath\\Microsoft Edge.lnk\") {Remove-Item \"$CommonDesktopPath\\Microsoft Edge.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://www.whatismybrowser.com/guides/the-latest-version/edge",
-        "regex": "<td>Edge on <strong>Windows 10</strong></td>\\n\\s+<td>([\\d.]+)"
+        "url": "https://chocolatey.org/packages/microsoft-edge",
+        "regex": "(?sm)Microsoft Edge ([\\d.]+).*filestreamingservice/files/(?<url32>[\\dw]+)-"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "$matchUrl32#/setup.msi_"
+            },
+            "32bit": {
+                "url": "$matchUrl32#/setup.msi_"
+            }
+        }
     }
 }
