@@ -19,7 +19,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"programname*\"",
+            "$programname = \"Zoom*\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $majorVersion.$minorVersion.$patchVersion -ErrorAction SilentlyContinue))",
             "{",
