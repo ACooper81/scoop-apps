@@ -5,12 +5,12 @@
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/48139845-89ac-44b5-af5b-ef7d2ac92c93/MicrosoftEdgeEnterpriseX64.msi#/setup.msi_",
-            "hash": "932BE382DB229D3AB4FF2DCA9CE5CBB9DED5B05E60958FD5B2D388EEB82E7152"
+            "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
+            "hash": "016009B06A8C22DBBCDC59339F047136756EAB1C6E7C3E414189A9E308DB754F"
         },
         "32bit": {
-            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/6794ee13-fa11-4363-856f-02157a15cb66/MicrosoftEdgeEnterpriseX86.msi#/setup.msi_",
-            "hash": "F0C4C2139104B9DC6C6F4447F217D9D7BBD8DCFE346CFAA13DA81322D23C6105"
+            "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
+            "hash": "285FC88E8D54EC78EBCD14FA2B002100A556451F4F4442E3047A92EBCB64A30C"
         }
     },
     "installer": {
