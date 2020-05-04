@@ -26,10 +26,10 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.gogalaxy.com/en/download",
-        "regex": "galaxy_client_([\\d.]+)\\.pkg"
+        "url": "https://chocolatey.org/packages/goggalaxy",
+        "regex": "GOG Galaxy ([\\d.]+)</title>"
     },
     "autoupdate": {
-        "url": "https://cdn.gog.com/open/galaxy/client/setup_galaxy_$version.exe"
+        "url": "https://content-system.gog.com/open_link/download?path=/open/galaxy/client/setup_galaxy_$version.exe"
     }
 }
