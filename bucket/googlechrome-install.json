@@ -25,6 +25,7 @@
             "-or !(Test-Path \"$ProgramFilesX86\\Google\\Chrome\\Application\\$version\\chrome.dll\"))",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
+            "   Start-Sleep -Seconds 30",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue)`",
             "   -or !(Test-Path \"$ProgramFilesX86\\Google\\Chrome\\Application\\$version\\chrome.dll\"))",
             "   {",
