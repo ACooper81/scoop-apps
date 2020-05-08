@@ -1,16 +1,16 @@
 {
-    "version": "81.0.416.68",
+    "version": "81.0.416.72",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "016009B06A8C22DBBCDC59339F047136756EAB1C6E7C3E414189A9E308DB754F"
+            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/0a781574-de1b-431e-87a3-ed7d0f66393b/MicrosoftEdgeEnterpriseX64.msi#/setup.msi_",
+            "hash": "56B382234A2D710735C3EA39CE2D0154A31F690264E96B7D1EA8F7FF088BC934"
         },
         "32bit": {
-            "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "285FC88E8D54EC78EBCD14FA2B002100A556451F4F4442E3047A92EBCB64A30C"
+            "url": "http://dl.delivery.mp.microsoft.com/filestreamingservice/files/6fee713c-ca92-48dd-84db-0aec13725d77/MicrosoftEdgeEnterpriseX86.msi#/setup.msi_",
+            "hash": "8F7ED7CEBF837B48F8807F2874E508C7E5D640D5570B18C24B487D3888B5E47B"
         }
     },
     "installer": {
@@ -38,17 +38,5 @@
     "checkver": {
         "url": "https://scoop-services.azurewebsites.net/checkver?app=microsoftedge",
         "jsonpath": "$.stable.x64.version"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "$matchUrl64#/setup.msi_",
-                "regex": "(?sm)url64 = '(?<url64>[.*])'"
-            },
-            "32bit": {
-                "url": "$matchUrl32#/setup.msi_",
-                "regex": "(?sm)url32 = '(?<url32>[.*])'"
-            }
-        }
     }
 }
