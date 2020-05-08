@@ -47,9 +47,6 @@
             "32bit": {
                 "url": "https://download1.operacdn.com/pub/opera/desktop/$version/win/Opera_$version_Setup.exe#/dl.7z"
             }
-        },
-        "hash": {
-            "url": "$url.sha256sum"
         }
     }
 }
