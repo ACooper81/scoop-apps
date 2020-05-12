@@ -1,0 +1,30 @@
+{
+    "version": "8.10.154",
+    "description": "Logitech Options software lets you customize your device's settings",
+    "homepage": "http://support.logitech.com/en_gb/software/options",
+    "license": "",
+    "notes": "",
+    "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.10.154.exe#/setup.7z",
+    "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
+    "bin": "LogiOptions.exe",
+    "shortcuts": [
+        [
+            "LogiOptions.exe",
+            "Logitech Options"
+        ]
+    ],
+    "checkver": {
+        "url": "https://websiteurl",
+        "regex": "startstring([\\d.]+)endstring"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z"
+            },
+            "32bit": {
+                "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z"
+            }
+        }
+    }
+}
