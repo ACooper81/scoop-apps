@@ -66,8 +66,8 @@
         }
     },
     "checkver": {
-        "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/",
-        "regex": "<span class=\"sub-label\">MPC-BE.([\\d.]+).x64"
+        "url": "https://sourceforge.net/projects/mpcbe/rss?path=/MPC-BE/Release%20builds",
+        "regex": "MPC-BE\\.([\\d.]+)\\.x64-installer\\.zip"
     },
     "autoupdate": {
         "architecture": {
