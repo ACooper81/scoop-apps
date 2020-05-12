@@ -1,10 +1,10 @@
 {
-    "version": "20.006.20042",
+    "version": "20.009.20063",
     "description": "Not only view, but print, sign, and annotate PDFs with the free Adobe Acrobat Reader DC.",
     "homepage": "https://acrobat.adobe.com/us/en/acrobat/pdf-reader.html",
     "notes": "This manifest only installs and updates Adobe Acrobat Reader DC",
-    "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2000620042/AcroRdrDCUpd2000620042.msp#/setup.msp_",
-    "hash": "18353a8a564bcb1b795456135fa4a781336f212f0466a5bb0ac1cace9f6f35b8",
+    "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/2000920063/AcroRdrDCUpd2000920063.msp#/setup.msp_",
+    "hash": "f98ad060a9f7c2ef01dd2377dbef0cfe795f8562a9b32d2b40b6806130943194",
     "pre_install": [
         "$processname = \"AcroRd32\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
