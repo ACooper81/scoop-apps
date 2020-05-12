@@ -39,5 +39,8 @@
     "checkver": {
         "url": "https://downloadcenter.intel.com/search?keyword=Intel%C2%AE+Extreme+Tuning+Utility",
         "regex": "XTU\\)\\.\\s+\\(([\\d\\.]+)"
+    },
+    "autoupdate": {
+        "url": "https://downloadmirror.intel.com/29183/eng/XTUSetup.exe#/setup.exe"
     }
 }
