@@ -1,5 +1,5 @@
 {
-    "version": "6.5.2.38",
+    "version": "6.5.2.40",
     "description": "Intel XTU is a Windows*-based performance-tuning software that enables novice and experienced enthusiasts to overclock, monitor, and stress a system.",
     "homepage": "https://downloadcenter.intel.com/search?keyword=Intel%C2%AE+Extreme+Tuning+Utility",
     "notes": "Sorry, Intel® Extreme Tuning Utility is 64 bit only.",
@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloadmirror.intel.com/29183/eng/XTUSetup.exe#/setup.exe",
-            "hash": "dd3a2e6fc62990a99d8eb5ecb1d8b44c66f83c38b0a9bde937e076b4f2be1462"
+            "hash": "7cc2ed8102602fb357aeef9e9fa7785b8f5f548244e4158c0306b559fd08859c"
         }
     },
     "pre_install": [
