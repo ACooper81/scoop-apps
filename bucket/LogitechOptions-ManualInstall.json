@@ -1,0 +1,42 @@
+{
+    "version": "8.10.154",
+    "description": "Logitech Options software lets you customize your device's settings",
+    "homepage": "https://www.logitech.com/en-us/product/options",
+    "license": "",
+    "notes": "",
+    "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_8.10.154.exe#/setup.exe",
+    "hash": "e29473805577effdc1a4ff6e2bd309c7ac7b331c25fbe03a9b3be568907b6aac",
+    "pre_install": [
+        "$processname = \"LogiOptions\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "$programname = \"Logitech Options*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.logitech.com/en-us/product/options",
+        "regex": "Options_([\\d.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_$version.exe#/setup.exe"
+    }
+}
