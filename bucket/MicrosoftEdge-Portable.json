@@ -1,16 +1,16 @@
 {
-    "version": "81.0.416.72",
+    "version": "81.0.416.77",
     "description": "See what's new on the latest version of the Microsoft Edge browser.",
     "homepage": "https://www.microsoft.com/en-us/edge",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://api.shuax.com/v2/download/edge/stable/x64#/dl.7z",
-            "hash": "9a4b7038b7dfdfb6008946edbc89a85e92f6adc762d6746ca52d0a4468aa7e1a"
+            "hash": "d1ed3cb89285fd6d6ccbb15833752df3508fe51d1cba9d2a8f5655bc737f2ebe"
         },
         "32bit": {
             "url": "https://api.shuax.com/v2/download/edge/stable/x86#/dl.7z",
-            "hash": "2b8ff2392173b22b186ca67912779cd519a95f1b47a2bbfb4dd2117fea72b9d2"
+            "hash": "e9c4a37120dcf61398863d5defec05caea0c9b03995287f6e2241c6d16f48a51"
         }
     },
     "installer": {
