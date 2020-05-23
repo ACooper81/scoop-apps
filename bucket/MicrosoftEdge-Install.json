@@ -36,8 +36,8 @@
         "if (Test-Path \"$CommonDesktopPath\\Microsoft Edge.lnk\") {Remove-Item \"$CommonDesktopPath\\Microsoft Edge.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://scoop-services.azurewebsites.net/checkver?app=microsoftedge",
-        "jsonpath": "$.stable.x64.version"
+        "url": "https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
+        "regex": "Version ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
