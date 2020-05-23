@@ -1,5 +1,5 @@
 {
-    "version": "5.10.17.456",
+    "version": "5.10.18.457",
     "description": "Detecting and updating outdated software",
     "homepage": "https://www.kcsoftwares.com/?sumo",
     "license": {
@@ -7,7 +7,7 @@
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo.zip",
-    "hash": "dae6c42847889255b56e5bb0a2728fb52b65c25fb57dfcfb8a05b18566e7a85b",
+    "hash": "9f33b7b26207b71fbfd730b48e2ca5d32ffe26cc3e1da18208dd172b8f5931a1",
     "extract_dir": "sumo",
     "bin": "SUMo.exe",
     "shortcuts": [
