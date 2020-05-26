@@ -1,10 +1,10 @@
 {
-    "version": "0.18.0",
+    "version": "0.18.1",
     "description": "A set of utilities for power users to tune and streamline their Windows experience for greater productivity.",
     "homepage": "https://github.com/microsoft/PowerToys",
     "license": "MIT",
-    "url": "https://github.com/microsoft/PowerToys/releases/download/0.18.0/PowerToysSetup-0.18.0-x64.msi",
-    "hash": "4224f2788ddb0d36d61a84a166c059e17fca4234da2a0c73d099a6971d4bbf5a",
+    "url": "https://github.com/microsoft/PowerToys/releases/download/v0.18.1/PowerToysSetup-0.18.1-x64.msi",
+    "hash": "83b2f088f6a0ef7066ba8303ad51e2a270123fe127991486b715ac55f84da19b",
     "extract_dir": "PowerToys",
     "shortcuts": [
         [
