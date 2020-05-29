@@ -1,5 +1,5 @@
 {
-    "version": "1.9.72",
+    "version": "1.9.76",
     "description": "Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://brave.com",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.9.72/BraveBrowserStandaloneSetup.exe#/dl.7z",
-            "hash": "89ea20319549f9e5d2c3da3798572909e272e952304dbba9208b1457106deafe"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.9.76/BraveBrowserStandaloneSetup.exe#/dl.7z",
+            "hash": "ab97044ed87859dd83bed48f6e62047ebd0f0f114b0275a221952f7370ba482c"
         },
         "32bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.9.72/BraveBrowserStandaloneSetup32.exe#/dl.7z",
-            "hash": "f2c63c0d56631de7b36a1c7f755b1ee0dca06c10aa32e8dbd52cef61e1a65873"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.9.76/BraveBrowserStandaloneSetup32.exe#/dl.7z",
+            "hash": "88c057d0bf4073068fc35758b90e74287d6e6af4b75f6e992934f57da9efce59"
         }
     },
     "pre_install": [
