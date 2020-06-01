@@ -9,6 +9,7 @@
     "url": "https://www.kcsoftwares.com/files/sumo.zip",
     "hash": "9f33b7b26207b71fbfd730b48e2ca5d32ffe26cc3e1da18208dd172b8f5931a1",
     "extract_dir": "sumo",
+    "pre_install": "if (!(Test-Path \"$persist_dir\\settings.ini\")) { Set-Content \"$dir\\settings.ini\" '[Settings]', 'AutoUpdate=0' -Encoding Ascii }",
     "bin": "SUMo.exe",
     "shortcuts": [
         [
@@ -16,9 +17,10 @@
             "SUMo - Software Update Monitor"
         ]
     ],
+    "persist": "settings.ini",
     "checkver": {
         "url": "https://www.kcsoftwares.com/?download",
-        "regex": "(?sm)<h3>SUMo</h3>\\s+<small>Version : <code>([\\d.]+)</code>"
+        "regex": "(?sm)SUMo</h.*?Version\\s+:\\s*<code>([\\d.]+)</"
     },
     "autoupdate": {
         "url": "https://www.kcsoftwares.com/files/sumo.zip"
