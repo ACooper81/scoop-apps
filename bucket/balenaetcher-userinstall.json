@@ -5,6 +5,7 @@
     "license": "Apache-2.0",
     "url": "https://github.com/balena-io/etcher/releases/download/v1.5.95/balenaEtcher-Setup-1.5.95.exe#/setup.exe",
     "hash": "803acb6f51ec67e8ccf5c77ab1e691589448123915cec28c6acd84fe57ca623f",
+    "bin": "balenaEtcher.exe",
     "pre_install": [
         "$processname = \"balenaEtcher\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
