@@ -16,6 +16,7 @@
             "hash": "38d34d4eb3ff1a67762d6f9991c730aa798d09cdc28a8c4dfcc67a45bd9ef58e"
         }
     },
+    "bin": "qBittorrent.exe",
     "pre_install": [
         "$processname = \"qbittorrent\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
