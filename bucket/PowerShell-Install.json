@@ -13,6 +13,7 @@
             "hash": "f38c2fd72dc54c1fec2871e4e95352ca546101be6283458d06a6f9b1a56ad60a"
         }
     },
+    "bin": "pwsh.exe",
     "pre_install": [
         "$processname = \"pwsh\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
