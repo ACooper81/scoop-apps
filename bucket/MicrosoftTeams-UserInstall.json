@@ -13,6 +13,7 @@
             "hash": "fa5365324924d561bca12c6737ce8987d5ee5ea5d82b634565a84f53d31d4a44"
         }
     },
+    "bin": "Teams.exe",
     "pre_install": [
         "$processname = \"Teams\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
