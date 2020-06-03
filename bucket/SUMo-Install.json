@@ -8,6 +8,7 @@
     },
     "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
     "hash": "e26e7572ce79ecd66a8292a22795bc58efc9a94102d6b2b58c6d5ac140750a92",
+    "bin": "SUMo.exe",
     "pre_install": [
         "$processname = \"SUMo\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
