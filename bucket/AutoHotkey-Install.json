@@ -3,18 +3,6 @@
     "description": "The ultimate automation scripting language for Windows.",
     "license": "GPL-2.0-or-later",
     "homepage": "https://www.autohotkey.com/",
-    "pre_install": [
-        "$processname = \"AutoHotkey\"",
-        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
-        "if ($process) {",
-        "   $process.CloseMainWindow()",
-        "   Start-Sleep -Seconds 5",
-        "   if (!$process.HasExited) {",
-        "       Start-Sleep -Seconds 25",
-        "       $process | Stop-Process -Force",
-        "   }",
-        "}"
-    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/Lexikos/AutoHotkey_L/releases/download/v1.1.32.00/AutoHotkey_1.1.32.00_setup.exe#/setup.exe",
@@ -53,6 +41,19 @@
             }
         }
     },
+    "bin": "AutoHotkey.exe",
+    "pre_install": [
+        "$processname = \"AutoHotkey\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
     "checkver": {
         "github": "https://github.com/lexikos/autohotkey_l"
     },
