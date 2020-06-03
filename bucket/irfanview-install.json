@@ -16,6 +16,10 @@
             "hash": "027531994c0d95836328fe7c39390fa9f85061f79660c093e1d6df7874d8b44b"
         }
     },
+    "bin": [
+        "i_view32.exe",
+        "i_view64.exe"
+    ],
     "pre_install": [
         "$processname = \"i_view*\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
