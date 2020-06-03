@@ -4,6 +4,7 @@
     "homepage": "https://www.codesector.com",
     "url": "http://www.codesector.com/files/teracopy.exe#/setup.exe",
     "hash": "5b667ff25a5f2ecf810e2f60dd079dc68fce6eafa174e6de835b8aed919e12f3",
+    "bin": "TeraCopy.exe",
     "pre_install": [
         "$processname = \"TeraCopy\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
