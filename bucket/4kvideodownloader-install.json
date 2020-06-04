@@ -16,7 +16,6 @@
             "hash": "14120ba24ee9af212ebc26d6cf4984fde9c42d6f6bb30a834019ceb0d719adaa"
         }
     },
-    "bin": "4kvideodownloader.exe",
     "pre_install": [
         "$processname = \"4kvideodownloader\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
