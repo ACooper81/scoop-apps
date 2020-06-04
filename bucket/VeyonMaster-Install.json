@@ -13,7 +13,6 @@
             "hash": "caedee947cc60067497b9ee3502e28872688d3c55216429a21ee0be7770865fd"
         }
     },
-    "bin": "veyon-master.exe",
     "pre_install": [
         "$processname = \"veyon-master\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
