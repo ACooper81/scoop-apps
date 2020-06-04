@@ -10,7 +10,6 @@
             "hash": "7cc2ed8102602fb357aeef9e9fa7785b8f5f548244e4158c0306b559fd08859c"
         }
     },
-    "bin": "PerfTune.exe",
     "pre_install": [
         "$processname = \"PerfTune\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
