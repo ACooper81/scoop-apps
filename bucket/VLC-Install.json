@@ -13,7 +13,6 @@
             "hash": "ccfb91146cba92a3ec5274fee90d2cee35cfda7fd38240b3f65da26d53d28a0b"
         }
     },
-    "bin": "VLC.exe",
     "pre_install": [
         "$processname = \"VLC\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
