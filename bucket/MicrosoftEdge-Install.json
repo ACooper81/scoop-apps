@@ -1,16 +1,16 @@
 {
-    "version": "83.0.478.37",
+    "version": "83.0.478.45",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": "",
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "9804cc23a9909992e34f79a2c3fee27a443a8a2aa9548dea61fe6f21d2866fd7"
+            "hash": "bf55b2c1753452253ee5faa1bc47bc354adc14b6fe43db2bd08a1d1e3ee70c3b"
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "f43535735d7439f64a5a043e38377a78f35f22db77ea59f5d3506684dc09c701"
+            "hash": "fa9ab428bced5271b6db91a7a54a83a956ef0fe350b4f17611adc801febf9890"
         }
     },
     "installer": {
