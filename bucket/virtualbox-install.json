@@ -12,11 +12,6 @@
             "hash": "28f03359b9db46156628208dcb26572cf258d0803031a97c6533c49fff60dade"
         }
     },
-    "bin": [
-        "VirtualBox.exe",
-        "VirtualBoxVM.exe",
-        "VBoxHeadless.exe"
-    ],
     "pre_install": [
         "$processname = \"virtualbox\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
