@@ -13,7 +13,6 @@
             "hash": "3784bbb9d8c041566af2a923da24c597ca519be424ca69f358927a5c09205f6d"
         }
     },
-    "bin": "syncappw.exe",
     "pre_install": [
         "$processname = \"syncappw\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
