@@ -5,7 +5,6 @@
     "license": "",
     "url": "https://download.nomachine.com/download/6.10/Windows/nomachine_6.10.12_1.exe#/setup.exe",
     "hash": "97a5dbfa8de99b85ba28c1775f7bbb2dfaaf4ce8ba91babe2868b69402d1b84f",
-    "bin": "NoMachine.exe",
     "pre_install": [
         "$processname = \"NoMachine\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
