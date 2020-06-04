@@ -5,7 +5,6 @@
     "license": "",
     "url": "https://github.com/ytmdesktop/ytmdesktop/releases/download/v1.10.0/YouTube.Music.Desktop.App.Setup.1.10.0.exe#/setup.exe",
     "hash": "e7d4b5abe859f55632e9fb8f2e3ec9d4623025e4422954795c1a7f2a3cd66536",
-    "bin": "YouTube Music Desktop App.exe",
     "pre_install": [
         "$processname = \"YouTube Music Desktop App\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
