@@ -7,7 +7,6 @@
         "identifier": ""
     },
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
-    "bin": "videodownloader.exe",
     "pre_install": [
         "$processname = \"videodownloader\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
