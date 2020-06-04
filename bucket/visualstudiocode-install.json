@@ -16,7 +16,6 @@
             "hash": "64c7c9636e6c7a698085f4c4fd9cd4dc1e346ef182510c42190bc484853e1c06"
         }
     },
-    "bin": "Code.exe",
     "pre_install": [
         "$processname = \"Code\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
