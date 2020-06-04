@@ -41,7 +41,6 @@
             }
         }
     },
-    "bin": "AutoHotkey.exe",
     "pre_install": [
         "$processname = \"AutoHotkey\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
