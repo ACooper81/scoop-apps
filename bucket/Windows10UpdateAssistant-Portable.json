@@ -1,10 +1,10 @@
 {
-    "version": "November2019",
+    "version": "May2020",
     "description": "Windows 10 Update Assistant. Force update to latest version of Windows 10.",
     "homepage": "https://www.microsoft.com/en-GB/software-download/windows10",
     "license": "Freeware",
-    "url": "https://download.microsoft.com/download/9/b/f/9bf08afb-bfd8-488a-9ce6-90134cea4d8f/Windows10Upgrade9252.exe#/UpdateAssistant.exe",
-    "hash": "079ab78611f3868f55ccc9b9413eeb2085f33ea5346d2ac8cce320487226084d",
+    "url": "https://software-download.microsoft.com/download/pr/MediaCreationTool2004.exe#/UpdateAssistant.exe",
+    "hash": "E230E99A0836C468F8CA98FBE0CEDB7B73CE88229409035D1E5353B88397A781",
     "uninstaller": {
         "script": [
             "if ((is_admin) -and (Test-Path 'C:\\Windows10Upgrade')) {",
