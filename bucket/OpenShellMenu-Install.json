@@ -3,7 +3,7 @@
     "description": "Classic style Start Menu for Windows 7, 8, 8.1, 10",
     "homepage": "https://open-shell.github.io/Open-Shell-Menu/",
     "license": "Freeware",
-    "url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.143/OpenShellSetup_4_4_142.exe#/setup.exe",
+    "url": "https://github.com/Open-Shell/Open-Shell-Menu/releases/download/v4.4.142/OpenShellSetup_4_4_142.exe#/setup.exe",
     "hash": "38F23B6527C41C0F7C7760189AE7A7DA0747F7C85A04D464BBCB17E1D87EE914",
     "pre_install": [
         "$processname = \"StartMenu\"",
