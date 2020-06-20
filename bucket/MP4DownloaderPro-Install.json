@@ -20,7 +20,7 @@
     "installer": {
         "script": [
             "$programname = \"MP4 Downloader Pro*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "if((Get-Command \"C:\\Program Files (x86)\\Tomabo\\MP4 Downloader Pro\\MP4DownloaderPro.exe\").Version -lt [System.Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS /NORESTART /SP- | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
