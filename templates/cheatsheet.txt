@@ -60,6 +60,23 @@ Install Scripts
         ]
     },
 
+    "installer": {
+        "script": [
+            "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$filepath = \"$ProgramFilesX86\\folder\\file.exe\"",
+            "if((Get-Command \"$filepath\").Version -lt [System.Version]\"$version\")",
+            "{",
+            "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS /NORESTART /SP- | Out-Null",
+            "   Start-Sleep -Seconds 30",
+            "   if((Get-Command \"$filepath\").Version -lt [System.Version]\"$version\")",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+
 ==================================================
 Post_Install Scripts
 ==================================================
