@@ -6,6 +6,7 @@
     "architecture": {
         "url": "https://creativecloud.adobe.com/apps/download/creative-cloud#/setup.exe"
     },
+    "notes":"Download latest version from https://creativecloud.adobe.com/apps/download/creative-cloud",
     "pre_install": [
         "$processname = \"Creative Cloud\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
