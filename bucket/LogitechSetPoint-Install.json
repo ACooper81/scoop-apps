@@ -1,0 +1,56 @@
+{
+    "version": "6.69.125",
+    "description": "SetPoint lets you customize your mouse, keyboard, touchpad and number pad settings in Windows",
+    "homepage": "http://support.logitech.com/en_gb/software/setpoint",
+    "license": "",
+    "architecture": {
+        "64bit": {
+            "url": "https://website/filename.exe#/setup.exe",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "https://website/filename.exe#/setup.exe",
+            "hash": ""
+        }
+    },
+    "pre_install": [
+        "$processname = \"SetPoint\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "$programname = \"Logitech SetPoint*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "checkver": {
+        "url": "https://chocolatey.org/packages/setpoint",
+        "regex": "Logitech SetPoint (Install)\\s([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download01.logi.com/web/ftp/pub/techsupport/mouse/SetPoint$version_64.exe#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://download01.logi.com/web/ftp/pub/techsupport/mouse/SetPoint$version_32.exe#/setup.exe"
+            }
+        }
+    }
+}
