@@ -1,16 +1,16 @@
 {
-    "version": "6.69.125",
+    "version": "6.69.126",
     "description": "SetPoint lets you customize your mouse, keyboard, touchpad and number pad settings in Windows",
     "homepage": "http://support.logitech.com/en_gb/software/setpoint",
     "license": "",
     "architecture": {
         "64bit": {
-            "url": "https://website/filename.exe#/setup.exe",
-            "hash": ""
+            "url": "https://download01.logi.com/web/ftp/pub/techsupport/mouse/SetPoint6.69.126_64.exe#/setup.exe",
+            "hash": "bb0f093dd6cdd67b90e6a200cb4be49b1011b98ba62ab3aedc521a85526e157a"
         },
         "32bit": {
-            "url": "https://website/filename.exe#/setup.exe",
-            "hash": ""
+            "url": "https://download01.logi.com/web/ftp/pub/techsupport/mouse/SetPoint6.69.126_32.exe#/setup.exe",
+            "hash": "a0b9e2477f0bdc32f69e8695a87115c5b5d58789947f89c0a34d28bba624cda9"
         }
     },
     "pre_install": [
@@ -41,7 +41,7 @@
     },
     "checkver": {
         "url": "https://chocolatey.org/packages/setpoint",
-        "regex": "Logitech SetPoint (Install)\\s([\\d.]+)"
+        "regex": "Downloads of v ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
