@@ -1,5 +1,5 @@
 {
-    "version": "0.6.1.2",
+    "version": "0.6.1.3",
     "description": "The NV Updater program is used to update the driver for Geforce graphics cards from Nvidia. No NVIDIA account is required and the additional tool Geforce Experience is not installed.",
     "homepage": "https://www.sys-worx.net/nv-updater-eng/",
     "license": "Freeware",
