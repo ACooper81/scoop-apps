@@ -33,7 +33,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.msi_\" -Force"
+            "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
     "checkver": "github",
