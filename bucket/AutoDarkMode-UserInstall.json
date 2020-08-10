@@ -4,7 +4,7 @@
     "homepage": "https://github.com/Armin2208/Windows-Auto-Night-Mode",
     "license": "",
     "url": "https://github.com/Armin2208/Windows-Auto-Night-Mode/releases/download/3.0/AutoDarkMode_v3_0_1_Setup.exe#/setup.exe",
-    "hash": "9070876F8646688AFF139FAA699DB86ACFC4FE4B9AC7062131FCA775392261CF",
+    "hash": "eb58ad3ef3529ce1327abb7e2417f138b7aa0e5126ae65ee499986c09249282b",
     "pre_install": [
         "$processname = \"AutoDarkMode\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
