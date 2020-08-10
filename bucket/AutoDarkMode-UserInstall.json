@@ -21,7 +21,7 @@
         "script": [
             "if ( [environment]::OSVersion.Version.Major -ne 10 )",
             "{",
-            "   Write-Warning \"Skipping installation because Auto Dark Mode supports only Windows 10.\"",
+            "   Write-Warning \"Skipping installation because Auto Dark Mode only supports Windows 10.\"",
             "   exit 1",
             "}",
             "$programname = \"Auto Dark Mode*\"",
