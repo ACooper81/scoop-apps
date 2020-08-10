@@ -33,7 +33,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\AutoDarkMode_v3_Setup.exe\" -Force"
+            "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
     "checkver": "github",
