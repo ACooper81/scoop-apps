@@ -4,7 +4,7 @@
     "homepage": "https://www.bcuninstaller.com/",
     "license": "Apache-2.0",
     "url": "https://osdn.net/projects/bulk-crap-uninstaller/downloads/72271/BCUninstaller_4.16_portable.zip/",
-    "hash": "d383996cc87a82bbb6c51f775d711c887db6e44687d848b6fb0792fde703d548",
+    "hash": "1fdbcbc3613e8a2b67da548b8b2b105abefc448ce69c06eaf3540faafe36ae95",
     "bin": [
         "BCUninstaller.exe",
         "BCU-console.exe",
