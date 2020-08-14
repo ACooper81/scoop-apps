@@ -3,7 +3,7 @@
     "description": "Bulk program uninstaller with advanced automation.",
     "homepage": "https://www.bcuninstaller.com/",
     "license": "Apache-2.0",
-    "url": "https://www.fosshub.com/Bulk-Crap-Uninstaller.html/BCUninstaller_4.16_portable.zip",
+    "url": "https://www.fosshub.com/Bulk-Crap-Uninstaller.html?dwl=BCUninstaller_4.16_portable.zip",
     "hash": "d383996cc87a82bbb6c51f775d711c887db6e44687d848b6fb0792fde703d548",
     "bin": [
         "BCUninstaller.exe",
@@ -33,6 +33,6 @@
         "regex": "\"softwareVersion\">([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.fosshub.com/Bulk-Crap-Uninstaller.html/BCUninstaller_$version_portable.zip"
+        "url": "https://www.fosshub.com/Bulk-Crap-Uninstaller.html?dwl=BCUninstaller_$version_portable.zip"
     }
 }
