@@ -13,6 +13,21 @@
                     "autohotkey"
                 ],
                 "compiler/ahk2exe.exe"
+            ],
+            "shortcuts": [
+                [
+                    "AutoHotkeyU64.exe",
+                    "AutoHotkey"
+                ],
+                [
+                    "Compiler\\Ahk2Exe.exe",
+                    "AutoHotkey Compiler"
+                ],
+                [
+                    "AutoHotkeyU64.exe",
+                    "AutoHotkey WindowSpy Tool",
+                    "WindowSpy.ahk"
+                ]
             ]
         },
         "32bit": {
@@ -24,6 +39,21 @@
                     "autohotkey"
                 ],
                 "compiler/ahk2exe.exe"
+            ],
+            "shortcuts": [
+                [
+                    "AutoHotkeyU32.exe",
+                    "AutoHotkey"
+                ],
+                [
+                    "Compiler\\Ahk2Exe.exe",
+                    "AutoHotkey Compiler"
+                ],
+                [
+                    "AutoHotkeyU32.exe",
+                    "AutoHotkey WindowSpy Tool",
+                    "WindowSpy.ahk"
+                ]
             ]
         }
     },
