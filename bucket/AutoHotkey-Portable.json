@@ -17,15 +17,15 @@
             "shortcuts": [
                 [
                     "AutoHotkeyU64.exe",
-                    "AutoHotkey"
+                    "AutoHotkey/AutoHotkey"
                 ],
                 [
                     "Compiler\\Ahk2Exe.exe",
-                    "AutoHotkey Compiler"
+                    "AutoHotkey/AutoHotkey Compiler"
                 ],
                 [
                     "AutoHotkeyU64.exe",
-                    "AutoHotkey WindowSpy Tool",
+                    "AutoHotkey/AutoHotkey WindowSpy Tool",
                     "WindowSpy.ahk"
                 ]
             ]
@@ -43,15 +43,15 @@
             "shortcuts": [
                 [
                     "AutoHotkeyU32.exe",
-                    "AutoHotkey"
+                    "AutoHotkey/AutoHotkey"
                 ],
                 [
                     "Compiler\\Ahk2Exe.exe",
-                    "AutoHotkey Compiler"
+                    "AutoHotkey/AutoHotkey Compiler"
                 ],
                 [
                     "AutoHotkeyU32.exe",
-                    "AutoHotkey WindowSpy Tool",
+                    "AutoHotkey/AutoHotkey WindowSpy Tool",
                     "WindowSpy.ahk"
                 ]
             ]
