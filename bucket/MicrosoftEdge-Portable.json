@@ -18,7 +18,7 @@
     },
     "shortcuts": [
         [
-            "msedge.exe",
+            "$version\\msedge.exe",
             "Microsoft Edge"
         ]
     ],
