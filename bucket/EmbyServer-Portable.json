@@ -13,7 +13,7 @@
             "shortcuts": [
                 [
                     "system\\EmbyServer.exe",
-                    "EMBY Server"
+                    "Emby Server"
                 ]
             ]
         },
@@ -23,7 +23,7 @@
             "shortcuts": [
                 [
                     "system\\EmbyServer.exe",
-                    "EMBY Server"
+                    "Emby Server"
                 ]
             ]
         }
