@@ -5,7 +5,6 @@
     "license": "MIT",
     "url": "https://github.com/Wox-launcher/Wox/releases/download/v1.4.1196/Wox-1.4.1196.zip",
     "hash": "46e83bf0e22ee296488167b3e8211be0c6e1800942deb3a70c4f971ed21346d8",
-    "extract_dir": "lib\\net45",
     "bin": "Wox.exe",
     "shortcuts": [
         [
