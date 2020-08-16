@@ -10,6 +10,12 @@ https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder?vie
 "$ProgramFiles = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles\')"
 "$ProgramFilesX86 = [System.Environment]::GetEnvironmentVariable(\'ProgramFiles(x86)\')"
 
+"if ([System.Environment]::Is64BitOperatingSystem){",
+"   $ShortcutTarget = \"$ProgramFilesPath\\IrfanView\\i_view64.exe\"",
+"}else{",
+"   $ShortcutTarget = \"$ProgramFilesPath\\IrfanView\\i_view.exe\"",
+"}",
+
 [version]"81.0.4044.92" -ge [version]"81.0.4044"
 $a = "3.0.2.2.0"
 $b = "3.0.2.3.0"
