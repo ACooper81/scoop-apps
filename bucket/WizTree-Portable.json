@@ -4,7 +4,7 @@
     "homepage": "https://antibody-software.com/web/software/software/wiztree-finds-the-files-and-folders-using-the-most-disk-space-on-your-hard-drive",
     "license": "Unknown",
     "url": "https://antibody-software.com/files/wiztree___portable.zip",
-    "hash": "3a6fcb7a32e2352f802e35bd68d013782ef2850ffcd65147933a30e5507363ff",
+    "hash": "79ded9e7ff3f1f85c6b3fbba8be92ab353a18b4691ac6cc76f4f0fba0f48f66a",
     "pre_install": "if (-not (Test-Path \"$persist_dir\\WizTree3.ini\")) { New-Item \"$dir\\WizTree3.ini\" -ItemType File | Out-Null }",
     "architecture": {
         "64bit": {
