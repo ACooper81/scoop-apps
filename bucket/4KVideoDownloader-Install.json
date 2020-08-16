@@ -45,8 +45,7 @@
     },
     "post_install": [
         "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
-        "if (Test-Path \"$DesktopPath\\4K Video Downloader.lnk\") {Remove-Item \"$DesktopPath\\4K Video Downloader.lnk\" -Force}",
-        "Move-Item -Path \"$env:USERPROFILE\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\4K Video Downloader.lnk\" -Destination \"C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\4K Video Downloader.lnk\" -Force"
+        "if (Test-Path \"$DesktopPath\\4K Video Downloader.lnk\") {Remove-Item \"$DesktopPath\\4K Video Downloader.lnk\" -Force}"
     ],
     "checkver": {
         "url": "https://www.4kdownload.com/products/product-videodownloader",
