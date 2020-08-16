@@ -1,0 +1,44 @@
+{
+    "version": "3.1.7",
+    "description": "A developer platform for running desktop apps.",
+    "homepage": "https://dotnet.microsoft.com/",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.7-windows-x64-installer#/setup.exe",
+            "hash": "d0491061b4c94c01437e515dd85150174c0b6e339ebf8686b815e22e186ac752"
+        },
+        "32bit": {
+            "url": "https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.7-windows-x86-installer#/setup.exe",
+            "hash": "5858551ffa66e77a24ec4fcadf559156749b0abe8cc683b4004fb93b117f1936"
+        }
+    },
+    "installer": {
+        "script": [
+            "$programname = \"Microsoft Windows Desktop Runtime*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /quiet | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "checkver": {
+        "url": "https://chocolatey.org/packages/dotnetcore-runtime#files",
+        "regex": "Microsoft .NET Core Runtime ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-$version-windows-x64-installer#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-$version-windows-x86-installer#/setup.exe"
+            }
+        }
+    }
+}
