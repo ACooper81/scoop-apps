@@ -6,11 +6,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.7-windows-x64-installer#/setup.exe",
-            "hash": "d0491061b4c94c01437e515dd85150174c0b6e339ebf8686b815e22e186ac752"
+            "hash": "D922F5E58FB04DD5C9FECE9FAABA215726E7F987B13B3D17E8F8A0CA35F70799"
         },
         "32bit": {
             "url": "https://dotnet.microsoft.com/download/dotnet-core/thank-you/runtime-desktop-3.1.7-windows-x86-installer#/setup.exe",
-            "hash": "5858551ffa66e77a24ec4fcadf559156749b0abe8cc683b4004fb93b117f1936"
+            "hash": "7523C936B92819E40817881FBFB8BECD6EE7B35967AF4201078299D10EEBA640"
         }
     },
     "installer": {
