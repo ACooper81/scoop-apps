@@ -28,14 +28,6 @@
         "   }",
         "}"
     ],
-    "bin": "qbittorrent.exe",
-    "shortcuts": [
-        [
-            "qbittorrent.exe",
-            "qBittorrent Enhanced"
-        ]
-    ],
-    "persist": "profile",
     "installer": {
         "script": [
             "$programname = \"qbittorrent*\"",
