@@ -16,6 +16,7 @@
     "installer": {
         "script": [
             "$programname = \"Microsoft Windows Desktop Runtime*\"",
+            "$downloadlink = \"https://dotnet.microsoft.com/download/dotnet-core/current/runtime\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /quiet | Out-Null",
