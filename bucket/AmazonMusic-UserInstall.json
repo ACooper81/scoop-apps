@@ -16,7 +16,7 @@
         "       $process | Stop-Process -Force",
         "   }",
         "}",
-        "do {Sleep 1} until (Get-Process \"Amazon Music\" -ErrorAction SilentlyContinue); Get-Process \"Amazon Music Helper\" | Stop-Process; Get-Process \"Amazon Music\" | Stop-Process"
+        "do {Sleep 1} until (Get-Process \"Amazon Music\" -ErrorAction SilentlyContinue); Get-Process \"Amazon Music Helper\" | Stop-Process -Force; Get-Process \"Amazon Music\" | Stop-Process -Force"
     ],
     "installer": {
         "script": [
