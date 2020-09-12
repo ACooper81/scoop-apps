@@ -16,7 +16,8 @@
         "       $process | Stop-Process -Force",
         "   }",
         "}",
-        "do {Sleep 1} until (Get-Process \"Amazon Music\" -ErrorAction SilentlyContinue); Get-Process \"Amazon Music Helper\" | Stop-Process -Force; Get-Process \"Amazon Music\" | Stop-Process -Force"
+        "$command = \"do {Sleep 1} until (Get-Process \"Amazon Music\" -ErrorAction SilentlyContinue); Get-Process \"Amazon Music Helper\" | Stop-Process -Force; Get-Process \"Amazon Music\" | Stop-Process -Force\"",
+        "Start-Process powershell -Command $command"
     ],
     "installer": {
         "script": [
