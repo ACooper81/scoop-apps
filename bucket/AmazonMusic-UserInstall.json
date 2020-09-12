@@ -5,6 +5,19 @@
     "license": "",
     "url": "https://images-na.ssl-images-amazon.com/images/G/01/digital/music/morpho/installers/20200905/0031046272/AmazonMusicInstaller.exe",
     "hash": "73A2946C961D01B23FCE6BFF0FA26B71D47F00CFF32B7C7BB2BED3ABD72AA2E4",
+    "pre_install": [
+        "$processname = \"Amazon Music\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}",
+        "do {Sleep 1} until (Get-Process \"Amazon Music\" -ErrorAction SilentlyContinue); Get-Process \"Amazon Music Helper\" | Stop-Process; Get-Process \"Amazon Music\" | Stop-Process"
+    ],
     "installer": {
         "script": [
             "$programname = \"Amazon Music*\"",
@@ -20,7 +33,8 @@
             "$programname = \"Amazon Music\"",
             "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
             "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}",
-            "taskkill /F /IM \"Amazon Music.exe\" /FI 'status eq running'"
+            "taskkill /F /IM \"Amazon Music\" /FI 'status eq running'",
+            "taskkill /F /IM \"Amazon Music Helper\" /FI 'status eq running'"
         ]
     },
     "checkver": {
