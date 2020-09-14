@@ -20,7 +20,7 @@
             "Darker"
         ]
     ],
-    "persist": "appsettings.json2",
+    "persist": "appsettings.json",
     "checkver": {
         "github": "https://github.com/angelwzr/darker"
     },
