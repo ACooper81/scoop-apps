@@ -11,7 +11,7 @@
         }
     },
     "installer": {
-        "script": "if (-not (Test-Path \"$persist_dir\\appsettings.json\")) { New-Item \"$dir\\appsettings.json\" -Value \"{\"ThemeMode\":\"Both\",\"IsAutoUpdateEnabled\":true}\" | Out-Null }"
+        "script": "if (-not (Test-Path \"$persist_dir\\appsettings.json\")) { New-Item \"$dir\\appsettings.json\" -Value '{\"ThemeMode\":\"Both\",\"IsAutoUpdateEnabled\":true}' | Out-Null }"
     },
     "bin": "darker.exe",
     "shortcuts": [
