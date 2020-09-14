@@ -1,13 +1,13 @@
 {
-    "version": "0",
+    "version": "1.1.0.0",
     "description": "This simple tray app for Windows 10 allows you to switch system or applications theme (Dark/Light) with one click",
     "homepage": "https://mswin.me/darker/",
     "license": "Freeware",
     "notes": "",
     "architecture": {
         "64bit": {
-            "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z",
-            "hash": "0e783f6d60100e10b17e135479ffd1b5ecf8acfb76c10e0f58da29f6132fc603"
+            "url": "https://github.com/angelwzr/darker/releases/download/1.1.0.0/darker-1.1.zip",
+            "hash": "f6d1086dd301987b61ecb17420c34a5ced8d29fef31bf7d0b27997266353e439"
         }
     },
     "bin": "darker.exe",
@@ -24,7 +24,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z"
+                "url": "https://github.com/angelwzr/darker/releases/download/$version/darker-$majorVersion.$minorVersion.zip"
             }
         }
     }
