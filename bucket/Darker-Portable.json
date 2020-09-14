@@ -13,6 +13,9 @@
     "pre_install": [
         "if (!(Test-Path \"$dir\\usersettings.json\")) {New-Item -Path \"$dir\\usersettings.json\" -Type \"file\"}"
     ],
+    "installer": {
+        "script": "if (-not (Test-Path \"$persist_dir\\appsettings.json\")) { New-Item \"$dir\\appsettings.json\" | Out-Null }"
+    },
     "bin": "darker.exe",
     "shortcuts": [
         [
