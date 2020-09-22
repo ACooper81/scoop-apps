@@ -19,7 +19,7 @@
     },
     "pre_install": [
         "$file = \"$persist_dir\\brave-portable.sample.yml\"",
-        "if (-not (Test-Path \"$persist_dir\\brave-portable.sample.yml\")) {New-Item $file -ItemType File -Value (\"common:\" + [Environment]::NewLine)} | Out-Null",
+        "if (-not (Test-Path \"$persist_dir\\brave-portable.sample.yml\")) {New-Item $file -ItemType File -Value (\"common:\" + [Environment]::NewLine)}",
         "Add-Content $file (\"  disable_log: false\")",
         "Add-Content $file (\"  args: []\")",
         "Add-Content $file (\"  env: {}\")",
