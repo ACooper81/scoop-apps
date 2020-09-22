@@ -25,8 +25,7 @@
         "Add-Content $file (\"  env: {}\")",
         "Add-Content $file ('  app_path: \"\"')",
         "Add-Content $file (\"app:\")",
-        "Add-Content $file (\"  cleanup: false\")",
-        "if (-not (Test-Path \"$persist_dir\\portapp-prev.json\")) { New-Item \"$dir\\portapp-prev.json\" -ItemType File | Out-Null }"
+        "Add-Content $file (\"  cleanup: false\")"
     ],
     "bin": "brave-portable.exe",
     "persist": [
