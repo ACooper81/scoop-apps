@@ -32,8 +32,7 @@
         "data",
         "log",
         "reg",
-        "brave-portable.sample.yml",
-        "portapp-prev.json"
+        "brave-portable.sample.yml"
     ],
     "shortcuts": [
         [
