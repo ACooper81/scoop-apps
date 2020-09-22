@@ -17,6 +17,10 @@
             "hash": "16d449c819ba06c9e50c12fe0ebf04c9b925f4c1411e2648201667116fa2253d"
         }
     },
+    "pre_install": [
+        "if (-not (Test-Path \"$persist_dir\\brave-portable.sample.yml\")) { New-Item \"$dir\\brave-portable.sample.yml\" -ItemType File | Out-Null }",
+        "if (-not (Test-Path \"$persist_dir\\portapp-prev.json\")) { New-Item \"$dir\\portapp-prev.json\" -ItemType File | Out-Null }"
+    ],
     "bin": "brave-portable.exe",
     "persist": [
         "data",
