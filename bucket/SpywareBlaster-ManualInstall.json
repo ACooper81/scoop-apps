@@ -41,6 +41,6 @@
         "regex": ">SpywareBlaster ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.majorgeeks.com/mg/getmirror/spywareblaster,1.html#/setup.exe"
+        "url": "https://www.brightfort.net/downloads/spywareblastersetup$majorVersion$minorVersion.exe#/setup.exe"
     }
 }
