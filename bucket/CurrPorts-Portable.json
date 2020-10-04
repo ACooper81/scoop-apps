@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "cports.exe",
-            "CurrPorts "
+            "CurrPorts"
         ]
     ],
     "checkver": "CurrPorts v([\\d.]+)",
