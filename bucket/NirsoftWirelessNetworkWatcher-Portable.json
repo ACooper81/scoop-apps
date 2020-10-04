@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "WNetWatcher.exe",
-            "Wireless Network Watcher"
+            "NirSoft\\Wireless Network Watcher"
         ]
     ],
     "checkver": "Wireless Network Watcher v([\\d.]+)",

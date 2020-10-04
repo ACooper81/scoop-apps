@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "MultiMonitorTool.exe",
-            "MultiMonitorTool"
+            "NirSoft\\MultiMonitorTool"
         ]
     ],
     "checkver": "MultiMonitorTool v([\\d.]+)",

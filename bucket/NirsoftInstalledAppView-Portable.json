@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "InstalledAppView.exe",
-            "InstalledAppView"
+            "NirSoft\\InstalledAppView"
         ]
     ],
     "checkver": "InstalledAppView v([\\d.]+)",

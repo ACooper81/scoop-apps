@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "RegistryChangesView.exe",
-            "RegistryChangesView"
+            "NirSoft\\RegistryChangesView"
         ]
     ],
     "checkver": "RegistryChangesView v([\\d.]+)",

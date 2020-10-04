@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "AdvancedRun.exe",
-            "AdvancedRun"
+            "NirSoft\\AdvancedRun"
         ]
     ],
     "checkver": "AdvancedRun v([\\d.]+)",

@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "RegFromApp.exe",
-            "RegFromApp"
+            "NirSoft\\RegFromApp"
         ]
     ],
     "checkver": "RegFromApp v([\\d.]+)",

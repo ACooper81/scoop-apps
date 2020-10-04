@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "ControlMyMonitor.exe",
-            "ControlMyMonitor"
+            "NirSoft\\ControlMyMonitor"
         ]
     ],
     "checkver": "ControlMyMonitor v([\\d.]+)",

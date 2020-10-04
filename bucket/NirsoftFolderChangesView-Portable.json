@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "FolderChangesView.exe",
-            "FolderChangesView"
+            "NirSoft\\FolderChangesView"
         ]
     ],
     "checkver": "FolderChangesView v([\\d.]+)",

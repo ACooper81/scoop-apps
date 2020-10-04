@@ -17,7 +17,7 @@
     "shortcuts": [
         [
             "NetworkOpenedFiles.exe",
-            "NetworkOpenedFiles"
+            "NirSoft\\NetworkOpenedFiles"
         ]
     ],
     "checkver": "NetworkOpenedFiles v([\\d.]+)",
