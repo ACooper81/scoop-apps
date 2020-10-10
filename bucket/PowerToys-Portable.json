@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.23.2/PowerToysSetup-0.23.2-x64.exe",
+            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.23.2/PowerToysSetup-0.23.2-x64.exe#/dl.zip",
             "hash": "2233fe2e2b961029e6cae2d887e30b2a663a4633647e3640e9ab8cb5b3db213c"
         }
     },
@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.exe"
+                "url": "https://github.com/microsoft/PowerToys/releases/download/v$version/PowerToysSetup-$version-x64.exe#/dl.zip"
             }
         }
     }
