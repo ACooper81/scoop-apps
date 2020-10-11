@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.22.0/PowerToysSetup-0.22.0-x64.exe#/dl.zip",
+            "url": "https://github.com/microsoft/PowerToys/releases/download/v0.22.0-Experimental/PowerToysSetup-0.22.0-x64.msi#/dl.zip",
             "hash": "8345191DB421B8F1EF7714F05708DAE28FAEEFFF612EAC3DF5908CED269240B5"
         }
     },
