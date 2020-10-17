@@ -4,7 +4,7 @@
     "homepage": "https://www.sys-worx.net/nv-updater-eng/",
     "license": "Freeware",
     "notes": "To run at startup you need to right click on the tray icon and click Options then select the 'Autorun NV Updater at Windows startup'.",
-    "url": "https://www.sys-worx.net/filebase/file/9-nv-updater-nvidia-driver-updater/#versions",
+    "url": "https://www.sys-worx.net/filebase/download/43/",
     "hash": "8ecf1736f2181e5e3b06948c20c0238675c1df6497ccd0af33995287d4dfaf88",
     "bin": "nv_updater.exe",
     "shortcuts": [
@@ -16,8 +16,5 @@
     "checkver": {
         "url": "https://www.sys-worx.net/filebase/file/9-nv-updater-nvidia-driver-updater/",
         "regex": "version\">([\\d.]+)</span>"
-    },
-    "autoupdate": {
-        "url": "https://www.sys-worx.net/filebase/file/9-nv-updater-nvidia-driver-updater/#versions"
     }
 }
