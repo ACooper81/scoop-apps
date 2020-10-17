@@ -5,7 +5,7 @@
     "license": "Freeware",
     "notes": "To run at startup you need to right click on the tray icon and click Options then select the 'Autorun NV Updater at Windows startup'.",
     "url": "https://www.sys-worx.net/filebase/download/43/",
-    "hash": "8ecf1736f2181e5e3b06948c20c0238675c1df6497ccd0af33995287d4dfaf88",
+    "hash": "badea9126f46981ed21a3292a7869d97f69b62bf2737eeb17d5f678ddbfdf1ea",
     "bin": "nv_updater.exe",
     "shortcuts": [
         [
