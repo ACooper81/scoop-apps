@@ -7,11 +7,6 @@
     "hash": "b566c700db92041e96d9e75319f70f5fd37ad4346c8daff282389c386bfdf8dd",
     "installer": {
         "script": [
-            "if (!(is_admin)) {",
-            "    error \"Administrator rights are required to install $app.\"",
-            "    exit 1",
-            "}",
-            "",
             "$programname = \"Rufus*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
