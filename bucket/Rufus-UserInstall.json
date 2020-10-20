@@ -16,7 +16,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force"
+            "Remove-Item \"$dir\\rufus.appx\" -Force"
         ]
     },
     "checkver": {
