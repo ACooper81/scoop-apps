@@ -19,6 +19,12 @@
             "Remove-Item \"$dir\\rufus.appx\" -Force"
         ]
     },
+    "uninstaller": {
+        "script": [
+            "$programname = \"Rufus\"",
+            "if(Get-AppxPackage -Name $programname) {Get-AppxPackage -Name $programname | Remove-AppxPackage}"
+        ]
+    },
     "checkver": {
         "github": "https://github.com/pbatard/rufus"
     },
