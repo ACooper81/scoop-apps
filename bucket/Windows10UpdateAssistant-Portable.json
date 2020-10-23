@@ -16,8 +16,8 @@
     },
     "shortcuts": [
         [
-            "UpdateAssistant.exe",
-            "Windows 10 Update Assistant"
+            "Windows10Upgrade9252.exe",
+            "Windows 10 Upgrade Assistant"
         ]
     ],
     "checkver": {
