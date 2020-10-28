@@ -10,7 +10,7 @@
             "shortcuts": [
                 [
                     "APO-OK_p.exe",
-                    "AutoPowerOptionsOK"
+                    "SoftwareOK\\AutoPowerOptionsOK"
                 ]
             ]
         },
@@ -20,7 +20,7 @@
             "shortcuts": [
                 [
                     "APO-OK_p.exe",
-                    "AutoPowerOptionsOK"
+                    "SoftwareOK\\AutoPowerOptionsOK"
                 ]
             ]
         }
