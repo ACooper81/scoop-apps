@@ -43,7 +43,7 @@
     ],
     "checkver": {
         "url": "https://www.hwinfo.com/ver.txt",
-        "re": "([\\d.]+-\\d+)"
+        "regex": "([\\d.]+-\\d+)"
     },
     "autoupdate": {
         "architecture": {
