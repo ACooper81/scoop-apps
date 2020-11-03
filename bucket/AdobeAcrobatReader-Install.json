@@ -51,7 +51,7 @@
     ],
     "checkver": {
         "url": "https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/index.html#installers",
-        "re": "<em>([\\d.]+)"
+        "regex": "<em>([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/$cleanVersion/AcroRdrDCUpd$cleanVersion.msp#/setup.msp_"
