@@ -1,10 +1,10 @@
 {
-    "version": "0",
+    "version": "8.16",
     "description": "Soft Organizer. Free Unnecessary Programs Removal Tool",
     "homepage": "https://www.chemtable.com/soft-organizer.htm",
     "license": "Proprietary",
-    "url": "https://website/filename.exe#/setup.exe",
-    "hash": "",
+    "url": "https://www.chemtable.com/files/soft-organizer-setup.exe#/setup.exe",
+    "hash": "2f5fa6bfab5b11a74ee176dba05941b2e53760d83791438b6158a01c02b72420",
     "pre_install": [
         "$processname = \"SoftOranizer\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
