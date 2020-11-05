@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "d8b3055d2373918577178ae0bd872de7be0addd3142062706f102bdabda706d6"
+            "hash": "21d89ef6cf0a6db8f2ffd6693a10ff7e3f4a571c402f943164a9e173a0fe52bd"
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
