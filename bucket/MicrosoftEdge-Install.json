@@ -10,7 +10,7 @@
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "0ad9f06cc396f92e01a85ef472667880f6ca4996a33ca8cf37dfbf9a6902dbba"
+            "hash": "7eda71b7982933423efb9ce649319f56a6b23ecd4eff8ee3c913f7421eb05dc8"
         }
     },
     "installer": {
