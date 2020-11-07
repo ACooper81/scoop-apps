@@ -32,7 +32,7 @@
             "while ((Get-Process -Name 'AutorunOrganizer.exe' -ErrorAction SilentlyContinue).Count -eq 0) {",
             "   Start-Sleep -Milliseconds 50",
             "}",
-            "taskkill /F /IM \"AutorunOrganizer.exe\" /FI 'status eq running'"
+            "taskkill /F /IM 'AutorunOrganizer.exe' /FI 'status eq running'"
         ]
     },
     "checkver": {
