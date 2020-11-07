@@ -38,7 +38,7 @@
     ],
     "checkver": {
         "url": "https://www.chemtable.com/soft-organizer.htm",
-        "regex": "<title>Download Soft Organizer ([\\d.]+)"
+        "regex": "<title>Soft Organizer ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.chemtable.com/files/soft-organizer-setup.exe#/setup.exe"
