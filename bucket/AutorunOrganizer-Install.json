@@ -28,7 +28,11 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force"
+            "Remove-Item \"$dir\\setup.exe\" -Force",
+            "while ((Get-Process -Name 'AutorunOrganizer' -ErrorAction SilentlyContinue).Count -eq 0) {",
+            "   Start-Sleep -Milliseconds 50",
+            "}",
+            "taskkill /F /IM AutorunOrganizer /FI 'status eq running'"
         ]
     },
     "checkver": {
