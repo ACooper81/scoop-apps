@@ -37,8 +37,8 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "http://www.softwarerating.info/programs/?id=1362150663320830",
-        "regex": "<title>Download Soft Organizer ([\\d.]+).0.0"
+        "url": "https://www.chemtable.com/soft-organizer.htm",
+        "regex": "<title>Download Soft Organizer ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.chemtable.com/files/soft-organizer-setup.exe#/setup.exe"
