@@ -1,10 +1,10 @@
 {
-    "version": "0",
+    "version": "4.45",
     "description": "Autorun Organizer. Free Startup Manager for Windows",
     "homepage": "https://www.chemtable.com/autorun-organizer.htm",
     "license": "Freeware",
-    "url": "https://www.chemtable.com/files/soft-organizer-setup.exe#/setup.exe",
-    "hash": "2f5fa6bfab5b11a74ee176dba05941b2e53760d83791438b6158a01c02b72420",
+    "url": "https://www.chemtable.com/files/ao3/autorun-organizer-setup.exe#/setup.exe",
+    "hash": "7bfcc96a8ec1a674caaac0d91323169a4dd0f5b725e30dfe43a2e681c4b5549f",
     "pre_install": [
         "$processname = \"AutorunOrganizer\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
