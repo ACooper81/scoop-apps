@@ -20,7 +20,7 @@
     "installer": {
         "script": [
             "$programname = \"BootRacer*\"",
-            "$processname = \"BootRacer\"",
+            "$processname = \"BootRace.exe\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\BootRacerSetup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
@@ -30,7 +30,7 @@
             "   }",
             "}",
             "Remove-Item \"$dir\\BootRacerSetup.exe\" -Force",
-            "while ((Get-Process -Name 'Bootracer' -ErrorAction SilentlyContinue).Count -eq 0) {",
+            "while ((Get-Process -Name 'Bootrace' -ErrorAction SilentlyContinue).Count -eq 0) {",
             "   Start-Sleep -Milliseconds 50",
             "}",
             "taskkill /F /IM $processname /FI 'status eq running'"
