@@ -30,7 +30,7 @@
             "   }",
             "}",
             "Remove-Item \"$dir\\BootRacerSetup.exe\" -Force",
-            "while ((Get-Process -Name 'Bootrace.exe' -ErrorAction SilentlyContinue).Count -eq 0) {",
+            "while ((Get-Process -Name 'Bootracer' -ErrorAction SilentlyContinue).Count -eq 0) {",
             "   Start-Sleep -Milliseconds 50",
             "}",
             "taskkill /F /IM $processname /FI 'status eq running'"
