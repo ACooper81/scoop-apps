@@ -20,7 +20,7 @@
     "installer": {
         "script": [
             "$programname = \"BootRacer*\"",
-            "$processname = \"BootRace.exe\"",
+            "$processname = \"BootRacer\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\BootRacerSetup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
