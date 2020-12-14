@@ -16,10 +16,11 @@
 .PARAMETER Recurse
     Manifests in all subdirectories will be checked. (except .vscode and bin)
 .PARAMETER Rest
-    -s - Skip manifest with latest version
+    -ns - Show all (even up to date) manifests
     -u - Update given manifests
     -f - Force update given manifests
         Usefull for hash updates
+    -v VER - Version to be updated to.
 .EXAMPLE
     PS BUCKETROOT > .\bin\checkver.ps1
     Check all manifests in root.
@@ -53,10 +54,12 @@
 #>
 param(
     [Parameter(ValueFromPipeline = $true)]
-    [Alias('App')]
+    [Alias('App', 'Name')]
     [String[]] $Manifest = '*',
     [ValidateScript( { if ( Test-Path $_ -Type Container) { $true } else { $false } })]
     [String] $Dir = "$PSScriptRoot\..\bucket",
+    [Alias('ns')]
+    [Switch] $NoSkip,
     [Switch] $Recurse,
     [Parameter(ValueFromRemainingArguments = $true)]
     [String[]] $Rest = @()
@@ -68,12 +71,19 @@ begin {
     if (-not $env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path (scoop prefix scoop) }
     $Dir = Resolve-Path $Dir
     $Script = "$env:SCOOP_HOME\bin\checkver.ps1"
-    $Rest = $Rest | Select-Object -Unique # Remove duplicated switches
+    $Rest = $Rest | Select-Object -Unique # Remove duplicated switches	# Handle default -s parameter
+
+    # Don't skip if NoSkip is present
+    if ((!$NoSkip) -and ($Rest -cnotcontains '-s')) { $Rest += '-s' }
+    $Rest = $Rest -join ' '
 }
 
 process {
     if ($Recurse) {
-        Get-RecursiveFolder | ForEach-Object { Invoke-Expression -Command "$Script -Dir ""$_"" $Rest" }
+        Get-RecursiveFolder | ForEach-Object {
+            Invoke-Expression -Command "$Script -Dir ""$_"" $Rest"
+            Write-Host '---'
+        }
     } else {
         foreach ($man in $Manifest) { Invoke-Expression -Command "$Script -App ""$man"" -Dir ""$Dir"" $Rest" }
     }
