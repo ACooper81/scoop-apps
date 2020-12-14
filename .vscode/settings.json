@@ -1,9 +1,10 @@
 {
     "json.schemas": [
         {
-            "url": "https://raw.githubusercontent.com/lukesampson/scoop/master/schema.json",
+            "url": "https://raw.githubusercontent.com/Ash258/Scoop-Core/NEW/schema.json",
             "fileMatch": [
                 ".vscode/Template.jsonc",
+                "TODO/*.json",
                 "bucket/*.json",
             ],
         },
