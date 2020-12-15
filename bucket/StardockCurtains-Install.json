@@ -4,7 +4,7 @@
     "homepage": "https://www.stardock.com/products/curtains/",
     "license": "Proprietary",
     "changelog": "https://www.stardock.com/products/curtains/history",
-    "url": "https://cdn.stardock.us/downloads/public/software/curtains/Curtains_setup.exe#/setup.exe",
+    "url": "https://cdn.stardock.us/downloads/public/software/curtains/Curtains_setup_sd.exe#/setup.exe",
     "hash": "b64f123e59f13ee8931fe6f52f1b9bcf8a01b97c271ed847e92c7ea5a54d50de",
     "installer": {
         "script": [
@@ -25,6 +25,6 @@
         "regex": "<h2>Update to Version ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://cdn.stardock.us/downloads/public/software/curtains/Curtains_setup.exe#/setup.exe"
+        "url": "https://cdn.stardock.us/downloads/public/software/curtains/Curtains_setup_sd.exe#/setup.exe"
     }
 }
