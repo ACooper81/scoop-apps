@@ -1,10 +1,10 @@
 {
-    "version": "0",
+    "version": "3.01",
     "description": "Files Inspector. A Free Utility For Freeing Up Disk Space Manually",
     "homepage": "https://www.chemtable.com/files-inspector.htm",
     "license": "Freeware",
-    "url": "https://www.chemtable.com/files/ao3/autorun-organizer-setup.exe#/setup.exe",
-    "hash": "d9608e9e4cb70fb251d88e4e49c40b38c0688d9a9328d9c23108ae82459ba07e",
+    "url": "https://www.chemtable.com/files/fi/files-inspector-setup.exe#/setup.exe",
+    "hash": "5d79481fac4af9efad123a9465f802615350eb74558ae5ca1bd1eca7b5fedb19",
     "pre_install": [
         "$processname = \"FilesInspector\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
