@@ -30,6 +30,6 @@
     },
     "checkver": {
         "url": "https://dotnet.microsoft.com/download/dotnet/5.0",
-        "regex": ".NET Desktop Runtime  ([\\d.]+)"
+        "regex": ".NET Desktop Runtime ([\\d.]+)"
     }
 }
