@@ -39,8 +39,9 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://www.kcsoftwares.com/sumo/view.php?uid=312543986&ProductName=GOG%20Galaxy&Company=GOG.com&prot=2",
-        "regex": "<small>v([\\d.]+)"
+        "url": "https://remote-config.gog.com/components/webinstaller?component_version=2.0.0",
+        "regex": "\"version\": \"([\\d.]+)",
+        "reverse": true
     },
     "autoupdate": {
         "url": "https://cdn.gog.com/open/galaxy/client/$version/setup_galaxy_$versiona.exe#/setup.exe"
