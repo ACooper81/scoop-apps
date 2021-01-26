@@ -6,6 +6,7 @@
         "identifier": "Freeware",
         "url": "https://www.google.com/chrome/privacy/eula_text.html"
     },
+    "changelog": "https://chromereleases.googleblog.com/",
     "architecture": {
         "64bit": {
             "url": "https://dl.google.com/release2/chrome/CUtGVpXHPGLv_SbZcTshgQ_87.0.4280.88/87.0.4280.88_chrome_installer.exe#/dl.7z",
