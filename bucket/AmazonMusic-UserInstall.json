@@ -13,7 +13,7 @@
             "   Get-Process 'Amazon Music' -ErrorAction SilentlyContinue | Stop-Process -Force",
             "   $command = \"do {Sleep 1} until (Get-Process 'Amazon Music' -ErrorAction SilentlyContinue); Get-Process 'Amazon Music Helper' | Stop-Process -Force; Get-Process 'Amazon Music' | Stop-Process -Force\"",
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command -WindowStyle Hidden",
-            "   &\"$dir\\AmazonMusicInstaller.exe\" --mode unattended | Out-Null",
+            "   &\"$dir\\Amazon+Music+Installer.exe\" --mode unattended | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
