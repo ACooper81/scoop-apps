@@ -21,8 +21,8 @@
         "Assert-Administrator",
         "$programname = \"Google Chrome*\"",
         "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
-        "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name $programname -MinimumVersion $version -ErrorAction SilentlyContinue)`",
-        "-or !(Test-Path \"$ProgramFiles\\Google\\Chrome\\Application\\$version\\chrome.dll\"))",
+        "if((Get-Package -Provider Programs -IncludeWindowsInstaller -Name $programname -MinimumVersion $version -ErrorAction SilentlyContinue)`",
+        "-or (Test-Path \"$ProgramFiles\\Google\\Chrome\\Application\\$version\\chrome.dll\"))",
         "{",
         "   exit 0",
         "}"
