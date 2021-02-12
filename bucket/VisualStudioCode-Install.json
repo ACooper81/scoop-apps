@@ -6,6 +6,7 @@
         "identifier": "Freeware",
         "url": "https://code.visualstudio.com/License/"
     },
+    "notes": "Download url https://code.visualstudio.com/download#",
     "changelog": "https://code.visualstudio.com/updates/v1_53",
     "architecture": {
         "64bit": {
