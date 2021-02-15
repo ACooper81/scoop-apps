@@ -6,7 +6,7 @@
     "changelog": "https://www.chemtable.com/version-history.htm?prod_id=Soft%20Organizer",
     "url": "https://www.chemtable.com/files/soft-organizer-setup.exe#/setup.7z",
     "hash": "a97d5c8da1a80c75b57a5dae6d7d9f2caf8bd4824d78b32dfbd56b3765eea2aa",
-    "bin": "SoftOranizer.exe",
+    "bin": "SoftOrganizer.exe",
     "innosetup": true,
     "pre_install": [
             "if([System.Environment]::Is64BitOperatingSystem)",
@@ -22,7 +22,7 @@
         ],
     "shortcuts": [
         [
-            "SoftOranizer.exe",
+            "SoftOrganizer.exe",
             "Soft Organizer"
         ]
     ],
