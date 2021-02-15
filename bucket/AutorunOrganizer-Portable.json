@@ -14,7 +14,6 @@
             "{",
             "   Set-Location -Path \"$dir\"",
             "   Get-ChildItem \"*,1*\" | Rename-Item -NewName {$_.name -replace '^,1',''}",
-            "   Get-ChildItem \"*,2*\" | Select-String -Pattern \",2\" | Select-Object -ExcludeProperty path | Remove-Item -Force -Confirm",
             "}",
             "else",
             "{",
