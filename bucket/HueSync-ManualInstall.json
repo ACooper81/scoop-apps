@@ -3,6 +3,7 @@
     "description": "Hue Sync. Sync your lights with movies, music and games",
     "homepage": "https://www.philips-hue.com/en-hk/entertainment/hue-sync",
     "license": "Freeware",
+    "changelog": "https://www.philips-hue.com/en-au/support/release-notes/hue-sync",
     "architecture": {
         "64bit": {
             "url": "https://firmware.meethue.com/v1/download?deviceTypeId=HueSyncWin#/setup.exe",
