@@ -20,7 +20,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"Epic Game Launcher*\"",
+            "$programname = \"Epic Games Launcher*\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
