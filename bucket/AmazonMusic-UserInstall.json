@@ -3,8 +3,8 @@
     "description": "Amazon Music. Your Music: Simplae, Fast, Advanced.",
     "homepage": "https://www.amazon.com/b?node=16962657011",
     "license": "",
-    "url": "https://morpho-releases.s3-us-west-2.amazonaws.com/win/01222239_3d96181cf0f30550567c99ef4178bafc/Amazon+Music+Installer.exe",
-    "hash": "7C84B7A51579BED1AFF2AB9B3598672B7106628B47D3E575C210D71F5262E942",
+    "url": "https://images-na.ssl-images-amazon.com/images/G/01/digital/music/morpho/installers/20210210/2003125d77/AmazonMusicInstaller.exe",
+    "hash": "EDFA9FA4650BFC335A64E9D7844E8F52AD1677FD21A00AD7B2519611839FBDEC",
     "installer": {
         "script": [
             "$programname = \"Amazon Music*\"",
