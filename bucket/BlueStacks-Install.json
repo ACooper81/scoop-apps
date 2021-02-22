@@ -28,7 +28,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Get-ChildItem -Path \"$dir\\*\" | Where-Object -FilterScript {$_.BaseName -notlike \"scoop-*\"} | Remove-Item -Force"
+            "Get-ChildItem -Path \"$dir\\*\" | Where-Object -FilterScript {$_.BaseName -notlike \"scoop-*\"} | Remove-Item -Recurse -Force"
         ]
     },
     "checkver": {
