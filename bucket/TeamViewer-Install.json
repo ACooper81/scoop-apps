@@ -44,7 +44,7 @@
     ],
     "checkver": {
         "url": "https://community.teamviewer.com/English/categories/change-logs-en",
-        "regex": " v([\\d.]+) - Change"
+        "regex": "[Windows] v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://dl.teamviewer.com/download/TeamViewer_Setup.exe#/setup.exe"
