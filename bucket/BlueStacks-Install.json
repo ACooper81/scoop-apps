@@ -31,6 +31,11 @@
             "Get-ChildItem -Path \"$dir\\*\" | Where-Object -FilterScript {$_.BaseName -notlike \"scoop-*\"} | Remove-Item -Recurse -Force"
         ]
     },
+    "post_install": [
+        "$DesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$DesktopPath\\BlueStacks.lnk\") {Remove-Item \"$DesktopPath\\BlueStacks.lnk\" -Force}",
+        "if (Test-Path \"$DesktopPath\\BlueStacks Multi-Instance Manager.lnk\") {Remove-Item \"$DesktopPath\\BlueStacks Multi-Instance Manager.lnk\" -Force}"
+    ],
     "checkver": {
         "url": "https://support.bluestacks.com/hc/en-us/articles/360021469391-Release-Notes-BlueStacks-4",
         "regex": "content=\"BlueStacks ([\\d.]+)"
