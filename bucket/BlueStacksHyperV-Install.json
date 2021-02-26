@@ -1,5 +1,5 @@
 {
-    "version": "4.260",
+    "version": "4.270",
     "description": "BlueStacks App Player. Android emulator.",
     "homepage": "https://www.bluestacks.com/",
     "license": {
@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://cloud.bluestacks.com/get_offline_download?os_arch=x64#/setup.7z",
-            "hash": "9c4d0df7f5f5fe813c959900597449c4e019642fc494725f4a149c7a4ad84f28"
+            "hash": "1fee6e05794d805104b207ee1be2e0541041b80b163d8d2c7b3a1512c489d9b9"
         }
     },
     "installer": {
