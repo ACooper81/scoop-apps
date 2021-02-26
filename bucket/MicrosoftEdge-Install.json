@@ -1,16 +1,16 @@
 {
-    "version": "88.0.705.74",
+    "version": "88.0.705.81",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": "",
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "2aae21c3efe0ed33994385b499a975cba7490d169a76bc341ea8c220d0f6866a"
+            "hash": "3ca9850153e81de6b6c52f1b5ae3763f1c37ff87d41a35e68c261d53f5af017c"
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "ecd32d79b1f103e2e3cfdffcd199e029e2b66521f638c5f2da4d5621f0ddbe99"
+            "hash": "43eb104bd5e2ab3d931449b16de0273900e2747e2fb91736796e05cce4538af0"
         }
     },
     "pre_download": "Assert-Administrator",
