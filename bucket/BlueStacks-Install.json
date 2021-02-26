@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://cloud.bluestacks.com/get_offline_download?os_arch=x64#/setup.7z",
-            "hash": "9c4d0df7f5f5fe813c959900597449c4e019642fc494725f4a149c7a4ad84f28"
+            "hash": "1fee6e05794d805104b207ee1be2e0541041b80b163d8d2c7b3a1512c489d9b9"
         },
         "32bit": {
             "url": "https://cloud.bluestacks.com/get_offline_download?os_arch=x86#/setup.7z",
-            "hash": "e957061a973fb37271ca12b8706fad7773845113a5cd07ba61431e450ebf9d6e"
+            "hash": "057b44572181b0013862f9f521bf55ff3cfd363e09c4e41dc98a47cd8ee597b9"
         }
     },
     "installer": {
