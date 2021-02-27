@@ -36,8 +36,8 @@
         }
     },
     "checkver": {
-        "url": "https://www.mitec.cz/webupdate.html",
-        "regex": "TMXVersion\"\\s*CONTENT=\"([\\d.]+)\""
+        "url": "https://www.mitec.cz/Data/XML/data_tmxvh.xml",
+        "regex": "VERSION>([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.mitec.cz/Downloads/TMX.zip"
