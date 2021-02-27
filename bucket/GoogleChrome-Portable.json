@@ -1,4 +1,5 @@
 {
+    "##": "https://www.google.com/intl/en/chrome/?standalone=1",
     "version": "88.0.4324.190",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
@@ -10,12 +11,12 @@
     "changelog": "https://chromereleases.googleblog.com/",
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi#/dl.7z",
-            "hash": "923318540989252011ac4711c7a829453b749a1ddf803a79418757f0982abab9"
+            "url": "https://www.google.com/intl/en/chrome/thank-you.html?standalone=1&statcb=1&installdataindex=empty&defaultbrowser=0##/dl.7z",
+            "hash": "ee99a46676e41cf71a79968e45569d0d948fffd587eeec294a3d61d16f348903"
         },
         "32bit": {
-            "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi#/dl.7z",
-            "hash": "9395f38d5492ba8bb6f4661a3452dadbaad278cd725a05a939adc1abf958db15"
+            "url": "https://www.google.com/intl/en/chrome/thank-you.html?standalone=1&statcb=1&installdataindex=empty&defaultbrowser=0##/dl.7z",
+            "hash": "ee99a46676e41cf71a79968e45569d0d948fffd587eeec294a3d61d16f348903"
         }
     },
     "installer": {
@@ -35,10 +36,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi#/dl.7z"
+                "url": "https://www.google.com/intl/en/chrome/thank-you.html?standalone=1&statcb=1&installdataindex=empty&defaultbrowser=0##/dl.7z"
             },
             "32bit": {
-                "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi#/dl.7z"
+                "url": "https://www.google.com/intl/en/chrome/thank-you.html?standalone=1&statcb=1&installdataindex=empty&defaultbrowser=0##/dl.7z"
             }
         }
     }
