@@ -25,10 +25,10 @@
         "script": [
             "$programname = \"Allavsoft $version\"",
             "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "if((Get-Command \"$ProgramFilesX86\\Allavsoft\\Video Download Converter\\videodownloader.exe\").Version -lt $version)",
+            "if((Get-Command \"$ProgramFilesX86\\Allavsoft\\Video Downloader Converter\\videodownloader.exe\").Version -lt $version)",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
-            "   if((Get-Command \"$ProgramFilesX86\\Allavsoft\\Video Download Converter\\videodownloader.exe\").Version -lt $version)",
+            "   if((Get-Command \"$ProgramFilesX86\\Allavsoft\\Video Downloader Converter\\videodownloader.exe\").Version -lt $version)",
             "   {",
             "       exit 1",
             "   }",
