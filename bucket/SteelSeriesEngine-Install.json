@@ -4,11 +4,9 @@
     "homepage": "https://steelseries.com/engine",
     "license": "Propritary",
     "changelog": "https://techblog.steelseries.com/",
-    "url": "https://website/filename.exe#/setup.exe",
-    "hash": "27899FB6FE11DE7957FC758C34990E4DC2B52547EA52E353258723BC3B8FA6E0",
-    "pre_download":[
-        "Assert-Administrator"
-    ],
+    "url": "https://engine.steelseriescdn.com/SteelSeriesEngine3.19.2Setup.exe#/setup.exe",
+    "hash": "27899fb6fe11de7957fc758c34990e4dc2b52547ea52e353258723bc3b8fa6e0",
+    "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"SteelSeriesEngine3\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
