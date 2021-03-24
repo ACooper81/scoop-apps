@@ -20,7 +20,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"programname*\"",
+            "$programname = \"Power Automate Desktop*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" -Install -ACCEPTEULA -Silent -DisablePADShortcut | Out-Null",
