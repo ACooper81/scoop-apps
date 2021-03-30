@@ -1,10 +1,10 @@
 {
-    "version": "7.3.2",
+    "version": "7.4.1",
     "description": "NoMachine is a remote-control tool, available for multiple platforms",
     "homepage": "https://www.nomachine.com/",
     "license": "",
-    "url": "https://download.nomachine.com/download/7.3/Windows/nomachine_7.3.2_1.exe#/setup.exe",
-    "hash": "75300bda9879dff08aa54a0013b84d764c8ec04fcdd6bba485d92f2dbb3f1d44",
+    "url": "https://download.nomachine.com/download/7.4/Windows/nomachine_7.4.1_1.exe#/setup.exe",
+    "hash": "ff19c87e934251069def5aff1ca8fd643d7f40be0fccab783636acbf4e1fd88c",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"NoMachine\"",
