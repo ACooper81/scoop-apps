@@ -6,6 +6,7 @@
         "identifier": "Freeware",
         "url": "https://www.oo-software.com/en/shutup10/eula"
     },
+    "changelog": "https://www.oo-software.com/en/shutup10/changelog",
     "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe",
     "hash": "d37c4fe1e09b05ae4f47c2167afaa0bc11f6468b1e23e3b2a6743ed4814edb37",
     "pre_install": "if (!(Test-Path \"$persist_dir\\OOSU10.ini\")) { New-Item \"$dir\\OOSU10.ini\" | Out-Null }",
