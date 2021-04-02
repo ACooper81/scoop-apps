@@ -4,7 +4,7 @@
     "homepage": "http://www.tomabo.com/mp4-downloader-pro/index.html",
     "license": "",
     "url": "http://www.tomabo.net/downloads/mp4-downloader-pro-4-setup.exe#/setup.exe",
-    "hash": "632c7646afb0ae0d6f43d4423c9830deee4fefa2faa5ea24d7a59b9128936825",
+    "hash": "15f65e1aa52b3fb0c2b6415a910fb09fbfca1a45d45926df167e3f4e26d768eb",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"MP4DownloaderPro\"",
