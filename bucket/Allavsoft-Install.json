@@ -7,7 +7,7 @@
         "identifier": ""
     },
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
-    "hash": "d6590994ce6cf0e0f6960b015cd8f4ca66316e8906482b3ccea7ab5180ad39cd",
+    "hash": "04bef99876d298ba1fd561379288eb8bee62c6395029f265f56cacb3a7948d0d",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"videodownloader\"",
