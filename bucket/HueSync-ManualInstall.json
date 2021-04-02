@@ -1,5 +1,6 @@
 {
-    "version": "1.5",
+    "##": "https://www.philips-hue.com/en-hk/explore-hue/propositions/entertainment/sync-with-pc#get_the_app",
+    "version": "1.6",
     "description": "Hue Sync. Sync your lights with movies, music and games",
     "homepage": "https://www.philips-hue.com/en-hk/entertainment/hue-sync",
     "license": "Freeware",
@@ -7,7 +8,7 @@
     "architecture": {
         "64bit": {
             "url": "https://firmware.meethue.com/v1/download?deviceTypeId=HueSyncWin#/setup.exe",
-            "hash": "6eeae673da7ff02d67d350363380d449943bf4c7c4755a783e42c1d269e796c0"
+            "hash": "95B4E7F312BF56B0E0E8852257E776B6304ECE6D7B497ACEEF2FAEB138D8547C"
         }
     },
     "pre_download": "Assert-Administrator",
