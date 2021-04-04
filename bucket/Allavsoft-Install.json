@@ -1,5 +1,5 @@
 {
-    "version": "3.23.4.7753",
+    "version": "3.23.4.7762",
     "description": "Allavsoft. Download free videos from 100+ sites and convert to popular video and audio format.",
     "homepage": "https://www.allavsoft.com/index.html",
     "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
@@ -23,7 +23,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"Allavsoft $version\"",
+            "$programname = \"Allavsoft *\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
