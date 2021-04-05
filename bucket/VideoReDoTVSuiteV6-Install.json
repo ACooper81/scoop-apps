@@ -40,7 +40,7 @@
     },
     "checkver": {
         "url": "https://www.videoredo.com/en/ReleaseNotes_TVSuite.htm",
-        "regex": "Version: ([\\d.]+)",
+        "regex": "<strong>Version ([\\d.]+)",
         "reverse": true
     },
     "autoupdate": {
