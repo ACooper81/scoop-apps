@@ -10,6 +10,7 @@
     "bin": "TeraCopy.exe",
     "architecture": {
         "64bit": {
+            "pre_install": "Get-ChildItem \"$dir\" '*,1.*' | Rename-Item -Path { $_.Fullname } -NewName { $_.Basename.TrimEnd(',1') + $_.Extension }",
             "post_install": [
                 "Rename-Item \"$dir\\TeraCopyService,1.exe\" \"TeraCopyService.exe\"",
                 "Rename-Item \"$dir\\TeraCopyExt,1.dll\" \"TeraCopyExt.dll\"",
@@ -18,6 +19,7 @@
             ]
         },
         "32bit": {
+            "pre_install": "Get-ChildItem \"$dir\" '*,2.*' | Rename-Item -Path { $_.Fullname } -NewName { $_.Basename.TrimEnd(',2') + $_.Extension }",
             "post_install": [
                 "Rename-Item \"$dir\\TeraCopyService,2.exe\" \"TeraCopyService.exe\"",
                 "Rename-Item \"$dir\\TeraCopyExt,2.dll\" \"TeraCopyExt.dll\"",
