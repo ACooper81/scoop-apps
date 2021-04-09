@@ -49,7 +49,7 @@
     },
     "checkver": {
         "url": "http://www.tomabo.com/mp4-downloader-pro/download.html",
-        "regex": "Current Version</td>\\s+<td bgcolor=\"#FFFFFF\" align=\"center\">([\\d.]+)"
+        "regex": "Latest Version</td>\\s+<td bgcolor=\"#FFFFFF\" align=\"center\">([\\d.]+)"
     },
     "autoupdate": {
         "url": "http://www.tomabo.net/downloads/mp4-downloader-pro-$majorVersion-setup.exe#/setup.exe"
