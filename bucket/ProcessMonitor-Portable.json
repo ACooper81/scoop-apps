@@ -1,0 +1,27 @@
+{
+    "version": "3.53",
+    "description": "Process Monitor. Real-time file, registry and process monitor",
+    "homepage": "https://portableapps.com/apps/utilities/process-monitor-portable",
+    "license": "",
+    "url": "https://versaweb.dl.sourceforge.net/project/portableapps/Process%20Monitor%20Portable/ProcessMonitorPortable_3.53_online.paf.exe",
+    "hash": "md5:d2369220d6886dcd751323aaffe869ef",
+    "bin": "ProcessMonitorPortable/ProcessMonitorPortable.exe",
+    "shortcuts": [
+        [
+            "ProcessMonitorPortable/ProcessMonitorPortable.exe",
+            "Process Monitor"
+        ]
+    ],
+    "persist": "Data",
+    "checkver": {
+        "url": "https://portableapps.com/apps/utilities/process-monitor-portable",
+        "regex": "Version \\s+([\\w\\.]* for Win"
+    },
+    "autoupdate": {
+        "url": "https://versaweb.dl.sourceforge.net/project/portableapps/Process%20Monitor%20Portable/ProcessMonitorPortable_$version_online.paf.exe",
+        "hash": {
+            "url": "https://portableapps.com/apps/utilities/process-monitor-portable",
+            "regex": "MD5 Hash: +[\\w]{32}"
+        }
+    }
+}
