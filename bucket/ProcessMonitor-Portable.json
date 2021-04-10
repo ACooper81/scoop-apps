@@ -1,27 +1,38 @@
 {
     "version": "3.53",
     "description": "Process Monitor. Real-time file, registry and process monitor",
-    "homepage": "https://portableapps.com/apps/utilities/process-monitor-portable",
+    "homepage": "https://docs.microsoft.com/en-us/sysinternals/downloads/procmon",
     "license": "",
     "url": "https://versaweb.dl.sourceforge.net/project/portableapps/Process%20Monitor%20Portable/ProcessMonitorPortable_3.53_online.paf.exe",
-    "hash": "md5:d2369220d6886dcd751323aaffe869ef",
-    "bin": "ProcessMonitorPortable/ProcessMonitorPortable.exe",
-    "shortcuts": [
-        [
-            "ProcessMonitorPortable/ProcessMonitorPortable.exe",
-            "Process Monitor"
-        ]
-    ],
+    "hash": "",
+    "architecture": {
+        "64bit": {
+            "bin": "procmon64.exe",
+            "shortcuts": [
+                [
+                "procmon64.exe",
+                "Process Monitor",
+                "/accepteula"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "procmon.exe",
+            "shortcuts": [
+                [
+                "procmon.exe",
+                "Process Monitor",
+                "/accepteula"
+                ]
+            ]
+        }
+    },
     "persist": "Data",
     "checkver": {
-        "url": "https://portableapps.com/apps/utilities/process-monitor-portable",
-        "regex": "Version \\s+([\\w\\.]* for Win"
+        "url": "https://docs.microsoft.com/en-us/sysinternals/downloads/procmon",
+        "regex": "Process Monitor v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://versaweb.dl.sourceforge.net/project/portableapps/Process%20Monitor%20Portable/ProcessMonitorPortable_$version_online.paf.exe",
-        "hash": {
-            "url": "https://portableapps.com/apps/utilities/process-monitor-portable",
-            "regex": "MD5 Hash: +[\\w]{32}"
-        }
+        "url": "https://download.sysinternals.com/files/ProcessMonitor.zip"
     }
 }
