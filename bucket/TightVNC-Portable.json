@@ -1,8 +1,9 @@
 {
     "version": "2.8.27",
-    "description": "VNC-Compatible Remote Control / Remote Desktop",
+    "description": "TightVNC. VNC-Compatible Remote Control / Remote Desktop",
     "homepage": "https://tightvnc.com",
     "license": "GPL-2.0-or-later",
+    "changelog": "https://tightvnc.com/whatsnew.php",
     "architecture": {
         "64bit": {
             "url": "https://www.tightvnc.com/download/2.8.27/tightvnc-2.8.27-gpl-setup-64bit.msi",
