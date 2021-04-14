@@ -10,7 +10,7 @@
     "shortcuts": [
         [
             "Patchfluent.exe",
-            "ProgramShortcutName"
+            "Patchfluent"
         ]
     ],
     "checkver": {
