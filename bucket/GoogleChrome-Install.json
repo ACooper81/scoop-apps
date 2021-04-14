@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise64.msi#/setup.msi_",
-            "hash": "bc6ab61d6f603e76eaa08f6f113e46f9f84a85bd7e136f0c2d693ee6892e30cf"
+            "hash": "d44783cabe0fc66e70bc0ae2074adf4a562c2d426dde9bf49e89c71ba1d2114e"
         },
         "32bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi#/setup.msi_",
-            "hash": "658fe2bfb72199f5db4a114e0dd957447594b355dfe2bd4df3f0d43e3a7fa923"
+            "hash": "df1b0582717db40c60cf6b4f8099887df7e7866c0fcd6b8bd02bf4d3c23adf6e"
         }
     },
     "pre_download": "Assert-Administrator",
