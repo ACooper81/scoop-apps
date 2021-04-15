@@ -1,11 +1,1 @@
-﻿scoop update; $status = scoop status
-ForEach ($line in $($status -split "`r`n"))
-{
-    $line = $line.TrimStart()
-    Write-Host $line
-    $line = $line.Split(":")
-    Write-Host $line
-    $line = $line[0].TrimEnd()
-    Write-Host $line
-    iex "scoop update $line -g"
-}
+﻿scoop update; $status = scoop status; ForEach ($line in $($status -split "`r`n")) { $line = $line.TrimStart().Split(":")[0].TrimEnd(); Invoke-Expression -Command "scoop update $line"; Invoke-Expression -Command "sudo scoop update $line -g" }; Start-Sleep -Seconds 10
