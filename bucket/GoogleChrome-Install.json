@@ -14,7 +14,11 @@
         },
         "32bit": {
             "url": "https://dl.google.com/edgedl/chrome/install/GoogleChromeStandaloneEnterprise.msi#/setup.msi_",
+<<<<<<< HEAD
             "hash": "658fe2bfb72199f5db4a114e0dd957447594b355dfe2bd4df3f0d43e3a7fa923"
+=======
+            "hash": "8639e462eb6b5bbda0ab8d161c765c04ec14c46a35621ae6821fe17a341d0b41"
+>>>>>>> f8418e27234de957fd2c281f7db42d0516902ae1
         }
     },
     "pre_download": "Assert-Administrator",
