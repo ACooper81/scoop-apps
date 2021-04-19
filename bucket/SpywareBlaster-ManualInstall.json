@@ -26,6 +26,7 @@
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" | Out-Null",
+            "   Start-Sleep -Seconds 60",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
