@@ -36,8 +36,8 @@
         ]
     },
     "post_install": [
-        "$DesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$DesktopPath\\Soft Organizer.lnk\") {Remove-Item \"$DesktopPath\\Soft Organizer.lnk\" -Force}"
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Soft Organizer.lnk\") {Remove-Item \"$CommonDesktopPath\\Soft Organizer.lnk\" -Force}"
     ],
     "checkver": {
         "url": "https://www.chemtable.com/soft-organizer.htm",
