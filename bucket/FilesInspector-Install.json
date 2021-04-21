@@ -40,8 +40,8 @@
         ]
     },
     "post_install": [
-        "$DesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$DesktopPath\\Files Inspector.lnk\") {Remove-Item \"$DesktopPath\\Files Inspector.lnk\" -Force}"
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\Files Inspector.lnk\") {Remove-Item \"$CommonDesktopPath\\Files Inspector.lnk\" -Force}"
     ],
     "checkver": {
         "url": "https://www.chemtable.com/files-inspector.htm",
