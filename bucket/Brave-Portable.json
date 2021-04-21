@@ -9,7 +9,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/portapps/brave-portable/releases/download/1.23.71-72/brave-portable-win32-1.23.71-72.7z#/dl.7z",
+            "url": "https://github.com/portapps/brave-portable/releases/download/1.23.71-72/brave-portable-win64-1.23.71-72.7z#/dl.7z",
             "hash": "7D9C7A609856D561F1D63170BF99836E6122BB8501379AC881589480B93AF2A2"
         },
         "32bit": {
