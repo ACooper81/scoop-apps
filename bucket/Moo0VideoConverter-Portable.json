@@ -4,7 +4,7 @@
     "homepage": "https://websiteurl",
     "license": "Freeware",
     "changelog": "https://www.moo0.com/?top=https://www.moo0.com/software/VideoConverter/history/",
-    "url": "https://bin.moo0.com/software/Moo0%20VideoConverter%20v1.28%20Installer.exe#/setup.7z",
+    "url": "https://bin.moo0.com/software/Moo0%20VideoConverter%20v1.28%20Installer.exe#/dl.7z",
     "hash": "06dad960d718113b45a47e4a91ee4421471a33e165a7c41260b64d47ff5b8dc7",
     "bin": "VideoConverter.exe",
     "shortcuts": [
@@ -18,6 +18,6 @@
         "regex": "Moo0 Video Converter ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://bin.moo0.com/software/Moo0%20VideoConverter%20v$version%20Installer.exe#/setup.7z"
+        "url": "https://bin.moo0.com/software/Moo0%20VideoConverter%20v$version%20Installer.exe#/dl.7z"
     }
 }
