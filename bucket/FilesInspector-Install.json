@@ -23,7 +23,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"Files Inspector version*\"",
+            "$programname = \"Files Inspector*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
