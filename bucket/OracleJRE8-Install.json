@@ -19,7 +19,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"Java 8 Update*\"",
+            "$programname = \"Java 8 Update $patchVersion*\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /s REBOOT=0 SPONSORS=0 AUTO_UPDATE=0 | Out-Null",
