@@ -22,7 +22,7 @@
         ]
     ],
     "installer": {
-        "keep": "true",
+        "keep": true,
         "script": "start-process \"$dir\\installer.exe\" -argumentlist \"/i %MSI% /qn ADDLOCAL=StartMenu APPLICATIONFOLDER=$dir START_MENU_FOLDER=0 ARPSYSTEMCOMPONENT=0\" -Verb RunAs -Wait"
     },
     "uninstaller": {
