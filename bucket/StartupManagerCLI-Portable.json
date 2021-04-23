@@ -5,12 +5,6 @@
     "url": "https://github.com/Faustvii/StartupManager/releases/download/1.6.2/StartupManager.zip",
     "hash": "f8bb34ab5653fea43b4c7457cd530896e6079a8198ea94cae1b91d432fb05dad",
     "bin": "StartupManager.exe",
-    "shortcuts": [
-        [
-            "StartupManager.exe",
-            "Startup Manager"
-        ]
-    ],
     "suggest": {
         "sudo": "sudo",
         "Microsoft.NETCoreRuntime": "Microsoft.NETCoreRuntime-Install"
