@@ -13,7 +13,7 @@
     ],
     "suggest": {
         "sudo": "sudo",
-        "dotnet core sdk": "dotnet-sdk"
+        "Microsoft .NET Core Runtime": "Microsoft.NETCoreRuntime-Install"
     },
     "checkver": "github",
     "autoupdate": {
