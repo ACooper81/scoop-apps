@@ -13,7 +13,7 @@
     ],
     "suggest": {
         "sudo": "sudo",
-        "Microsoft .NET Core Runtime": "Microsoft.NETCoreRuntime-Install"
+        "Microsoft.NETCoreRuntime": "Microsoft.NETCoreRuntime-Install"
     },
     "checkver": "github",
     "autoupdate": {
