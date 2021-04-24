@@ -6,6 +6,7 @@
     "changelog": "https://www.safer-networking.org/products/spybot-identity-monitor/version-history/",
     "url": "https://download.spybot.info/Identity%20Monitor/SpybotIdentityMonitor-3.4-setup.exe#/dl.7z",
     "hash": "9E80B2400D9C05B4E8D710D51E73F851A58186D80C9E090E996C5681796D766E",
+    "innosetup": true,
     "architecture": {
         "64bit": {
             "bin": "Spybot3IdentityMonitor64.exe",
