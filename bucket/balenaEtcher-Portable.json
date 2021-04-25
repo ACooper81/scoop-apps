@@ -7,12 +7,25 @@
     "url": "https://github.com/balena-io/etcher/releases/download/v1.5.117/balenaEtcher-Portable-1.5.117.exe#/dl.7z",
     "hash": "333e919125027fcc5200d42b2189047fe7bf51f82be69170546e4c0e641a8f92",
     "extract_dir": "$PLUGINSDIR",
-    "installer": {
-        "script": [
-            "Remove-Item \"$dir\\*\" -Exclude \"app-64.7z\"",
-            "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\"",
-            "Remove-Item \"$dir\\app-64.7z\""
-        ]
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": [
+                    "Remove-Item \"$dir\\*\" -Exclude \"app-64.7z\"",
+                    "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\app-64.7z\""
+                ]
+            }
+        },
+        "32bit": {
+            "installer": {
+                "script": [
+                    "Remove-Item \"$dir\\*\" -Exclude \"app-32.7z\"",
+                    "Expand-7zipArchive \"$dir\\app-32.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\app-32.7z\""
+                ]
+            }
+        }
     },
     "bin": "balenaEtcher.exe",
     "shortcuts": [
