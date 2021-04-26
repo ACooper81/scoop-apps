@@ -1,0 +1,23 @@
+{
+    "version": "0",
+    "description": "iMazing HEIC Converter. A tiny and free desktop app for Mac and PC which lets you convert Apple's new iOS photos from HEIC to JPG or PNG. Enjoy!",
+    "homepage": "https://imazing.com/heic",
+    "license": "Freeware",
+    "url": "https://downloads.imazing.com/windows/iMazing-HEIC-Converter/iMazingHEICConverterWindows.exe#/setup.exe",
+    "hash": "485eb7fefe874d4693fc273244f6dfd4ffc8eeb35d94480cb9ec6963f1fe89d5",
+    "innosetup": true,
+    "bin": "iMazing HEIC Converter.exe",
+    "shortcuts": [
+        [
+            "iMazing HEIC Converter.exe",
+            "iMazing HEIC Converter"
+        ]
+    ],
+    "checkver": {
+        "url": "https://imazing.com/heic/download/windows",
+        "regex": "<td><p>Version:</p></td>\\s+<td><p><b>([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://downloads.imazing.com/windows/iMazing-HEIC-Converter/iMazingHEICConverterWindows.exe#/dl.7z"
+    }
+}
