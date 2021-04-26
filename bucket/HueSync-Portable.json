@@ -15,8 +15,10 @@
     "depends": "UniversalExtractor2-Portable",
     "installer": {
         "script": [
+            "Remove-Item \"$dir\\*\" -Exclude \"Hue Sync.msi\"",
             "uniextract \"$dir\\setup.exe\" \"$dir\" /silent",
-            "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\" \"Program Files 64\\Hue Sync\\*\""
+            "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\" \"Program Files 64\\Hue Sync\\*\"",
+            "Remove-Item \"$dir\\Hue Sync.msi\""
         ]
     },
     "bin": "HueSync.exe",
