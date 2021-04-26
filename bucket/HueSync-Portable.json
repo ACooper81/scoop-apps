@@ -15,8 +15,7 @@
     "depends": "UniversalExtractor2-Portable",
     "installer": {
         "script": [
-            "uniextract \"$dir\\setup.exe\" \"$dir\" /silent",
-            "Start-Sleep -Seconds 30",
+            "Invoke-ExternalCommand uniextract -ArgumentList @(\"$dir\\setup.exe\", \"$dir\", '/silent') | Out-Null",
             "Remove-Item \"$dir\\*\" -Exclude \"Hue Sync.msi\"",
             "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\\\"",
             "Remove-Item \"$dir\\Hue Sync.msi\""
