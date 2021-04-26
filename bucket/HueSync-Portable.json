@@ -12,6 +12,13 @@
             "hash": "0C3D3E77D3A52636D76AFE937F97ED685615E445838C8CC58C5451087122E606"
         }
     },
+    "depends": "UniversalExtractor2-Portable",
+    "installer": {
+        "script": [
+            "uniextract \"$dir\\setup.exe\" \"$dir\" /silent",
+            "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\" \"Program Files 64\\Hue Sync\\*\""
+        ]
+    },
     "bin": "HueSync.exe",
     "shortcuts": [
         [
@@ -19,11 +26,6 @@
             "Hue Sync"
         ]
     ],
-    "installer": {
-        "script": [
-            "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\" \"Program Files 64\\Hue Sync\\*\""
-        ]
-    },
     "checkver": {
         "url": "https://www.philips-hue.com/en-au/support/release-notes/hue-sync",
         "regex": "Software version ([\\d.]+)"
