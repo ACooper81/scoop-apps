@@ -19,7 +19,15 @@
             }
         },
         "32bit": {
-            
+            "installer": {
+                "script": [
+                    "Invoke-ExternalCommand dark -ArgumentList @(\"$dir\\setup.exe\", \"-x\", \"$dir\") | Out-Null",
+                    "lessmsi x \"$dir\\AttachedContainer\\ipvanish.msi\" \"$dir\\\"",
+                    "Remove-Item \"$dir\\AttachedContainer\\\" -Force -Recurse -ErrorAction SilentlyContinue",
+                    "Remove-Item \"$dir\\UX\\\" -Force -Recurse -ErrorAction SilentlyContinue",
+                    "Remove-Item \"$dir\\setup.exe\""
+                ]
+            }
         }
     },
     "bin": "SourceDir\\INSTALLDIR\\IPVanish.exe",
