@@ -10,7 +10,7 @@
         "64bit": {
             "installer": {
                 "script": [
-                    "Invoke-ExternalCommand dark -ArgumentList @(\"$dir\\setup.exe\", \"-x\" \"$dir\") | Out-Null",
+                    "Invoke-ExternalCommand dark -ArgumentList @(\"$dir\\setup.exe\", \"-x\", \"$dir\") | Out-Null",
                     "lessmsi x \"$dir\\AttachedContainer\\ipvanish64.msi\" \"$dir\\\"",
                     "Remove-Item \"$dir\\AttachedContainer\\*.msi\""
                 ]
