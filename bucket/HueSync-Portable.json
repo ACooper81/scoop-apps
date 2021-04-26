@@ -19,6 +19,7 @@
             "Hue Sync"
         ]
     ],
+    "innosetup": true,
     "installer": {
         "script": [
             "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\" \"Program Files 64\\Hue Sync\\*\""
