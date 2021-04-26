@@ -17,7 +17,9 @@
         "script": [
             "uniextract \"$dir\\setup.exe\" \"$dir\" /silent",
             "Start-Sleep -Seconds 30",
-            "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\\\""
+            "Remove-Item \"$dir\\*\" -Exclude \"Hue Sync.msi\"",
+            "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\\\"",
+            "Remove-Item \"$dir\\Hue Sync.msi\""
         ]
     },
     "bin": "SourceDir\\Program Files 64\\Hue Sync\\HueSync.exe",
