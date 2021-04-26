@@ -20,10 +20,10 @@
             "lessmsi x \"$dir\\Hue Sync.msi\" \"$dir\\\""
         ]
     },
-    "bin": "HueSync.exe",
+    "bin": "SourceDir\\Program Files 64\\Hue Sync\\HueSync.exe",
     "shortcuts": [
         [
-            "HueSync.exe",
+            "SourceDir\\Program Files 64\\Hue Sync\\HueSync.exe",
             "Hue Sync"
         ]
     ],
