@@ -34,6 +34,6 @@
         "regex": "(?sm)https://dl.google.com(?<downloadurl>[\\w.-/].*?)</code>.*?_([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://dl.google.com$matchDownloadurl"
+        "url": "https://dl.google.com$matchDownloadurl#/chrome.7z"
     }
 }
