@@ -11,10 +11,10 @@
     "installer": {
         "script": [
             "$programname = \"programname*\"",
-            "if(!((Get-ItemProperty \"HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5\").Version -ge $version -ErrorAction SilentlyContinue))",
+            "if(!((Get-ItemProperty \"HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5\").Version -ge $version))",
             "{",
             "   &\"$dir\\dotnetfx35.exe\" /qn /norestart | Out-Null",
-            "   if(!((Get-ItemProperty \"HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5\").Version -ge $version -ErrorAction SilentlyContinue))",
+            "   if(!((Get-ItemProperty \"HKLM:\\SOFTWARE\\Wow6432Node\\Microsoft\\NET Framework Setup\\NDP\\v3.5\").Version -ge $version))",
             "   {",
             "       exit 1",
             "   }",
