@@ -19,7 +19,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force"
+            "Remove-Item \"$dir\\dotnetfx35.exe\" -Force"
         ]
     }
 }
