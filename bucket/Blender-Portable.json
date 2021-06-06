@@ -19,13 +19,13 @@
     ],
     "checkver": {
         "url": "https://www.blender.org/download/",
-        "regex": "blender-([\\w.]+)-windows64\\.zip"
+        "regex": "blender-([\\d.]+)-windows-x64.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.blender.org/release/Blender$majorVersion.$minorVersion/blender-$version-windows64.zip",
-                "extract_dir": "blender-$version-windows64"
+                "url": "https://mirror.clarkson.edu/blender/release/Blender$majorVersion.$minorVersion/blender-$version-windows-x64.zip",
+                "extract_dir": "blender-windows64"
             }
         },
         "hash": {
