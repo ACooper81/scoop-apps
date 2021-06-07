@@ -24,7 +24,7 @@
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion \"$majorVersion.$minorVersion$patchVersion\" -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /exenoupdates /qn | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion \"$majorVersion.$minorVersion$patchVersion\" -ErrorAction SilentlyContinue))",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion \"$majorVersion.$minorVersion.$patchVersion\" -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
