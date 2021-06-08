@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": "https://cdn3.bluestacks.com/downloads/windows/arabica/5.0.0.7228/b228b0da964c1f588d75747cccd884d4/BlueStacksMicroInstaller_5.0.0.7228_native.exe?filename=BlueStacksInstaller.exe#/setup.exe",
-            "hash": "8EB44F19FC3EC3F2D526E7456117C34D1D27CF045DF6BA7C2DA9A086AF229046"
+            "hash": "b3ad6fefbe39494b2238688aea51e456355b8bb22dce2559e4d8d45fd6b51715"
         },
         "32bit": {
             "url": "https://cdn3.bluestacks.com/downloads/windows/arabica/5.0.0.7228/b228b0da964c1f588d75747cccd884d4/BlueStacksMicroInstaller_5.0.0.7228_native.exe?filename=BlueStacksInstaller.exe#/setup.exe",
-            "hash": "8EB44F19FC3EC3F2D526E7456117C34D1D27CF045DF6BA7C2DA9A086AF229046"
+            "hash": "b3ad6fefbe39494b2238688aea51e456355b8bb22dce2559e4d8d45fd6b51715"
         }
     },
     "pre_download":[
