@@ -4,7 +4,7 @@
     "homepage": "https://www.microsoft.com/en-us/windows/windows-11",
     "license": "Unknown",
     "changelog": "",
-    "url": "https://aka.ms/GetPCHealthCheckApp#/dl.7z",
+    "url": "https://aka.ms/GetPCHealthCheckApp#/setup.msi",
     "hash": "8c905bd1f1e50ead3938bfa4d50c252e4739232a7452971ff1d4f9be1fea5e47",
     "bin": "PCHealthCheck.exe",
     "shortcuts": [
