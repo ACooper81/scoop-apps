@@ -6,7 +6,6 @@
     "changelog": "",
     "url": "https://aka.ms/GetPCHealthCheckApp#/setup.msi_",
     "hash": "8c905bd1f1e50ead3938bfa4d50c252e4739232a7452971ff1d4f9be1fea5e47",
-    "extract_dir": "PCHealthCheck",
     "bin": "PCHealthCheck.exe",
     "shortcuts": [
         [
