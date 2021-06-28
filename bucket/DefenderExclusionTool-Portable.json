@@ -6,8 +6,8 @@
         "identifier": "Freeware",
         "url": "https://www.sordum.org/eula/"
     },
-    "url": "https://www.sordum.org/downloads/?defender-exclusion-tool",
-    "hash": "2b80e71d16043f09940ab247416e867430e16b7d6825ce4f0b76a0c01dc33bf5",
+    "url": "https://www.sordum.org/files/download/defender-exclusion-tool/ExcTool.zip",
+    "hash": "2FB48E4AC0EC297836060E9A7E5406FEF5B09560919E72DEF8EF2551C3DF8A6D",
     "bin": "ExcTool.exe",
     "shortcuts": [
         [
@@ -17,6 +17,6 @@
     ],
     "checkver": "v([\\d.]+)",
     "autoupdate": {
-        "url": "https://www.sordum.org/downloads/?defender-exclusion-tool"
+        "url": "https://www.sordum.org/files/download/defender-exclusion-tool/ExcTool.zip"
     }
 }
