@@ -8,6 +8,7 @@
     },
     "url": "https://www.sordum.org/files/download/defender-exclusion-tool/ExcTool.zip",
     "hash": "2FB48E4AC0EC297836060E9A7E5406FEF5B09560919E72DEF8EF2551C3DF8A6D",
+    "extract_dir": "ExcTool_v$version",
     "bin": "ExcTool.exe",
     "shortcuts": [
         [
