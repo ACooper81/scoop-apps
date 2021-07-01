@@ -8,7 +8,7 @@
     },
     "changelog": "",
     "url": "https://www.deezer.com/desktop/download?platform=win32&architecture=x86#/dl.7z",
-    "hash": "67f9b5bc55703b6bb1e1f0420c3b2c7f6a398bb0e6057e0b9e67a148f97ffbdc",
+    "hash": "1c00d286f209de69ff5fee811a5662b8d7114046a9c74348c31ce955352b5856",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [
