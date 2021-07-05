@@ -6,6 +6,7 @@
     "changelog": "https://github.com/tidwall/jj/releases",
     "url": "https://github.com/tidwall/jj/releases/download/v1.8.0/jj-1.8.0-windows-amd64.zip",
     "hash": "efa116e4b860d4b82b5c6561358704ab52e6824818a6129ded68c3e123d7ba11",
+    "extract_dir": "jj-$version-windows-amd64",
     "bin": "jj.exe",
     "checkver": {
         "github": "https://github.com/tidwall/jj"
