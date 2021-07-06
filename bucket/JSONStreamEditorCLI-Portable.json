@@ -13,6 +13,6 @@
     },
     "autoupdate": {
         "url": "https://github.com/tidwall/jj/releases/download/v$version/jj-$version-windows-amd64.zip",
-        "extract_dir": "jj-$version-windows-amd64",
+        "extract_dir": "jj-$version-windows-amd64"
     }
 }
