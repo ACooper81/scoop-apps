@@ -7,18 +7,6 @@
     "url": "https://engine.steelseriescdn.com/SteelSeriesGG4.0.0Setup.exe#/setup.exe",
     "hash": "46447326a70e2f7b675d00b60ce7681c9a54b657bd1af8aaa13f4264a0d0e4e1",
     "pre_download": "Assert-Administrator",
-    "pre_install": [
-        "$processname = \"SteelSeriesGG\"",
-        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
-        "if ($process) {",
-        "   $process.CloseMainWindow()",
-        "   Start-Sleep -Seconds 5",
-        "   if (!$process.HasExited) {",
-        "       Start-Sleep -Seconds 25",
-        "       $process | Stop-Process -Force",
-        "   }",
-        "}"
-    ],
     "installer": {
         "script": [
             "$programname = \"SteelSeries GG*\"",
