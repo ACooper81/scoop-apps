@@ -25,10 +25,10 @@
         "script": [
             "$programname = \"Deezer*\"",
             "$processname = \"Deezer.exe\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $majorVersion.$minorVersion.$patchVersion -ErrorAction SilentlyContinue))",
             "{",
             "   &\"$dir\\setup.exe\" /quiet | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $majorVersion.$minorVersion.$patchVersion -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
