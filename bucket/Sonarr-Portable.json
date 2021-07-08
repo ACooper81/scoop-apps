@@ -18,6 +18,6 @@
         "regex": "/main/([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://services.sonarr.tv/v1/download/main/latest?version=3&os=windows#/setup.zip"
+        "url": "https://download.sonarr.tv/v3/main/$version/Sonarr.main.$version.windows.zip#/setup.zip"
     }
 }
