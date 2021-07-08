@@ -1,11 +1,11 @@
 {
-    "version": "3.0.5.1143",
+    "version": "3.0.6.1265",
     "description": "Sonarr. Sonarr is a PVR for Usenet and BitTorrent users.",
     "homepage": "https://sonarr.tv",
     "license": "MIT",
     "changelog": "https://github.com/Sonarr/Sonarr/releases",
-    "url": "https://services.sonarr.tv/v1/download/phantom-develop/latest?version=3&os=windows#/setup.zip",
-    "hash": "cc43e0385c035da073a0791e2750e1129bb8fb5f94137599fa387e9b49c7fcf2",
+    "url": "https://services.sonarr.tv/v1/download/main/latest?version=3&os=windows#/setup.zip",
+    "hash": "30AC5C1435E5A6658BC706FC87206FAA62CA42DB43BE6673B63BB0ACC2A0773B",
     "extract_dir": "Sonarr",
     "shortcuts": [
         [
@@ -15,5 +15,8 @@
     ],
     "checkver": {
         "github": "https://github.com/Sonarr/Sonarr"
+    },
+    "autoupdate": {
+        "url": "https://services.sonarr.tv/v1/download/main/latest?version=3&os=windows#/setup.zip"
     }
 }
