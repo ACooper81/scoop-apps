@@ -20,13 +20,5 @@
             "}",
             "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
-    },
-    "checkver": {
-        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/GG",
-        "regex": "js-navigation-open Link--primary\" title=\"([\\d.]+)",
-        "reverse": true
-    },
-    "autoupdate": {
-        "url": "https://engine.steelseriescdn.com/SteelSeriesGG$versionSetup.exe#/setup.exe"
     }
 }
