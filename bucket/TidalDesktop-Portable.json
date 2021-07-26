@@ -8,9 +8,8 @@
     "hash": "2569878529D16A0BF53910EE581AE0DD64AEEE83525A05DBDD9271C74336BF7D",
     "installer": {
         "script": [
-            "Remove-Item \"$dir\\*\" -Exclude \"app-32.7z\"",
-            "Rename-Item -Path \"$dir\\TIDAL-2.28.0-full.nupkg\" -NewName \"TIDAL-2.28.0-full.7z\"",
-            "Expand-7zipArchive \"$dir\\TIDAL-2.28.0-full.7z\" -ExtractDir 'lib\\net45' -Removal",
+            "Remove-Item \"$dir\\*\" -Exclude \"TIDAL-2.28.0-full.nupkg\"",
+            "Expand-7zipArchive \"$dir\\TIDAL-2.28.0-full.nupkg\" -ExtractDir 'lib\\net45' -Removal",
             "Remove-Item \"$dir\\TIDAL-2.28.0-full.nupkg\""
         ]
     },
