@@ -1,10 +1,10 @@
 {
-    "version": "4.5.1",
+    "version": "4.5.2",
     "description": "MP4 Downloader Pro is a Windows application to download your favorite videos from hundreds of video sharing sites.",
     "homepage": "http://www.tomabo.com/mp4-downloader-pro/index.html",
     "license": "",
     "url": "http://www.tomabo.net/downloads/mp4-downloader-pro-4-setup.exe#/setup.exe",
-    "hash": "278481d61574c7dbcea997d037d9e63ee3a5b091ded8212ba7e5ddf1698b125f",
+    "hash": "ea4175ac22ad08ca16e2a2f49938910b3d76cdf92b3deb0cad5e1c69d6b57cca",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"MP4DownloaderPro\"",
