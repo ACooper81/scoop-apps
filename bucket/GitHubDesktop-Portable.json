@@ -3,6 +3,7 @@
     "description": "Extend your GitHub workflow beyond your browser.",
     "homepage": "https://desktop.github.com/",
     "license": "MIT",
+    "changelog": "https://desktop.github.com/release-notes/",
     "architecture": {
         "64bit": {
             "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-2.9.0-full.nupkg",
