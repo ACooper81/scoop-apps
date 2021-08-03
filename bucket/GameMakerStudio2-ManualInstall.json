@@ -27,10 +27,10 @@
         "script": [
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$filepath = \"$ProgramFiles\\GameMaker Studio 2\\GameMakerStudio.exe\"",
-            "if((Test-Path -Path $filepath -PathType Leaf -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
+            "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /S | Out-Null",
-            "   if((Test-Path -Path $filepath -PathType Leaf -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
+            "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
             "   }",
