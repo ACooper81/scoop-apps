@@ -1,0 +1,56 @@
+{
+    "version": "2.3.3.574",
+    "description": "GameMaker Studio 2. GameMaker has helped developers create much-loved and multi-million seller games",
+    "homepage": "https://www.yoyogames.com/en/gamemaker",
+    "license": "",
+    "changelog": "https://gms.yoyogames.com/ReleaseNotes.html",
+    "architecture": {
+        "64bit": {
+            "url": "https://gms.yoyogames.com/GameMakerStudio-Installer-2.3.3.574.exe#/setup.exe",
+            "hash": "5dd59f4b9d8e0968351853e6e7f9f354499e8e84060bfde10c140e75a4d277c2"
+        }
+    },
+    "pre_download": "Assert-Administrator",
+    "pre_install": [
+        "$processname = \"GameMakerStudio\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "$programname = \"programname*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "$programname = \"GameMaker Studio 2\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
+    ],
+    "checkver": {
+        "url": "https://gmapi.gnysek.pl/",
+        "regex": "Current version is <b>([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://gms.yoyogames.com/GameMakerStudio-Installer-$version.exe#/setup.exe"
+            }
+        }
+    }
+}
