@@ -84,6 +84,25 @@ Install Scripts
         ]
     },
 
+    "installer": {
+        "script": [
+            "$programname = \"programname*\"",
+            "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$filepath = \"$ProgramFilesX86\\folder\\file.exe\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue)",
+            "or !((Get-Command \"$filepath\").Version.ToString() -ge \"$version\"))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue)",
+            "   or !((Get-Command \"$filepath\").Version.ToString() -ge \"$version\"))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+
 ==================================================
 Post_Install Scripts
 ==================================================
