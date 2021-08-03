@@ -25,13 +25,12 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"programname*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue)",
-            "or !((Get-Command \"C:\\Program Files\\GameMaker Studio 2\\GameMakerStudio.exe\").Version.ToString() -ge \"$version\"))",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$filepath = \"$ProgramFiles\\GameMaker Studio 2\\GameMakerStudio.exe\"",
+            "if((Get-Command \"$filepath\").Version -lt [System.Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /S | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue)",
-            "   or !((Get-Command \"C:\\Program Files\\GameMaker Studio 2\\GameMakerStudio.exe\").Version.ToString() -ge \"$version\"))",
+            "   if((Get-Command \"$filepath\").Version -lt [System.Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
