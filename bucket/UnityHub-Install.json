@@ -1,0 +1,56 @@
+{
+    "version": "2.4.5",
+    "description": "Unity Hub. The Unity Hub is a management tool that you can use to manage all of your Unity Projects and installations.",
+    "homepage": "https://store.unity.com/download-nuo",
+    "license": "Proprietary",
+    "changelog": "https://unity3d.com/hub/whats-new",
+    "architecture": {
+        "64bit": {
+            "url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe#/setup.exe",
+            "hash": "165e807163471a4f3bb25eaa9febfa408a2f9110d9547ba67d7a7c2f784c9bec"
+        }
+    },
+    "pre_download": "Assert-Administrator",
+    "pre_install": [
+        "$processname = \"Unity Hub\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "$programname = \"Unity Hub*\"",
+            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "{",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "Remove-Item \"$dir\\setup.exe\" -Force"
+        ]
+    },
+    "post_install": [
+        "$programname = \"Unity Hub\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
+    ],
+    "checkver": {
+        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnityTechnologies/UnityHub",
+        "regex": "Link--primary\" title=\"([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe#/setup.exe"
+            }
+        }
+    }
+}
