@@ -32,7 +32,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"4K Video Downloader*\"",
+            "$programname = \"4K Video Downloader\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "{",
