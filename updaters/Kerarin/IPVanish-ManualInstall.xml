@@ -63,27 +63,17 @@
           </UrlVariable>
         </value>
       </item>
-      <item>
-        <key>
-          <string>downloadfile</string>
-        </key>
-        <value>
-          <UrlVariable>
-            <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>Textual</VariableType>
-            <Regex />
-            <TextualContent>{downloadpath}\IPVanish {version}.exe</TextualContent>
-            <Name>downloadfile</Name>
-          </UrlVariable>
-        </value>
-      </item>
     </Variables>
-    <ExecuteCommand>jj -i "{filepath}" -o "{filepath}" -v {version} version
-jj -i "{filepath}" -o "{filepath}" -v {download}#/setup.exe -O url
-$sha256 = Get-FileHash "{downloadfile}" -Algorithm SHA256).Hash
-jj -i "{filepath}" -o "{filepath}" -v $sha256 -O hash</ExecuteCommand>
+    <ExecuteCommand>$filepath = $app.variables.filepath.CachedContent
+$version = $app.variables.version.CachedContent
+$download = $app.variables.download.CachedContent + "#/setup.exe"
+$downloadfile = $app.CurrentLocation
+$sha256 = (Get-FileHash "$downloadfile" -Algorithm SHA256).Hash
+jj -i "$filepath" -o "$filepath" -v $version version
+jj -i "$filepath" -o "$filepath" -v $download url
+jj -i "$filepath" -o "$filepath" -v $sha256 hash</ExecuteCommand>
     <ExecutePreCommand />
-    <ExecuteCommandType>Batch</ExecuteCommandType>
+    <ExecuteCommandType>PowerShell</ExecuteCommandType>
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Install</Category>
     <SourceType>FixedUrl</SourceType>
@@ -91,7 +81,7 @@ jj -i "{filepath}" -o "{filepath}" -v $sha256 -O hash</ExecuteCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-08-08T17:33:23.2879349+09:30</LastUpdated>
+    <LastUpdated>2021-08-08T18:20:34.9078518+09:30</LastUpdated>
     <TargetPath>{downloadpath}\IPVanish {version}.exe</TargetPath>
     <FixedDownloadUrl>{download}</FixedDownloadUrl>
     <Name>IPVanish-ManualInstall</Name>
