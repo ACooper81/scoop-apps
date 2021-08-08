@@ -64,7 +64,8 @@
         </value>
       </item>
     </Variables>
-    <ExecuteCommand>$filepath = $app.variables.filepath.CachedContent
+    <ExecuteCommand>$localgithubpath = $globalvars.localgithubpath.CachedContent
+$filepath = $localgithubpath + "\scoop-apps\bucket\IPVanish-ManualInstall.json"
 $version = $app.variables.version.CachedContent
 $download = $app.variables.download.CachedContent + "#/setup.exe"
 $downloadfile = $app.CurrentLocation
@@ -81,7 +82,7 @@ jj -i "$filepath" -o "$filepath" -v $sha256 hash</ExecuteCommand>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-08-08T18:20:34.9078518+09:30</LastUpdated>
+    <LastUpdated>2021-08-08T22:48:21.8014244+09:30</LastUpdated>
     <TargetPath>{downloadpath}\IPVanish {version}.exe</TargetPath>
     <FixedDownloadUrl>{download}</FixedDownloadUrl>
     <Name>IPVanish-ManualInstall</Name>
