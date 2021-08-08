@@ -1,9 +1,9 @@
 {
-    "version": "1.7.3024.2",
+    "version": "2.0.4046.1",
     "description": "Amazon Games. Explore all games, loot, and more for Prime members",
     "homepage": "https://www.amazon.com/b?node=21211466011",
     "license": "",
-    "url": "https://download.amazongames.com/AmazonGamesSetup.exe",
+    "url": "https://download.amazongames.com/AmazonGamesSetup.exe#/setup.exe",
     "hash": "1A99F1054E51FE86416C59E5C526D69776FDABD7BB9831DBAAB8582322121C7A",
     "installer": {
         "script": [
@@ -13,13 +13,13 @@
             "   Get-Process 'Amazon Games' -ErrorAction SilentlyContinue | Stop-Process -Force",
             "   $command = \"do {Sleep 1} until (Get-Process 'Amazon Games' -ErrorAction SilentlyContinue); Get-Process 'Amazon Games' | Stop-Process -Force\"",
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command -WindowStyle Hidden",
-            "   &\"$dir\\AmazonGamesSetup.exe\" --mode unattended | Out-Null",
+            "   &\"$dir\\setup.exe\" --mode unattended | Out-Null",
             "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
             "   {",
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\AmazonGamesSetup.exe\" -Force",
+            "Remove-Item \"$dir\\setup.exe\" -Force",
             "$programname = \"Amazon Games\"",
             "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
             "if (Test-Path \"$DesktopPath\\$programname.lnk\") {Remove-Item \"$DesktopPath\\$programname.lnk\" -Force}"
