@@ -1,10 +1,10 @@
 {
-    "version": "5.7.4.804",
+    "version": "5.7.5.939",
     "description": "Zoom provides videotelephony and online chat services through a cloud-based peer-to-peer software platform and is used for teleconferencing, telecommuting, distance education, and social relations.",
     "homepage": "https://zoom.us/",
     "license": "Proprietary",
     "url": "https://zoom.us/client/latest/ZoomInstallerFull.msi#/setup.msi_",
-    "hash": "e1e36a4157d8bd853663b424a7d55529044b0085875401cde53369836bdecd1a",
+    "hash": "263475d94b5ac328f29fcffd0c607d82e17517526c833c8798d76782e5cc0380",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"Zoom*\"",
