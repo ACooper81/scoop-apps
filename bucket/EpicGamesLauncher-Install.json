@@ -1,10 +1,10 @@
 {
-    "version": "1.1.298.0",
+    "version": "1.2.17.0",
     "description": "Epic Games Launcher. Allow players to purchase, install and keep their games up to date",
     "homepage": "https://www.epicgames.com/store/en-US/",
     "license": "Freemium",
-    "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Win32/EpicInstaller-10.19.2.msi?launcherfilename=EpicInstaller-10.19.2.msi#/setup.msi_",
-    "hash": "b24e6568ec5ddc968733fbe4e8d05088a38e496b1a350d0f2101646fb10a8a2e",
+    "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Win32/EpicInstaller-12.1.7.msi#/setup.msi_",
+    "hash": "6B069AB06AC7F0885B17214980B1CED6BFEC5311D44CD510EF884CA5BF516AA1",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"EpicGamesLauncher\"",
@@ -39,7 +39,8 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://chocolatey.org/packages/epicgameslauncher",
-        "regex": "Epic Games Launcher ([\\d.]+)"
+        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicGamesLauncher",
+        "regex": "navigation-open Link--primary\" title=\"([\\d.]+)",
+        "reverse": true
     }
 }
