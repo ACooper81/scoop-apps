@@ -1,0 +1,38 @@
+{
+    "version": "5.2",
+    "description": "AnyBurn. AnyBurn is a light weight but professional CD / DVD / Blu-ray burning software that everyone must have",
+    "homepage": "https://www.anyburn.com/index.htm",
+    "license": "Freeware",
+    "changelog": "https://www.anyburn.com/tutorials/history.htm",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.anyburn.com/anyburn_setup_x64.exe#/setup.7z",
+            "hash": "2631e2fb7b282b56f206de79aa69cc3cffc9a518717ec6b496c5cf176e3e18ab"
+        },
+        "32bit": {
+            "url": "https://www.anyburn.com/anyburn_setup.exe#/setup.7z",
+            "hash": "572542287ad9f6227f4383a8b3cb968a6ad68104d063fff76991dead64a1cf18"
+        }
+    },
+    "bin": "AnyBurn.exe",
+    "shortcuts": [
+        [
+            "AnyBurn.exe",
+            "AnyBurn"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.anyburn.com/tutorials/history.htm",
+        "regex": "<b> AnyBurn ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.anyburn.com/anyburn_setup_x64.exe#/setup.7z"
+            },
+            "32bit": {
+                "url": "https://www.anyburn.com/anyburn_setup.exe#/setup.7z"
+            }
+        }
+    }
+}
