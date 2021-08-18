@@ -7,14 +7,15 @@
     "hash": "1A99F1054E51FE86416C59E5C526D69776FDABD7BB9831DBAAB8582322121C7A",
     "installer": {
         "script": [
-            "$programname = \"Amazon Games*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "$UserProfile = [Environment]::GetFolderPath(\"userprofile\")",
+            "$filepath = \"$UserProfile\\AppData\\Local\\Amazon Games\\App\\Amazon Games.exe\"",
+            "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   Get-Process 'Amazon Games' -ErrorAction SilentlyContinue | Stop-Process -Force",
             "   $command = \"do {Sleep 1} until (Get-Process 'Amazon Games' -ErrorAction SilentlyContinue); Get-Process 'Amazon Games' | Stop-Process -Force\"",
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command -WindowStyle Hidden",
             "   &\"$dir\\setup.exe\" --mode unattended | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
             "   }",
