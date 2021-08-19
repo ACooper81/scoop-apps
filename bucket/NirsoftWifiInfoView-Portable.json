@@ -1,10 +1,10 @@
 {
-    "version": "2.70",
+    "version": "2.71",
     "description": "WifiInfoView scans the wireless networks in your area and displays extensive information about them,",
     "homepage": "http://www.nirsoft.net/utils/wifi_information_view.html",
     "license": "freeware",
     "url": "https://nirsoft.net/utils/wifiinfoview.zip",
-    "hash": "03ddc8f440512d6fe2cecc36188537b13f801a3466f49614ac47728c85f976fe",
+    "hash": "2569aec6f647e3d04baeed4b20949c071671bd85ca9ccbd3161a455073c6e134",
     "bin": "WifiInfoView.exe",
     "shortcuts": [
         [
