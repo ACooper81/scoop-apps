@@ -10,6 +10,7 @@
             "hash": "e3d622c72e9db56b6510fd705858d41872559a122d05350d7c40ef975231e1b1"
         }
     },
+    "extract_dir": "krita-x64-$version",
     "bin": [
         "bin\\krita.exe",
         "bin\\kritarunner.exe"
