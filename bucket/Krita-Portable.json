@@ -3,7 +3,7 @@
     "description": "Krita. A free digital painting application.",
     "homepage": "https://krita.org/",
     "license": "GPL-3.0-or-later",
-    "changelog": "",
+    "changelog": "https://krita.org/en/download/krita-desktop/",
     "architecture": {
         "64bit": {
             "url": "https://download.kde.org/stable/krita/4.4.3/krita-x64-4.4.3-setup.exe#/dl.7z",
