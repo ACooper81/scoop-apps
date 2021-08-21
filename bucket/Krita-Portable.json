@@ -10,13 +10,14 @@
             "hash": "e3d622c72e9db56b6510fd705858d41872559a122d05350d7c40ef975231e1b1"
         }
     },
+    "extract_dir": "krita-x64-4.4.7",
     "bin": [
-        "krita-x64-$version\\bin\\krita.exe",
-        "krita-x64-$version\\bin\\kritarunner.exe"
+        "bin\\krita.exe",
+        "bin\\kritarunner.exe"
     ],
     "shortcuts": [
         [
-            "krita-x64-$version\\bin\\krita.exe",
+            "bin\\krita.exe",
             "Krita"
         ]
     ],
@@ -33,6 +34,7 @@
         },
         "hash": {
             "url": "$url.sha256"
-        }
+        },
+        "extract_dir": "krita-x64-$version"
     }
 }
