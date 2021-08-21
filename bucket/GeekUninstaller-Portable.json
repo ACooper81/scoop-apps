@@ -1,5 +1,5 @@
 {
-    "version": "1.4.8.145",
+    "version": "0",
     "description": "Basic uninstaller though powerful and lightning fast.",
     "homepage": "https://geekuninstaller.com/",
     "license": "Shareware",
@@ -17,6 +17,6 @@
         "regex": "<b>([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://geekuninstaller.com/geek.7z"
+        "url": "https://geekuninstaller.com/geek.zip"
     }
 }
