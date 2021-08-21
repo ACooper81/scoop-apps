@@ -6,7 +6,7 @@
     "changelog": "https://desktop.github.com/release-notes/",
     "architecture": {
         "64bit": {
-            "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-2.9.0-full.nupkg",
+            "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-2.9.0-x64-full.nupkg",
             "hash": "sha1:095bfa26fd79d5f61717678258b4f920984ac0c3"
         }
     },
@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-$version-full.nupkg",
+                "url": "https://central.github.com/deployments/desktop/desktop/latest/GitHubDesktop-$version-x64-full.nupkg",
                 "hash": {
                     "url": "https://central.github.com/api/deployments/desktop/desktop/latest/RELEASES"
                 }
