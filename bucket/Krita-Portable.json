@@ -12,12 +12,12 @@
     },
     "extract_dir": "krita-x64-$version",
     "bin": [
-        "bin\\krita.exe",
-        "bin\\kritarunner.exe"
+        "krita-x64-$version\\bin\\krita.exe",
+        "krita-x64-$version\\bin\\kritarunner.exe"
     ],
     "shortcuts": [
         [
-            "bin\\krita.exe",
+            "krita-x64-$version\\bin\\krita.exe",
             "Krita"
         ]
     ],
