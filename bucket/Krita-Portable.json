@@ -21,7 +21,6 @@
             "Krita"
         ]
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe.nsis\" -Recurse -Force",
     "checkver": {
         "url": "https://krita.org/en/download/krita-desktop/",
         "regex": "Download Krita\\s+([\\d.]+)"
