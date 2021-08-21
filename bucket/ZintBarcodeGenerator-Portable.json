@@ -3,7 +3,7 @@
     "description": "Zint Barcode Generator. A barcode encoding library supporting over 50 symbologies",
     "homepage": "https://sourceforge.net/projects/zint/",
     "license": "GPL-3.0-or-later",
-    "url": "https://ixpeering.dl.sourceforge.net/project/zint/zint/2.10.0/zint-2.10.0-win32.zip#/setup.7z",
+    "url": "https://ixpeering.dl.sourceforge.net/project/zint/zint/2.10.0/zint-2.10.0-win32.zip#/setup.zip",
     "hash": "sha1:c96e3657fc13d24d36f39cb76864691e5cd67ae5",
     "extract_dir": "zint-2.10.0",
     "bin": "qtZint.exe",
@@ -19,6 +19,6 @@
     },
     "autoupdate": {
         "extract_dir": "zint-$version",
-        "url": "https://ixpeering.dl.sourceforge.net/project/zint/zint/$version/zint-$version-win32.zip#/setup.7z"
+        "url": "https://ixpeering.dl.sourceforge.net/project/zint/zint/$version/zint-$version-win32.zip#/setup.zip"
     }
 }
