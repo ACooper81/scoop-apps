@@ -7,7 +7,7 @@
         "url": "https://www.oo-software.com/en/ooappbuster/eula"
     },
     "changelog": "https://www.oo-software.com/en/ooappbuster/changelog",
-    "url": "https://dl5.oo-software.com/files/ooappbuster/OOAPB.exe",
+    "url": "https://dl5.oo-software.com/files/ooappbuster/OOAPB.exe#/setup.7z",
     "hash": "02c941541486832a899244f4c91cedf05865ce3a305c599f1643ac1105713044",
     "shortcuts": [
         [
@@ -23,6 +23,6 @@
     "persist": "OOAPB.ini",
     "checkver": "Version ([0-9.]+)",
     "autoupdate": {
-        "url": "https://dl5.oo-software.com/files/ooappbuster/OOAPB.exe"
+        "url": "https://dl5.oo-software.com/files/ooappbuster/OOAPB.exe#/setup.7z"
     }
 }
