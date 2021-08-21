@@ -3,7 +3,7 @@
     "description": "Inkscape. Vector graphics editor",
     "homepage": "https://portableapps.com/apps/graphics_pictures/inkscape_portable",
     "license": "",
-    "url": "https://media.inkscape.org/dl/resources/file/InkscapePortable_1.1.paf.exe",
+    "url": "https://media.inkscape.org/dl/resources/file/InkscapePortable_1.1.paf.exe#/dl.7z",
     "hash": "91a9213c6a9afa3c28ea47fc361e93b48069ad4eb86f0f9acf5165b4cae8de8a",
     "bin": "InkscapePortable.exe",
     "shortcuts": [
@@ -18,7 +18,7 @@
         "regex": "Version ([\\d.-]+)"
     },
     "autoupdate": {
-        "url": "https://media.inkscape.org/dl/resources/file/InkscapePortable_$version.paf.exe",
+        "url": "https://media.inkscape.org/dl/resources/file/InkscapePortable_$version.paf.exe#/dl.7z",
         "hash": {
             "url": "https://portableapps.com/apps/graphics_pictures/inkscape_portable",
             "regex": "MD5 Hash: +[\\w]{32}"
