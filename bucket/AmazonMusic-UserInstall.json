@@ -1,10 +1,10 @@
 {
-    "version": "8.5.0.2261",
+    "version": "8.7.0.2277",
     "description": "Amazon Music. Your Music: Simplae, Fast, Advanced.",
     "homepage": "https://www.amazon.com/b?node=16962657011",
     "license": "",
-    "url": "https://morpho-releases.s3-us-west-2.amazonaws.com/win/2261510_2da6ef64ea2ad6a25b7583188181b499/AmazonMusicInstaller.exe",
-    "hash": "53B895247345EF6284053BDB9EC88D217D992B5B0FCDF6DE5466F34FA1C88E8F",
+    "url": "https://amazon.com/images/G/01/digital/music/morpho/installers/20200905/0031046272/AmazonMusicInstaller.exe#/setup.exe",
+    "hash": "73A2946C961D01B23FCE6BFF0FA26B71D47F00CFF32B7C7BB2BED3ABD72AA2E4",
     "installer": {
         "script": [
             "$programname = \"Amazon Music*\"",
@@ -28,8 +28,7 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/a/Amazon/Music",
-        "regex": "js-navigation-open Link--primary\" title=\"([\\d.]+)",
-        "reverse": true
+        "url": "https://www.kcsoftwares.com/sumo/view.php?ProductName=Amazon%20Music&Company=Amazon&prot=2",
+        "regex": "Amazon Music<small>\\s+v([\\d.]+)"
     }
 }
