@@ -1,6 +1,6 @@
 {
     "##": "Checkver URL https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-    "version": "92.0.902.78",
+    "version": "92.0.902.84",
     "description": "World-class performance with more privacy, more productivity, and more value while you browse.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": {
@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "246d6ffdd873aff96392fea520eb0f9ae47ff5c7875b63fe0e87627230517c8b"
+            "hash": "814a8d91ae9e6a3e99db7210ae7fe37cb2542ba807cbba1a7201d644d7105a54"
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "ac9cb7c57d2c1919c542e11492f9971c741182624f9d09c3c728ddffebe00ebe"
+            "hash": "c0871e8c74a95608169e951557d2d3625ab55bfdd90d41c414754b705919b142"
         }
     },
     "pre_download": "Assert-Administrator",
