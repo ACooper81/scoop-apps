@@ -1,10 +1,10 @@
 {
-    "version": "3.6.6.0",
+    "version": "3.7.4.0",
     "description": "IPVanish. provides a secure environment for everyday internet activity",
     "homepage": "https://www.ipvanish.com",
     "license": "Proprietary",
     "url": "https://www.ipvanish.com/software/setup-prod-v2/ipvanish-setup.exe#/setup.exe",
-    "hash": "3E1F902E8E9B0C9A0737973F52CF5784F5A2A4EBA1B4ABFB73B4F41771CA1511",
+    "hash": "3114595300FFFF7E3E520524CA3F34A57A0AC8C3853AC9727A023CBF37CB9105",
     "pre_download":[
         "Assert-Administrator"
     ],
