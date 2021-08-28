@@ -1,11 +1,11 @@
 {
-    "version": "6.2.0",
+    "version": "7.0",
     "description": "SteelSeries GG. SteelSeries GG helps create better connections with your gear, your people and your game",
     "homepage": "https://steelseries.com/gg/",
     "license": "Propritary",
     "changelog": "https://techblog.steelseries.com/",
     "url": "https://steelseries.com/gg/downloads/gg/latest/windows#/setup.exe",
-    "hash": "D691BC61D533E0B782171F4BA14DBDFCC1D97073DB82076C25EC26ABD8CAA936",
+    "hash": "1eb078bc529116526b65fc30989ffc190d3ad1c03a955513bdf42f3bcf5eb418",
     "pre_download": "Assert-Administrator",
     "installer": {
         "script": [
@@ -22,8 +22,10 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/s/SteelSeries/GG",
-        "regex": "js-navigation-open Link--primary\" title=\"([\\d.]+)",
-        "reverse": true
+        "url": "https://techblog.steelseries.com/",
+        "regex": "Release notes for GG ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://steelseries.com/gg/downloads/gg/latest/windows#/setup.exe"
     }
 }
