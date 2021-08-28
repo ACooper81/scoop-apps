@@ -23,7 +23,7 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"GitHub Desktop*\"",
+            "$programname = \"GitHub Desktop\"",
             "$installpath = \"$dir\\GitHubDesktop.exe\"",
             "$LocalAppData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
             "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue)`",
