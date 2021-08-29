@@ -26,7 +26,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/nukeop/nuclear/releases/download/v$version/nuclear.Setup.$version.exe#/dl.7z"
+                "url": "https://github.com/nukeop/nuclear/releases/download/v$version/nuclear-v$version.zip#/dl.7z"
             }
         }
     }
