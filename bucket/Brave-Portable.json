@@ -38,7 +38,7 @@
     ],
     "checkver": {
         "url": "https://github.com/portapps/brave-portable/releases/",
-        "regex": "css-truncate\" title=\"(?<version>[\\d.]+)-(?<revision>[\\d]+)\">",
+        "regex": "<a href=\"/portapps/brave-portable/tree/(?<version>[\\d.]+)-(?<revision>[\\d]+)",
         "replace": "$1-$2"
     },
     "autoupdate": {
