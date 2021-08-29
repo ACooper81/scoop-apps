@@ -1,5 +1,5 @@
 {
-    "version": "5.30.30",
+    "version": "5.30.40",
     "description": "Deezer Desktop. Enjoy all of your music and usual features, plus HotKeys, Offline Mode and an improved look and feel.",
     "homepage": "https://www.deezer.com/en/download?utm_source=web_link",
     "license": {
@@ -8,7 +8,7 @@
     },
     "changelog": "",
     "url": "https://www.deezer.com/desktop/download?platform=win32&architecture=x86#/setup.exe",
-    "hash": "582b3df3207f8cd20f92af5917e65f75eab73cbc370244600c6ef872e7837e92",
+    "hash": "c12c3a4d520c4a892d9bb18615302c5b245bccf03a7193ec4a032ba3cf914f65",
     "pre_install": [
         "$processname = \"Deezer\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
