@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.autohotkey.com/download/ahk-install.exe#/dl.7z",
-            "hash": "ae16f667cf5069d3e26ad7dea0bce0bbf31435f353562bfaaae425bf34868048",
+            "hash": "8972df169a3cd8abc37de9122d54b9270d1b5fe277dd727642224fdc76f8f52d",
             "bin": [
                 [
                     "autohotkeyu64.exe",
@@ -33,7 +33,7 @@
         },
         "32bit": {
             "url": "https://www.autohotkey.com/download/ahk-install.exe#/dl.7z",
-            "hash": "ae16f667cf5069d3e26ad7dea0bce0bbf31435f353562bfaaae425bf34868048",
+            "hash": "8972df169a3cd8abc37de9122d54b9270d1b5fe277dd727642224fdc76f8f52d",
             "bin": [
                 [
                     "autohotkeyu32.exe",
