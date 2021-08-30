@@ -9,7 +9,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "{download64}#/setup.exe",
+            "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe#/setup.exe",
             "hash": "23DDD3DDB8423757850BE67440A523696A29A86D49F319757E15EF8317C76667"
         },
         "32bit": {
