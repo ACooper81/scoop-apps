@@ -8,7 +8,7 @@
         "url": "https://www.bluestacks.com/tw/terms-and-privacy.html"
     },
     "changelog": "https://support.bluestacks.com/hc/en-us/articles/360056521752",
-    "url": "https://cdn3.bluestacks.com/downloads/windows/nxt/5.2.130.1002/55be6eab0858e08de81bf7fe93072520/BlueStacksMicroInstaller_5.2.130.1002_native.exe?filename=BlueStacksInstaller_5.2.130.1002_native_e0175934c4a0a56f1db683585ffd1bcf.exe#/setup.exe",
+    "url": "https://cdn3.bluestacks.com/downloads/windows/nxt/5.2.130.1002/55be6eab0858e08de81bf7fe93072520/BlueStacksMicroInstaller_5.2.130.1002_native.exe#/setup.exe",
     "hash": "A9F3E0EE31F2AAEAEFF7E903141B88DE1F48FCF82822CDB0E1CFEF1A138FA100",
     "pre_download":[
         "Assert-Administrator"
