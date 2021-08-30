@@ -4,8 +4,8 @@
     <WebsiteUrl />
     <UserAgent />
     <UserNotes />
-    <LastFileSize>952</LastFileSize>
-    <LastFileDate>2021-07-07T17:26:52.1018857+09:30</LastFileDate>
+    <LastFileSize>811</LastFileSize>
+    <LastFileDate>2021-08-30T17:49:46.0075525+09:30</LastFileDate>
     <IgnoreFileInformation>false</IgnoreFileInformation>
     <DownloadBeta>Default</DownloadBeta>
     <DownloadDate xsi:nil="true" />
@@ -56,13 +56,14 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>StartEnd</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex />
             <Url>{manifest}</Url>
             <StartText>x64
   InstallerUrl: </StartText>
             <EndText>
 </EndText>
+            <TextualContent>{download32}</TextualContent>
             <Name>download64</Name>
           </UrlVariable>
         </value>
@@ -92,12 +93,13 @@
         <value>
           <UrlVariable>
             <RegexRightToLeft>false</RegexRightToLeft>
-            <VariableType>RegularExpression</VariableType>
+            <VariableType>Textual</VariableType>
             <Regex>InstallerSha256: ([\w.]+)</Regex>
             <Url>{manifest}</Url>
             <StartText>InstallerSha256: </StartText>
             <EndText>
 </EndText>
+            <TextualContent>{sha25632}</TextualContent>
             <Name>sha25664</Name>
           </UrlVariable>
         </value>
@@ -142,11 +144,11 @@ jj -i "{filepath}" -o "{filepath}" -v {sha25632} -O architecture.32bit.hash</Exe
     <ExecutePreCommandType>Batch</ExecutePreCommandType>
     <Category>Install</Category>
     <SourceType>FixedUrl</SourceType>
-    <PreviousLocation>C:\Users\Adrian\Downloads\PowerBIDersktop-Install-2.94.921.0.yaml</PreviousLocation>
+    <PreviousLocation>C:\Users\Adrian\Downloads\PowerBIDersktop-Install-2.96.901.0.yaml</PreviousLocation>
     <DeletePreviousFile>true</DeletePreviousFile>
     <Enabled>true</Enabled>
     <FileHippoId />
-    <LastUpdated>2021-07-07T17:26:52.1135958+09:30</LastUpdated>
+    <LastUpdated>2021-08-30T17:49:46.02413+09:30</LastUpdated>
     <TargetPath>{downloadpath}\PowerBIDersktop-Install-{version}.yaml</TargetPath>
     <FixedDownloadUrl>{manifest}</FixedDownloadUrl>
     <Name>PowerBIDersktop-Install</Name>
