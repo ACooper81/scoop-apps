@@ -1,5 +1,5 @@
 {
-    "version": "4.17.1.4410",
+    "version": "4.17.2.4460",
     "description": "4K Video Downloader. Allows downloading videos, playlists, channels and subtitles from YouTube, Facebook, Vimeo and other video sites in high quality.",
     "homepage": "https://www.4kdownload.com/products/product-videodownloader",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.1_x64.zip",
-            "hash": "6e3b25b3cae3e7c20063d71db20964148e147593a7ba82da4082414463ff490f"
+            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.2_x64.zip",
+            "hash": "dff7bc00223439fed126c21a57034aa402a1f83e6a3a50a86f9f451d7ad4671c"
         },
         "32bit": {
-            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.1.zip",
-            "hash": "bffbc6240e9224945c953d7e156f1045d2b928ac40f5da465297e04c68cc1fd1"
+            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.2.zip",
+            "hash": "112b0a3254cec0315b227bd9f30001a0cdc08a8783165415ee501dff54ef1cc3"
         }
     },
     "extract_dir": "4kvideodownloader",
