@@ -8,7 +8,7 @@
     },
     "changelog": "https://community.teamviewer.com/English/categories/change-logs-en",
     "url": "https://dl.teamviewer.com/download/TeamViewer_Setup.exe#/setup.exe",
-    "hash": "e6062bb2dc73699cf93799331be601fdfd5f5062608400d6062bcb16dd99fd04",
+    "hash": "07f45dbddb68d13204d562cfc8818d4bb44f6a57d17c1b78b7a4ca220f9a61c6",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"teamviewer*\"",
