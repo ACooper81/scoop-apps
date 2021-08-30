@@ -1,5 +1,5 @@
 {
-    "version": "4.17.1.4410",
+    "version": "4.17.2.4460",
     "description": "4K Video Downloader. Allows downloading videos, playlists, channels and subtitles from YouTube, Facebook, Vimeo and other video sites in high quality.",
     "homepage": "https://www.4kdownload.com/products/product-videodownloader",
     "notes": "This manifest only installs and updates 4K Video Downloader",
@@ -9,12 +9,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.1_x64.msi#/setup.msi_",
-            "hash": "0c0d6c827dad81527eed5eaf3174cefa93457fb994544d709d7d3e871defc8cc"
+            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.2_x64.msi#/setup.msi_",
+            "hash": "57134c15bc360deafd866936bc4add46861ac277eadbbbbe058d118e798ec29b"
         },
         "32bit": {
-            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.1.msi#/setup.msi_",
-            "hash": "9a1d44902b52c2654d4b0e72331bdd038683adbcc31beea2a4b307fcd9fd22dd"
+            "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.17.2.msi#/setup.msi_",
+            "hash": "79f46728441d6438ab9e15082d6f2b272f717c0b6db9c7faa1c43d2c24ba0654"
         }
     },
     "pre_download": "Assert-Administrator",
