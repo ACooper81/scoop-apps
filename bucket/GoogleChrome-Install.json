@@ -1,5 +1,5 @@
 {
-    "version": "92.0.4515.159",
+    "version": "93.0.4577.63",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
     "license": {
@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise64.msi#/setup.msi_",
-            "hash": "37255a92bb927a3aa04af74fd39eb83a85a0fe593107b64492731a23a98a1319"
+            "hash": "d14fb15a250edb0ea6ba5e2f65bcd3900da281de2625d0a173ddd13f4b7f6f73"
         },
         "32bit": {
             "url": "https://dl.google.com/tag/s/dl/chrome/install/googlechromestandaloneenterprise.msi#/setup.msi_",
-            "hash": "c7202f10404fd5c780b0e5bd9df4418b9f7e8f0c56b02ab26ee4c8045281c0a4"
+            "hash": "c11c290849e6495ba8092f8a52af78717ee3eef9153c29cc354f08e4d6b1d357"
         }
     },
     "pre_download": "Assert-Administrator",
