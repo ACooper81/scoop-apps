@@ -21,7 +21,7 @@
         ]
     ],
     "checkver": {
-        "github": "http://www.chuyu.me/en/"
+        "github": "https://github.com/Chuyu-Team/Dism-Multi-language/releases"
     },
     "autoupdate": {
         "url": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v$version/Dism++$version.zip"
