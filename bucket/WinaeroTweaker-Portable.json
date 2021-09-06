@@ -1,13 +1,13 @@
 {
-    "version": "1.20",
+    "version": "1.30",
     "description": "Tweaks and hidden settings for power-users for Windows 7/8/8.1/10",
-    "homepage": "https://winaero.com/comment.php?comment.news.1836",
+    "homepage": "https://winaero.com/winaero-tweaker/",
     "license": {
         "identifier": "Freeware",
         "url": "https://winaero.com/comment.php?comment.news.1836"
     },
     "url": "https://winaero.com/winaerotweaker.zip",
-    "hash": "c0ea2637bb7dad6b5b2741db706f56832ef4c4e40bfd3606b71386b0e8f10570",
+    "hash": "175604c25b8650a83e0a0b42031172fc38e5c1bbdce17d48ca0964ef2f2f6a7d",
     "pre_install": "Rename-Item (Get-ChildItem \"$dir\" *.exe).FullName setup.exe",
     "installer": {
         "file": "setup.exe",
@@ -26,7 +26,7 @@
             "Winaero Tweaker"
         ]
     ],
-    "checkver": ">Version ([\\d\\.]+)",
+    "checkver": "change log</span></h2><p>([\\d.]+)",
     "autoupdate": {
         "url": "https://winaero.com/winaerotweaker.zip"
     }
