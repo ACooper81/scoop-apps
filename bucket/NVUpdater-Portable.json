@@ -15,7 +15,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.sys-worx.net/filebase/file/9-nv-updater-nvidia-driver-updater/#versions",
+        "url": "https://www.sys-worx.net/filebase/file11-nv-updater-nvidia-driver-updater/#versions",
         "regex": "(?sm)data-attachment-id=.*?https://(?<downloadurl>[\\w.-/].*?)-([\\d])-([\\d])-([\\d])-([\\d])-zip/",
         "replace": "$1.$2.$3.$4"
     },
