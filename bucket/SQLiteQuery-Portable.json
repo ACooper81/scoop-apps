@@ -13,8 +13,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.mitec.cz/Data/XML/data_downloads.xml",
-        "regex": "<NAME>MiTeC SQLite Query\\s+([\\d.]+)<"
+        "url": "https://www.mitec.cz/",
+        "regex": "SQLite Query ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.mitec.cz/Downloads/SQLiteQ.zip"
