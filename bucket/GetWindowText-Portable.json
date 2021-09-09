@@ -1,12 +1,12 @@
 {
-    "version": "4.11",
+    "version": "4.22",
     "description": "GetWindowText for Windows read out the window text on all OS!",
     "homepage": "http://www.softwareok.com/?seite=Microsoft/GetWindowText",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.softwareok.com/Download/GetWindowText_x64.zip",
-            "hash": "c9bbedab79437ca666c2fdadb78aeabf8d85bbda2524696d43e2b406f55fe242",
+            "hash": "61728130d9e4d8b87e83ec6bc13a73792004c36cbb94344802ae33dfda6d888b",
             "shortcuts": [
                 [
                     "GetWindowText_x64.exe",
@@ -16,7 +16,7 @@
         },
         "32bit": {
             "url": "https://www.softwareok.com/Download/GetWindowText.zip",
-            "hash": "c7e0846e5b98ef460e6a0ae28dcacb9cee97033bfc3e48b8f3c6decaa72f50a1",
+            "hash": "d6235681b1856d7abdccf36e8873c919164a68acc05eab170dde6e6269ea3001",
             "shortcuts": [
                 [
                     "GetWindowText.exe",
