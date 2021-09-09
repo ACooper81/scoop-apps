@@ -1,5 +1,5 @@
 {
-    "version": "15.21.4",
+    "version": "15.21.8",
     "description": "TeamViewer is proprietary computer software for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.",
     "homepage": "https://www.teamviewer.com",
     "license": {
@@ -8,7 +8,7 @@
     },
     "changelog": "https://community.teamviewer.com/English/categories/change-logs-en",
     "url": "https://download.teamviewer.com/download/version_15x/TeamViewerPortable.zip",
-    "hash": "7d6c0ba7bafbda3022258bbffee13b96a3f8d1e1088420789e86e489326d4245",
+    "hash": "c159e8f447335325a338a900560199123498583c298dac2c4fd2161f27991df1",
     "shortcuts": [
         [
             "TeamViewer.exe",
