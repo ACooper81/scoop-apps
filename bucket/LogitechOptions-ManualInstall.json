@@ -38,6 +38,6 @@
         "regex": "<title>Download Logitech Options ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/Options_$majorVersion.$minorVersion.$patchVersion.exe#/setup.exe"
+        "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe#/setup.exe"
     }
 }
