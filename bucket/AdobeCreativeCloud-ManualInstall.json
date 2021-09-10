@@ -36,5 +36,13 @@
             "Remove-Item –path \"$dir\\packages\" –recurse",
             "Remove-Item –path \"$dir\\resources\" –recurse"
         ]
+    },
+    "checkver": {
+        "url": "https://helpx.adobe.com/download-install/kb/creative-cloud-desktop-app-download.html",
+        "regex": "/win64/ACCCx(\\d+)_(\\d+)_(\\d+)_(\\d+).zip",
+        "replace": "${1}.${2}.${3}.${4}"
+    },
+    "autoupdate": {
+        "url": "https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/$majorVersion_$minorVersion_$patchVersion/win64/ACCCx$majorVersion_$minorVersion_$patchVersion_$buildVersion.zip#/setup.7z"
     }
 }
