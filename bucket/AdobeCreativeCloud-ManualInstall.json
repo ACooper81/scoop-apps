@@ -38,8 +38,8 @@
         ]
     },
     "checkver": {
-        "url": "https://helpx.adobe.com/download-install/kb/creative-cloud-desktop-app-download.html",
-        "regex": "/win64/ACCCx(\\d+)_(\\d+)_(\\d+)_(\\d+).zip",
+        "url": "https://download.archsupply.com/get/download-adobe-creative-cloud/",
+        "regex": "<title>Adobe Creative Cloud (\\d+).(\\d+).(\\d+).(\\d+)",
         "replace": "${1}.${2}.${3}.${4}"
     },
     "autoupdate": {
