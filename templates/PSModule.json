@@ -1,11 +1,11 @@
 {
-    "version": "",
+    "version": "0",
     "description": "",
     "homepage": "https://websiteurl",
-    "license": "",
+    "license": "Unknown",
     "changelog": "",
     "notes": "",
-    "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z",
+    "url": "https://websiteurl/programname-$version-win32.7z#/dl.7z",
     "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
     "psmodule": {
         "name": "modulename"
@@ -15,6 +15,6 @@
         "regex": "startstring([\\d.]+)endstring"
     },
     "autoupdate": {
-        "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z"
+        "url": "https://websiteurl/programname-$version-win64.7z#/dl.7z"
     }
 }
