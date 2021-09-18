@@ -1,5 +1,5 @@
 {
-    "version": "3.23.7.7903",
+    "version": "3.23.7.7930",
     "description": "Allavsoft. Download free videos from 100+ sites and convert to popular video and audio format.",
     "homepage": "https://www.allavsoft.com/index.html",
     "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
@@ -7,7 +7,7 @@
         "identifier": ""
     },
     "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe",
-    "hash": "a14a2bbe40469cbfc121aab9b437a3b4fd88cd1f756e42ff645600fcedc580a9",
+    "hash": "4b8738e45921e1b0e4eb9c28f5e52ea4482363aa74f4365f4a0f34fd3620a04d",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"videodownloader\"",
