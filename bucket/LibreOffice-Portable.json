@@ -1,10 +1,10 @@
 {
-    "version": "7.2.0",
+    "version": "7.2.1",
     "description": "LibreOffice. Complete office suite",
     "homepage": "https://portableapps.com/apps/office/libreoffice_portable",
     "license": "",
-    "url": "https://ftp.osuosl.org/pub/tdf/libreoffice/portable/7.2.0/LibreOfficePortable_7.2.0_MultilingualStandard.paf.exe",
-    "hash": "b297e586ad058fa7635760c782b2e1765af82f4049fe4dbee11c765aab27e349",
+    "url": "https://ftp.osuosl.org/pub/tdf/libreoffice/portable/7.2.1/LibreOfficePortable_7.2.1_MultilingualStandard.paf.exe",
+    "hash": "51ff5cde6eb849b36b6f645babfb3b8d16b3eabf88a29e6e075da4bde9119a7f",
     "bin": "LibreOfficePortable.exe",
     "shortcuts": [
         [
