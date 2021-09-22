@@ -3,7 +3,7 @@
     "description": "The Non-Sucking Service Manager. nssm is a service helper which doesn't suck.",
     "homepage": "https://nssm.cc/",
     "license": "Public Domain",
-    "changelog": "https://nssm.cc/changelog",
+    "changelog": "https://git.nssm.cc/nssm/nssm/raw/master/ChangeLog.txt",
     "url": "https://nssm.cc/ci/nssm-2.24-103-gdee49fc.zip",
     "hash": "sha1:0722c8a775deb4a1460d1750088916f4f5951773",
     "architecture": {
