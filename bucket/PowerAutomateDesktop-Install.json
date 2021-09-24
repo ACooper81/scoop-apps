@@ -33,8 +33,9 @@
         ]
     },
     "checkver": {
-        "url": "https://power-automate-desktop.updatestar.com/en",
-        "regex": "Power Automate Desktop ([\\d.]+)"
+        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerAutomateDesktop",
+        "regex": "Microsoft/PowerAutomateDesktop/([\\d.]+)",
+        "reverse": true
     },
     "autoupdate": {
         "url": "https://go.microsoft.com/fwlink/?LinkId=2102613&clcid=0x409#/setup.exe"
