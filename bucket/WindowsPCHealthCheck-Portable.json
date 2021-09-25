@@ -1,11 +1,11 @@
 {
-    "version": "2.3.2106.25001",
+    "version": "3.0.2109.14001",
     "description": "Check Windows 11 upgrade compatibility",
     "homepage": "https://www.microsoft.com/en-us/windows/windows-11",
     "license": "Unknown",
     "changelog": "",
-    "url": "https://aka.ms/GetPCHealthCheckApp#/setup.msi",
-    "hash": "8c905bd1f1e50ead3938bfa4d50c252e4739232a7452971ff1d4f9be1fea5e47",
+    "url": "https://aka.ms/GetPCHealthCheckApp#/setup.msi_",
+    "hash": "f0525a01c96967d3003426196adc0cf2ed541db23faeb93fd41dcbbfaac0d837",
     "extract_dir": "PCHealthCheck",
     "bin": "PCHealthCheck.exe",
     "shortcuts": [
