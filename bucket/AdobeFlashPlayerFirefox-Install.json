@@ -9,10 +9,8 @@
     },
     "changelog": "https://helpx.adobe.com/flash-player/flash-player-releasenotes.html",
     "url": "https://download.macromedia.com/pub/flashplayer/pdc/32.0.0.465/install_flash_player_32_plugin.msi#/setup.msi_",
-    "hash": "38116c92264e6c477a8048d0e1d37be988c893bec84923ee364cf78a650f646b",
-    "pre_download":[
-        "Assert-Administrator"
-    ],
+    "hash": "3223e0bdc1eaedf9840af348b21ff53de9ffe7df61e260759838cc44cd91998b",
+    "pre_download": "Assert-Administrator",
     "installer": {
         "script": [
             "$programname = \"Adobe Flash Player 32 NPAPI*\"",
