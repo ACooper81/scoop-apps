@@ -1,5 +1,5 @@
 {
-    "version": "8.0.10-0",
+    "version": "8.0.11-0",
     "description": "Apache distribution containing MariaDB, PHP, and Perl",
     "homepage": "https://www.apachefriends.org/index.html",
     "license": "GPL-2.0-only",
@@ -9,8 +9,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.10/xampp-windows-x64-8.0.10-0-VS16-installer.exe#/setup.exe",
-            "hash": "sha1:95135844d3ee15db06495a0f8e4d18d913dc4798"
+            "url": "https://downloads.sourceforge.net/project/xampp/XAMPP%20Windows/8.0.11/xampp-windows-x64-8.0.11-0-VS16-installer.exe#/setup.exe",
+            "hash": "sha1:a3b1e0effbce6a862224f119b14083882684192c"
         }
     },
     "installer": {
