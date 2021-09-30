@@ -1,10 +1,10 @@
 {
-    "version": "2.0.41.150",
+    "version": "2.0.43.71",
     "description": "GOG Galaxy 2.0. Gaming Client designed for a convenient purchasing, playing and updating games, as well as an online play between gaming platforms.",
     "homepage": "https://www.gog.com/galaxy",
     "license": "",
-    "url": "https://cdn.gog.com/open/galaxy/client/2.0.41.150/setup_galaxy_2.0.41.150.exe#/setup.exe",
-    "hash": "ea14b6fadb2320988f89623093787904821bcc262ba98e3549498589f005d37b",
+    "url": "https://cdn.gog.com/open/galaxy/client/2.0.43.71/setup_galaxy_2.0.43.71.exe#/setup.exe",
+    "hash": "9f160cc76aa056c98a597097ccf2617561e356861d2b8b21ecfaeb2f324ff427",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"GalaxyClient\"",
