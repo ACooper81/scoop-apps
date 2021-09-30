@@ -1,13 +1,13 @@
 {
-    "version": "2.3.4.583",
+    "version": "2.3.5.589",
     "description": "GameMaker Studio 2. GameMaker has helped developers create much-loved and multi-million seller games",
     "homepage": "https://www.yoyogames.com/en/gamemaker",
     "license": "Proprietary",
     "changelog": "https://gms.yoyogames.com/ReleaseNotes.html",
     "architecture": {
         "64bit": {
-            "url": "https://gms.yoyogames.com/GameMakerStudio-Installer-2.3.4.583.exe#/setup.exe",
-            "hash": "db2e5330dcd6b946ee9fec096924cd86d362dac2e5d5085f2d071a057aeabc0b"
+            "url": "https://gms.yoyogames.com/GameMakerStudio-Installer-2.3.5.589.exe#/setup.exe",
+            "hash": "87a4e7911320d5b772a743aeaea9cb21ee64327ea50843330ba87b09df8e1be8"
         }
     },
     "pre_download": "Assert-Administrator",
