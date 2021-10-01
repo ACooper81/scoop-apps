@@ -7,7 +7,7 @@
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
-    "hash": "2d249faab11f2f7f8c2a6e2bf7674b0f56f8f7d4da504c31645199fba72fe89d",
+    "hash": "f531279ec30706bd27fa35821cfad8169b1995aaa8904bc399e141ead440b707",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"SUMo\"",
