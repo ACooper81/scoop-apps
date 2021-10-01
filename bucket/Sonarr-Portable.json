@@ -4,8 +4,8 @@
     "homepage": "https://sonarr.tv",
     "license": "MIT",
     "changelog": "https://github.com/Sonarr/Sonarr/releases",
-    "url": "https://services.sonarr.tv/v1/download/main/latest?version=3&os=windows#/setup.zip",
-    "hash": "30AC5C1435E5A6658BC706FC87206FAA62CA42DB43BE6673B63BB0ACC2A0773B",
+    "url": "https://download.sonarr.tv/v3/main/3.0.6.1265/Sonarr.main.3.0.6.1265.windows.zip#/setup.zip",
+    "hash": "30ac5c1435e5a6658bc706fc87206faa62ca42db43be6673b63bb0acc2a0773b",
     "extract_dir": "Sonarr",
     "shortcuts": [
         [
