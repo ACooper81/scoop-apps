@@ -32,10 +32,12 @@
     "installer": {
         "script": [
             "$programname = \"programname*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{7BFB58DD-7484-49BF-A8F7-0CD4A80BA5F8}\"",
+            "$regValue = \"DisplayVersion\"",
+            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /S | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
