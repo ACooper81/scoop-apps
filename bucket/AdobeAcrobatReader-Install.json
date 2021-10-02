@@ -27,9 +27,9 @@
     "installer": {
         "script": [
             "$programname = \"Adobe Acrobat Reader DC*\"",
+            "$installpath = \"$dir\\setup.msi_\"",
             "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{7BFB58DD-7484-49BF-A8F7-0CD4A80BA5F8}\"",
             "$regValue = \"DisplayVersion\"",
-            "$installpath = \"$dir\\setup.msi_\"",
             "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   $ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
