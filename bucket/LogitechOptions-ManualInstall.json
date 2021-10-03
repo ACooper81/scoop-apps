@@ -22,10 +22,12 @@
     "installer": {
         "script": [
             "$programname = \"Logitech Options*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion \"$version\" -ErrorAction SilentlyContinue))",
+            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\LogiOptions\"",
+            "$regValue = \"DisplayVersion\"",
+            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /S | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion \"$version\" -ErrorAction SilentlyContinue))",
+            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
