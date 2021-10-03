@@ -22,10 +22,13 @@
     "installer": {
         "script": [
             "$programname = \"VideoReDo TVSuite Version $version\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
+            "$regPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\VideoReDo6_is1\"",
+            "$regValue = \"DisplayName\"",,
+            "$trimString = \"VideoReDo TVSuite Version \"",
+            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayName.Trim(\"$trimString\") -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -ErrorAction SilentlyContinue))",
+            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayName.Trim(\"$trimString\") -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
