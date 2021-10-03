@@ -34,11 +34,10 @@
         "script": [
             "$programname = \"Microsoft PowerBI Desktop*\"",
             "$regPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{6a01366c-d5ae-4092-8454-998c7f584474}\"",
-            "$regValue = \"DisplayVersion\"",
             "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" -quiet -norestart ACCEPT_EULA=1 | Out-Null",
-            "   if((Get-ItemProperty -LiteralPath \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
