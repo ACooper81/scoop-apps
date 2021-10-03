@@ -37,9 +37,8 @@
         ]
     },
     "checkver": {
-        "url": "https://www.videoredo.com/en/ReleaseNotes_TVSuite.htm",
-        "regex": "<strong>Version ([\\d.]+)",
-        "reverse": true
+        "url": "https://www.videoredo.com/en/Download.htm",
+        "regex": "Version: ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.videoredo.com/en/Download.htm?download=tvsuitev6#/setup.exe"
