@@ -33,10 +33,12 @@
     "installer": {
         "script": [
             "$programname = \"Microsoft Visual Studio Code (User)*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "$regPath = \"HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1\"",
+            "$regValue = \"DisplayVersion\"",
+            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /MERGETASKS=!runcode,!desktopicon,!quicklaunchicon,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
