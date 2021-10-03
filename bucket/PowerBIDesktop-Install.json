@@ -32,13 +32,13 @@
     ],
     "installer": {
         "script": [
-            "$programname = \"Microsoft PowerBI Desktop\"",
-            "$regPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\"",
+            "$programname = \"Microsoft PowerBI Desktop*\"",
+            "$regPath = \"HKLM:SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\"",
             "$regValue = \"DisplayVersion\"",
-            "if((Get-ChildItem -Path \"$regPath\" | Get-ItemProperty | Where-Object {$_.DisplayName -match \"$programname\" } | Select-Object -Property \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" -quiet -norestart ACCEPT_EULA=1 | Out-Null",
-            "   if((Get-ChildItem -Path \"$regPath\" | Get-ItemProperty | Where-Object {$_.DisplayName -match \"$programname\" } | Select-Object -Property \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
