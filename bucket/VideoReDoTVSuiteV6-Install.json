@@ -23,7 +23,7 @@
         "script": [
             "$programname = \"VideoReDo TVSuite Version $version\"",
             "$regPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\VideoReDo6_is1\"",
-            "$regValue = \"DisplayName\"",,
+            "$regValue = \"DisplayName\"",
             "$trimString = \"VideoReDo TVSuite Version \"",
             "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayName.Trim(\"$trimString\") -lt [Version]\"$version\")",
             "{",
