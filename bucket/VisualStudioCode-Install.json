@@ -34,12 +34,12 @@
     "installer": {
         "script": [
             "$programname = \"Microsoft Visual Studio Code\"",
-            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{EA457B21-F73E-494C-ACAB-524FDE069978}_is1\"",
+            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\"",
             "$regValue = \"DisplayVersion\"",
-            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "if((Get-ChildItem -Path \"$regPath\" | Get-ItemProperty | Where-Object {$_.DisplayName -match \"$programname\" } | Select-Object -Property \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /MERGETASKS=!runcode,!desktopicon,!quicklaunchicon,addcontextmenufiles,addcontextmenufolders,associatewithfiles,addtopath | Out-Null",
-            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "   if((Get-ChildItem -Path \"$regPath\" | Get-ItemProperty | Where-Object {$_.DisplayName -match \"$programname\" } | Select-Object -Property \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
