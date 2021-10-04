@@ -11,11 +11,10 @@
         "script": [
             "$programname = \"SteelSeries GG*\"",
             "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SteelSeries Engine 3\"",
-            "$regValue = \"DisplayVersion\"",
-            "if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" /S | Out-Null",
-            "   if((Get-ItemProperty -Path \"$regPath\" -Name \"$regValue\").DisplayVersion -lt [Version]\"$version\")",
+            "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
