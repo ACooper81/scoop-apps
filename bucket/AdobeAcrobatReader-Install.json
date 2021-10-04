@@ -43,14 +43,14 @@
             "      (New-Object System.Net.WebClient).DownloadFile($url, $destination)",
             "       Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/rs', '/msi', '/qn', '/norestart', 'EULA_ACCEPT=YES') -RunAs | Out-Null",
             "      Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msp_\", '/qn') -RunAs | Out-Null",
-            "       Remove-Item \"$dir\\setup.exe\"",
+            "       if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "   }",
             "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.msp_\""
+            "if (Test-Path -Path \"$dir\\setup.msp_\") { Remove-Item \"$dir\\setup.msp_\" -Force }"
         ]
     },
     "post_install": [
