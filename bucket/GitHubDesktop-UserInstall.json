@@ -37,7 +37,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\GitHubDesktop.exe\" -Force"
+            "if (Test-Path -Path \"$dir\\GitHubDesktop.exe\") { Remove-Item \"$dir\\GitHubDesktop.exe\" -Force }"
         ]
     },
     "post_install": [
