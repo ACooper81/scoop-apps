@@ -18,7 +18,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force"
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
     },
     "post_install": [
