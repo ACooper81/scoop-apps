@@ -8,7 +8,8 @@
     "installer": {
         "script": [
             "$programname = \"Amazon Music*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "$regPath = \"HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Amazon Amazon Music\"",
+            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   Get-Process 'Amazon Music' -ErrorAction SilentlyContinue | Stop-Process -Force",
             "   $command = \"do {Sleep 1} until (Get-Process 'Amazon Music' -ErrorAction SilentlyContinue); Get-Process 'Amazon Music Helper' | Stop-Process -Force; Get-Process 'Amazon Music' | Stop-Process -Force\"",
@@ -16,7 +17,7 @@
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command -WindowStyle Hidden",
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command2 -WindowStyle Hidden",
             "   &\"$dir\\setup.exe\" --unattendedmodeui none | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "   {",
             "       exit 1",
             "   }",
