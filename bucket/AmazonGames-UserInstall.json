@@ -20,7 +20,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "$programname = \"Amazon Games\"",
             "$DesktopPath = [Environment]::GetFolderPath(\"DesktopDirectory\")",
             "if (Test-Path \"$DesktopPath\\$programname.lnk\") {Remove-Item \"$DesktopPath\\$programname.lnk\" -Force}"
