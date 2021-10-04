@@ -32,7 +32,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\set-up.exe\" -Force",
+            "if (Test-Path -Path \"$dir\\set-up.exe\") { Remove-Item \"$dir\\set-up.exe\" -Force }",
             "Remove-Item –path \"$dir\\packages\" –recurse",
             "Remove-Item –path \"$dir\\resources\" –recurse"
         ]
