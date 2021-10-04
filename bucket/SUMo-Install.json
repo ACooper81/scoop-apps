@@ -34,7 +34,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "while ((Get-Process -Name 'SUMo' -ErrorAction SilentlyContinue).Count -eq 0) {",
             "   Start-Sleep -Milliseconds 50",
             "}",

@@ -37,7 +37,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\VBoxSetup.exe\""
+            "if (Test-Path -Path \"$dir\\VBoxSetup.exe\") { Remove-Item \"$dir\\VBoxSetup.exe\" -Force }"
         ]
     },
     "checkver": {

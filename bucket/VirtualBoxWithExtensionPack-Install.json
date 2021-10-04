@@ -37,7 +37,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\VBoxSetup.exe\"",
+            "if (Test-Path -Path \"$dir\\VBoxSetup.exe\") { Remove-Item \"$dir\\VBoxSetup.exe\" -Force }",
             "$url = \"https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack\"",
             "$destination = \"$dir\\Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack\"",
             "(New-Object System.Net.WebClient).DownloadFile($url, $destination)",

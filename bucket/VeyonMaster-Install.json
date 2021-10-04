@@ -45,7 +45,7 @@
             "{",
             "   Remove-Item \"$CommonDesktopPath\\Veyon Master.lnk\" -Force",
             "}",
-            "Remove-Item \"$dir\\setup.exe\" -Force"
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
     },
     "checkver": {
