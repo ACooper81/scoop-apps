@@ -9,7 +9,7 @@
             "hash": "5008b5494b57b637d3a3102acfa6a62ad6d6147f346ef016b88243c56ea043c7"
         }
     },
-    "post_install": "Move-Item \"$dir\\portable.ini.template\" \"$dir\\portable.ini\"",
+    "post_install": "Move-Item \"$dir\\HandBrake\\portable.ini.template\" \"$dir\\HandBrake\\portable.ini\"",
     "shortcuts": [
         [
             "HandBrake\\HandBrake.exe",
