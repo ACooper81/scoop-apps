@@ -30,7 +30,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\BootRacerSetup.exe\" -Force",
+            "if (Test-Path -Path \"$dir\\BootRacerSetup.exe\") { Remove-Item \"$dir\\BootRacerSetup.exe\" -Force }",
             "while ((Get-Process -Name 'Bootrace' -ErrorAction SilentlyContinue).Count -eq 0) {",
             "   Start-Sleep -Milliseconds 50",
             "}",
