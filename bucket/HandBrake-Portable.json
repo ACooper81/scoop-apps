@@ -12,7 +12,7 @@
     "post_install": "Move-Item \"$dir\\portable.ini.template\" \"$dir\\portable.ini\"",
     "shortcuts": [
         [
-            "HandBrake.exe",
+            "HandBrake\\HandBrake.exe",
             "HandBrake"
         ]
     ],
