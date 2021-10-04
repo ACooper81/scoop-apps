@@ -39,7 +39,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\setup.msi_\" -Force"
+            "if (Test-Path -Path \"$dir\\setup.msi_\") { Remove-Item \"$dir\\setup.msi_\" -Force }"
         ]
     },
     "post_install": [
