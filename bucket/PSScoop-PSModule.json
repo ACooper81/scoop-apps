@@ -1,0 +1,18 @@
+{
+    "version": "0.1.0",
+    "description": "PSScoop. A PowerShell module for scoop package manager",
+    "homepage": "https://github.com/ACooper81/PSScoop",
+    "license": "Freeware",
+    "changelog": "https://github.com/ACooper81/PSScoop/releases",
+    "url": "https://github.com/ACooper81/PSScoop/releases/download/v0.1.0/PSScoop-0.1.0.zip#/dl.7z",
+    "hash": "2928fd988fb6e71151abb54786012217d45985705dafb202f41b4ea5e6f359bf",
+    "psmodule": {
+        "name": "PSScoop"
+    },
+    "checkver": {
+        "github": "https://github.com/ACooper81/PSScoop"
+    },
+    "autoupdate": {
+        "url": "https://github.com/ACooper81/PSScoop/releases/download/v0.1.0/PSScoop-$version.zip#/dl.7z"
+    }
+}
