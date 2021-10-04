@@ -32,7 +32,7 @@
         ]
     },
     "post_install": [
-        "Remove-Item \"$dir\\setup.exe\"",
+        "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
         "$DesktopPath = [Environment]::GetFolderPath(\"Desktop\")",
         "if (Test-Path \"$DesktopPath\\balenaEtcher.lnk\") {Remove-Item \"$DesktopPath\\balenaEtcher.lnk\" -Force}"
     ],
