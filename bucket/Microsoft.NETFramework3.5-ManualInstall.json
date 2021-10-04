@@ -19,7 +19,7 @@
             "       exit 1",
             "   }",
             "}",
-            "Remove-Item \"$dir\\dotnetfx35.exe\" -Force"
+            "if (Test-Path -Path \"$dir\\dotnetfx35.exe\") { Remove-Item \"$dir\\dotnetfx35.exe\" -Force }"
         ]
     }
 }
