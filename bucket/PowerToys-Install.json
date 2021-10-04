@@ -27,7 +27,7 @@
         "script": [
             "$programname = \"PowerToys*\"",
             "$installpath = \"$dir\\setup.msi_\"",
-            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{DED29EDD-F6DE-4B52-B070-260055565001}\"",
+            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{E42CA5D6-208C-438D-8751-375F708C104D}\"",
             "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" --silent | Out-Null",
