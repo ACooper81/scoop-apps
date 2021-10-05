@@ -1,10 +1,10 @@
 {
-    "version": "1.28",
+    "version": "1.29",
     "description": "ControlMyMonitor allows you view and modify the settings of your monitor (Also known as 'VCP Features'), like brightness, contrast, sharpness, red/green/blue color balance, OSD Language, Input Port (VGA , DVI , HDMI ) and more...",
     "homepage": "http://www.nirsoft.net/utils/control_my_monitor.html",
     "license": "freeware",
     "url": "http://www.nirsoft.net/utils/controlmymonitor.zip",
-    "hash": "d2bc97754dcc597ae10f78afe7522d213fd738e43ecadbf475abdaa89e47ee2e",
+    "hash": "afef634edae4e513d9382061cd71dedb9a0dc9849f4a5cf4d54396c54aa90e24",
     "bin": "ControlMyMonitor.exe",
     "shortcuts": [
         [

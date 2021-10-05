@@ -5,7 +5,7 @@
     "license": "Unknown",
     "changelog": "",
     "url": "https://aka.ms/GetPCHealthCheckApp#/setup.msi_",
-    "hash": "f0525a01c96967d3003426196adc0cf2ed541db23faeb93fd41dcbbfaac0d837",
+    "hash": "66d2c0f590dd903baa029fc9bccb609ab210dba846a5a915481dda88d7f50451",
     "extract_dir": "PCHealthCheck",
     "bin": "PCHealthCheck.exe",
     "shortcuts": [
