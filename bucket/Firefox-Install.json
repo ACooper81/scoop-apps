@@ -18,8 +18,8 @@
     "installer": {
         "script": [
             "$programname = \"Mozilla Firefox*\"",
-            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Firefox * (x64 en-US)\"",
-            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Firefox *\"",
+            "if((Get-ItemProperty -Path \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
             "{",
             "   &\"$dir\\setup.exe\" -ms | Out-Null",
             "   if((Get-ItemProperty -Path \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
