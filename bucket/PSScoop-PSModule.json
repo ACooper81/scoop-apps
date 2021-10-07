@@ -13,6 +13,6 @@
         "github": "https://github.com/ACooper81/PSScoop"
     },
     "autoupdate": {
-        "url": "https://github.com/ACooper81/PSScoop/releases/download/v0.1.0/PSScoop-$version.zip#/dl.7z"
+        "url": "https://github.com/ACooper81/PSScoop/releases/download/v$version/PSScoop-$version.zip#/dl.7z"
     }
 }
