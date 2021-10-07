@@ -9,7 +9,7 @@
             "hash": "7d8c48e8e86988b046b24b31ee9e5eb771611abc39dfda9a599a709477346afa"
         }
     },
-    "pre_install": [
+    "##": [
         "$processname = \"GitHubDesktop\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
         "if ($process) {",
