@@ -1,0 +1,21 @@
+{
+    "version": "2021.10.05",
+    "description": "Universal MediaCreationTool. wrapper for all MCT Windows 10 versions from 1507 to 21H1 with business (Enterprise) edition support",
+    "homepage": "git.io/MediaCreationTool.bat",
+    "license": "Freeware",
+    "changelog": "git.io/MediaCreationTool.bat",
+    "url": "https://codeload.github.com/gist/c74dc774a8fb81a332b5d65613187b15/zip/23d8788d48b23dcd648ca6ea644dd30d811a4231#/setup.7z",
+    "hash": "52BBAEDFBC1BBAC835DD3AEA5B83297BD37B71BD7D4BF93BB5FB244128AE4123",
+    "extract_dir": "c74dc774a8fb81a332b5d65613187b15-23d8788d48b23dcd648ca6ea644dd30d811a4231",
+    "bin": "MediaCreationTool.bat",
+    "shortcuts": [
+        [
+            "MediaCreationTool.bat",
+            "Universal MediaCreationTool"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.majorgeeks.com/files/details/universal_mediacreationtool.html",
+        "regex": "\">Universal MediaCreationTool([\\d.]+)</a>"
+    }
+}
