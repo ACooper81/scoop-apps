@@ -1,10 +1,10 @@
 {
-    "version": "3.85",
+    "version": "3.86",
     "description": "Process Monitor. Real-time file, registry and process monitor",
     "homepage": "https://docs.microsoft.com/en-us/sysinternals/downloads/procmon",
     "license": "",
     "url": "https://download.sysinternals.com/files/ProcessMonitor.zip",
-    "hash": "508681293120caa2afd2aeaea72445d0bf37114e6590ac906f220fc1e950b94f",
+    "hash": "f5d5338d3b8818af50438921ec1046be3c443b06aeefa0f1fe188effba650e2c",
     "architecture": {
         "64bit": {
             "bin": "procmon64.exe",
