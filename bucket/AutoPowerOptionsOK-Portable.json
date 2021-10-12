@@ -1,5 +1,5 @@
 {
-    "version": "4.33",
+    "version": "4.44",
     "description": "AutoPowerOptionsOK. The auto power options adjustment to increase energy efficiency is ok!",
     "homepage": "http://www.softwareok.com/?seite=Microsoft/AutoPowerOptionsOK",
     "license": "Freeware",
@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.softwareok.com/Download/AutoPowerOptionsOK_Portable.zip",
-            "hash": "e3cda0c5ccbb782400d170fcb7598656db98f82cb36ca4436457ac7be7de00cd",
+            "hash": "27b0feb8782eeb61033f2cb511297776410bba5ad9eb65c139639f52f4a3ff92",
             "shortcuts": [
                 [
                     "APO-OK_p.exe",
@@ -17,7 +17,7 @@
         },
         "32bit": {
             "url": "https://www.softwareok.com/Download/AutoPowerOptionsOK_Portable.zip",
-            "hash": "e3cda0c5ccbb782400d170fcb7598656db98f82cb36ca4436457ac7be7de00cd",
+            "hash": "27b0feb8782eeb61033f2cb511297776410bba5ad9eb65c139639f52f4a3ff92",
             "shortcuts": [
                 [
                     "APO-OK_p.exe",
