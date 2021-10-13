@@ -26,6 +26,7 @@
             "$programname = \"Allavsoft *\"",
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "$filepath = \"$ProgramFiles\\Allavsoft\\Video Downloader Converter\\videodownloader.exe\"",
+            "Write-Verbose $filepath",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CLOSEAPPLICATIONS /SP- | Out-Null",
