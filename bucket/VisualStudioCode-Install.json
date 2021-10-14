@@ -1,6 +1,6 @@
 {
     "##": "Download url https://code.visualstudio.com/download#",
-    "version": "1.61.0",
+    "version": "1.61.1",
     "description": "Visual Studio Code. is a lightweight but powerful source code editor.",
     "homepage": "https://code.visualstudio.com/",
     "license": {
@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64#/setup.exe",
-            "hash": "17f648f4f52c63983946da5433560880e2d818d277913c0220cfcf4834f3ba79"
+            "hash": "78cb00c352bd16304141cfea6b58825f845356f5574f01dfd2ea62cd0e480dae"
         },
         "32bit": {
             "url": "https://code.visualstudio.com/sha/download?build=stable&os=win32#/setup.exe",
-            "hash": "8547663d9bad2013f79e4953ce64a7f779b13ea4709e560f1cb5fcdd77170855"
+            "hash": "f1e88e0729fc15697629d40569d5ba789fd4cd97d466b1a3759fea4db6e6786e"
         }
     },
     "pre_download": "Assert-Administrator",
