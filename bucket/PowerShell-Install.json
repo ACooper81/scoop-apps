@@ -1,16 +1,16 @@
 {
-    "version": "7.1.4",
+    "version": "7.1.5",
     "description": "PowerShell Core, the cross-platform task automation and configuration management framework/tool.",
     "homepage": "https://github.com/PowerShell/PowerShell",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.1.4/PowerShell-7.1.4-win-x64.msi#/setup.msi_",
-            "hash": "9190f005adcc59f1d2cff21b8d4fbba70d72b8b4b567d845b33508a9c388a7a2"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.1.5/PowerShell-7.1.5-win-x64.msi#/setup.msi_",
+            "hash": "17924469091452658680bfbc582bbe5cade52242f035880cc29d2a763d16d011"
         },
         "32bit": {
-            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.1.4/PowerShell-7.1.4-win-x86.msi#/setup.msi_",
-            "hash": "e75859850b7e7e6a3acb7a33f1f33171a77636cb8944cea11fb2e9c0537416b5"
+            "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.1.5/PowerShell-7.1.5-win-x86.msi#/setup.msi_",
+            "hash": "6ac379c42444712a3b05b55eac7ae7cbc625085e79db344d0012a04a1187268e"
         }
     },
     "pre_download": "Assert-Administrator",
