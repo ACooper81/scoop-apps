@@ -31,7 +31,7 @@
             "$programname = \"PowerShell*\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$filepath = \"$ProgramFiles\\PowerShell\\$majorVersion\\pwsh.exe\"",
+            "$filepath = \"$ProgramFiles\\PowerShell\\7\\pwsh.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1') -RunAs | Out-Null",
