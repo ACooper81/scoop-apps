@@ -7,7 +7,7 @@
         "identifier": "Freeware",
         "url": "https://code.visualstudio.com/License/"
     },
-    "changelog": "https://code.visualstudio.com/updates",
+    "changelog": "https://code.visualstudio.com/updates/v1_61",
     "architecture": {
         "64bit": {
             "url": "https://code.visualstudio.com/sha/download?build=stable&os=win32-x64#/setup.exe",
