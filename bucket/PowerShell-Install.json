@@ -14,7 +14,7 @@
         }
     },
     "pre_download": "Assert-Administrator",
-    "pre_install": [
+    "##": [
         "$processname = \"pwsh\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
         "if ($process) {",
