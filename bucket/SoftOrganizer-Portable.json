@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "changelog": "https://www.chemtable.com/version-history.htm?prod_id=Soft%20Organizer",
     "url": "https://www.chemtable.com/files/soft-organizer-setup.exe#/setup.7z",
-    "hash": "7d79936fd0a38a57912e521cba0c8d45870a201226d68e60d4561bd29a37d055",
+    "hash": "d0df7b9273ec47d7572fbdb211a4aed1497a11e8cf08baaf77417d4c7dcd166b",
     "bin": "SoftOrganizer.exe",
     "innosetup": true,
     "pre_install": [
