@@ -5,7 +5,7 @@
     "license": "Freeware",
     "changelog": "https://www.chemtable.com/version-history.htm?prod_id=Files%20Inspector",
     "url": "https://www.chemtable.com/files/fi/files-inspector-setup.exe#/setup.7z",
-    "hash": "7ac74374e6d5e37aecff978fc8d06d6792be8970057d677f4ac5917b7438a969",
+    "hash": "31aaab29ea85a32ed17c55b18d95824eb4b38a9b40cdaa1618b5c23b0a930a9c",
     "bin": "FilesInspector.exe",
     "innosetup": true,
     "pre_install": [
