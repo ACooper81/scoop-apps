@@ -3,7 +3,7 @@
     "description": "LibreOffice. Complete office suite",
     "homepage": "https://portableapps.com/apps/office/libreoffice_portable",
     "license": "",
-    "url": "https://ftp.osuosl.org/pub/tdf/libreoffice/portable/7.2.1/LibreOfficePortable_7.2.1_MultilingualStandard.paf.exe",
+    "url": "https://ftp.osuosl.org/pub/tdf/libreoffice/portable/7.2.1/LibreOfficePortable_7.2.1_MultilingualStandard.paf.exe#/dl.7z",
     "hash": "51ff5cde6eb849b36b6f645babfb3b8d16b3eabf88a29e6e075da4bde9119a7f",
     "bin": "LibreOfficePortable.exe",
     "shortcuts": [
@@ -18,7 +18,7 @@
         "regex": "Version ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://ftp.osuosl.org/pub/tdf/libreoffice/portable/$version/LibreOfficePortable_$version_MultilingualStandard.paf.exe",
+        "url": "https://ftp.osuosl.org/pub/tdf/libreoffice/portable/$version/LibreOfficePortable_$version_MultilingualStandard.paf.exe#/dl.7z",
         "hash": {
             "url": "https://portableapps.com/apps/office/libreoffice_portable",
             "regex": "MD5 Hash: +[\\w]{32}"
