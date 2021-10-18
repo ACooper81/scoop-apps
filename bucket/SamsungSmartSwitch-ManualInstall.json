@@ -1,11 +1,11 @@
 {
-    "version": "4.2.21075.3",
+    "version": "4.2.21093.6",
     "description": "Samsung Smart Switch. A sure and secure way to move your data to Galaxy",
     "homepage": "https://www.samsung.com/au/apps/smart-switch/#downloadforPCorMAC",
     "license": "Freeware",
     "changelog": "",
     "url": "https://www.samsung.com/global/download/smartswitchwin#/setup.exe",
-    "hash": "581e3b744ae2922d55cc1eeb9620469f2dd9ac9671535a435095b531037fa27f",
+    "hash": "f83a768758f0c3da2d23b6130a74efecf345103d3f99eb56641cdfa30a59ad4b",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"SmartSwitchPC\"",
