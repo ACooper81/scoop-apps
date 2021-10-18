@@ -5,7 +5,7 @@
     "license": "Freeware",
     "changelog": "https://github.com/ACooper81/PSScoop/releases",
     "url": "https://github.com/ACooper81/PSScoop/releases/download/v0.1.3/PSScoop-0.1.3.zip#/dl.7z",
-    "hash": "3c5fa3094a1dc19f0c09e5c4e7cbbadb8d8eb00923c991f9aaeb2eceab131767",
+    "hash": "e487ee19b201c46cde71ce640cbd87db7f9d20ebc4a49b81ab56be62c5c79068",
     "psmodule": {
         "name": "PSScoop"
     },
