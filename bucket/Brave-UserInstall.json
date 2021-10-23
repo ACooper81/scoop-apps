@@ -32,8 +32,8 @@
     ],
     "installer": {
         "script": [
-            "$LocalAppData = [Environment]::GetFolderPath(\"LocalAppData\")",
-            "$filepath = \"$LocalAppData\\BraveSoftware\\Brave-Browser\\Application\\brave.exe\"",
+            "$LocalApplicationData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
+            "$filepath = \"$LocalApplicationData\\BraveSoftware\\Brave-Browser\\Application\\brave.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version.ToString().Substring(3) -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" | Out-Null",
