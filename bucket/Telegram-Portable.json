@@ -14,7 +14,7 @@
             "hash": "28796F8AEF46EE963F34D48184308AA28C0AC9B2998D2CCCF2DFAACFCF3F1F53"
         }
     },
-    "extractdir": "Telegram",
+    "extract_dir": "Telegram",
     "bin": "telegram.exe",
     "persist": "tdata",
     "shortcuts": [
