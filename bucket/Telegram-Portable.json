@@ -29,10 +29,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://updates.tdesktop.com/tx64/tportable-x64.3.1.8.zip"
+                "url": "https://updates.tdesktop.com/tx64/tportable-x64.$version.zip"
             },
             "32bit": {
-                "url": "https://updates.tdesktop.com/tsetup/tportable.3.1.8.zip"
+                "url": "https://updates.tdesktop.com/tsetup/tportable.$version.zip"
             }
         }
     }
