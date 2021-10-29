@@ -4,6 +4,10 @@
 Refer to new installer how to install base scoop.
 https://github.com/ScoopInstaller/Install#scoop-uninstaller
 
+Run the following in a non-admin PowerShell terminal
+- Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+- iwr -useb 'https://raw.githubusercontent.com/scoopinstaller/install/master/install.ps1' | iex
+
 As soon as base scoop is installed do the following:
 
 - scoop install 7zip git sudo dark innounp lessmsi aria2 --global --no-cache
