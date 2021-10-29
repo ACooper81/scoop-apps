@@ -1,5 +1,5 @@
 {
-    "version": "1.8.1.1029",
+    "version": "2.0.1.1055",
     "description": "4K Slideshow Maker. Create impressive slideshows, save your memories.",
     "homepage": "https://www.4kdownload.com/products/product-slideshowmaker",
     "notes": "This manifest only installs and updates 4K Slideshow Maker",
@@ -9,12 +9,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.4kdownload.com/app/4kslideshowmaker_1.8.1_x64.msi#/setup.msi_",
-            "hash": "9127ccf7a5145df36c84920bbe2779915dfdaf35c014c5c9952e0d831dbcb2f4"
+            "url": "https://dl.4kdownload.com/app/4kslideshowmaker_2.0.1_x64.msi#/setup.msi_",
+            "hash": "600ee76d2f1cddc7c264b8f37d593a765553b9e65553e6b58f91570e710b3474"
         },
         "32bit": {
-            "url": "https://dl.4kdownload.com/app/4kslideshowmaker_1.8.1.msi#/setup.msi_",
-            "hash": "f61cb1adf76a45d1cde2d7ab307d08acbddd630d4d8f14962a4fc7f5d8b6ae6b"
+            "url": "https://dl.4kdownload.com/app/4kslideshowmaker_2.0.1.msi#/setup.msi_",
+            "hash": "1abf45d28580ad1b527fb7db41dbece1de8e5cc6eee900ce77c21e030e425165"
         }
     },
     "pre_download": "Assert-Administrator",
