@@ -1,0 +1,44 @@
+{
+    "version": "9.40.86.0",
+    "description": "Logitech Options software lets you customize your device's settings",
+    "homepage": "https://www.logitech.com/en-us/product/options",
+    "license": "",
+    "notes": "",
+    "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe#/setup.exe",
+    "hash": "c7cadd557d2a01a6d9da3cc3b32d372752e12f369c8c6636d2fa9b1b6f1c2489",
+    "pre_download": "Assert-Administrator",
+    "pre_install": [
+        "$processname = \"LogiOptions\"",
+        "$process = Get-Process $processname -ErrorAction SilentlyContinue",
+        "if ($process) {",
+        "   $process.CloseMainWindow()",
+        "   Start-Sleep -Seconds 5",
+        "   if (!$process.HasExited) {",
+        "       Start-Sleep -Seconds 25",
+        "       $process | Stop-Process -Force",
+        "   }",
+        "}"
+    ],
+    "installer": {
+        "script": [
+            "$programname = \"Logitech Options*\"",
+            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\LogiOptions\"",
+            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "{",
+            "   &\"$dir\\setup.exe\" /quiet /update=false /flow=false | Out-Null",
+            "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "   {",
+            "       exit 1",
+            "   }",
+            "}",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
+        ]
+    },
+    "checkver": {
+        "url": "http://www.softwarerating.info/programs/?id=1397147448494364",
+        "regex": "<title>Download Logitech Options ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe#/setup.exe"
+    }
+}
