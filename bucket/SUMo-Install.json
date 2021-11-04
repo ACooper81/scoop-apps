@@ -1,5 +1,5 @@
 {
-    "version": "5.14.2.509",
+    "version": "5.14.3.510",
     "description": "Detecting and updating outdated software",
     "homepage": "https://www.kcsoftwares.com/?sumo",
     "license": {
@@ -7,7 +7,7 @@
         "url": "http://www.kcsoftwares.com/legal/ToU.pdf"
     },
     "url": "https://www.kcsoftwares.com/files/sumo_lite.exe#/setup.exe",
-    "hash": "7d4d74559f6607d168c0c050a51291edd2b1ffc5fd1a1f164d16bf2a8fd7d7c6",
+    "hash": "eefa293e3b8b732c532dccc2b643b1b26c9555db5d6a984094cce17a821fa088",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"SUMo\"",
