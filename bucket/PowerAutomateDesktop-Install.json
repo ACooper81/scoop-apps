@@ -21,8 +21,9 @@
     "installer": {
         "script": [
             "$programname = \"Power Automate Desktop*\"",
-            "$regPath = \"HKLM:\\SOFTWARE\\WOW6432Node\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{f6cafb72-c4d0-4a33-b2cd-0fcab1671712}\"",
-            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$filepath = \"$ProgramFilesX86\\Power Automate Desktop\\PAD.Console.Host.exe\"",
+            "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" -Install -ACCEPTEULA -Silent -DisablePADShortcut | Out-Null",
             "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
