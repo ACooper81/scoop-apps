@@ -1,10 +1,10 @@
 {
-    "version": "2.0.4983.3",
+    "version": "2.1.5699.1",
     "description": "Amazon Games. Explore all games, loot, and more for Prime members",
     "homepage": "https://www.amazon.com/b?node=21211466011",
     "license": "",
     "url": "https://download.amazongames.com/AmazonGamesSetup.exe#/setup.exe",
-    "hash": "1A99F1054E51FE86416C59E5C526D69776FDABD7BB9831DBAAB8582322121C7A",
+    "hash": "E663BB9116EF2CB557657504623C0DE7C597A3B89A061DA43AE8148655664226",
     "installer": {
         "script": [
             "$UserProfile = [Environment]::GetFolderPath(\"userprofile\")",
