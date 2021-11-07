@@ -26,7 +26,7 @@
             "Winaero Tweaker"
         ]
     ],
-    "checkver": "change log</span></h2><p>([\\d.]+)",
+    "checkver": "The latest version is ([\\d.]+)",
     "autoupdate": {
         "url": "https://winaero.com/winaerotweaker.zip"
     }
