@@ -14,8 +14,9 @@
         ]
     ],
     "checkver": {
-        "url": "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/t/TeamSonarr/Sonarr/3.0/TeamSonarr.Sonarr.installer.yaml",
-        "regex": "/main/([\\d.]+)"
+        "url": "view-source:https://download.sonarr.tv/v3/main/",
+        "regex": "<a href=\"([\\d.]+)",
+        "reverse": true
     },
     "autoupdate": {
         "url": "https://download.sonarr.tv/v3/main/$version/Sonarr.main.$version.windows.zip#/setup.zip"
