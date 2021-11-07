@@ -14,7 +14,7 @@
         ]
     ],
     "checkver": {
-        "url": "view-source:https://download.sonarr.tv/v3/main/",
+        "url": "https://download.sonarr.tv/v3/main/",
         "regex": "<a href=\"([\\d.]+)",
         "reverse": true
     },
