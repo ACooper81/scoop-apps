@@ -5,7 +5,7 @@
     "license": "MIT",
     "changelog": "https://github.com/kiedtl/winfetch/releases",
     "url": "https://raw.githubusercontent.com/kiedtl/winfetch/v2.3.0/winfetch.ps1",
-    "hash": "c9a63cf0b922f39ebb8c61b9ee41fad9f57c4049d3025f24c947fe4250ca3232",
+    "hash": "9549bdc36103d5ea8e8efc597159b1455194134960a7ebeea67a7dd36772d9e5",
     "bin": "winfetch.ps1",
     "checkver": "github",
     "autoupdate": {
