@@ -1,11 +1,11 @@
 {
-    "version": "3.8.0",
+    "version": "3.8.2",
     "description": "Plexamp. A beautiful, dedicated Plex music player with tons of goodies for audiophile purists, music curators, and hipsters looking for their next aural fix.",
     "homepage": "https://plexamp.com/",
     "license": "Apache-2.0",
     "changelog": "https://forums.plex.tv/t/plexamp-release-notes/",
-    "url": "https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp%20Setup%203.8.0.exe#/dl.7z",
-    "hash": "d9f8e88e83e9a80c1775903b96c1acab84f3ca0a143a4c15dea0a57af9bba89b",
+    "url": "https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp%20Setup%203.8.2.exe#/dl.7z",
+    "hash": "8a9f353581e4d67c0dd30f724a637a619ba9203c64bd38132abb4f13f1da3ca5",
     "extract_dir": "$PLUGINSDIR",
     "architecture": {
         "64bit": {
