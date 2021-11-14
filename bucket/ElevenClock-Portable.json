@@ -6,6 +6,7 @@
     "changelog": "https://github.com/martinet101/ElevenClock/releases",
     "url": "https://github.com/martinet101/ElevenClock/releases/download/2.6.1/ElevenClock.Installer.exe",
     "hash": "6183010c53c6b76ee26499588f6be531df9c77718052b370c7531e243f6d3b45",
+    "innosetup": true,
     "bin": "ElevenClock.exe",
     "shortcuts": [
         [
