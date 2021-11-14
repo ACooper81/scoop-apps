@@ -16,10 +16,10 @@
             }
         }
     },
-    "bin": "TwinkleTray.exe",
+    "bin": "Twinkle Tray.exe",
     "shortcuts": [
         [
-            "TwinkleTray.exe",
+            "Twinkle Tray.exe",
             "Twinkle Tray"
         ]
     ],
