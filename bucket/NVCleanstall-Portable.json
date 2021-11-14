@@ -18,6 +18,6 @@
         "regex": "NVCleanstall v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://us2-dl.techpowerup.com/files/JBR9DxzW4xMC18bluf0e8Q/1631390580/NVCleanstall_$version.exe#/NVCleanstall.exe"
+        "url": "https://us2-dl.techpowerup.com/files/ExPVLejs-wMwVC7eVDFmeA/1636906298/NVCleanstall_$version.exe#/NVCleanstall.exe"
     }
 }
