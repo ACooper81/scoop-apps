@@ -4,7 +4,7 @@
     "homepage": "https://twinkletray.com/",
     "license": "MIT",
     "changelog": "https://github.com/xanderfrangos/twinkle-tray/releases",
-    "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v1.13.9/Twinkle.Tray.v1.13.9.exe",
+    "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v1.13.9/Twinkle.Tray.v1.13.9.exe#/dl.7z",
     "hash": "74a4868f362243678d06afd51cadb6e8efa4fe2848a75ac0300a2bda66ee72f9",
     "architecture": {
         "64bit": {
@@ -28,6 +28,6 @@
         "github": "https://github.com/xanderfrangos/twinkle-tray"
     },
     "autoupdate": {
-        "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v$version/Twinkle.Tray.v$version.exe"
+        "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v$version/Twinkle.Tray.v$version.exe#/dl.7z"
     }
 }
