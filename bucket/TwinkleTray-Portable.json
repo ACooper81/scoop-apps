@@ -6,6 +6,17 @@
     "changelog": "https://github.com/xanderfrangos/twinkle-tray/releases",
     "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v1.13.9/Twinkle.Tray.v1.13.9.exe",
     "hash": "74a4868f362243678d06afd51cadb6e8efa4fe2848a75ac0300a2bda66ee72f9",
+    "architecture": {
+        "64bit": {
+            "installer": {
+                "script": [
+                    "Remove-Item \"$dir\\*\" -Exclude \"app-64.7z\"",
+                    "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\"",
+                    "Remove-Item \"$dir\\app-64.7z\""
+                ]
+            }
+        }
+    },
     "bin": "TwinkleTray.exe",
     "shortcuts": [
         [
