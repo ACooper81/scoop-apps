@@ -1,5 +1,5 @@
 {
-    "version": "2.001",
+    "version": "2.002",
     "description": "TweakPower. Optimize Windows made easy",
     "homepage": "https://kurtzimmermann.com",
     "license": "freeware",
@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://kurtzimmermann.com/files/TweakPowerX64.zip",
-            "hash": "2e78d1f77a6e068dfc52aa5eb6c19d099ca2e6bf72069f0dbf4d681a843af9a0"
+            "hash": "5c941f30c431d5f1d5238ae92ff42210d9348d717c26b4bfce4750df6ed5dd7d"
         },
         "32bit": {
             "url": "https://kurtzimmermann.com/files/TweakPowerX32.zip",
-            "hash": "f7a06f3ab7a22b10ca8b5b507ef54de6d9885aea18e6e674aab62bb5ed017691"
+            "hash": "483821db6350a4ae27ba4c5683d5dd0754c686de19b6fc14a55dc314083b86f1"
         }
     },
     "persist": "Settings",
