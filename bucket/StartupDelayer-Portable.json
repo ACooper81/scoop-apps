@@ -6,16 +6,16 @@
     "changelog": "",
     "url": "https://www.r2.com.au/static/downloads/files/startup-delayer-v3.0b366.exe#/setup.exe",
     "hash": "340a426a4b5ac8ac6a909188d7286bdc133688db65a53fb3e5f38fc16439e194",
-    "depends": "upx",
+    "depends": "UniversalExtractor2-Portable",
     "installer": {
         "script": [
-            "upx.exe -d $dir\\setup.exe"
+            "Invoke-ExternalCommand uniextract -ArgumentList @(\"$dir\\setup.exe\", \"$dir\", '/silent') | Out-Null"
         ]
     },
-    "bin": "Startup Delayer.exe",
+    "bin": "%AppFolder%\\Startup Delayer.exe",
     "shortcuts": [
         [
-            "Startup Delayer.exe",
+            "%AppFolder%\\Startup Delayer.exe",
             "Startup Delayer"
         ]
     ],
