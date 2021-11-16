@@ -6,6 +6,7 @@
     "changelog": "",
     "url": "https://www.r2.com.au/static/downloads/files/startup-delayer-v3.0b366.exe#/setup.7z",
     "hash": "340a426a4b5ac8ac6a909188d7286bdc133688db65a53fb3e5f38fc16439e194",
+    "extractdir": "%AppFolder%",
     "bin": "Startup Delayer.exe",
     "shortcuts": [
         [
