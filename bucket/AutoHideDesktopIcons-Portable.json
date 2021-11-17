@@ -1,5 +1,5 @@
 {
-    "version": "5.15",
+    "version": "5.22",
     "description": "AutoHideDesktopIcons. Auto hide and showing the Windows desktop icons with a timer!",
     "homepage": "http://www.softwareok.com/?seite=Microsoft/AutoHideDesktopIcons",
     "license": "Freeware",
@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.softwareok.com/Download/AutoHideDesktopIcons_Portable.zip",
-            "hash": "e773439b9476adab56c01edf426dbc2a25f41ec0b24649ad62d7809235f76ce1",
+            "hash": "cc3a6598f5b890fedcaf6c615e09d64b05de5649a7a6fe7a506d730d554cfe9a",
             "shortcuts": [
                 [
                     "AutoHideDesktopIcons_p.exe",
@@ -17,7 +17,7 @@
         },
         "32bit": {
             "url": "https://www.softwareok.com/Download/AutoHideDesktopIcons_Portable.zip",
-            "hash": "e773439b9476adab56c01edf426dbc2a25f41ec0b24649ad62d7809235f76ce1",
+            "hash": "cc3a6598f5b890fedcaf6c615e09d64b05de5649a7a6fe7a506d730d554cfe9a",
             "shortcuts": [
                 [
                     "AutoHideDesktopIcons_p.exe",
