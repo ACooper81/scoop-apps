@@ -1,11 +1,11 @@
 {
-    "version": "1.2.1.7",
+    "version": "1.2.1.8",
     "description": "TIDAL Media Downloader Pro. «Tidal-Media-Downloader» is an application that lets you download videos and tracks from Tidal. It supports two version: tidal-dl and tidal-gui.",
     "homepage": "https://github.com/yaronzz/Tidal-Media-Downloader-PRO",
     "license": "Apache 2.0",
     "changelog": "https://github.com/yaronzz/Tidal-Media-Downloader-PRO/releases",
-    "url": "https://github.com/yaronzz/Tidal-Media-Downloader-PRO/releases/download/1.2.1.7/tidal-gui.exe",
-    "hash": "1607041cb5f1920e9a6c73acd4b01e353f8baa58097ba893cf13c8801867186b",
+    "url": "https://github.com/yaronzz/Tidal-Media-Downloader-PRO/releases/download/1.2.1.8/tidal-gui.exe",
+    "hash": "1d8741170c3f40dd25c4c76315355c18adbf4ee9f4018a57b997c3bd91469302",
     "bin": "tidal-gui.exe",
     "shortcuts": [
         [
