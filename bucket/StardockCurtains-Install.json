@@ -1,11 +1,11 @@
 {
-    "version": "1.19",
+    "version": "1.19.1",
     "description": "Stardock Curtains. Easily create and add additional style modes to Windows 10",
     "homepage": "https://www.stardock.com/products/curtains/",
     "license": "Proprietary",
     "changelog": "https://www.stardock.com/products/curtains/history",
     "url": "https://cdn.stardock.us/downloads/public/software/curtains/Curtains_setup_sd.exe#/setup.exe",
-    "hash": "ddc715a0c007530e1dac428a88c104871337d79890349a61f9b19bb0eb741eec",
+    "hash": "59677fa82bed189067847066978971457be072250d47b56683a30b3c11971447",
     "pre_download": "Assert-Administrator",
     "installer": {
         "script": [
