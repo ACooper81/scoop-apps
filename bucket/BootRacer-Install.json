@@ -1,10 +1,10 @@
 {
-    "version": "8.60.2021.0802",
+    "version": "8.70.2021.1123",
     "description": "BootRacer. Monitors Boot Time and Detects Slow Startup Programs",
     "homepage": "https://www.greatis.com/bootracer/#top",
     "license": "Freemium",
     "url": "https://www.greatissoftware.com/bootracer_free.zip",
-    "hash": "b1368ff4a6ea6def0c05bb8ee1ab0e04552f05f90ef79fea1f503edae5526470",
+    "hash": "1f4734b8520ca9d5237543c42354561846eaa1f330aa89909f184cbeaa7c0560",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"Bootrace.exe\"",
