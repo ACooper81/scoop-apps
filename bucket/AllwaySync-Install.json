@@ -1,17 +1,17 @@
 {
-    "version": "21.0.9",
+    "version": "21.1.5",
     "description": "Allway Sync. Is backup and file synchronization software.",
     "homepage": "https://allwaysync.com/",
     "license": "Propritary",
     "changelog": "https://allwaysync.com/news",
     "architecture": {
         "64bit": {
-            "url": "https://allwaysync.com/content/download/allwaysync-x64-21-0-9.exe#/setup.exe",
-            "hash": "0d3f1202ca744126716a4dd03c56b50116032fe54995841851aa6d944f0346e2"
+            "url": "https://allwaysync.com/content/download/allwaysync-x64-21-1-5.exe#/setup.exe",
+            "hash": "41581a1f85f246434fc922fa0f2f13dec06a81454ea2d1c9a95ff0d46589d9aa"
         },
         "32bit": {
-            "url": "https://allwaysync.com/content/download/allwaysync-21-0-9.exe#/setup.exe",
-            "hash": "d8c150bba0a3884964584bfa2e84fa07799f9271a5d5bc0fbcb961748e06e7e0"
+            "url": "https://allwaysync.com/content/download/allwaysync-21-1-5.exe#/setup.exe",
+            "hash": "1adbe91259f7850bf246be59ae4fe6527f1df5c85b4ba5fb363b960c2d7f1c39"
         }
     },
     "pre_download": "Assert-Administrator",
