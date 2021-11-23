@@ -1,5 +1,5 @@
 {
-    "version": "1.133",
+    "version": "1.200",
     "description": "RegCool. RegCool is a very flexible editor for the Windows registry.",
     "homepage": "https://kurtzimmermann.com/regcoolext_en.html",
     "changelog": "https://kurtzimmermann.com/regcoolversions_en.html",
@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://kurtzimmermann.com/files/RegCoolX64.zip",
-            "hash": "d7339391bcd35be70b1c3adbbf9b2cb09459fdaa50b34e086a4713f78bf9f604"
+            "hash": "f6d62acc1d34c4ea7ed96db93b0c0655cbf6addc4f6cab0cf717053d9d3bc7a1"
         },
         "32bit": {
             "url": "https://kurtzimmermann.com/files/RegCoolX32.zip",
-            "hash": "3038e5ddbde301533cd0cecb72d95f237b3f7a6e5d2ea0a5932e1808b0f1b040"
+            "hash": "58fd8450c8e46c5f56c21f68e57f2a187ce75353995a9c39452b05671d5b1d8f"
         }
     },
     "persist": "Settings",
