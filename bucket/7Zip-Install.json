@@ -1,5 +1,5 @@
 {
-    "version": "19.00",
+    "version": "21.06",
     "description": "7-Zip. A multi-format file archiver with high compression ratios",
     "homepage": "https://www.7-zip.org/",
     "notes": "This manifest only installs and updates 7-Zip",
@@ -10,17 +10,15 @@
     "changelog": "https://7zip.dev/en/changelog/",
     "architecture": {
         "64bit": {
-            "url": "https://7-zip.org/a/7z1900-x64.msi#/setup.msi_",
-            "hash": "a7803233eedb6a4b59b3024ccf9292a6fffb94507dc998aa67c5b745d197a5dc"
+            "url": "https://7-zip.org/a/7z2106-x64.msi#/setup.msi_",
+            "hash": "3a18c7ed102778c1735def84d88c1abeec6919436aee4c4d852acaea90101dd7"
         },
         "32bit": {
-            "url": "https://7-zip.org/a/7z1900.msi#/setup.msi_",
-            "hash": "b49d55a52bc0eab14947c8982c413d9be141c337da1368a24aa0484cbb5e89cd"
+            "url": "https://7-zip.org/a/7z2106.msi#/setup.msi_",
+            "hash": "68a38ecca0643f55eff55e6c5cc22bb89b4763a5cfdc68fd53b06f50da10ed5d"
         }
     },
-    "pre_download":[
-        "Assert-Administrator"
-    ],
+    "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"7zFM\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
