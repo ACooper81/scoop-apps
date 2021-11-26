@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.adobe.com/go/dng_converter_win#/setup.exe",
-            "hash": "8421712b1afcc2436562a4d90e4b28b0122e61196cbfb26e79bdfe28a9aaed5a"
+            "hash": "64D1E13CC0FD7503586C31379C50574F694FB7F86B90BAF489D57030ECC7229A"
         }
     },
     "pre_download": "Assert-Administrator",
