@@ -6,7 +6,7 @@
     "changelog": "",
     "architecture": {
         "64bit": {
-            "url": "https://www.adobe.com/go/acr_installer_win#/setup.exe",
+            "url": "https://www.adobe.com/go/dng_installer_win#/setup.exe",
             "hash": "8421712b1afcc2436562a4d90e4b28b0122e61196cbfb26e79bdfe28a9aaed5a"
         }
     },
@@ -50,7 +50,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.adobe.com/go/acr_installer_win#/setup.exe"
+                "url": "https://www.adobe.com/go/dng_installer_win#/setup.exe"
             }
         }
     }
