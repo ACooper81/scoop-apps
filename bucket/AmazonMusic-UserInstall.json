@@ -8,8 +8,9 @@
     "installer": {
         "script": [
             "$programname = \"Amazon Music*\"",
-            "$regPath = \"HKCU:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Amazon Amazon Music\"",
-            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "$AppData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
+            "$filepath = \"$AppData\\Amazon Music\\Amazon Music.exe\"",
+            "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   Get-Process 'Amazon Music' -ErrorAction SilentlyContinue | Stop-Process -Force",
             "   $command = \"do {Sleep 1} until (Get-Process 'Amazon Music' -ErrorAction SilentlyContinue); Get-Process 'Amazon Music Helper' | Stop-Process -Force; Get-Process 'Amazon Music' | Stop-Process -Force\"",
@@ -17,7 +18,7 @@
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command -WindowStyle Hidden",
             "   Start-Process -FilePath \"powershell.exe\" -ArgumentList $command2 -WindowStyle Hidden",
             "   &\"$dir\\setup.exe\" --unattendedmodeui none | Out-Null",
-            "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
             "   }",
