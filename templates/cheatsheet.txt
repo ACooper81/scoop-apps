@@ -70,8 +70,8 @@ Install Scripts
 
     "installer": {
         "script": [
-            "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$filepath = \"$ProgramFilesX86\\folder\\file.exe\"",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$filepath = \"$ProgramFiles\\folder\\file.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /FORCECLOSEAPPLICATIONS /NORESTART /SP- | Out-Null",
