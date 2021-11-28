@@ -8,7 +8,7 @@
     },
     "changelog": "",
     "url": "https://www.deezer.com/desktop/download?platform=win32&architecture=x86#/setup.exe",
-    "hash": "7be6dcb99c3898b287d54c775365433ea2d0d6bfd0c0a39ac647e72730cd3575",
+    "hash": "ec874ed8d9ee2377a8cafda6d021d735bc3c1d1de87445b776561c855213a641",
     "pre_install": [
         "$processname = \"Deezer\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
