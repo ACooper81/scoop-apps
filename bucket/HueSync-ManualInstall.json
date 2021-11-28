@@ -27,11 +27,12 @@
     "installer": {
         "script": [
             "$programname = \"Hue Sync*\"",
-            "$regPath = \"HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{C0270355-35E2-4862-8B57-A7C1A258AF77}\"",
-            "if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$filepath = \"$ProgramFiles\\Hue Sync\\HueSync.exe\"",
+            "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /S | Out-Null",
-            "   if((Get-ItemProperty -LiteralPath \"$regPath\").DisplayVersion -lt [Version]\"$version\")",
+            "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
             "   }",
