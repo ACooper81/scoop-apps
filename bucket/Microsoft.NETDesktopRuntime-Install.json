@@ -19,7 +19,7 @@
             "$programname = \"Microsoft Windows Desktop Runtime*\"",
             "$downloadlink = \"https://dotnet.microsoft.com/download/dotnet/5.0\"",
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$filepath = \"$ProgramFiles\\dotnet\\shared\\Microsoft.NETCoreApp\\$version\\\"",
+            "$filepath = \"$ProgramFiles\\dotnet\\shared\\Microsoft.NETCoreApp\\6.0.0\\\"",
             "if((Test-Path -Path $filepath) -eq $false)",
             "{",
             "   &\"$dir\\setup.exe\" /quiet | Out-Null",
