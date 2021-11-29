@@ -26,7 +26,7 @@
             "$filepath = \"$ProgramFiles\\Samsung\\Smart Switch PC\\SmartSwitchPC.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   &\"$dir\\setup.exe\" | Out-Null",
             "   Start-Sleep -Seconds 60",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
