@@ -1,5 +1,5 @@
 {
-    "version": "4",
+    "version": "3.13",
     "description": "Stardock Fences. Automatically organize your desktop shortcuts icons and running tasks",
     "homepage": "https://www.stardock.com/products/fences/",
     "license": "Proprietary",
@@ -28,8 +28,8 @@
         "if (Test-Path \"$DesktopPath\\Customize Fences.lnk\") {Remove-Item \"$DesktopPath\\Customize Fences.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://www.stardock.com/products/fences/history",
-        "regex": "<h2 class=\"changelog\">Fences ([\\d.]+)"
+        "url": "https://www.stardock.com/products/fences/update",
+        "regex": "Update to Version ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://cdn.stardock.us/downloads/public/software/fences/Fences3-sd-setup.exe#/setup.exe"
