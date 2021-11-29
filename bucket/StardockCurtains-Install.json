@@ -11,7 +11,7 @@
         "script": [
             "$programname = \"Stardock Curtains*\"",
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$filepath = \"$ProgramFiles\\Stardock\\Curtains\\CurtainsConfig.exe\"",
+            "$filepath = \"$ProgramFiles\\Stardock\\Curtains\\Curtains64.dll\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /s /noreboot | Out-Null",
