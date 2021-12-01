@@ -1,10 +1,10 @@
 {
-    "version": "9.10",
+    "version": "9.11",
     "description": "An open source video game library manager and launcher with support for 3rd party libraries like Steam, GOG, Origin, Battle.net and Uplay. Includes game emulation support, providing one unified interface for your games.",
     "homepage": "https://playnite.link/",
     "license": "MIT",
-    "url": "https://playnite.link/update/stable/9.10/Playnite910.zip",
-    "hash": "f8047404214ffa3d2671a6be3ce335a825d67861ef4f99b342c99830f1777f67",
+    "url": "https://playnite.link/update/stable/9.11/Playnite911.zip",
+    "hash": "c65de2de2d150f35bf788cb457b0896129116b6f3bcbeb8826e0abaf912e8db8",
     "bin": "Playnite.DesktopApp.exe",
     "shortcuts": [
         [
