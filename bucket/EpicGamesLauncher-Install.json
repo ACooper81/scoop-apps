@@ -23,7 +23,7 @@
             "$programname = \"Epic Games Launcher*\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$filepath = \"$ProgramFiles\\Epic Games\\Luancher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe\"",
+            "$filepath = \"$ProgramFiles\\Epic Games\\Luancher\\Portal\\Binaries\\Win64\\EpicGamesLauncher.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
