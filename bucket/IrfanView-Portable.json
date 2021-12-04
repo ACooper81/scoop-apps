@@ -1,5 +1,5 @@
 {
-    "version": "4.58",
+    "version": "4.59",
     "description": "A fast, compact and innovative graphic viewer",
     "license": {
         "identifier": "Freeware",
@@ -8,8 +8,8 @@
     "homepage": "https://www.irfanview.com/",
     "architecture": {
         "64bit": {
-            "url": "https://www.irfanview.info/files/iview458_x64.zip",
-            "hash": "0c4e17336d800b1e072d8a0cb94957d673df11d1b526c6ce1f17aebc71f6dd76",
+            "url": "https://www.irfanview.info/files/iview459_x64.zip",
+            "hash": "a12155f6b8da6468ea1f99d70dfe199a59b992fecc503188677d13c04a8eeccd",
             "shortcuts": [
                 [
                     "i_view64.exe",
@@ -24,8 +24,8 @@
             ]
         },
         "32bit": {
-            "url": "https://www.irfanview.info/files/iview458.zip",
-            "hash": "e2d78f4d9b6ba7869dd5eb22e924655720474563ef78813929a54652ac59e28d",
+            "url": "https://www.irfanview.info/files/iview459.zip",
+            "hash": "60a98cb04285892f129d9ac17278ac53a500c29635fe240790c9af749518f0cf",
             "shortcuts": [
                 [
                     "i_view32.exe",
