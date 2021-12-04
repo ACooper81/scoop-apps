@@ -18,7 +18,8 @@
     "installer": {
         "script": [
             "&\"$dir\\setup.exe\" /VERYSILENT /PORTABLE=1 | Out-Null",
-            "New-Item -ItemType Directory -Force -Path \"$dir\\Sandbox\""
+            "New-Item -ItemType Directory -Force -Path \"$dir\\Sandbox\"",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
     },
     "persist":[
