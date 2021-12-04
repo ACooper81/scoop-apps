@@ -41,8 +41,7 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/e/EpicGames/EpicGamesLauncher",
-        "regex": "navigation-open Link--primary\" title=\"([\\d.]+)",
-        "reverse": true
+        "url": "https://m.majorgeeks.com/files/details/epic_games_store_launcher.html",
+        "regex": "Epic Games Store Launcher ([\\d.]+)"
     }
 }
