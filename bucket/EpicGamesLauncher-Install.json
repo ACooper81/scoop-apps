@@ -1,10 +1,10 @@
 {
-    "version": "1.2.17.0",
+    "version": "1.3.0.0",
     "description": "Epic Games Launcher. Allow players to purchase, install and keep their games up to date",
     "homepage": "https://www.epicgames.com/store/en-US/",
     "license": "Freemium",
-    "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Win32/EpicInstaller-12.1.7.msi#/setup.msi_",
-    "hash": "6B069AB06AC7F0885B17214980B1CED6BFEC5311D44CD510EF884CA5BF516AA1",
+    "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Win32/EpicInstaller-13.0.0.msi#/setup.msi_",
+    "hash": "0aeca6b283679678ad79d0400ed76936b0e943dc7a04996fac17d306b2763e99",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"EpicGamesLauncher\"",
