@@ -1,10 +1,10 @@
 {
-    "version": "7.13.0.2210",
+    "version": "8.8.2.2305",
     "description": "Amazon Music. Your Music: Simplae, Fast, Advanced.",
     "homepage": "https://www.amazon.com/b?node=16962657011",
     "license": "",
-    "url": "https://amazon.com/images/G/01/digital/music/morpho/installers/20200905/0031046272/AmazonMusicInstaller.exe#/setup.exe",
-    "hash": "73A2946C961D01B23FCE6BFF0FA26B71D47F00CFF32B7C7BB2BED3ABD72AA2E4",
+    "url": "https://d2j9xt6n9dg5d3.cloudfront.net/win/23051118_4826a00f51c5021cc5741ac83aa10b7f/AmazonMusicInstaller.exe#/setup.exe",
+    "hash": "995bc403162e52b0ad7c8c7617267e671c6b2d1fc872dcabc3cf7e179ec53fe1",
     "installer": {
         "script": [
             "$programname = \"Amazon Music*\"",
