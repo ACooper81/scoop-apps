@@ -7,6 +7,22 @@
     "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.exe",
     "hash": "1d73de789243a588a43d97948ab42c396aeadf21965ddf2d488e7dc67c7451ce",
     "innosetup": true,
+    "installer": {
+        "script": [
+            "&\"$dir\\setup.exe\" /VERYSILENT /PORTABLE=1 | Out-Null",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
+            "if (!(Test-Path \"$persist_dir\\Portable\")) {",
+            "   ensure \"$dir\\Portable\" | Out-Null",
+            "}",
+            "if (-not (Test-Path \"$persist_dir\\Portable\\MediaMonkey.ini\")) {",
+            "   Set-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" '[Portable]' -Encoding Ascii",
+            "   Add-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" 'IsPortable=1' -Encoding Ascii",
+            "}"
+        ]
+    },
+    "persist": [
+        "Portable"
+    ],
     "bin": "MediaMonkey.exe",
     "shortcuts": [
         [
