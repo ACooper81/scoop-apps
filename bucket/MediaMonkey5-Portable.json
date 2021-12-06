@@ -9,14 +9,14 @@
     "innosetup": true,
     "installer": {
         "script": [
-            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "if (!(Test-Path \"$persist_dir\\Portable\")) {",
             "   ensure \"$dir\\Portable\" | Out-Null",
             "}",
             "if (-not (Test-Path \"$persist_dir\\Portable\\MediaMonkey.ini\")) {",
             "   Set-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" '[Portable]' -Encoding Ascii",
             "   Add-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" 'IsPortable=1' -Encoding Ascii",
-            "}"
+            "}",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
     },
     "persist": [
