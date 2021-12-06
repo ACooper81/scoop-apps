@@ -9,7 +9,6 @@
     "innosetup": true,
     "installer": {
         "script": [
-            "&\"$dir\\setup.exe\" /VERYSILENT /PORTABLE=1 | Out-Null",
             "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "if (!(Test-Path \"$persist_dir\\Portable\")) {",
             "   ensure \"$dir\\Portable\" | Out-Null",
