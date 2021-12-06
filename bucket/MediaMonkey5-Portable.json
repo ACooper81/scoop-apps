@@ -4,8 +4,17 @@
     "homepage": "https://www.mediamonkey.com/windows",
     "license": "Freemium",
     "changelog": "https://www.mediamonkey.com/forum/viewtopic.php?p=485718",
-    "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.7z",
+    "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.exe",
     "hash": "1d73de789243a588a43d97948ab42c396aeadf21965ddf2d488e7dc67c7451ce",
+    "installer": {
+        "script": [
+            "&\"$dir\\setup.exe\" /VERYSILENT /PORTABLE=1 | Out-Null",
+            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
+            "if (!(Test-Path \"$persist_dir\\Sandbox\")) {",
+        "       ensure \"$dir\\Sandbox\" | Out-Null",
+        "   }"
+        ]
+    },
     "bin": "MediaMonkey.exe",
     "shortcuts": [
         [
@@ -18,6 +27,6 @@
         "regex": "Current version of MediaMonkey: ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.7z"
+        "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.exe"
     }
 }
