@@ -1,0 +1,23 @@
+{
+    "version": "0",
+    "description": "MediaMonkey 5. MediaMonkey is the award-winning media organizer and player for serious collectors. It cleans the mess in your music and video libraries, and lets you share and enjoy them across all your devices",
+    "homepage": "https://www.mediamonkey.com/windows",
+    "license": "Freemium",
+    "changelog": "https://www.mediamonkey.com/forum/viewtopic.php?p=485718",
+    "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z",
+    "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
+    "bin": "MediaMonkey.exe",
+    "shortcuts": [
+        [
+            "MediaMonkey.exe",
+            "MediaMonkey 5"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.mediamonkey.com/forum/viewtopic.php?t=8811",
+        "regex": "Current version of MediaMonkey: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.7z"
+    }
+}
