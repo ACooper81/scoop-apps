@@ -13,8 +13,8 @@
             "   ensure \"$dir\\Portable\" | Out-Null",
             "}",
             "if (-not (Test-Path \"$persist_dir\\Portable\\MediaMonkey.ini\")) {",
-            "   Set-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" '[Portable]' -Encoding Ascii",
-            "   Add-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" 'IsPortable=1' -Encoding Ascii",
+            "   Set-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" \"[Portable]\"",
+            "   Add-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" \"IsPortable=1\"",
             "}",
             "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
