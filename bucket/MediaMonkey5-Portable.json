@@ -12,9 +12,9 @@
             "if (!(Test-Path \"$persist_dir\\Portable\")) {",
             "   ensure \"$dir\\Portable\" | Out-Null",
             "}",
-            "if (-not (Test-Path \"$persist_dir\\Portable\\MediaMonkey.ini\")) {",
-            "   Set-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" \"[Portable]\"",
-            "   Add-Content \"$persist_dir\\Portable\\MediaMonkey.ini\" \"IsPortable=1\"",
+            "if (-not (Test-Path \"$dir\\Portable\\MediaMonkey.ini\")) {",
+            "   Set-Content \"$dir\\Portable\\MediaMonkey.ini\" \"[Portable]\"",
+            "   Add-Content \"$dir\\Portable\\MediaMonkey.ini\" \"IsPortable=1\"",
             "}",
             "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
