@@ -4,7 +4,7 @@
     "homepage": "https://flow.microsoft.com/en-us/desktop/",
     "license": "",
     "url": "https://go.microsoft.com/fwlink/?LinkId=2102613&clcid=0x409#/setup.exe",
-    "hash": "d3f7392acebb8189ecccf43e477553cbdb34b2cfd9a4d6f1b9f6e9669a23cfbc",
+    "hash": "c9fcd5e69fe7ea140149e7199ecab0043bc9e87f688f5a4ed324e8ef7955b1f2",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"PAD.Console.Host.exe\"",
