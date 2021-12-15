@@ -1,5 +1,5 @@
 {
-    "version": "14.0.1",
+    "version": "14.1",
     "description": "Adobe DNG Converter. The Adobe DNG Converter enables you to easily convert camera-specific raw files from supported cameras to a more universal DNG raw file.",
     "homepage": "https://helpx.adobe.com/camera-raw/digital-negative.html",
     "license": "Freeware",
@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.adobe.com/go/dng_converter_win#/setup.exe",
-            "hash": "64D1E13CC0FD7503586C31379C50574F694FB7F86B90BAF489D57030ECC7229A"
+            "hash": "6d03e53e5ff34bd1869a0698030b97c528730f66cd2ddc10b8bf50ee2fbd372d"
         }
     },
     "pre_download": "Assert-Administrator",

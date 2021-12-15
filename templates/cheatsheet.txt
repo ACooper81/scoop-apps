@@ -48,6 +48,22 @@ Pre_Install Scripts
     ],
 
 ==================================================
+Post_Install Scripts
+==================================================
+
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}",
+        "",
+        "Remove-Variable process"
+    ],
+
+    "post_install": [
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
+    ],
+
+==================================================
 Install Scripts
 ==================================================
 
@@ -122,15 +138,6 @@ Install Scripts
             "Remove-Item \"$dir\\setup.exe\" -Force"
         ]
     },
-
-==================================================
-Post_Install Scripts
-==================================================
-
-    "post_install": [
-        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
-        "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
-    ],
 
 ==================================================
 Uninstall Scripts
