@@ -1,11 +1,11 @@
 {
-    "version": "1.24.7",
+    "version": "1.25.4",
     "description": "VeraCrypt. VeraCrypt is a free open source disk encryption software for Windows, Mac OSX and Linux.",
     "homepage": "https://www.veracrypt.fr/en/Home.html",
     "license": "Apache-2.0",
     "changelog": "https://www.veracrypt.fr/en/Release%20Notes.html",
-    "url": "https://download3.portableapps.com/portableapps/VeraCryptPortable/VeraCryptPortable_1.24_Update_7.paf.exe?20190321#/dl.7z",
-    "hash": "F21789813565ED6486E70A99005BBD7E57F8046C4E21A9BDB2D4D7140924F727",
+    "url": "https://download3.portableapps.com/portableapps/VeraCryptPortable/VeraCryptPortable_1.25.4.paf.exe?20190321#/dl.7z",
+    "hash": "cc997f741436f7b3f3011f53d175ceffec7212ff2ce4d04fd0da1d40e6eac40b",
     "bin": [
         [
             "VeraCryptPortable.exe",
