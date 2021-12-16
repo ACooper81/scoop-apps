@@ -16,8 +16,7 @@
     ],
     "checkver": {
         "url": "https://allwaysync.com/download/",
-        "regex": "allwaysync-n-go-(\\d+)-(\\d+)-(\\d+).paf.exe",
-        "replace": "${1}.${2}.${3}"
+        "regex": "Latest version: <strong>([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://allwaysync.com/content/download/allwaysync-n-go-$dashVersion.paf.exe#/setup.7z"
