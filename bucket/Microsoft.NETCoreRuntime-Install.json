@@ -1,23 +1,21 @@
 {
     "##": "Download URL https://dotnet.microsoft.com/download/dotnet/6.0/runtime",
-    "version": "6.0.0",
+    "version": "6.0.1",
     "description": "The .NET Runtime contains just the components needed to run a console app.",
     "homepage": "https://dotnet.microsoft.com/",
     "license": "Freeware",
     "changelog": "https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.6/5.0.6.md",
     "architecture": {
         "64bit": {
-            "url": "https://download.visualstudio.microsoft.com/download/pr/b9cfdb9e-d5cd-4024-b318-00390b729d2f/65690f2440f40654898020cdfffa1050/dotnet-runtime-6.0.0-win-x64.exe#/setup.exe",
-            "hash": "sha512:95be7c91cbae40f3faf29329bf741f3d0670003bd3316c2cd7adf1653b472b0ca6b0f40713b84fd3855d9ded7d4e7f6b0ae67aa900ea04caada24e524b94bbe1"
+            "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x64-installer#/setup.exe",
+            "hash": "9aa00ed032d6d9c5f98bd3752a1dbc4ff5a7496a3983bbb0a9a89b538514a3a0"
         },
         "32bit": {
-            "url": "https://download.visualstudio.microsoft.com/download/pr/34df41d5-c813-4e30-8aa3-3603ce6600c0/976e801af82c7108abbcb736a8bc5c14/dotnet-runtime-6.0.0-win-x86.exe#/setup.exe",
-            "hash": "sha512:50ff4627573abc80731515573aa1e4b5a8c05c1ace868920d22edcdce803489d4070022e3a4359596a935bb68932c6e53932886a8336ef2220d640cb1b7328d2"
+            "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.1-windows-x86-installer#/setup.exe",
+            "hash": "1d799f8810dc388496da06c612a451a5bab94dcc1d86dfc707c5d3dc1b83dc3c"
         }
     },
-    "pre_download":[
-        "Assert-Administrator"
-    ],
+    "pre_download": "Assert-Administrator",
     "installer": {
         "script": [
             "$programname = \"Microsoft .NET Runtime*\"",
@@ -38,5 +36,19 @@
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
         "regex": "(?s)([\\d.]+)[^\\d]*?(?<sdkversion>[\\d.]+)[^\\d]*?(?:current|lts)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-$version-windows-x64-installer#/setup.exe"
+            },
+            "32bit": {
+                "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-$version-windows-x86-installer#/setup.exe"
+            }
+        },
+        "hash": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sha.txt",
+            "mode": "extract"
+        }
     }
 }
