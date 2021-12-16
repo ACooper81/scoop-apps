@@ -45,8 +45,8 @@
         ]
     },
     "checkver": {
-        "url": "https://www.touslesdrivers.com/index.php?v_page=23&v_code=66983",
-        "regex": "<title>Drivers Logitech SetPoint ([\\d.]+)"
+        "url": "https://m.majorgeeks.com/files/details/logitech_setpoint.html",
+        "regex": "Logitech Setpoint 32-Bit ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
