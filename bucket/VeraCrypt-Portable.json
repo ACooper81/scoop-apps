@@ -28,8 +28,7 @@
     ],
     "checkver": {
         "url": "https://portableapps.com/apps/security/veracrypt-portable",
-        "regex": "=VeraCryptPortable_([\\d.]+)_Update_([\\d.]).paf.exe",
-        "replace": "$1.$2"
+        "regex": ">Version ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download3.portableapps.com/portableapps/VeraCryptPortable/VeraCryptPortable_$majorVersion.$minorVersion_Update_$patchVersion.paf.exe?20190321#/dl.7z"
