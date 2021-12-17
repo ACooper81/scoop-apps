@@ -1,5 +1,5 @@
 {
-    "version": "2.1.5699.1",
+    "version": "2.1.6190.2",
     "description": "Amazon Games. Explore all games, loot, and more for Prime members",
     "homepage": "https://www.amazon.com/b?node=21211466011",
     "license": "",
@@ -29,5 +29,8 @@
     "checkver": {
         "url": "https://www.kcsoftwares.com/sumo/view.php?uid=312543986&ProductName=Amazon%20Games&Company=Amazon&prot=2",
         "regex": "<small>\\s+v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://download.amazongames.com/AmazonGamesSetup.exe#/setup.exe"
     }
 }
