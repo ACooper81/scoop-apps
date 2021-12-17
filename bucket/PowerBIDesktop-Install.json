@@ -1,6 +1,6 @@
 {
     "##": "Download URL and Hashes https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBI",
-    "version": "2.97.921.0",
+    "version": "2.100.684.0",
     "description": "Power BI Desktop. Create rich, interactive reports with visual analytics at your fingertips",
     "homepage": "https://powerbi.microsoft.com/en-us/desktop/",
     "license": {
@@ -9,12 +9,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe#/setup.exe",
-            "hash": "0F633242227AA5A610168B63FC88866DBDBD50BCD07C4F32962AB44A3725A625"
+            "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe#/setup.exe",
+            "hash": "D026467D9F96E87FEA0C91CCDD5CB13A11FB2D3C8B6F6E526C649F73E35BFB98"
         },
         "32bit": {
             "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe#/setup.exe",
-            "hash": "0F633242227AA5A610168B63FC88866DBDBD50BCD07C4F32962AB44A3725A625"
+            "hash": "E38216B1BB17C9B0E32E823CE5099DD7F364F9DEBBC497D2A890A2FC75C2B98D"
         }
     },
     "pre_download": "Assert-Administrator",
