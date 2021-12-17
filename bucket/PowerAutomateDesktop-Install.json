@@ -1,10 +1,10 @@
 {
-    "version": "2.15.280.21347",
+    "version": "2.15.282.21349",
     "description": "Power Automate Desktop. Easily automate anything from your desktop",
     "homepage": "https://flow.microsoft.com/en-us/desktop/",
     "license": "",
     "url": "https://go.microsoft.com/fwlink/?LinkId=2102613&clcid=0x409#/setup.exe",
-    "hash": "c9fcd5e69fe7ea140149e7199ecab0043bc9e87f688f5a4ed324e8ef7955b1f2",
+    "hash": "7d52cb78611269427b64d62f41f2c3397be5648cc3b57f9b3ca0d1cbad0fab85",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"PAD.Console.Host.exe\"",
