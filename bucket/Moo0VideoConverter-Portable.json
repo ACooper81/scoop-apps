@@ -14,8 +14,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://www.moo0.com/?top=https://www.moo0.com/software/VideoConverter/",
-        "regex": "Moo0 Video Converter ([\\d.]+)"
+        "url": "https://moo0-video-converter.en.lo4d.com/windows",
+        "regex": "Moo0 Video Converter, ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://bin.moo0.com/software/Moo0%20VideoConverter%20v$version%20Installer.exe#/dl.7z"
