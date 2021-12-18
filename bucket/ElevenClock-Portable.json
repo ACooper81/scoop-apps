@@ -1,11 +1,11 @@
 {
-    "version": "2.9",
+    "version": "2.9.1",
     "description": "ElevenClock. A taskbar clock for secondary taskbars on Windows 11",
     "homepage": "https://github.com/martinet101/ElevenClock",
     "license": "Apache-2.0",
     "changelog": "https://github.com/martinet101/ElevenClock/releases",
-    "url": "https://github.com/martinet101/ElevenClock/releases/download/2.9/ElevenClock.Installer.exe",
-    "hash": "c6d26802b11c5548709982f850e2c67d1b841b7cb71ad1ac4cab49ed514fca4b",
+    "url": "https://github.com/martinet101/ElevenClock/releases/download/2.9.1/ElevenClock.Installer.exe",
+    "hash": "3818fa0a8364f4590ff8616675d9836d4a84f0b532b4b5ffd1197d4bc31bee6f",
     "innosetup": true,
     "bin": "ElevenClock.exe",
     "shortcuts": [
