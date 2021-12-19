@@ -1,11 +1,11 @@
 {
-    "version": "1.13.11",
+    "version": "1.13.10",
     "description": "Twinkle Tray. Twinkle Tray lets you easily manage the brightness levels of multiple monitors",
     "homepage": "https://twinkletray.com/",
     "license": "MIT",
     "changelog": "https://github.com/xanderfrangos/twinkle-tray/releases",
-    "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v1.13.11/Twinkle.Tray.v1.13.11.exe#/dl.7z",
-    "hash": "666194a2ba70997194f73342fa30c4688814226c760577f40839b5c9a874f367",
+    "url": "https://github.com/xanderfrangos/twinkle-tray/releases/download/v1.13.10/Twinkle.Tray.v1.13.10.exe#/dl.7z",
+    "hash": "658de6c7bc678fb825beed4c915a6238f806635bff9fb13afdd6ac311462306c",
     "architecture": {
         "64bit": {
             "installer": {
