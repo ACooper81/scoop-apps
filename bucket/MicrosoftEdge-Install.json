@@ -11,11 +11,11 @@
     "architecture": {
         "64bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093437#/setup.msi_",
-            "hash": "b13ab75ab0175a242d4d2b95e91a6e019b6ac5eccb270ee40d565d0856b060dd"
+            "hash": "68fdbcace08d3cc07523e5abe0f23035ac41b22d2542cfe5ec91c837f88e0035"
         },
         "32bit": {
             "url": "http://go.microsoft.com/fwlink/?LinkID=2093505#/setup.msi_",
-            "hash": "5f12916dadfecebe742ff128f36cc821b09380c8331e0713d2402ecb3f983cfb"
+            "hash": "47885187e17c752b79389a74aef6fbe877644074b6beb12b3615b7bde2020da9"
         }
     },
     "pre_download": "Assert-Administrator",
