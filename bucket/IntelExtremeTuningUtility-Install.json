@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloadmirror.intel.com/29183/XTUSetup.exe#/setup.exe",
-            "hash": "762005E092AF832C54D6CA9876939D6969B24CAF2691B6C4A9CB733B3ACB0F9A"
+            "hash": "d74ba4f28b7e4bace8539c9753e2b2f58547bb2fa06f0ed54cd9fcded147522d"
         }
     },
     "pre_download": "Assert-Administrator",
