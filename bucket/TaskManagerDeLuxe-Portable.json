@@ -1,11 +1,11 @@
 {
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "MiTeC Task Manager DeLuxe. Full-featured task manager replacement",
     "homepage": "https://www.mitec.cz/tmx.html",
     "license": "Proprietary",
     "changelog": "https://www.mitec.cz/Data/XML/data_tmxvh.xml",
     "url": "https://www.mitec.cz/Downloads/TMX.zip",
-    "hash": "3237f770b2556b7eb9dd6277d564e90ce84e98aaa53a37847af73b9879e4ec4e",
+    "hash": "52844246e8507e3f568fe1ade4804e86c0c65fdd19f5af87e6add64d07a3965b",
     "uninstaller": {
         "script": "shortcut_folder $global | Split-Path | Get-ChildItem -Filter 'TMX*' | Remove-Item -Force"
     },
