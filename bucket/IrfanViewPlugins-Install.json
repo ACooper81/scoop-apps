@@ -21,10 +21,12 @@
     "installer": {
         "script": [
             "$programname = \"IrfanView*\"",
-            "if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$filepath = \"$ProgramFiles\\IrfanView\\Plugins\\Formats.dll\"",
+            "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" /silent | Out-Null",
-            "   if(!(Get-Package -Provider Programs -IncludeWindowsInstaller -Name \"$programname\" -MinimumVersion $version -ErrorAction SilentlyContinue))",
+            "   &\"$dir\\setup.exe\" /silent /desktop=0 /thumbs=0 /group=1 /allusers=1 /assoc=0 | Out-Null",
+            "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
             "   }",
