@@ -1,10 +1,10 @@
 {
-    "version": "2.10.28",
+    "version": "2.10.30",
     "description": "GIMP. Image editor",
     "homepage": "https://portableapps.com/GIMPPortable",
     "license": "",
-    "url": "https://download3.portableapps.com/portableapps/GIMPPortable/GIMPPortable_2.10.28.paf.exe?20190321#/setup.zip",
-    "hash": "8a43f137316afce242338f6cb3aa6f7f00d8b77d1e0f278ce9129d782eb53655",
+    "url": "https://download3.portableapps.com/portableapps/GIMPPortable/GIMPPortable_2.10.30.paf.exe?20190321#/setup.zip",
+    "hash": "4fad693bb4b28dcc28eacf6211a96340824b7264bea0820ced6bbadc74522f20",
     "bin": "GIMPPortable.exe",
     "shortcuts": [
         [
