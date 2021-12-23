@@ -1,16 +1,16 @@
 {
-    "version": "4.4.8",
+    "version": "5.0.0",
     "description": "Krita. A free digital painting application.",
     "homepage": "https://krita.org/",
     "license": "GPL-3.0-or-later",
     "changelog": "https://krita.org/en/download/krita-desktop/",
     "architecture": {
         "64bit": {
-            "url": "https://download.kde.org/stable/krita/4.4.8/krita-x64-4.4.8.zip",
-            "hash": "f41af1285b600c7d1cec5b04232feab19f854472e392ae7a1b48d254522115df"
+            "url": "https://download.kde.org/stable/krita/5.0.0/krita-x64-5.0.0.zip",
+            "hash": "a9bf2e0d8d09854b15dcc7bb2588486e39a97702e6f6306c7a1c1c0026cf22f4"
         }
     },
-    "extract_dir": "krita-x64-4.4.8",
+    "extract_dir": "krita-x64-5.0.0",
     "bin": [
         "bin\\krita.exe",
         "bin\\kritarunner.exe"
