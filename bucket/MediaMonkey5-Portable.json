@@ -1,11 +1,11 @@
 {
-    "version": "5.0.1.2433",
+    "version": "5.0.2.2531",
     "description": "MediaMonkey 5. MediaMonkey is the award-winning media organizer and player for serious collectors. It cleans the mess in your music and video libraries, and lets you share and enjoy them across all your devices",
     "homepage": "https://www.mediamonkey.com/windows",
     "license": "Freemium",
     "changelog": "https://www.mediamonkey.com/forum/viewtopic.php?p=485718",
     "url": "https://www.mediamonkey.com/MediaMonkey-5_Setup.exe#/setup.exe",
-    "hash": "1d73de789243a588a43d97948ab42c396aeadf21965ddf2d488e7dc67c7451ce",
+    "hash": "6af7216bff74f6e7a31e0e79456398adc407b594fe6cc2be0a9bf1d296e84fa6",
     "innosetup": true,
     "installer": {
         "script": [
@@ -19,9 +19,7 @@
             "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
     },
-    "persist": [
-        "Portable"
-    ],
+    "persist": "Portable",
     "bin": "MediaMonkey.exe",
     "shortcuts": [
         [
