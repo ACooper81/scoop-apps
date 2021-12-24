@@ -5,8 +5,8 @@ Run the following in a non-admin PowerShell terminal and accept the security pro
 - iwr -useb 'https://raw.githubusercontent.com/ACooper81/scoop-apps/master/install.ps1' | iex
 
 As soon as scoop is installed do the following:
-Run the following in a admin PowerShell terminal and
-- scoop list; scoop checkup
+Run the following in a admin PowerShell terminal
+- iwr -useb 'https://raw.githubusercontent.com/ACooper81/scoop-apps/master/postinstall.ps1' | iex
 
 # Manual Installation
 Refer to new installer how to install base scoop.
