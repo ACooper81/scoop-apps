@@ -6,7 +6,7 @@ scoop bucket add 'Base'
 scoop bucket add Scoop-Apps 'https://github.com/ACooper81/scoop-apps'
 [Environment]::SetEnvironmentVariable('SCOOP', '$env:UserProfile\scoop', 'User')
 scoop update
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
+if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs }
 scoop install 7zip git sudo dark innounp lessmsi aria2 --global --no-cache
 sudo scoop list
 Add-MpPreference -ExclusionPath 'C:\Users\User\scoop'
