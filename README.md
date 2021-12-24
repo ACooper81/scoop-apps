@@ -1,6 +1,9 @@
 # Description
 
-# Installation
+# Automatic Install Script
+iwr -useb 'https://raw.githubusercontent.com/ACooper81/scoop-apps/master/install.ps1' | iex
+
+# Manual Installation
 Refer to new installer how to install base scoop.
 https://github.com/ScoopInstaller/Install#scoop-uninstaller
 
