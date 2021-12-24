@@ -1,7 +1,12 @@
 # Description
 
 # Automatic Install Script
-iwr -useb 'https://raw.githubusercontent.com/ACooper81/scoop-apps/master/install.ps1' | iex
+Run the following in a non-admin PowerShell terminal and accept the security prompts.
+- iwr -useb 'https://raw.githubusercontent.com/ACooper81/scoop-apps/master/install.ps1' | iex
+
+As soon as scoop is installed do the following:
+Run the following in a admin PowerShell terminal and
+- scoop list; scoop checkup
 
 # Manual Installation
 Refer to new installer how to install base scoop.
@@ -12,7 +17,7 @@ Run the following in a non-admin PowerShell terminal
 - iwr -useb 'https://raw.githubusercontent.com/scoopinstaller/install/master/install.ps1' | iex
 
 As soon as base scoop is installed do the following:
-
+Run the following in a admin PowerShell terminal
 - scoop install 7zip git sudo dark innounp lessmsi aria2 --global --no-cache
 - scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
 - scoop bucket add Scoop-Apps 'https://github.com/ACooper81/scoop-apps'
