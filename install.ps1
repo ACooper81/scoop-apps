@@ -4,5 +4,6 @@ scoop install sudo git
 scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
 scoop bucket add 'Base'
 scoop bucket add Scoop-Apps 'https://github.com/ACooper81/scoop-apps'
-[Environment]::SetEnvironmentVariable('SCOOP', '$env:UserProfile\scoop', 'User')
+$UserProf = $env:UserProfile
+[Environment]::SetEnvironmentVariable('SCOOP', '$UserProf\scoop', 'User')
 scoop update
