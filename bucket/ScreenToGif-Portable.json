@@ -1,10 +1,18 @@
 {
-    "version": "2.34.1",
+    "version": "2.35.2",
     "description": "Screen, webcam and sketchboard recorder with an integrated editor.",
     "homepage": "https://www.screentogif.com/",
     "license": "MS-PL",
-    "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/2.34.1/ScreenToGif.2.34.1.Portable.zip",
-    "hash": "67f821bed7f34ebbb7ba8a91cce1fdc1429279aa1489fcaaa5127687c86b8fce",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/2.35.2/ScreenToGif.2.35.2.Portable.x64.zip#/setup.7z",
+            "hash": "c03420bcfa883d2b3518c9574efe250790aa27001c3428c2232b59d4b51857ac"
+        },
+        "32bit": {
+            "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/2.35.2/ScreenToGif.2.35.2.Portable.x86.zip#/setup.7z",
+            "hash": "39778ff239edc84725cc57cee58cf0568606c76aff059a792d6740808a337e47"
+        }
+    },
     "bin": "ScreenToGif.exe",
     "shortcuts": [
         [
@@ -19,6 +27,14 @@
         "github": "https://github.com/NickeManarin/ScreenToGif"
     },
     "autoupdate": {
-        "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/$version/ScreenToGif.$version.Portable.zip"
+        "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/$version/ScreenToGif.$version.Portable.zip",
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/$version/ScreenToGif.$version.Portable.x64.zip#/setup.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/NickeManarin/ScreenToGif/releases/download/$version/ScreenToGif.$version.Portable.x86.zip#/setup.7z"
+            }
+        }
     }
 }
