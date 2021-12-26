@@ -7,12 +7,6 @@
     "url": "https://github.com/rzander/ruckzuck/releases/download/1.7.2.3/RZGet.exe#/RZGet.exe",
     "hash": "3e35a599324edee688159ab9f5513b52d7b1e78454047fb2c6cab90cf71d9f7e",
     "bin": "RZGet.exe",
-    "shortcuts": [
-        [
-            "RZGet.exe",
-            "RZGet"
-        ]
-    ],
     "checkver": {
         "github": "https://github.com/rzander/ruckzuck"
     },
