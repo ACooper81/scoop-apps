@@ -14,7 +14,7 @@
     "shortcuts": [
         [
             "SUMo.exe",
-            "SUMo - Software Update Monitor"
+            "SUMo"
         ]
     ],
     "persist": "settings.ini",
