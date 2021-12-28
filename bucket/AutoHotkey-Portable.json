@@ -61,11 +61,11 @@
                 ],
                 [
                     "Compiler\\Ahk2Exe.exe",
-                    "AutoHotkey/AutoHotkey Compiler"
+                    "AutoHotkey/Convert .ahk to .exe"
                 ],
                 [
                     "AutoHotkeyU64.exe",
-                    "AutoHotkey/AutoHotkey WindowSpy Tool",
+                    "AutoHotkey/Window Spy",
                     "WindowSpy.ahk"
                 ]
             ]
@@ -85,11 +85,11 @@
                 ],
                 [
                     "Compiler\\Ahk2Exe.exe",
-                    "AutoHotkey/AutoHotkey Compiler"
+                    "AutoHotkey/Convert .ahk to .exe"
                 ],
                 [
                     "AutoHotkeyU32.exe",
-                    "AutoHotkey/AutoHotkey WindowSpy Tool",
+                    "AutoHotkey/Window Spy",
                     "WindowSpy.ahk"
                 ]
             ]
