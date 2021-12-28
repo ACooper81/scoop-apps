@@ -32,23 +32,23 @@
         ],
         [
             "Aut2Exe\\Aut2exe_x64.exe",
-            "AutoIt/AutoIt Compile Script to .exe (x64)"
+            "AutoIt/Compile Script to .exe (x64)"
         ],
         [
             "Aut2Exe\\Aut2exe.exe",
-            "AutoIt/AutoIt Compile Script to .exe (x86)"
+            "AutoIt/Compile Script to .exe (x86)"
         ],
         [
             "AutoIt3_x64.exe",
-            "AutoIt/AutoIt Run Script (x64)"
+            "AutoIt/Run Script (x64)"
         ],
         [
             "AutoIt3.exe",
-            "AutoIt/AutoIt Run Script (x86)"
+            "AutoIt/Run Script (x86)"
         ],
         [
             "SciTe\\SciTE.exe",
-            "AutoIt/AutoIt Script Editor"
+            "AutoIt/SciTE Script Editor"
         ]
     ],
     "post_install": [
