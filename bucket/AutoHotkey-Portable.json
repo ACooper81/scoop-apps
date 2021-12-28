@@ -45,6 +45,56 @@
             "WindowSpy.ahk"
         ]
     ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "autohotkeyu64.exe",
+                    "autohotkey"
+                ],
+                "compiler/ahk2exe.exe"
+            ],
+            "shortcuts": [
+                [
+                    "AutoHotkeyU64.exe",
+                    "AutoHotkey/AutoHotkey"
+                ],
+                [
+                    "Compiler\\Ahk2Exe.exe",
+                    "AutoHotkey/AutoHotkey Compiler"
+                ],
+                [
+                    "AutoHotkeyU64.exe",
+                    "AutoHotkey/AutoHotkey WindowSpy Tool",
+                    "WindowSpy.ahk"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "autohotkeyu32.exe",
+                    "autohotkey"
+                ],
+                "compiler/ahk2exe.exe"
+            ],
+            "shortcuts": [
+                [
+                    "AutoHotkeyU32.exe",
+                    "AutoHotkey/AutoHotkey"
+                ],
+                [
+                    "Compiler\\Ahk2Exe.exe",
+                    "AutoHotkey/AutoHotkey Compiler"
+                ],
+                [
+                    "AutoHotkeyU32.exe",
+                    "AutoHotkey/AutoHotkey WindowSpy Tool",
+                    "WindowSpy.ahk"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "github": "https://github.com/lexikos/autohotkey_l"
     },
