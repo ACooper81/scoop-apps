@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "WifiInfoView.exe",
-            "NirSoft\\WifiInfoView "
+            "NirSoft\\WifiInfoView"
         ]
     ],
     "checkver": "WifiInfoView v([\\d.]+)",
