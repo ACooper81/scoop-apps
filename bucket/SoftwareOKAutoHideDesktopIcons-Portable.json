@@ -1,0 +1,46 @@
+{
+    "version": "5.33",
+    "description": "AutoHideDesktopIcons. Auto hide and showing the Windows desktop icons with a timer!",
+    "homepage": "http://www.softwareok.com/?seite=Microsoft/AutoHideDesktopIcons",
+    "license": "Freeware",
+    "changelog": "http://www.softwareok.com/?seite=Microsoft/AutoHideDesktopIcons/History",
+    "architecture": {
+        "64bit": {
+            "url": "https://www.softwareok.com/Download/AutoHideDesktopIcons_Portable.zip",
+            "hash": "d64910b44fe147c89d5a1d4c25a03ef395ff23dee5b9ccd49f797a1db25caa64",
+            "shortcuts": [
+                [
+                    "AutoHideDesktopIcons_p.exe",
+                    "SoftwareOK\\AutoHideDesktopIcons"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://www.softwareok.com/Download/AutoHideDesktopIcons_Portable.zip",
+            "hash": "d64910b44fe147c89d5a1d4c25a03ef395ff23dee5b9ccd49f797a1db25caa64",
+            "shortcuts": [
+                [
+                    "AutoHideDesktopIcons_p.exe",
+                    "SoftwareOK\\AutoHideDesktopIcons"
+                ]
+            ]
+        }
+    },
+    "pre_install": "if (-not (Test-Path \"$dir\\AutoHideDesktopIcons.ini\")) { Set-Content \"$dir\\AutoHideDesktopIcons.ini\" '[Program]' -Encoding Ascii }",
+    "persist": "AutoHideDesktopIcons.ini",
+    "checkver": "New in version ([\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.softwareok.com/Download/AutoHideDesktopIcons_Portable.zip"
+            },
+            "32bit": {
+                "url": "https://www.softwareok.com/Download/AutoHideDesktopIcons_Portable.zip"
+            }
+        },
+        "hash": {
+            "url": "https://www.softwareok.com/?Download=AutoHideDesktopIcons",
+            "regex": "$basename.*?$sha256.*?$basename/AutoHideDesktopIcons_"
+        }
+    }
+}
