@@ -12,7 +12,7 @@
     "shortcuts": [
         [
             "TeamViewer.exe",
-            "TeamViewer Portable"
+            "TeamViewer"
         ]
     ],
     "persist": "teamviewer.ini",
