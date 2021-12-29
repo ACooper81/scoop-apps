@@ -7,7 +7,7 @@
         "url": "https://www.sordum.org/eula/"
     },
     "url": "https://www.sordum.org/files/download/windows-update-blocker/Wub.zip",
-    "hash": "9a958f4a5d1aa236235690bd315f783f197f815fcad956918fa229c20fc99fa4",
+    "hash": "a3989249de68b1d6545f6ae889a1347142847637cf193276ffa92c2d543f3ecb",
     "extract_dir": "Wub",
     "bin": "Wub.exe",
     "shortcuts": [
