@@ -10,6 +10,30 @@
         [
             "LibreOfficePortable.exe",
             "LibreOffice"
+        ],
+        [
+            "LibreOfficeBasePortable.exe",
+            "LibreOffice Base"
+        ],
+        [
+            "LibreOfficeCalcPortable.exe",
+            "LibreOffice Calc"
+        ],
+        [
+            "LibreOfficeDrawPortable.exe",
+            "LibreOffice Draw"
+        ],
+        [
+            "LibreOfficeImpressPortable.exe",
+            "LibreOffice Impress"
+        ],
+        [
+            "LibreOfficeMathPortable.exe",
+            "LibreOffice Math"
+        ],
+        [
+            "LibreOfficeWriterPortable.exe",
+            "LibreOffice Writer"
         ]
     ],
     "persist": "Data",
