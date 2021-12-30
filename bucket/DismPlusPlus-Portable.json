@@ -6,20 +6,36 @@
     "changelog": "https://github.com/Chuyu-Team/Dism-Multi-language/blob/master/UpdateHistory.md",
     "url": "https://github.com/Chuyu-Team/Dism-Multi-language/releases/download/v10.1.1002.1/Dism++10.1.1002.1.zip",
     "hash": "bd782ba834a77661db0b272c00afd5377404b23cb26783507ded145f4c72f9a6",
-    "bin": [
-        "DISM++x86.exe",
-        "DISM++x64.exe"
-    ],
-    "shortcuts": [
-        [
-            "DISM++x86.exe",
-            "DISM++ (x86)"
-        ],
-        [
-            "DISM++x64.exe",
-            "DISM++ (x64)"
-        ]
-    ],
+    "architecture": {
+        "64bit": {
+            "bin": [
+                [
+                    "DISM++x64.exe",
+                    "dism++"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DISM++x64.exe",
+                    "DISM++"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": [
+                [
+                    "DISM++x64.exe",
+                    "dism++"
+                ]
+            ],
+            "shortcuts": [
+                [
+                    "DISM++x86.exe",
+                    "DISM++"
+                ]
+            ]
+        }
+    },
     "checkver": {
         "github": "https://github.com/Chuyu-Team/Dism-Multi-language"
     },
