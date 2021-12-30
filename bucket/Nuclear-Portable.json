@@ -15,8 +15,8 @@
     },
     "shortcuts": [
         [
-            "Nuclear.exe",
-            "Nuclear"
+            "nuclear.exe",
+            "nuclear"
         ]
     ],
     "checkver": {
