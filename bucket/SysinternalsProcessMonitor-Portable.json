@@ -11,7 +11,7 @@
             "shortcuts": [
                 [
                     "procmon64.exe",
-                    "Sysinternals\\Process Monitor",
+                    "Sysinternals\\ProcessMonitor - Monitor file system, registry, process, thread and DLL activity",
                     "/accepteula"
                 ]
             ]
@@ -21,7 +21,7 @@
             "shortcuts": [
                 [
                     "procmon.exe",
-                    "Sysinternals\\Process Monitor",
+                    "Sysinternals\\ProcessMonitor - Monitor file system, registry, process, thread and DLL activity",
                     "/accepteula"
                 ]
             ]
