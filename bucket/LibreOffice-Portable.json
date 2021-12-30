@@ -9,31 +9,31 @@
     "shortcuts": [
         [
             "LibreOfficePortable.exe",
-            "LibreOffice"
+            "LibreOffice\\LibreOffice"
         ],
         [
             "LibreOfficeBasePortable.exe",
-            "LibreOffice Base"
+            "LibreOffice\\LibreOffice Base"
         ],
         [
             "LibreOfficeCalcPortable.exe",
-            "LibreOffice Calc"
+            "LibreOffice\\LibreOffice Calc"
         ],
         [
             "LibreOfficeDrawPortable.exe",
-            "LibreOffice Draw"
+            "LibreOffice\\LibreOffice Draw"
         ],
         [
             "LibreOfficeImpressPortable.exe",
-            "LibreOffice Impress"
+            "LibreOffice\\LibreOffice Impress"
         ],
         [
             "LibreOfficeMathPortable.exe",
-            "LibreOffice Math"
+            "LibreOffice\\LibreOffice Math"
         ],
         [
             "LibreOfficeWriterPortable.exe",
-            "LibreOffice Writer"
+            "LibreOffice\\LibreOffice Writer"
         ]
     ],
     "persist": "Data",
