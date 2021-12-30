@@ -11,7 +11,7 @@
             "shortcuts": [
                 [
                     "procexp64.exe",
-                    "Sysinternals\\Process Explorer",
+                    "Sysinternals\\ProcessExplorer - Enhanced Task Manager",
                     "/accepteula"
                 ]
             ]
@@ -21,7 +21,7 @@
             "shortcuts": [
                 [
                     "procexp.exe",
-                    "Sysinternals\\Process Explorer",
+                    "Sysinternals\\ProcessExplorer - Enhanced Task Manager",
                     "/accepteula"
                 ]
             ]
