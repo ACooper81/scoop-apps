@@ -1,11 +1,11 @@
 {
-    "version": "22000.348.39.1",
+    "version": "22000.376.40.20",
     "description": "Explorer Patcher. This project aims to bring back a productive working environment on Windows 11",
     "homepage": "https://github.com/valinet/ExplorerPatcher",
     "license": "GPL 2.0",
     "changelog": "https://github.com/valinet/ExplorerPatcher/releases",
     "url": "https://github.com/valinet/ExplorerPatcher/releases/latest/download/ep_setup.exe#/setup.exe",
-    "hash": "fa0437336aeb6e9414ec3ba9b32e425aa6aab5e918d59a06364bf5dba91026d0",
+    "hash": "c40be9eef0dff2cb23f06ab1e67fa78d797b6fe0a90ccb04cd84c40e966cf0ed",
     "pre_download": "Assert-Administrator",
     "installer": {
         "script": [
