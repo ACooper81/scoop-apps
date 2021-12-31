@@ -1,4 +1,4 @@
-scoop install aria2 7zip git sudo dark innounp lessmsi scoop-search --global --no-cache
+scoop install aria2 7zip git gsudo dark innounp lessmsi scoop-search --global --no-cache
 sudo scoop list
 Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
 [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', 'C:\ProgramData\scoop', 'Machine')
