@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "WhatChangedPortable.exe",
-            "WhatChangedPortable"
+            "WhatChanged"
         ]
     ],
     "persist": "Data",
