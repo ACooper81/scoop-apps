@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://kurtzimmermann.com/files/RegCoolX64.zip",
-            "hash": "073f4f43a3e96fa4e9b16b11367da0ba5bdc60133b6ad4846a61486e362752f6"
+            "hash": "c6d034afd61d28a8767fd0d30263bb3895068a466da36fd946b1c69dd9cbd154"
         },
         "32bit": {
             "url": "https://kurtzimmermann.com/files/RegCoolX32.zip",
-            "hash": "666ffc9c3d900ce2a0510a286eeef35340ec4382a455a49d9bdcd30f58457c69"
+            "hash": "6847393d63d834d9d9baaf82faee20c47a44ff442729ec2f2472ab7ebc313c8d"
         }
     },
     "persist": "Settings",
