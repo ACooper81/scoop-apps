@@ -1,5 +1,5 @@
 {
-    "version": "1.5.8.6302",
+    "version": "1.6.0.6767",
     "description": "Media Player Classic - BE is a free and open source audio and video player for Windows",
     "homepage": "https://mpcbe.sourceforge.io/",
     "license": "GPL-3.0-only",
@@ -18,8 +18,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.8/MPC-BE.1.5.8.6302.x64-installer.zip#/setup.zip",
-            "hash": "sha1:90a38eb7aadd47dcee4e599626984888f32ccd6a",
+            "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.6.0/MPC-BE.1.6.0.6767.x64-installer.zip#/setup.zip",
+            "hash": "sha1:cb90ae6167dc884d7d8894213d5505b6467c9273",
             "installer": {
                 "script": [
                     "$programname = \"MPC-BE*\"",
@@ -44,8 +44,8 @@
             ]
         },
         "32bit": {
-            "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.5.8/MPC-BE.1.5.8.6302.x86-installer.zip#/setup.zip",
-            "hash": "sha1:767e6b2da8543c46cf05fdf0fdb582fbeed4c4f5",
+            "url": "https://sourceforge.net/projects/mpcbe/files/MPC-BE/Release%20builds/1.6.0/MPC-BE.1.6.0.6767.x86-installer.zip#/setup.zip",
+            "hash": "sha1:12119dcc5a8449c1164c67597d8c5005ee5d2295",
             "installer": {
                 "script": [
                     "$programname = \"MPC-BE*\"",
