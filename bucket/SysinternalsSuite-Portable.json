@@ -375,6 +375,11 @@
                     "/accepteula"
                 ],
                 [
+                    "RDCMan.exe",
+                    "SysInternals/RDCMan - Manages multiple remote desktop connections",
+                    "/accepteula"
+                ],
+                [
                     "ShareEnum.exe",
                     "SysInternals/ShareEnum - View network shares",
                     "/accepteula"
@@ -568,6 +573,11 @@
                 [
                     "RAMMap.exe",
                     "SysInternals/RAMMap - Graphical display of memory usage",
+                    "/accepteula"
+                ],
+                [
+                    "RDCMan.exe",
+                    "SysInternals/RDCMan - Manages multiple remote desktop connections",
                     "/accepteula"
                 ],
                 [
