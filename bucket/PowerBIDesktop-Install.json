@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe#/setup.exe",
-            "hash": "D026467D9F96E87FEA0C91CCDD5CB13A11FB2D3C8B6F6E526C649F73E35BFB98"
+            "hash": "98f4867de6a9f89531bac8a7429fdabff5b9465c5b712198a0d7454aa2f25e01"
         },
         "32bit": {
             "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup.exe#/setup.exe",
