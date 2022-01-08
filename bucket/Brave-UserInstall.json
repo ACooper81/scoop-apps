@@ -1,5 +1,5 @@
 {
-    "version": "1.33.106",
+    "version": "1.34.80",
     "description": "Brave. Secure, Fast & Private Web Browser with Adblocker",
     "homepage": "https://github.com/portapps/brave-portable",
     "license": {
@@ -9,12 +9,12 @@
     "changelog": "https://brave.com/latest/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.33.106/BraveBrowserStandaloneSilentSetup.exe#/setup.exe",
-            "hash": "ae1676faeb96a97476fbd1a053ad03fc5f4e740376c6ba2704d67c7174e41aa0"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.34.80/BraveBrowserStandaloneSilentSetup.exe#/setup.exe",
+            "hash": "125be7e145354af0df6377a94479ab1239253da846040a0ce6a5ccfdbfeda542"
         },
         "32bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.33.106/BraveBrowserStandaloneSilentSetup32.exe#/setup.exe",
-            "hash": "01733ccf196ccd528350e0632d13c0b0b0c9d94191aa8f461418b7a1c9fe77a0"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.34.80/BraveBrowserStandaloneSilentSetup32.exe#/setup.exe",
+            "hash": "2a721a35bab0def71b85cd7ef7ba6d2b28b73a808e88c7726ede366a4fdf403b"
         }
     },
     "pre_download": "Assert-Administrator",
