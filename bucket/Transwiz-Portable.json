@@ -12,7 +12,7 @@
     "shortcuts": [
         [
             "CommonAppDataFolder\\ForensiT\\Transwiz\\Deployment Files\\Transwiz.exe",
-            "Computer Transfer Wizard"
+            "Transwiz"
         ]
     ],
     "persist": "Transwiz.config",
