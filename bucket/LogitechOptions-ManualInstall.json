@@ -1,11 +1,11 @@
 {
-    "version": "9.40.86.0",
+    "version": "9.50.269.0",
     "description": "Logitech Options software lets you customize your device's settings",
     "homepage": "https://www.logitech.com/en-us/product/options",
     "license": "",
     "notes": "",
     "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe#/setup.exe",
-    "hash": "c7cadd557d2a01a6d9da3cc3b32d372752e12f369c8c6636d2fa9b1b6f1c2489",
+    "hash": "524934e0d0daaa572ab7a43d15bf619fe2e864a2d46ee12a6be71f4f319f56dc",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"LogiOptions\"",
