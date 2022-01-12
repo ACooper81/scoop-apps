@@ -31,7 +31,7 @@
             "$filepath = \"$ProgramFiles\\PowerToys\\PowerToys.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" --silent | Out-Null",
+            "   &\"$dir\\setup.exe\" --silent --skip_dotnet_install | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
