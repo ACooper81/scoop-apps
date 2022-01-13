@@ -1,5 +1,5 @@
 {
-    "version": "2.4.5",
+    "version": "3.0.0",
     "description": "Unity Hub. The Unity Hub is a management tool that you can use to manage all of your Unity Projects and installations.",
     "homepage": "https://store.unity.com/download-nuo",
     "license": "Proprietary",
@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup.exe#/setup.exe",
-            "hash": "165e807163471a4f3bb25eaa9febfa408a2f9110d9547ba67d7a7c2f784c9bec"
+            "hash": "3edf37d1f89a8ef7e9457f4a70efc99bb12f86e37102ff6eef3169bc14f27184"
         }
     },
     "pre_download": "Assert-Administrator",
