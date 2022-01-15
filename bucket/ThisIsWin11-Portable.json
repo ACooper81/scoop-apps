@@ -1,12 +1,12 @@
 {
-    "version": "1.1.10",
+    "version": "1.1.20",
     "description": "ThisIsWin11. Helps you know, set up and customize Windows 11.",
     "homepage": "https://github.com/builtbybel/ThisIsWin11",
     "license": "MIT",
     "changelog": "https://github.com/builtbybel/ThisIsWin11/releases",
     "notes": "This package replaces the data folder if you have any custom tweaks please copy them before updating.",
-    "url": "https://github.com/builtbybel/ThisIsWin11/releases/download/1.1.10/TIW11.zip#/setup.7z",
-    "hash": "7c5b4559c60361d1789d75ecf3534f138b68db8746ebd56e4c4dce7ffbf95a69",
+    "url": "https://github.com/builtbybel/ThisIsWin11/releases/download/1.1.20/TIW11.zip#/setup.7z",
+    "hash": "96af188f837d4d58d0f13bb412d298cc750bb024bdb95a65b43eddc3dfd1b519",
     "bin": "ThisIsWin11.exe",
     "shortcuts": [
         [
