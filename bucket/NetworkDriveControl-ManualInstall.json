@@ -1,11 +1,11 @@
 {
-    "version": "1.59",
+    "version": "1.60",
     "description": "Network Drive Control. Automatically map network drives by network name when you logon.",
     "homepage": "https://www.michaelburns.net/Software/NDC/",
     "license": "Freeware",
     "changelog": "https://www.michaelburns.net/Software/NDC/ReleaseNotes.txt",
     "url": "https://www.michaelburns.net/Software/NDC/download/NDCSetup.zip",
-    "hash": "e1a08ec71383f89c0a73262746a4ebc3f9126e89107a02dc2de3737aa51c7375",
+    "hash": "56767654bd5370f23145265704d161bfdf9decf1603a8e5ee7a714c6ac570f0c",
     "bin": "NDCsetup.exe",
     "shortcuts": [
         [
