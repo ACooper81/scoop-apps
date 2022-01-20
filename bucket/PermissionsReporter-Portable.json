@@ -12,7 +12,7 @@
     },
     "installer": {
         "script": [
-            "\"$dir\\setup.exe\" //extract \"$dir\""
+            "\"$dir\\setup.exe\" \/extract \"$dir\""
         ]
     },
     "bin": "PermissionsReporter.exe",
