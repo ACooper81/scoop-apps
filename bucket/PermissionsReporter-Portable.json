@@ -15,10 +15,10 @@
             "&\"$dir\\setup.exe\" \/extract \"$dir\""
         ]
     },
-    "bin": "PermissionsReporter.exe",
+    "bin": "AEDA6C8\\PermissionsReporter.exe",
     "shortcuts": [
         [
-            "PermissionsReporter.exe",
+            "AEDA6C8\\PermissionsReporter.exe",
             "Permissions Reporter"
         ]
     ],
