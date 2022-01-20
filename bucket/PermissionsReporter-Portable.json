@@ -6,9 +6,14 @@
     "changelog": "",
     "architecture": {
         "64bit": {
-            "url": "https://www.permissionsreporter.com/Content/download/pr-setup.exe",
+            "url": "https://www.permissionsreporter.com/Content/download/pr-setup.exe#/setup.exe",
             "hash": "26d5d0646402c288612cb1fec9c1ac76a18a59eb9c705c975873126dd593f215"
         }
+    },
+    "installer": {
+        "script": [
+            "setup.exe /extract \"$dir\""
+        ]
     },
     "bin": "PermissionsReporter.exe",
     "shortcuts": [
@@ -24,7 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.permissionsreporter.com/Content/download/pr-setup.exe"
+                "url": "https://www.permissionsreporter.com/Content/download/pr-setup.exe#/setup.exe"
             }
         }
     }
