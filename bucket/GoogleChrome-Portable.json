@@ -1,6 +1,6 @@
 {
     "##": "http://get-chrome.herokuapp.com/",
-    "version": "97.0.4692.71",
+    "version": "97.0.4692.99",
     "description": "Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
     "notes": "https://tools.shuax.com/chrome/",
@@ -11,12 +11,12 @@
     "changelog": "https://chromereleases.googleblog.com/",
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/release2/chrome/gim2vp4vywbbfcpqxfzp3mfirq_97.0.4692.71/97.0.4692.71_chrome_installer.exe#/dl.7z",
-            "hash": "c2f68f2d05498920d3968a2914702a5529b0fb81f3b3bd89eaca904202bae9d2"
+            "url": "https://dl.google.com/release2/chrome/acjk4xgln6ulddtylenywxj36xcq_97.0.4692.99/97.0.4692.99_chrome_installer.exe#/dl.7z",
+            "hash": "ce571de3a1c16c815387553d18a019f49ae11cca1c314aa095f4f1ec5898e1c6"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/gim2vp4vywbbfcpqxfzp3mfirq_97.0.4692.71/97.0.4692.71_chrome_installer.exe#/dl.7z",
-            "hash": "c2f68f2d05498920d3968a2914702a5529b0fb81f3b3bd89eaca904202bae9d2"
+            "url": "https://dl.google.com/release2/chrome/acjk4xgln6ulddtylenywxj36xcq_97.0.4692.99/97.0.4692.99_chrome_installer.exe#/dl.7z",
+            "hash": "ce571de3a1c16c815387553d18a019f49ae11cca1c314aa095f4f1ec5898e1c6"
         }
     },
     "installer": {
