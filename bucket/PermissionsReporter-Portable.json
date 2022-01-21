@@ -12,8 +12,7 @@
     },
     "installer": {
         "script": [
-            "$commandString = & cmd /c \"$dir\\setup.exe\" /extract \"$dir\\\"",
-            "Start-Process -Wait -WindowStyle Hidden $commandString"
+            "&cmd /c \"$dir\\setup.exe\" /extract \"$dir\\\""
         ]
     },
     "bin": "AEDA6C8\\PermissionsReporter.exe",
