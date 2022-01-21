@@ -4,7 +4,7 @@
     "homepage": "https://www.amazon.com/b?node=21211466011",
     "license": "",
     "url": "https://download.amazongames.com/AmazonGamesSetup.exe#/setup.exe",
-    "hash": "e663bb9116ef2cb557657504623c0de7c597a3b89a061da43ae8148655664226",
+    "hash": "E663BB9116EF2CB557657504623C0DE7C597A3B89A061DA43AE8148655664226",
     "installer": {
         "script": [
             "$UserProfile = [Environment]::GetFolderPath(\"userprofile\")",
