@@ -12,7 +12,7 @@
     },
     "installer": {
         "script": [
-            "$commandString = &\"$dir\\setup.exe\" /extract \"$dir\\\"",
+            "$commandString = & cmd /c \"$dir\\setup.exe\" /extract \"$dir\\\"",
             "Start-Process -Wait -WindowStyle Hidden $commandString"
         ]
     },
