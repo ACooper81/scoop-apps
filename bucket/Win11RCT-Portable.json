@@ -5,7 +5,7 @@
     "license": "GNU",
     "changelog": "https://bytejams.com/#release_notes",
     "url": "https://bytejams.com/Win11RCT.zip",
-    "hash": "34269607627c90597172f23a18f12ae49723646b076961c5026dc17291ad48d2",
+    "hash": "3921e94965b111bb415f11d32210b61e8fe9697c132e7399ac1e31b5e894f010",
     "shortcuts": [
         [
             "Win11RCT.exe",
@@ -20,7 +20,7 @@
         "url": "https://bytejams.com/Win11RCT.zip",
         "hash": {
             "url": "https://bytejams.com/",
-            "regex": "(?sm)SHA 256*?$sha256"
+            "regex": "SHA-256: ([a-fA-F0-9]+)"
         }
     }
 }
