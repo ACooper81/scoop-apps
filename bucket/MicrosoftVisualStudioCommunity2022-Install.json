@@ -1,5 +1,5 @@
 {
-    "version": "17.0.4",
+    "version": "17.0.5",
     "description": "Microsoft Visual Studio Community 2022",
     "homepage": "https://www.visualstudio.com/downloads/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://visualstudio.microsoft.com/license-terms"
     },
     "url": "https://aka.ms/vs/17/release/vs_community.exe",
-    "hash": "50c2572bd77051812ef5c9d59393f57708f994dc8f31b82c89a735712fdff26a",
+    "hash": "15aaba5b89037604d9a922d454d4b7fa31c64ce536c802fe4968b15186c94874",
     "installer": {
         "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--add', 'Microsoft.VisualStudio.Workload.NativeDesktop', '--includeRecommended', '--quiet', '--norestart', '--wait') -RunAs | Out-Null"
     },
