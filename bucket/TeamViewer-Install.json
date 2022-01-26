@@ -1,5 +1,5 @@
 {
-    "version": "15.25.6",
+    "version": "15.26.4",
     "description": "Software for remote control, desktop sharing, online meetings, web conferencing and file transfer between computers.",
     "homepage": "https://www.teamviewer.com",
     "license": {
@@ -8,7 +8,7 @@
     },
     "changelog": "https://community.teamviewer.com/English/categories/change-logs-en",
     "url": "https://dl.teamviewer.com/download/TeamViewer_Setup.exe#/setup.exe",
-    "hash": "f2696153dedf3516c0aece3d8be9844b0d3654f3bd405a4e496cc2ccc3a38702",
+    "hash": "cb43a087e98388ddc0bc54c0e192981fee3bbf1029c26f7374ace63c6156685e",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"teamviewer*\"",
