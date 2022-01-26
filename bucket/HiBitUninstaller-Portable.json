@@ -1,13 +1,13 @@
 {
     "homepage": "http://www.hibitsoft.ir/Uninstaller.html",
     "description": "HiBit Uninstaller. Completely Uninstall Stubborn Software, Windows Apps & Browser Extension.",
-    "version": "2.7.40",
+    "version": "2.7.45",
     "license": {
         "identifier": "Proprietary"
     },
     "changelog": "http://www.hibitsoft.ir/HiBitUninstaller/Changelog.txt",
-    "url": "http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-Portable-2.7.40.zip",
-    "hash": "49f0091ce5d7cce150123c42ef4b0f0f81deb6ac016f6de045b8af0bada3dc1e",
+    "url": "http://www.hibitsoft.ir/HiBitUninstaller/HiBitUninstaller-Portable-2.7.45.zip",
+    "hash": "edcf845da2420cb8987c925a0b57e99d4d62428b2536cbcb3155012bbd080370",
     "shortcuts": [
         [
             "HiBitUninstaller-Portable.exe",
