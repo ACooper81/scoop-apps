@@ -1,11 +1,11 @@
 {
-    "version": "5.89.9385",
+    "version": "5.89.9401",
     "description": "Number-one tool for cleaning your PC.",
     "homepage": "https://www.ccleaner.com/ccleaner",
     "license": "Freeware",
     "changelog": "https://www.ccleaner.com/ccleaner/version-history",
     "url": "https://download.ccleaner.com/portable/ccsetup589.zip",
-    "hash": "554df2b06833d4ae48aeaafb79a55a58a14c895613aa7397abd12e4906e306ea",
+    "hash": "dab95285d352299acf3d50d505608c418d79eb214e31cdcc6b07ef3ea049c5be",
     "architecture": {
         "64bit": {
             "bin": [
