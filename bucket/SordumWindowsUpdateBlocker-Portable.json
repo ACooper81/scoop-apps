@@ -1,5 +1,5 @@
 {
-    "version": "1.6",
+    "version": "1.7",
     "description": "Sordum's Windows Update Blocker.",
     "homepage": "https://www.sordum.org/9470",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.sordum.org/eula/"
     },
     "url": "https://www.sordum.org/files/download/windows-update-blocker/Wub.zip",
-    "hash": "a3989249de68b1d6545f6ae889a1347142847637cf193276ffa92c2d543f3ecb",
+    "hash": "53b6b27ee61bb025cffc6965c8f3c302b48e9778e06cbfa7a39b533aa7c97d85",
     "extract_dir": "Wub",
     "bin": "Wub.exe",
     "shortcuts": [
