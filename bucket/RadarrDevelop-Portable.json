@@ -10,7 +10,7 @@
     "shortcuts": [
         [
             "Radarr.exe",
-            "Radarr"
+            "Radarr Develop"
         ]
     ],
     "checkver": {
