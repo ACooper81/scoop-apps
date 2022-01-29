@@ -5,7 +5,7 @@
     "license": "GPL-3.0-only",
     "changelog": "https://github.com/Armin2208/Windows-Auto-Night-Mode/releases",
     "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/10.1.0.10/AutoDarkModeX_10.1.0.10.exe#/setup.exe",
-    "hash": "fa78d748e46fe81e6e3f19a5c54da424a6142f3e8b520684b41774af2e1b93f9",
+    "hash": "bb45e187b4842bfc5d25f838d6267c04cad6fbbfbd70f61113598fc243d1db49",
     "pre_install": [
         "$processname = \"AutoDarkMode\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
@@ -43,10 +43,6 @@
         "github": "https://github.com/Armin2208/Windows-Auto-Night-Mode"
     },
     "autoupdate": {
-        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.exe#/setup.exe",
-        "hash": {
-            "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.sha256",
-            "mode": "extract"
-        }
+        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.exe#/setup.exe"
     }
 }
