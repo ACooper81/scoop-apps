@@ -1,7 +1,7 @@
 {
     "##": "Update is disabled because the installer cannot be properly extracted after version 5.9",
     "version": "5.8.1.0",
-    "description": "Multifunctional, multimedia file conversion tool",
+    "description": "Format Factory. Multifunctional, multimedia file conversion tool",
     "homepage": "http://www.pcfreetime.com/formatfactory/index.php",
     "license": {
         "identifier": "Freeware",
