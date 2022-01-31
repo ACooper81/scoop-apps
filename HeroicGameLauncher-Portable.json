@@ -1,5 +1,5 @@
 {
-    "version": "0",
+    "version": "2.0.2",
     "description": "Heroic Game Launcher. Open Source Game Launcher for Linux, Windows and MacOS (for both Native and Windows Games using Crossover). Right now it supports launching games from the Epic Games Store using Legendary, a CLI alternative to the Epic Games Launcher.",
     "homepage": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
     "license": "GPLv3",
@@ -33,13 +33,14 @@
         ]
     ],
     "checkver": {
-	    "github": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
+	    "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+        "regex": "HeroicGamesLauncher/tree/v([\\d+.]+)"
     },
     "autoupdate": {
 	    "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-Setup-$version.exe",
         "hash": {
             "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/latest.yml",
-            "regex": "^$sha"
+            "regex": "^$sha512"
         }
     }
 }
