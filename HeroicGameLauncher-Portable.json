@@ -33,11 +33,11 @@
         ]
     ],
     "checkver": {
-	    "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
+        "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher",
         "regex": "HeroicGamesLauncher/tree/v([\\d+.]+)"
     },
     "autoupdate": {
-	    "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-Setup-$version.exe",
+        "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-Setup-$version.exe",
         "hash": {
             "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/latest.yml",
             "regex": "^$sha512"
