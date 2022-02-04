@@ -33,7 +33,6 @@
             "{",
             "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\.tmp\"",
             "msiexec /i \"$dir\\.tmp\\AttachedContainer\\PowerToysSetup-$version-x64.msi\" /qn",
-            "Remove-Item \"$dir\\.tmp\", \"$dir\\$fname\" -Force -Recurse",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
