@@ -15,7 +15,7 @@
     ],
     "checkver": {
         "url": "https://github.com/Radarr/Radarr/releases",
-        "regex": "/Radarr/Radarr/tree/v([\\d.]+)"
+        "regex": "Radarr.develop.([\\d.]+).windows-core"
     },
     "autoupdate": {
         "url": "https://github.com/Radarr/Radarr/releases/download/v$version/Radarr.develop.$version.windows-core-x64.zip"
