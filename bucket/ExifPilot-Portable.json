@@ -16,6 +16,7 @@
     },
     "innosetup": true,
     "persist": "ExifPilot.tags",
+    "pre_install": "if(!(Test-Path \"$dir/ExifPilot.tags\")) { Add-Content \"$dir/ExifPilot.tags\" $null }",
     "shortcuts": [
         [
             "ExifPilot.exe",
