@@ -3,6 +3,7 @@
     "description": "A popular utility designed to copy files faster and more reliably, providing the user with many features.",
     "homepage": "https://www.codesector.com",
     "license": "Proprietary",
+    "changelog": "https://blog.codesector.com/category/teracopy/",
     "url": "http://www.codesector.com/files/teracopy.exe#/setup.exe",
     "hash": "9dfa57c6dd935f72e7e8254146cd143528fe962d2c2f518c2d6511d4d1150a3a",
     "pre_download": "Assert-Administrator",
