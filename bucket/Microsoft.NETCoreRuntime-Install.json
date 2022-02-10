@@ -8,7 +8,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.2-windows-x64-installer#/setup.exe",
-            "hash": "43b25c99b5afd2e9c0d84dc0ddf2ca489156b14ed809a43de265b2026427b8e9"
+            "hash": "1867af2c0b8b5167f346a65006d62a52ba0d2b136a874e4e10db154a11be779e"
         },
         "32bit": {
             "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.2-windows-x86-installer#/setup.exe",
