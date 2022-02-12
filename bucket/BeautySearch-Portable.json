@@ -9,8 +9,10 @@
         "BeautySearch.exe"
     ],
     "shortcuts": [
-        "BeautySearch.exe",
-        "BeautySearch"
+        [
+            "BeautySearch.exe",
+            "BeautySearch"
+        ]
     ],
     "checkver": {
         "github": "https://github.com/krlvm/BeautySearch"
