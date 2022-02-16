@@ -1,12 +1,12 @@
 {
-    "version": "2.9.7",
+    "version": "2.9.8",
     "description": "Extend your GitHub workflow beyond your browser.",
     "homepage": "https://desktop.github.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/setup.msi_",
-            "hash": "0a9f39decbb7fe4f60a9b61fdbe85654b3783b96f87700c46d5c1a55dfefa622"
+            "hash": "c104372d00f87be25e78f4d1154c281c1e197ec8e48489f06762a8b361a0f7f2"
         }
     },
     "pre_download": "Assert-Administrator",
