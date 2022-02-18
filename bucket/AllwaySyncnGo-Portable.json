@@ -16,10 +16,10 @@
         }
     },
     "extract_dir": "Allway Sync",
-    "bin": "syncappw.exe",
+    "bin": "Allway Sync\\syncappw.exe",
     "shortcuts": [
         [
-            "syncappw.exe",
+            "Allway Sync\\syncappw.exe",
             "Allway Sync 'n' Go"
         ]
     ],
