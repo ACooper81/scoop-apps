@@ -15,10 +15,11 @@
             "hash": "da04ad0a478d67162ad077aa031fdf8f106cb4bd04a63675cdf9f7d5c4f6c91a"
         }
     },
-    "bin": "Allway Sync\\syncappw.exe",
+    "extract_dir": "Allway Sync",
+    "bin": "bin\\syncappw.exe",
     "shortcuts": [
         [
-            "Allway Sync\\syncappw.exe",
+            "bin\\syncappw.exe",
             "Allway Sync 'n' Go"
         ]
     ],
