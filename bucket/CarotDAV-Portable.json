@@ -22,7 +22,7 @@
     ],
     "persist": "Setting.xml",
     "checkver": {
-        "url": "http://rei.to/carotdav_en.html",
+        "url": "http://rei.to/carotdav_en.html#download",
         "regex": "http://rei.to/CarotDAV([\\d.]+).portable.zip"
     },
     "autoupdate": {
