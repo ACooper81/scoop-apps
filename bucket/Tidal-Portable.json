@@ -21,11 +21,8 @@
     ],
     "checkver": {
         "script": [
-            "$dl_url = 'https://download.tidal.com/desktop/TIDALSetup.exe'",
-            "$dl = cache_path 'Tidal' 'unknown' $dl_url",
-            "do_dl $dl_url $dl",
-            "$version = (Get-Item $dl).VersionInfo.ProductVersion",
-            "Move-Item -Force $dl -Destination (cache_path 'Tidal' $version $dl_url)",
+            "Invoke-WebRequest -Uri \"https://download.tidal.com/desktop/TIDALSetup.exe\" -OutFile \"%TEMP%\\TIDALSetup.exe\"",
+            "$version = (Get-Item \"%TEMP%\\TIDALSetup.exe\").VersionInfo.ProductVersion",
             "return $version"
         ]
     },
