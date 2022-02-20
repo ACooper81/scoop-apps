@@ -139,6 +139,20 @@ Install Scripts
         ]
     },
 
+
+==================================================
+Checkver Scripts
+==================================================
+    "checkver": {
+        "script": [
+            "$dl_url = 'download_url'",
+            "$dl = cache_path 'app_name' 'unknown' $dl_url",
+            "do_dl $dl_url $dl",
+            "$version = (Get-Item $dl).VersionInfo.FileVersion",
+            "return $version"
+        ]
+    },
+
 ==================================================
 Uninstall Scripts
 ==================================================
