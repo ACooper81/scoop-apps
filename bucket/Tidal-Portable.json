@@ -1,10 +1,10 @@
 {
-    "version": "2.29.7",
+    "version": "2.29.7.0",
     "description": "TIDAL Desktop. TIDAL is the first global music streaming service with high fidelity sound, hi-def video quality, along with expertly curated playlists and original content",
-    "homepage": "https://tidal.com/",
+    "homepage": "https://google.com",
     "license": "Propritary",
     "changelog": "",
-    "url": "https://download.tidal.com/desktop/TIDALSetup.exe#/setup.7z",
+    "url": "https://download.tidal.com/desktop/TIDALSetup.exe",
     "hash": "c393be2e29ba3014f2107aea5d84ccc9dacb53772f0e477f9bc9a869137cd7de",
     "installer": {
         "script": [
@@ -21,8 +21,10 @@
     ],
     "checkver": {
         "script": [
-            "Invoke-WebRequest -Uri \"https://download.tidal.com/desktop/TIDALSetup.exe\" -OutFile \"%TEMP%\\TIDALSetup.exe\"",
-            "$version = (Get-Item \"%TEMP%\\TIDALSetup.exe\").VersionInfo.ProductVersion",
+            "$dl_url = 'https://download.tidal.com/desktop/TIDALSetup.exe'",
+            "$dl = cache_path 'Tidal' 'unknown' $dl_url",
+            "do_dl $dl_url $dl",
+            "$version = (Get-Item $dl).VersionInfo.ProductVersion",
             "return $version"
         ]
     },
