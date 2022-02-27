@@ -25,14 +25,16 @@
             "WinMerge"
         ]
     ],
-    "checkver": "WinMerge ([\\d.]+) - latest stable version",
+    "checkver": {
+        "github": "https://github.com/WinMerge/winmerge/releases/"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/winmerge/stable/$version/winmerge-$version-x64-exe.zip"
+                "url": "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-x64-exe.zip"
             },
             "32bit": {
-                "url": "https://downloads.sourceforge.net/project/winmerge/stable/$version/winmerge-$version-exe.zip"
+                "url": "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-exe.zip"
             }
         }
     }
