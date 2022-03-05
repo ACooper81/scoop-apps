@@ -15,7 +15,7 @@
     "shortcuts": [
         [
             "DUMo.exe",
-            "DUMo - Drivers Update Monitor"
+            "DUMo"
         ]
     ],
     "persist": "settings.ini",
