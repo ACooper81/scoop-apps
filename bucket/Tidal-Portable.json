@@ -4,7 +4,7 @@
     "homepage": "https://block.xyz/",
     "license": "Propritary",
     "changelog": "",
-    "url": "https://download.tidal.com/desktop/TIDALSetup.exe",
+    "url": "https://download.tidal.com/desktop/TIDALSetup.exe#/dl.7z",
     "hash": "f8bb5d069b02e4a2856c6328423819c181499ae3e4bb828a2bf68ee739115825",
     "installer": {
         "script": [
