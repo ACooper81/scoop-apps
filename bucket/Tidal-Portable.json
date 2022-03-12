@@ -8,8 +8,8 @@
     "hash": "f8bb5d069b02e4a2856c6328423819c181499ae3e4bb828a2bf68ee739115825",
     "installer": {
         "script": [
-            "Remove-Item \"$dir\\*\" -Exclude \"TIDAL-2.30.0-full.nupkg\"",
-            "Expand-7zipArchive \"$dir\\TIDAL-2.30.0-full.nupkg\" -ExtractDir 'lib\\net45' -Removal"
+            "Remove-Item \"$dir\\*\" -Exclude \"*.nupkg\"",
+            "Expand-7zipArchive \"$dir\\*.nupkg\" -ExtractDir 'lib\\net45' -Removal"
         ]
     },
     "post_install": "Remove-Item \"$dir\\TIDALSetup.exe\" -Force",
