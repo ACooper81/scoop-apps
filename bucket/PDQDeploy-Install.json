@@ -27,6 +27,11 @@
             "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
         ]
     },
+    "post_install": [
+        "$programname = \"PDQ Deploy\"",
+        "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
+        "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
+    ],
     "checkver": {
         "url": "https://www.pdq.com/releases/",
         "regex": "/Deploy_([\\d.]+).exe"
