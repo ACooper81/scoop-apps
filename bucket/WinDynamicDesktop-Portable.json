@@ -1,17 +1,17 @@
 {
-    "version": "4.7.0",
+    "version": "5.0.1",
     "description": "WinDynamicDesktop. Cycle through multiple wallpapers based on the times of sunrise and sunset.",
     "homepage": "https://github.com/t1m0thyj/WinDynamicDesktop",
     "license": "MPL-2.0",
     "changelog": "https://github.com/t1m0thyj/WinDynamicDesktop/releases",
     "architecture": {
         "64bit": {
-            "url": "https://websiteurl/programname-1-win64.7z#/setup.7z",
-            "hash": "0e783f6d60100e10b17e135479ffd1b5ecf8acfb76c10e0f58da29f6132fc603"
+            "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v5.0.1/WinDynamicDesktop_5.0.1_x64_Portable.exe#/WinDynamicDesktop.exe",
+            "hash": "72e24d41c715ee2c471d57fa8319d50ef7962c67092cd7c4d8f03ff72f5041d5"
         },
         "32bit": {
-            "url": "https://websiteurl/programname-1-win32.7z#/setup.7z",
-            "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c"
+            "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v5.0.1/WinDynamicDesktop_5.0.1_x86_Portable.exe#/WinDynamicDesktop.exe",
+            "hash": "bd41b1962ac5a4878df2b580cb58ff007024f8de873737c6c544b992ee39cb16"
         }
     },
     "pre_install": [
@@ -38,10 +38,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_x64_Portable.exe#/WinDynamicDesktop.exe"
+                "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_$version_x64_Portable.exe#/WinDynamicDesktop.exe"
             },
             "32bit": {
-                "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_x86_Portable.exe#/WinDynamicDesktop.exe"
+                "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_$version_x86_Portable.exe#/WinDynamicDesktop.exe"
             }
         }
     }
