@@ -4,8 +4,16 @@
     "homepage": "https://github.com/t1m0thyj/WinDynamicDesktop",
     "license": "MPL-2.0",
     "changelog": "https://github.com/t1m0thyj/WinDynamicDesktop/releases",
-    "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v4.7.0/WinDynamicDesktop_Portable.exe#/WinDynamicDesktop.exe",
-    "hash": "b464ac8ef09224af70f759510e0971029eca56aaa3a70d527e67093e614ff245",
+    "architecture": {
+        "64bit": {
+            "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z",
+            "hash": "0e783f6d60100e10b17e135479ffd1b5ecf8acfb76c10e0f58da29f6132fc603"
+        },
+        "32bit": {
+            "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z",
+            "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c"
+        }
+    },
     "pre_install": [
         "$current_dir = if (get_config NO_JUNCTIONS) { $dir } else { \"$(appdir $app $global)\\current\" }",
         "if (!(Test-Path \"$persist_dir\\WinDynamicDesktop.pth\")) {",
@@ -28,6 +36,13 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_Portable.exe#/WinDynamicDesktop.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_x64_Portable.exe#/WinDynamicDesktop.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/t1m0thyj/WinDynamicDesktop/releases/download/v$version/WinDynamicDesktop_x86_Portable.exe#/WinDynamicDesktop.exe"
+            }
+        }
     }
 }
