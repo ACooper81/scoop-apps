@@ -6,6 +6,7 @@
     "changelog": "https://github.com/farag2/Sophia-Script-for-Windows/releases",
     "url": "https://github.com/Sophia-Community/SophiApp/releases/download/1.0.0.53/SophiApp.zip",
     "hash": "f64e903305db72f70db179da1965b6a6ac3a1199cb4e9929960feb052d7ad3e4",
+    "extract_dir": "SophiApp",
     "bin": "SophiApp.exe",
     "shortcuts": [
         [
