@@ -40,9 +40,9 @@
         ]
     },
     "checkver": {
-        "url": "https://download.archsupply.com/get/download-adobe-creative-cloud/",
-        "regex": "<title>Adobe Creative Cloud (\\d+).(\\d+).(\\d+).(\\d+)",
-        "replace": "${1}.${2}.${3}.${4}"
+        "script": [
+            "return 5.7.0.1307"
+        ]
     },
     "autoupdate": {
         "url": "https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/$majorVersion_$minorVersion_$patchVersion/win64/ACCCx$majorVersion_$minorVersion_$patchVersion_$buildVersion.zip#/setup.7z"
