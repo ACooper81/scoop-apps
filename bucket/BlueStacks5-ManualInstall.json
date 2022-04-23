@@ -48,8 +48,8 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname Multi-Instance Manager.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname Multi-Instance Manager.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://support.bluestacks.com/hc/en-us/articles/360056521752",
-        "regex": "BlueStacks version ([\\d.]+)"
+        "url": "https://support.bluestacks.com/hc/en-us/sections/360012290292-Release-Notes",
+        "regex": "\">BlueStacks ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
