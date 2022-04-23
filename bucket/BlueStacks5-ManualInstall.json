@@ -49,7 +49,7 @@
     ],
     "checkver": {
         "url": "https://support.bluestacks.com/hc/en-us/sections/360012290292-Release-Notes",
-        "regex": "\">BlueStacks ([\\d.]+)"
+        "regex": "Release-Notes\">BlueStacks ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
