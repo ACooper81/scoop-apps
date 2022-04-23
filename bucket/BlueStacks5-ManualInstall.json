@@ -7,7 +7,7 @@
         "identifier": "Freeware",
         "url": "https://www.bluestacks.com/tw/terms-and-privacy.html"
     },
-    "changelog": "https://support.bluestacks.com/hc/en-us/articles/360056521752",
+    "changelog": "https://support.bluestacks.com/hc/en-us/sections/360012290292-Release-Notes",
     "url": "https://cdn3.bluestacks.com/downloads/windows/nxt/5.3.70.1004/57744a07a50949e99daf1bca6b79f295/BlueStacksMicroInstaller_5.3.70.1004_native.exe#/setup.exe",
     "hash": "B45487E991339B64263DB4C25FB38B79C8852A995B9C8779A7ECD140AA0CE9FE",
     "pre_download":[
@@ -50,5 +50,12 @@
     "checkver": {
         "url": "https://support.bluestacks.com/hc/en-us/articles/360056521752",
         "regex": "BlueStacks version ([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cloud.bluestacks.com/api/getdownloadnow?platform=win&win_version=10#/setup.exe"
+            }
+        }
     }
 }
