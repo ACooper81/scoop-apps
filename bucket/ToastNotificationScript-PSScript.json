@@ -16,6 +16,6 @@
         "regex": "ToastNotificationScript([\\d.]+).zip"
     },
     "autoupdate": {
-        "url": "https://github.com/imabdk/Toast-Notification-Script/blob/master/ToastNotificationScript$version.zip"
+        "url": "https://github.com/imabdk/Toast-Notification-Script/raw/master/ToastNotificationScript$version.zip"
     }
 }
