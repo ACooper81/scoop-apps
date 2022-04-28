@@ -5,7 +5,7 @@
     "license": "MIT",
     "changelog": "https://github.com/imabdk/Toast-Notification-Script",
     "url": "https://github.com/imabdk/Toast-Notification-Script/blob/master/ToastNotificationScript2.3.0.zip",
-    "hash": "871c7b9c5f735933f7acf0a52008fd4b9200a4883a52b2d835113ade5ed01317",
+    "hash": "29900834187fa6ebb21a15fc0b083d7103500bfc14a7dea1f4aa5a295880979a",
     "bin": "New-ToastNotification.ps1",
     "persist": [
         "config-toast.xml",
