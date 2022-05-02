@@ -18,10 +18,6 @@
         "regex": "NVCleanstall v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://nl2-dl.techpowerup.com/files/NVCleanstall_$version.exe#/NVCleanstall.exe",
-        "hash": {
-            "url": "https://www.techpowerup.com/download/techpowerup-nvcleanstall/",
-            "regex": "(?sm)$basename.*?$md5"
-        }
+        "url": "https://us2-dl.techpowerup.com/files/NVCleanstall_$version.exe"
     }
 }
