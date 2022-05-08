@@ -26,8 +26,8 @@
         ]
     },
     "checkver": {
-        "url": "https://ironmansoftware.com/powershell-universal/downloads",
-        "regex": "/changlog([\\d.]+)-"
+        "url": "https://docs.powershelluniversal.com/changelog",
+        "regex": "/changelog([\\d.]+)-"
     },
     "autoupdate": {
         "url": "https://imsreleases.blob.core.windows.net/universal/production/$version/PowerShellUniversal.$version.msi#/setup.msi_"
