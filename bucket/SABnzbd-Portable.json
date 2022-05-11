@@ -1,20 +1,20 @@
 {
-    "version": "3.5.3",
+    "version": "3.5.1",
     "description": "SABnzbd. The automated Usenet download tool",
     "homepage": "https://sabnzbd.org",
     "license": "GPL-2.0-or-later",
     "changelog": "https://github.com/sabnzbd/sabnzbd/releases",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sabnzbd/sabnzbd/releases/download/3.5.3/SABnzbd-3.5.3-win64-bin.zip",
-            "hash": "27aa658db665df130440b1ae8cf3813644688e8f6c0e7564b313a99dbf02f1b4"
+            "url": "https://github.com/sabnzbd/sabnzbd/releases/download/3.5.1/SABnzbd-3.5.1-win64-bin.zip",
+            "hash": "d356ff42c15ec78f35b21bb8f5963b815e2e330efc7e17231783c3b9efa179d1"
         },
         "32bit": {
-            "url": "https://github.com/sabnzbd/sabnzbd/releases/download/3.5.3/SABnzbd-3.5.3-win32-bin.zip",
-            "hash": "38220aa7f882704dce3af1cf70749f1e02dd3389f1aee0f9575773d309034c7a"
+            "url": "https://github.com/sabnzbd/sabnzbd/releases/download/3.5.1/SABnzbd-3.5.1-win32-bin.zip",
+            "hash": "a0051ba101f14ac2c7f12fc8c2495d28b3cb654120e394bb7cf108b49ff15a9b"
         }
     },
-    "extract_dir": "SABnzbd-3.5.3",
+    "extract_dir": "SABnzbd-3.5.1",
     "bin": [
         "SABnzbd-console.exe",
         [
