@@ -67,9 +67,6 @@
             "32bit": {
                 "url": "https://github.com/VSCodium/vscodium/releases/download/$version/VSCodium-win32-ia32-$version.zip"
             }
-        },
-        "hash": {
-            "url": "$url.sha256"
         }
     }
 }
