@@ -45,10 +45,6 @@
             "32bit": {
                 "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-$version-windows-x86-installer#/setup.exe"
             }
-        },
-        "hash": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sha.txt",
-            "mode": "extract"
         }
     }
 }
