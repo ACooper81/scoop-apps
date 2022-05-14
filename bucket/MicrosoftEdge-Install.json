@@ -43,7 +43,7 @@
     ],
     "checkver": {
         "url": "https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnotes-security",
-        "regex": "(Version ([\\d.]+)"
+        "regex": "Version ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
