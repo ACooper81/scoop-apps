@@ -43,10 +43,6 @@
             "32bit": {
                 "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x86.exe#/setup.exe"
             }
-        },
-        "hash": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/checksums/$version-sha.txt",
-            "mode": "extract"
         }
     }
 }
