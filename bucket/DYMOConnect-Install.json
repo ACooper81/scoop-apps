@@ -3,7 +3,6 @@
     "description": "DYMO Connect. Label printer software and drivers that supports all with all 450 series/4XL, 550 series/5XL and LabelManagers",
     "homepage": "https://www.dymo.com.au/support?cfid=user-guide",
     "license": "Proprietary",
-    "changelog": "",
     "url": "https://website/filename.exe#/setup.exe",
     "hash": "",
     "pre_download":[
