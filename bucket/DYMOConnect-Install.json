@@ -1,13 +1,11 @@
 {
-    "version": "0",
+    "version": "1.4.3.131",
     "description": "DYMO Connect. Label printer software and drivers that supports all with all 450 series/4XL, 550 series/5XL and LabelManagers",
     "homepage": "https://www.dymo.com.au/support?cfid=user-guide",
     "license": "Proprietary",
-    "url": "https://website/filename.exe#/setup.exe",
-    "hash": "",
-    "pre_download":[
-        "Assert-Administrator"
-    ],
+    "url": "https://s3.amazonaws.com/download.dymo.com/dymo/Software/Win/DCDSetup1.4.3.131.exe#/setup.exe",
+    "hash": "312d314d201bbd2884085134a4c0b1e2fe3da0a6e12f6ec6a69a61df3436cc8d",
+    "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"processname\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
