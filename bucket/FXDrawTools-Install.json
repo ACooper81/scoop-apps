@@ -26,7 +26,7 @@
             "$filepath = \"$ProgramFiles\\Efofex\\bin\\FXDraw.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   &\"$dir\\setup.exe\" /verysilent /noreboot | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
