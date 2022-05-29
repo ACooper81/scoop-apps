@@ -39,7 +39,8 @@
             "   &\"$dir\\setup.exe\" | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version.ToString().Substring(3) -lt [System.Version]\"$version\"))",
             "   {",
-            "       scoop repair Brave-UserInstall",
+            "       scoop repet Brave-UserInstall@1.36.122",
+            "       exit 0",
             "   }",
             "}",
             "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
