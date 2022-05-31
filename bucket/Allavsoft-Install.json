@@ -43,7 +43,13 @@
         "if (Test-Path \"$CommonDesktopPath\\Allavsoft.lnk\") {Remove-Item \"$CommonDesktopPath\\Allavsoft.lnk\" -Force}"
     ],
     "checkver": {
-        "script": "return \"3.24.6.8147\""
+        "script": [
+            "$dl_url = 'https://www.allavsoft.com/downloads/allavsoft.exe'",
+            "$dl = cache_path 'IPVanish' 'unknown' $dl_url",
+            "do_dl $dl_url $dl",
+            "$version = (Get-Item $dl).VersionInfo.FileVersion",
+            "return $version"
+        ]
     },
     "autoupdate": {
         "url": "https://www.allavsoft.com/downloads/allavsoft.exe#/setup.exe"
