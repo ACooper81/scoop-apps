@@ -1,5 +1,5 @@
 {
-    "version": "3.24.7.8183         ",
+    "version": "3.24.7.8183",
     "description": "Allavsoft. Download free videos from 100+ sites and convert to popular video and audio format.",
     "homepage": "https://www.allavsoft.com/index.html",
     "notes": "Installs the latest version from the website. You have to update the app using the programs updater.",
@@ -47,7 +47,7 @@
             "$dl_url = 'https://www.allavsoft.com/downloads/allavsoft.exe'",
             "$dl = cache_path 'IPVanish' 'unknown' $dl_url",
             "do_dl $dl_url $dl",
-            "$version = (Get-Item $dl).VersionInfo.FileVersion",
+            "$version = (Get-Item $dl).VersionInfo.FileVersion.Trim()",
             "return $version"
         ]
     },
