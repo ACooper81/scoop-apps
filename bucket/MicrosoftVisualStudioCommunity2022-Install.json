@@ -9,7 +9,10 @@
     "url": "https://aka.ms/vs/17/release/vs_community.exe",
     "hash": "413cb8144f27ed8d9d94ff0b762bc7db9a60244d1ab6500693485ccc78769094",
     "installer": {
-        "script": "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--quiet', '--norestart', '--wait') -RunAs | Out-Null"
+        "script": [
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--quiet', '--update', '--wait') -RunAs | Out-Null",
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('update', '--wait', '--quiet', '--norestart') -RunAs | Out-Null"
+        ]
     },
     "checkver": {
         "url": "https://docs.microsoft.com/en-us/visualstudio/releases/2022/release-notes",
