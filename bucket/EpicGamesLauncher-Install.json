@@ -41,7 +41,10 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://m.majorgeeks.com/files/details/epic_games_store_launcher.html",
-        "regex": "Epic Games Store Launcher ([\\d.]+)"
+        "url": "https://repology.org/project/epic-games/versions",
+        "regex": "cask/epic-games\">([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi#/setup.msi_"
     }
 }
