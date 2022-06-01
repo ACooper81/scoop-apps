@@ -37,7 +37,7 @@
             "$filepath = \"$ProgramFiles\\RealVNC\\VNC Viewer\\vnvviewer.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" /qn /NORESTART | Out-Null",
+            "   &\"$dir\\setup.exe\" /qn | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
