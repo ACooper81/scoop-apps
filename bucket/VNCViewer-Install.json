@@ -7,8 +7,6 @@
         "url": "https://www.realvnc.com/en/legal/#eulas"
     },
     "changelog": "https://www.realvnc.com/docs/desktop-release-notes.html",
-    "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z",
-    "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
     "architecture": {
         "64bit": {
             "url": "https://website/filename.exe#/setup.exe",
