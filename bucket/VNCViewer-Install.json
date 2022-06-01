@@ -1,5 +1,5 @@
 {
-    "version": "0",
+    "version": "6.22.315",
     "description": "VNC Viewer. Control VNC enabled computers.",
     "homepage": "https://www.realvnc.com/download/viewer",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://www.realvnc.com/en/legal/#eulas"
     },
     "changelog": "https://www.realvnc.com/docs/desktop-release-notes.html",
-    "url": "https://www.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Windows-32bit.exe#/vncviewer.exe",
-    "hash": "767a83a8dc5ec8eca769ef3735e53a133191276c454554603d1fbfe4fc3b83fa",
+    "url": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Windows.exe#/setup.exe",
+    "hash": "788b4817e1686491924f9e3bd166265bc2b477e73a7703103f512fb02f15b5f5",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"vnvviewer\"",
