@@ -39,7 +39,7 @@
             "   }",
             "   else",
             "   {",
-            "       $url = \"http://ardownload.adobe.com/pub/adobe/reader/win/AcrobatDC/1902120058/AcroRdrDC1902120058_en_US.exe\"",
+            "       $url = \"https://ardownload2.adobe.com/pub/adobe/reader/win/AcrobatDC/1500720033/AcroRdrDC1500720033_MUI.exe\"",
             "       $destination = \"$dir\\setup.exe\"",
             "      (New-Object System.Net.WebClient).DownloadFile($url, $destination)",
             "       Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/rs', '/msi', '/qn', '/norestart', 'EULA_ACCEPT=YES') -RunAs | Out-Null",
