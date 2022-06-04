@@ -1,0 +1,1 @@
+Get-ChildItem -Path "$env:userprofile\scoop\buckets\scoop-apps\bucket" -File -Filter "*-Install.json" | Select BaseName | foreach {scoop install $_.BaseName -g}
