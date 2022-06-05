@@ -43,6 +43,7 @@
             "       $destination = \"$dir\\setup.exe\"",
             "      (New-Object System.Net.WebClient).DownloadFile($url, $destination)",
             "       Invoke-ExternalCommand \"$dir\\setup.exe\" -ArgumentList @('/sAll', '/msi', '/norestart', '/quiet', 'PATH=\"$dir\\setup.msp_\"', 'ALLUSERS=1', 'EULA_ACCEPT=YES', 'DISABLEDESKTOPSHORTCUT=1') -RunAs | Out-Null",
+            "      Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msp_\", '/norestart', '/quiet', 'ALLUSERS=1', 'EULA_ACCEPT=YES', 'DISABLEDESKTOPSHORTCUT=1', 'REINSTALLMODE=\"ecmus\"', 'REINSTALL=\"ALL\"') -RunAs | Out-Null",
             "       if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "   }",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
