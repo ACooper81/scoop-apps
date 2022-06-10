@@ -24,7 +24,7 @@
             "$programname = \"Microsoft Edge*\"",
             "$installpath = \"$dir\\setup.msi_\"",
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$exepath = \"$ProgramFiles\\Google\\Chrome\\Application\\edge.exe\"",
+            "$exepath = \"$ProgramFiles\\Microsoft\\Edge\\Application\\edge.exe\"",
             "$filepath = \"$ProgramFiles\\Microsoft\\Edge\\Application\\$version\\msedge.dll\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -and ((Get-Command $exepath).Version -lt [System.Version]\"$version\"))",
             "{",
