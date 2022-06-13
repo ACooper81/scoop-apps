@@ -1,6 +1,6 @@
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod get.scoop.sh -outfile 'install.ps1'
-.\install.ps1 -RunAsAdmin -ScoopDir '$env:USERPROFILE\scoop' -ScoopGlobalDir '$env:ProgramData\scoop' -ScoopCacheDir '$env:USERPROFILE\scoop\cache' -NoProxy
+.\install.ps1 -RunAsAdmin -ScoopDir "$env:USERPROFILE\scoop" -ScoopGlobalDir "$env:ProgramData\scoop" -ScoopCacheDir "$env:USERPROFILE\scoop\cache" -NoProxy
 scoop install gsudo git scoop-search
 scoop config SCOOP_REPO 'https://github.com/Ash258/Scoop-Core'
 scoop bucket add 'Base'
