@@ -44,8 +44,8 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/u/UnityTechnologies/UnityHub",
-        "regex": "Link--primary\" title=\"([\\d.]+)"
+        "url": "https://unity.com/unity-hub/release-notes",
+        "regex": "class=\"active\">([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
