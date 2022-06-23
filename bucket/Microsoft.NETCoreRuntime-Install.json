@@ -8,11 +8,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.6-windows-x64-installer#/setup.exe",
-            "hash": "dd5690b134077f2a9950aef332c6cc2dd7d8507cc134ff92c474c0cf5a7b9e9f"
+            "hash": "864ccbf9e52cab6f29ab63ff4deb06eaa90a97a969a4623546706eae8eb75ec3"
         },
         "32bit": {
             "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.6-windows-x86-installer#/setup.exe",
-            "hash": "1bd28f919a2e473172478bfc1578a360d392eb286522483d1a8c457ac054d78b"
+            "hash": "543a3df7fa0c936348c0c8d606e4c476592e7f3bcf962798780291a86e03ef9d"
         }
     },
     "pre_download": "Assert-Administrator",
