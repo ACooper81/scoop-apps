@@ -1,5 +1,5 @@
 {
-    "version": "90.0.4450.0",
+    "version": "90.0.4463.0",
     "description": "Opera Developer. Fast, secure, easy-to-use browser.",
     "homepage": "https://www.opera.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download1.operacdn.com/pub/opera-developer/90.0.4450.0/win/Opera_Developer_90.0.4450.0_Setup_x64.exe#/dl.7z",
-            "hash": "93dd996cdcd95f770bc437188482af218846ac3f6153123fa619688315618f1b"
+            "url": "https://download1.operacdn.com/pub/opera-developer/90.0.4463.0/win/Opera_Developer_90.0.4463.0_Setup_x64.exe#/dl.7z",
+            "hash": "1f406aa2fae8970b3ceaa6186b8bb556211ae9262304866191ce01c06805e97f"
         },
         "32bit": {
-            "url": "https://download1.operacdn.com/pub/opera-developer/90.0.4450.0/win/Opera_Developer_90.0.4450.0_Setup.exe#/dl.7z",
-            "hash": "7affc250414fe304420b452c1997fb21365980bb009cc763b9a220a53fb271e6"
+            "url": "https://download1.operacdn.com/pub/opera-developer/90.0.4463.0/win/Opera_Developer_90.0.4463.0_Setup.exe#/dl.7z",
+            "hash": "8ef35eed8d5e241b4e7be0d8d0f49dbe2793a9ba6a3132ec728ed33a1c55c564"
         }
     },
     "installer": {

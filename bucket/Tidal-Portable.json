@@ -1,11 +1,11 @@
 {
-    "version": "2.30.4.0",
+    "version": "2.32.0.0",
     "description": "TIDAL Desktop. TIDAL is the first global music streaming service with high fidelity sound, hi-def video quality, along with expertly curated playlists and original content",
     "homepage": "https://block.xyz/",
     "license": "Propritary",
     "changelog": "",
     "url": "https://download.tidal.com/desktop/TIDALSetup.exe",
-    "hash": "0c8de0e48b9245333c82352a1fa774711b5bf6161e554aa121d831f25bc426d2",
+    "hash": "cb70ebf48d0ff1558375f11a698ad02e396ed698d2ee8aa3e98f4ed1672202f7",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\TIDALSetup.exe\"",

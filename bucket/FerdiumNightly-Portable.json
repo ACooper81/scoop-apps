@@ -1,11 +1,11 @@
 {
-    "version": "6.0.0-nightly.69",
+    "version": "6.0.0-nightly.81",
     "description": "Ferdium. All-in-one messaging apps for various services",
     "homepage": "https://github.com/ferdium/ferdium-app",
     "license": "Apache-2.0",
     "changelog": "https://github.com/ferdium/ferdium-app/releases",
-    "url": "https://github.com/ferdium/ferdium-app/releases/download/v6.0.0-nightly.69/Ferdium-Setup-6.0.0-nightly.69.exe#/dl.7z",
-    "hash": "sha512:04ab053cfbeb744fee1d82acacf76526b55735f82c8520b6153b5fca420396e1e9385e109d0801ef3b6b150988a70abb1505b881d09955961a4fabda14be07fd",
+    "url": "https://github.com/ferdium/ferdium-app/releases/download/v6.0.0-nightly.81/Ferdium-Setup-6.0.0-nightly.81.exe#/dl.7z",
+    "hash": "sha512:10cf96c14e00a87162b565c794980444f4a2eaef4e3986de23a9dbdf1fe394382ad12869a1746482a13f51718853e5d40980407ce3812059fb25d5bb53959c72",
     "architecture": {
         "64bit": {
             "installer": {
