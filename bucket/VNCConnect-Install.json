@@ -28,7 +28,7 @@
     },
     "checkver": {
         "url": "https://www.realvnc.com/en/connect/download/vnc/",
-        "regex": "VNC-Viewer-([\\d.]+)-Windows"
+        "regex": "VNC-Server-([\\d.]+)-Windows"
     },
     "autoupdate": {
         "url": "https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-$version-Windows.exe#/setup.exe",
