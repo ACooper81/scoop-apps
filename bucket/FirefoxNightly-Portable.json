@@ -3,7 +3,7 @@
     "description": "Firefox Nightly. Nightly builds of Firefox: the popular open source web browser.",
     "homepage": "https://www.mozilla.org/en-US/firefox/nightly/",
     "license": "MPL-2.0",
-    "changelog": "https://www.mozilla.org/en-US/firefox/105.0a1/releasenotes/",
+    "changelog": "https://www.mozilla.org/en-US/firefox/nightly/notes/",
     "notes": [
         "To set profile 'Scoop-Nightly' as *DEFAULT*, or profiles/settings was lost after update:",
         "  - Run 'Firefox Nightly Profile Manager', choose 'Scoop-Nightly' then click 'Start Nightly'.",
