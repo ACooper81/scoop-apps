@@ -3,6 +3,7 @@
     "description": "Windows Terminal. The new Windows Terminal, and the original Windows console host - all in the same place!",
     "homepage": "https://github.com/microsoft/terminal",
     "license": "MIT",
+    "changelog": "https://github.com/microsoft/terminal/releases",
     "suggest": {
         "vcredist": "extras/vcredist2019"
     },
