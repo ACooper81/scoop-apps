@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=106.0.1367.0&dl#/MicrosoftEdge-106.0.1367.0-x64.7z",
-            "hash": "b57738ae94a44fc4571b07dfe3de2cdaae5a69d4d019f7eb03caa4ccdc364af0"
+            "hash": "6aaba864032a4e2df4eed44d41f70a212797d764ec0a2bc3d429f237d92c3f4b"
         },
         "32bit": {
             "url": "https://dorado-api.deno.dev/edge?arch=86&channel=canary&version=106.0.1367.0&dl#/MicrosoftEdge-106.0.1367.0-x86.7z",
