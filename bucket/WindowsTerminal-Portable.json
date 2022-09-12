@@ -5,7 +5,7 @@
     "license": "MIT",
     "changelog": "https://github.com/microsoft/terminal/releases",
     "suggest": {
-        "vcredist": "extras/vcredist2019"
+        "vcredist": "extras/vcredist2022"
     },
     "url": "https://github.com/microsoft/terminal/releases/download/v1.14.2281.0/Microsoft.WindowsTerminal_Win10_1.14.2281.0_8wekyb3d8bbwe.msixbundle",
     "hash": "7109e403cbdaa51e145c81af17f6da65138dc5249889f55283895d7311a046f3",
