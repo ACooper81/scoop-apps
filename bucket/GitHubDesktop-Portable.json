@@ -19,7 +19,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://central.github.com/api/deployments/desktop/desktop/latest/RELEASES",
+        "url": "https://github.com/desktop/desktop/tags",
         "regex": "GitHubDesktop-([\\d.]+)-full.nupkg",
         "reverse": true
     },
