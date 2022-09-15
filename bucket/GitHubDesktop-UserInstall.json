@@ -45,8 +45,7 @@
     ],
     "checkver": {
         "url": "https://github.com/desktop/desktop/tags",
-        "regex": "GitHubDesktop-([\\d.]+)-full.nupkg",
-        "reverse": true
+        "regex": "/desktop/desktop/releases/tag/release-([\\d.]+)\">"
     },
     "autoupdate": {
         "architecture": {
