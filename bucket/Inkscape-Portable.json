@@ -6,11 +6,11 @@
     "changelog": "https://inkscape.org/release/",
     "architecture": {
         "64bit": {
-            "url": "https://inkscape.org/release/inkscape-1.2.1/windows/64-bit/compressed-7z/dl/",
+            "url": "https://inkscape.org/release/inkscape-1.2.1/windows/64-bit/compressed-7z/dl/#/dl.7z",
             "hash": "f5a8ff881c82815eae139ce1436ccaa12dfe34fcdb00891891de0dcd5ad6023b"
         },
         "32bit": {
-            "url": "https://inkscape.org/release/inkscape-1.2.1/windows/32-bit/compressed-7z/dl/",
+            "url": "https://inkscape.org/release/inkscape-1.2.1/windows/32-bit/compressed-7z/dl/#/dl.7z",
             "hash": "edf6d7d3d461ac65cf4435d3bd2ea624b9f56ec76330c394de019ffedf96c6a0"
         }
     },
@@ -32,10 +32,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://inkscape.org/release/inkscape-$version/windows/64-bit/compressed-7z/dl/"
+                "url": "https://inkscape.org/release/inkscape-$version/windows/64-bit/compressed-7z/dl/#/dl.7z"
             },
             "32bit": {
-                "url": "https://inkscape.org/release/inkscape-$version/windows/32-bit/compressed-7z/dl/"
+                "url": "https://inkscape.org/release/inkscape-$version/windows/32-bit/compressed-7z/dl/#/dl.7z"
             }
         }
     }
