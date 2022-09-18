@@ -1,21 +1,20 @@
 {
-    "version": "1.2.1_2022-07-14",
+    "version": "1.2.1",
     "description": "Inkscape. Professional vector graphics editor",
     "homepage": "https://inkscape.org",
     "license": "GPL-3.0-or-later",
     "changelog": "https://inkscape.org/release/",
     "architecture": {
         "64bit": {
-            "url": "https://media.inkscape.org/dl/resources/file/inkscape-1.2.1_2022-07-14_9c6d41e410-x64.7z",
-            "hash": "6a964aee3b411303a192d57e620f7f25d8a9b60758fc7d7ab6744393a3172eb9",
-            "extract_dir": "inkscape-1.2.1_2022-07-14_9c6d41e410-x64"
+            "url": "https://inkscape.org/release/inkscape-1.2.1/windows/64-bit/compressed-7z/dl/",
+            "hash": "f5a8ff881c82815eae139ce1436ccaa12dfe34fcdb00891891de0dcd5ad6023b"
         },
         "32bit": {
-            "url": "https://media.inkscape.org/dl/resources/file/inkscape-1.2.1_2022-07-14_9c6d41e410-x86.7z",
-            "hash": "dd24ccc13dd5cc266fe9fa941b68afa91d4ab90852379cbdc7f7243f3f2700df",
-            "extract_dir": "inkscape-1.2.1_2022-07-14_9c6d41e410-x86"
+            "url": "https://inkscape.org/release/inkscape-1.2.1/windows/32-bit/compressed-7z/dl/",
+            "hash": "edf6d7d3d461ac65cf4435d3bd2ea624b9f56ec76330c394de019ffedf96c6a0"
         }
     },
+    "extract_dir": "inkscape*",
     "bin": [
         "bin\\inkscape.com",
         "bin\\inkview.com"
@@ -27,31 +26,16 @@
         ]
     ],
     "checkver": {
-        "script": [
-            "$redirUrl = [System.Net.HttpWebRequest]::Create('https://inkscape.org/en/release').GetResponse().ResponseUri.AbsoluteUri",
-            "$test_dl = Invoke-WebRequest ($redirUrl + '/windows/64-bit/compressed-7z/dl/') -UseBasicParsing",
-            "$filename = ($test_dl.links | Where-Object href -match '\\.7z$' | Select-Object -first 1 -expand href) -split '/' | Select-Object -last 1",
-            "$clean_filename = $filename -replace '-(x86|x64)_\\w+\\.7z$'",
-            "$ink_version = $clean_filename -replace '^inkscape-([0-9_\\-.]+)_\\w+$','$1'",
-            "Write-Output $ink_version $clean_filename"
-        ],
-        "regex": "(?<version>.+)\\s(?<cleanfilename>.+)"
+        "url": "https://inkscape.org/release/",
+        "regex": "Download Inkscape ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://media.inkscape.org/dl/resources/file/$matchCleanfilename-x64.7z",
-                "extract_dir": "$matchCleanfilename-x64",
-                "hash": {
-                    "url": "https://media.inkscape.org/media/resources/sigs/$matchCleanfilename-x64.7z.sha256"
-                }
+                "url": "https://inkscape.org/release/inkscape-$version/windows/64-bit/compressed-7z/dl/"
             },
             "32bit": {
-                "url": "https://media.inkscape.org/dl/resources/file/$matchCleanfilename-x86.7z",
-                "extract_dir": "$matchCleanfilename-x86",
-                "hash": {
-                    "url": "https://media.inkscape.org/media/resources/sigs/$matchCleanfilename-x86.7z.sha256"
-                }
+                "url": "https://inkscape.org/release/inkscape-$version/windows/32-bit/compressed-7z/dl/"
             }
         }
     }
