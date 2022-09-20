@@ -1,12 +1,12 @@
 {
-    "version": "2.7.3",
+    "version": "2.7.4",
     "description": "Browser Tamer. Opens required browser based on configuration",
     "homepage": "https://www.aloneguid.uk/projects/bt/",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://www.aloneguid.uk/projects/bt/bin/bt-2.7.3.zip",
-            "hash": "be5261cf1dc4759b30b64b11618ff09f2208fbd191aec5b1b069bdd7e73865a0"
+            "url": "https://www.aloneguid.uk/projects/bt/bin/bt-2.7.4.zip",
+            "hash": "44fa065904fe9972120d3aed7443a47e7dae3225f95b02da1c313abb40c68a5a"
         }
     },
     "bin": "bt.exe",
