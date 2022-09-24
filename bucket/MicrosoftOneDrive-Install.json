@@ -22,8 +22,8 @@
     "installer": {
         "script": [
             "$programname = \"Microsoft OneDrive*\"",
-            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
-            "$filepath = \"$ProgramFiles\\folder\\file.exe\"",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$filepath = \"$ProgramFiles\\Microsoft OneDrive\\OneDrive.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /silent /update /restart /allusers | Out-Null",
