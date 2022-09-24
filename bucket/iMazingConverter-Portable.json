@@ -1,0 +1,25 @@
+{
+    "version": "2.0.2",
+    "description": "iMazing Converter. A tiny and free app for Mac and PC that converts photos from HEIC to JPEG, and videos from HEVC/H.265 to MP4/H.264. Enjoy!",
+    "homepage": "https://imazing.com/converter",
+    "license": "Proprietary",
+    "changelog": "",
+    "url": "https://downloads.imazing.com/windows/iMazing-Converter/iMazingConverterWindows.exe#/setup.7z",
+    "hash": "4cc8e0c131739f08d5039bf3ccaccc6d489fcc6e34d914af58916f650235eff0",
+    "bin": "iMazing Converter.exe",
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "iMazing Converter.exe",
+            "iMazing Converter"
+        ]
+    ],
+    "checkver": {
+        "url": "https://imazing.com/converter/download/windows",
+        "regex": "softwareVersion\":\"([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://downloads.imazing.com/windows/iMazing-Converter/iMazingConverterWindows.exe#/setup.7z",
+        "changelog": "https://downloads.imazing.com/windows/iMazing-Converter/$version/release-notes.html"
+    }
+}
