@@ -40,8 +40,7 @@
         ]
     },
     "checkver": {
-        "url": "https://helpx.adobe.com/au/creative-cloud/release-note/cc-release-notes.html",
-        "regex": "<p>Version ([\\d.]+)"
+        "script": "return 5.8.0.592"
     },
     "autoupdate": {
         "url": "https://ccmdl.adobe.com/AdobeProducts/KCCC/CCD/$majorVersion_$minorVersion_$patchVersion/win64/ACCCx$majorVersion_$minorVersion_$patchVersion_$buildVersion.zip#/setup.7z"
