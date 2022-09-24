@@ -33,10 +33,10 @@
     },
     "checkver": {
         "script": [
-            "$dl_url = 'https://www.amazon.com/gp/dmusic/desktop/downloadPlayer'",
+            "$dl_url = 'https://d2j9xt6n9dg5d3.cloudfront.net/win/23620901_66f336fde4b69ec22347599c69a5ccb6/AmazonMusicInstaller.exe'",
             "$dl = cache_path 'AmazonMusic' 'unknown' $dl_url",
             "do_dl $dl_url $dl",
-            "$version = (Get-Item $dl).VersionInfo.FileVersion",
+            "$version = (Get-Item $dl).VersionInfo.ProductVersion",
             "return $version"
         ]
     },
