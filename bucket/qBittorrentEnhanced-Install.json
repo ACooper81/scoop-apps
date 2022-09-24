@@ -50,7 +50,6 @@
         "$CommonDesktopPath = [Environment]::GetFolderPath(\"CommonDesktopDirectory\")",
         "if (Test-Path \"$CommonDesktopPath\\qbittorrent.lnk\") {Remove-Item \"$CommonDesktopPath\\qbittorrent.lnk\" -Force}"
     ],
-    "bin": "qbittorrent.exe",
     "checkver": {
         "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases",
         "regex": "qBittorrent Enhanced Edition v([\\d.]+)"
