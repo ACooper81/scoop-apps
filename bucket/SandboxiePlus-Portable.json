@@ -18,8 +18,6 @@
     "innosetup": true,
     "installer": {
         "script": [
-            "&\"$dir\\setup.exe\" /VERYSILENT /PORTABLE=1 /DIR=\"$dir\" | Out-Null",
-            "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }",
             "if (!(Test-Path \"$persist_dir\\Sandbox\")) {",
             "   ensure \"$dir\\Sandbox\" | Out-Null",
             "}"
