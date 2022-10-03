@@ -25,6 +25,6 @@
         "regex": "Desktop v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/bitwarden/desktop/releases/download/v$version/Bitwarden-Portable-$version.exe"
+        "url": "https://github.com/bitwarden/clients/releases/download/desktop-v$version/Bitwarden-Portable-$version.exe"
     }
 }
