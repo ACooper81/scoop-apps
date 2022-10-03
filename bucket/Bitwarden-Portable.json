@@ -21,7 +21,8 @@
         "}"
     ],
     "checkver": {
-        "github": "https://github.com/bitwarden/desktop"
+        "url": "https://github.com/bitwarden/clients/releases",
+        "regex": "Desktop v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/bitwarden/desktop/releases/download/v$version/Bitwarden-Portable-$version.exe"
