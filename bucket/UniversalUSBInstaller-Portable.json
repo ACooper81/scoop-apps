@@ -18,12 +18,13 @@
             "Universal USB Installer"
         ]
     ],
-    "post_install": "Rename-Item -Path \"$dir\\Universal-USB-Installer-*.exe\" -Newname \"Universal-USB-Installer.exe\"",
+    "post_install": "Rename-Item -Path \"$dir\\Universal-USB-Installer-2.0.1.4a.exe\" -Newname \"Universal-USB-Installer.exe\"",
     "checkver": {
         "url": "https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/",
         "regex": "<span[^>]*>Universal-USB-Installer-([\\d\\.]+)\\.exe"
     },
     "autoupdate": {
-        "url": "https://www.pendrivelinux.com/downloads/Universal-USB-Installer/Universal-USB-Installer-$version.exe"
+        "url": "https://www.pendrivelinux.com/downloads/Universal-USB-Installer/Universal-USB-Installer-$version.exe",
+        "post_install": "Rename-Item -Path \"$dir\\Universal-USB-Installer-*.exe\" -Newname \"Universal-USB-Installer.exe\""
     }
 }
