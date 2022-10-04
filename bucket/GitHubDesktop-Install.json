@@ -1,12 +1,12 @@
 {
-    "version": "3.0.8",
+    "version": "3.1.0",
     "description": "GitHub Desktop. Extend your GitHub workflow beyond your browser.",
     "homepage": "https://desktop.github.com/",
     "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://central.github.com/deployments/desktop/desktop/latest/win32?format=msi#/setup.msi_",
-            "hash": "f241cdee5e9ee0438ff4602d341120ca3f0da6d8d709e58a09456da17ed85e5f"
+            "hash": "e62cccd4adc37c42ac287fddd38bba07b1959313fc89add1675bbcabe9211609"
         }
     },
     "pre_download": "Assert-Administrator",
