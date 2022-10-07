@@ -49,5 +49,12 @@
         "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBI",
         "regex": "/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/PowerBI/([\\d.]+)",
         "reverse": true
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe#/setup.exe"
+            }
+        }
     }
 }
