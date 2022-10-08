@@ -1,5 +1,5 @@
 {
-    "version": "0.2",
+    "version": "2021.06",
     "description": "Policy Plus. Local Group Policy Editor plus more, for all Windows editions",
     "homepage": "https://github.com/Fleex255/PolicyPlus",
     "license": "CC-BY-4.0 License",
@@ -15,5 +15,8 @@
     ],
     "checkver": {
         "github": "https://github.com/Fleex255/PolicyPlus"
+    },
+    "autoupdate": {
+        "url": "https://s3-us-west-2.amazonaws.com/policy-plus/PolicyPlusLatest.exe#/PolicyPlus.exe"
     }
 }
