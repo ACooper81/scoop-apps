@@ -30,9 +30,9 @@
         "script": [
             "$programname = \"Zoom*\"",
             "$installpath = \"$dir\\setup.msi_\"",
-            "$ProgramFilesX86 = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
             "$programsVersion = \"$majorVersion.$minorVersion.$patchVersion\"",
-            "if((Get-Command \"$ProgramFilesX86\\Zoom\\bin\\zoom.exe\").Version -lt $version)",
+            "if((Get-Command \"$ProgramFiles\\Zoom\\bin\\zoom.exe\").Version -lt $version)",
             "{",
             "   Invoke-ExternalCommand msiexec -ArgumentList @('/i', \"$dir\\setup.msi_\", '/qn', '/norestart', 'MSIRESTARTMANAGERCONTROL=”Disable”', 'ZoomAutoUpdate=\"true\"') -RunAs | Out-Null",
             "   if((Get-Command \"$ProgramFilesX86\\Zoom\\bin\\zoom.exe\").Version -lt $version)",
