@@ -30,10 +30,13 @@
         "regex": "/releases/tag/(?:v|V)?([\\d\\-nightly.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/ferdium/ferdium-app/releases/download/v$version/Ferdium-Setup-$version.exe#/dl.7z",
-        "hash": {
-            "url": "$baseurl/latest.yml",
-            "regex": "sha512:\\s+$base64"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ferdium/ferdium-app/releases/download/v$version/Ferdium-win-Portable-$version-x64.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/ferdium/ferdium-app/releases/download/v$version/Ferdium-win-Portable-$version.exe#/dl.7z"
+            }
         }
     }
 }
