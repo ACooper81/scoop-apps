@@ -44,10 +44,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.zoom.us/client/5.12.0.8964/ZoomInstallerFull.msi?archType=x64#/dl.7z"
+                "url": "https://www.zoom.us/client/5.12.0.8964/ZoomInstallerFull.msi?archType=x64"
             },
             "32bit": {
-                "url": "https://www.zoom.us/client/5.12.0.8964/ZoomInstallerFull.msi#/dl.7z"
+                "url": "https://www.zoom.us/client/5.12.0.8964/ZoomInstallerFull.msi"
             }
         }
     }
