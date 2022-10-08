@@ -17,10 +17,6 @@
         }
     },
     "extract_dir": "bin",
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\dl.7z\" -Removal",
-        "Remove-Item \"$dir\\Install*\""
-    ],
     "post_install": [
         "Write-Host \"Registering zoommtg:// protocol handler\"",
         "$regpath = \"HKCU:\\SOFTWARE\\Classes\\zoommtg\"",
