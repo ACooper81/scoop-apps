@@ -36,6 +36,6 @@
         "github": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher"
     },
     "autoupdate": {
-        "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-Setup-$version.exe#/dl.7z"
+        "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v$version/Heroic-$version-Portable.exe#/dl.7z"
     }
 }
