@@ -16,7 +16,11 @@
             "hash": "b01e2a69500444300f9b2abacae80f111ee4de6444b0c44d0d74cc91e38c4bff"
         }
     },
-    "extract_dir": "Zoom\\bin",
+    "extract_dir": "bin",
+    "pre_install": [
+        "Expand-7zipArchive \"$dir\\dl.7z\" -Removal",
+        "Remove-Item \"$dir\\Install*\""
+    ],
     "post_install": [
         "Write-Host \"Registering zoommtg:// protocol handler\"",
         "$regpath = \"HKCU:\\SOFTWARE\\Classes\\zoommtg\"",
@@ -44,10 +48,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://zoom.us/client/$version/ZoomInstallerFull.exe?archType=x64#/dl.7z"
+                "url": "https://www.zoom.us/client/5.12.0.8964/ZoomInstallerFull.msi?archType=x64#/dl.7z"
             },
             "32bit": {
-                "url": "https://zoom.us/client/$version/ZoomInstallerFull.exe#/dl.7z"
+                "url": "https://www.zoom.us/client/5.12.0.8964/ZoomInstallerFull.msi#/dl.7z"
             }
         }
     }
