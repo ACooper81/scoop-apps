@@ -46,6 +46,6 @@
         "github": "https://github.com/Klocman/Bulk-Crap-Uninstaller"
     },
     "autoupdate": {
-        "url": "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v$version/BCUninstaller_$version_portable.7z"
+        "url": "https://github.com/Klocman/Bulk-Crap-Uninstaller/releases/download/v$version/BCUninstaller_$version_portable.zip"
     }
 }
