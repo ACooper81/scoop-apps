@@ -3,6 +3,7 @@
     "description": "LibreWolf. A fork of Firefox, focused on privacy, security and freedom.",
     "homepage": "https://librewolf.net/",
     "license": "MPL-2.0",
+    "changelog": "https://gitlab.com/librewolf-community/browser/windows/-/releases",
     "architecture": {
         "64bit": {
             "url": "https://gitlab.com/librewolf-community/browser/windows/uploads/1f144d19d93cdd969641583ee3b13e17/librewolf-105.0.3-1.en-US.win64-portable.zip",
