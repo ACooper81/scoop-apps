@@ -28,7 +28,7 @@
     },
     "checkver": {
         "url": "https://github.com/Terminus-Media/jellyfin-media-player/releases/latest",
-        "regex": "TerminusPlayer-(?<pmpversion>[\\d.]+)-windows-x64_release_(\\d+).exe"
+        "regex": "TerminusPlayer-(?<pmpversion>[\\d.]+)-windows-x64.release_(\\d+).exe"
     },
     "autoupdate": {
         "architecture": {
