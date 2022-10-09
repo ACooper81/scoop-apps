@@ -33,7 +33,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/mean00/avidemux2/releases/download/$version/avidemux_$version_win64.exe#/dl.7z"
+                "url": "https://github.com/mean00/avidemux2/releases/download/$version/avidemux_$version.VC++.64bits.exe#/dl.7z"
             }
         }
     }
