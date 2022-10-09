@@ -21,5 +21,8 @@
             "Format Factory"
         ]
     ],
-    "checkver": "Ver:V([\\d+.]+)"
+    "checkver": "Ver:V([\\d+.]+)",
+    "autoupdate": {
+        "url": "http://public.pcfreetime.com/FFSetup$version.exe#/dl.7z"
+    }
 }
