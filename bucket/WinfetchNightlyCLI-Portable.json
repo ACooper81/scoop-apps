@@ -1,5 +1,5 @@
 {
-    "version": "0.2022.08.28",
+    "version": "0.2022.09.15",
     "description": "Winfetch. A command-line system information utility for Windows 10",
     "homepage": "https://github.com/lptstr/winfetch",
     "license": "MIT",
@@ -7,8 +7,8 @@
     "suggest": {
         "jcwillox/imagemagick-pure": "imagemagick-pure"
     },
-    "url": "https://raw.githubusercontent.com/lptstr/winfetch/89a4524fc3cc715df9be373a111c7a6642018efa/winfetch.ps1",
-    "hash": "9bf8e50f3cfb03c30b4840a990ccdb386445ec67c2158aa9c760de8c6d0e3b40",
+    "url": "https://raw.githubusercontent.com/lptstr/winfetch/72c3403eb758d4165a8f17a36188c5df14097616/winfetch.ps1",
+    "hash": "6bb611f95133a3953bdc1b207e8551397fe9f72472742df6b402f5d79e4803e4",
     "bin": "winfetch.ps1",
     "checkver": {
         "url": "https://github.com/lptstr/winfetch/commits/master.atom",
