@@ -19,7 +19,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/martinrotter/rssguard/releases/latest",
+        "url": "https://api.github.com/repos/martinrotter/rssguard/releases/latest",
         "regex": "rssguard-(?<version>[\\d.]+)-(?<commit>[\\d\\w.]+)-win10\\.7z"
     },
     "autoupdate": {
