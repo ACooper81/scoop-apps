@@ -1,17 +1,17 @@
 {
     "##": "Download URL https://www.java.com/en/download/manual.jsp",
-    "version": "8.0.3110.11",
+    "version": "8.0.3410.10",
     "description": "Oracle JRE 8. Oracle Java Platform, Standard Edition Runtime Environment (JRE)",
     "homepage": "https://www.java.com/",
     "license": "https://www.oracle.com/technetwork/java/javase/terms/license/javase-license.html",
     "architecture": {
         "64bit": {
-            "url": "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245479_4d5417147a92418ea8b615e228bb6935#/setup.exe",
-            "hash": "4885e64c3e5dd16dc49f9b81c502e39c7529c6741776951c6702ab0af5ac44c0"
+            "url": "https://sdlc-esd.oracle.com/ESD6/JSCDL/jdk/8u341-b10/424b9da4b48848379167015dcc250d8d/jre-8u341-windows-x64.exe?GroupName=JSC&FilePath=/ESD6/JSCDL/jdk/8u341-b10/424b9da4b48848379167015dcc250d8d/jre-8u341-windows-x64.exe&BHost=javadl.sun.com&File=jre-8u341-windows-x64.exe&AuthParam=1665572722_82b126900f6314043dbe93de1c0426a7&ext=.exe#/setup.exe",
+            "hash": "78f9cebd517a838138bedc8651e84f6a576b43f9e84f18bb0b2e3b84c7208e02"
         },
         "32bit": {
-            "url": "https://javadl.oracle.com/webapps/download/AutoDL?BundleId=245477_4d5417147a92418ea8b615e228bb6935#/setup.exe",
-            "hash": "8875f7104cd2c1c5d5eef7f06b841e239254c62792ffb601a2f46e96c2f67cc3"
+            "url": "https://sdlc-esd.oracle.com/ESD6/JSCDL/jdk/8u341-b10/424b9da4b48848379167015dcc250d8d/jre-8u341-windows-i586.exe?GroupName=JSC&FilePath=/ESD6/JSCDL/jdk/8u341-b10/424b9da4b48848379167015dcc250d8d/jre-8u341-windows-i586.exe&BHost=javadl.sun.com&File=jre-8u341-windows-i586.exe&AuthParam=1665572729_9da05178c4d7e4cb6b52853505cc484d&ext=.exe#/setup.exe",
+            "hash": "971768b4cf54eedd2869cd5d3b32253c55aa561ec1806f9ff266fe502ca99c63"
         }
     },
     "pre_download": "Assert-Administrator",
