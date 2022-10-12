@@ -22,7 +22,7 @@
             "$filepath = \"$ProgramFiles\\Java\\jre1.8.0_341\bin\\javacpl.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" /S REBOOT=0 SPONSORS=0 AUTO_UPDATE=0 | Out-Null",
+            "   &\"$dir\\setup.exe\" /s REBOOT=0 SPONSORS=0 AUTO_UPDATE=0 | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
