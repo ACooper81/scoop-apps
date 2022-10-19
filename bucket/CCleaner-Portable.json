@@ -1,11 +1,11 @@
 {
-    "version": "6.04.10044",
+    "version": "6.05.10102",
     "description": "CCleaner. Number-one tool for cleaning your PC.",
     "homepage": "https://www.ccleaner.com/ccleaner",
     "license": "Freeware",
     "changelog": "https://www.ccleaner.com/ccleaner/version-history",
-    "url": "https://download.ccleaner.com/portable/ccsetup604.zip",
-    "hash": "bb31d3969e73e3561ca41345a228fc46bf3879374387114e3aaf7e72ef45ec60",
+    "url": "https://download.ccleaner.com/portable/ccsetup605.zip",
+    "hash": "4214cf58bd6f8416d046fb1122b2f657f93ad182adf3e0b752a58494ae377809",
     "architecture": {
         "64bit": {
             "bin": [
