@@ -13,8 +13,8 @@
     "shortcuts": [
         [
             "powershell.exe",
-            "-Command iwr -useb https://christitus.com/win | iex",
-            "Chris Titus Tech's Windows Utility"
+            "Chris Titus Tech's Windows Utility",
+            "-Command iwr -useb https://christitus.com/win | iex"
         ]
     ]
 }
