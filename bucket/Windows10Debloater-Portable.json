@@ -4,7 +4,8 @@
     "homepage": "https://github.com/Sycnex/Windows10Debloater",
     "license": "MIT",
     "changelog": "https://github.com/Sycnex/Windows10Debloater",
-    "url": "https://codeload.github.com/Sycnex/Windows10Debloater/zip/refs/heads/master",
+    "url": "https://codeload.github.com/Sycnex/Windows10Debloater/zip/refs/heads/master#/master.zip",
+    "extract_dir": "Windows10Debloater-master",
     "pre_install": "if(!(Test-Path \"$dir/custom-lists.ps1\")) { Add-Content \"$dir/custom-lists.ps1\" $null }",
     "installer": {
         "script": [
