@@ -6,6 +6,7 @@
     "changelog": "https://github.com/Sycnex/Windows10Debloater",
     "url": "https://codeload.github.com/Sycnex/Windows10Debloater/zip/refs/heads/master#/master.zip",
     "extract_dir": "Windows10Debloater-master",
+    "pre_install": "if(!(Test-Path \"$dir/custom-lists.ps1\")) { Add-Content \"$dir/custom-lists.ps1\" $null }",
     "installer": {
         "script": [
             "New-Item -Path \"$dir\\powershell.exe\" -ItemType SymbolicLink -Target  \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\""
