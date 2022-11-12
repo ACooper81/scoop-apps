@@ -1,9 +1,10 @@
 {
-    "version": "0.1",
+    "version": "nightly",
     "description": "Chris Titus Tech's Windows Utility. Compilation of windows tasks Chris Titus performs on each Windows system he uses.",
     "homepage": "https://github.com/ChrisTitusTech/winutil",
     "license": "MIT",
     "changelog": "https://github.com/ChrisTitusTech/winutil",
+    "url": "https://github.com/ChrisTitusTech/winutil/blob/main/README.md",
     "installer": {
         "script": [
             "New-Item -Name \"$dir\\powershell.exe\" -ItemType Junction -Value \"C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\""
