@@ -1,5 +1,5 @@
 {
-    "version": "nightly",
+    "version": "0.1",
     "description": "Chris Titus Tech's Windows Utility. Compilation of windows tasks Chris Titus performs on each Windows system he uses.",
     "homepage": "https://github.com/ChrisTitusTech/winutil",
     "license": "MIT",
