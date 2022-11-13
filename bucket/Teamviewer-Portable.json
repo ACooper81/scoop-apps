@@ -17,8 +17,8 @@
     ],
     "persist": "teamviewer.ini",
     "checkver": {
-        "url": "https://community.teamviewer.com/English/categories/change-logs-en",
-        "regex": "\\[Windows\\].*?([\\d.]+)"
+        "url": "https://www.teamviewer.com/en/download/windows/",
+        "regex": "Current version:.*?([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download.teamviewer.com/download/version_$majorVersionx/TeamViewerPortable.zip"
