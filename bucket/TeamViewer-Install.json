@@ -43,8 +43,8 @@
         "if (Test-Path \"$CommonDesktopPath\\TeamViewer.lnk\") {Remove-Item \"$CommonDesktopPath\\TeamViewer.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://community.teamviewer.com/English/categories/change-logs-en",
-        "regex": "Windows] v([\\d.]+)"
+        "url": "https://www.teamviewer.com/en/download/windows/",
+        "regex": "Current version:.*?([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://dl.teamviewer.com/download/TeamViewer_Setup.exe#/setup.exe"
