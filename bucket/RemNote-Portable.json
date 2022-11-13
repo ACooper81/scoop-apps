@@ -35,7 +35,7 @@
         "regex": "version: ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://download.remnote.io/RemNote%20Setup%20$version.exe#/dl.7z",
+        "url": "https://download.remnote.io/RemNote-$version-Setup.exe#/dl.7z",
         "hash": {
             "url": "$baseurl/latest.yml",
             "regex": "sha512:\\s*$base64"
