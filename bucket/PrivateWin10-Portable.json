@@ -20,6 +20,6 @@
         "github": "https://github.com/DavidXanatos/priv10"
     },
     "autoupdate": {
-        "url": "https://github.com/DavidXanatos/priv10/releases/download/v$version/PrivateWin10-Setup-v$version.zip"
+        "url": "https://github.com/DavidXanatos/priv10/releases/download/v$version/PrivateWin10-Setup-v$version.exe#/dl.7z"
     }
 }
