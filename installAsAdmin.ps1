@@ -10,7 +10,7 @@ scoop bucket add Scoop-Apps 'https://github.com/ACooper81/scoop-apps'
 scoop install aria2 7zip git gsudo dark innounp lessmsi scoop-search --global --no-cache
 Add-MpPreference -ExclusionPath "$env:ProgramData\scoop"
 Add-MpPreference -ExclusionPath 'C:\ProgramData\scoop'
-[Environment]::SetEnvironmentVariable('SCOOP', 'C:\Users\User\scoop', 'User')
+[Environment]::SetEnvironmentVariable('SCOOP', "$env:USERPROFILE\scoop", 'User')
 [Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', 'C:\ProgramData\scoop', 'Machine')
 Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
 scoop update
