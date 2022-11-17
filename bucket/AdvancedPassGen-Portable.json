@@ -1,0 +1,30 @@
+{
+    "version": "0",
+    "description": "Advanced PassGen. Free and open-source application that can help you generate passwords and export them",
+    "homepage": "https://codedead.com/software/advanced-passgen",
+    "license": "GPL-3.0-only",
+    "changelog": "https://github.com/CodeDead/Advanced-PassGen/releases",
+    "architecture": {
+        "64bit": {
+            "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z",
+            "hash": "0e783f6d60100e10b17e135479ffd1b5ecf8acfb76c10e0f58da29f6132fc603"
+        }
+    },
+    "bin": "advanced-passgen.exe",
+    "shortcuts": [
+        [
+            "advanced-passgen.exe",
+            "Advanced PassGen"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/CodeDead/Advanced-PassGen"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/CodeDead/Advanced-PassGen/releases/download/v$version/advanced-passgen_$version_x64_en-US.msi"
+            }
+        }
+    }
+}
