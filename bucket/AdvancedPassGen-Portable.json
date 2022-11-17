@@ -10,6 +10,7 @@
             "hash": "14dba4314efe760e365344ca14cccce1d68d01f63751783176d45e85f1e09f20"
         }
     },
+    "extract_dir": "PFiles\\advanced-passgen",
     "bin": "advanced-passgen.exe",
     "shortcuts": [
         [
