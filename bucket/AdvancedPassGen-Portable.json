@@ -6,17 +6,8 @@
     "changelog": "https://github.com/CodeDead/Advanced-PassGen/releases",
     "architecture": {
         "64bit": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-            "url": "https://websiteurl/programname--win64.7z#/setup.7z",
-=======
-            "url": "https://websiteurl/programname-$version-win64.7z#/setup.7z",
->>>>>>> parent of cd65f6aa (Update AdvancedPassGen-Portable.json)
-            "hash": "0e783f6d60100e10b17e135479ffd1b5ecf8acfb76c10e0f58da29f6132fc603"
-=======
             "url": "https://github.com/CodeDead/Advanced-PassGen/releases/download/v2.1.0/advanced-passgen_2.1.0_x64_en-US.msi",
             "hash": "14dba4314efe760e365344ca14cccce1d68d01f63751783176d45e85f1e09f20"
->>>>>>> bc73214436079ac33d1291f82da2ba18ba7a7be1
         }
     },
     "bin": "advanced-passgen.exe",
