@@ -10,6 +10,7 @@
             "hash": "8927a69021964339fd3949ec2ba766d494acb4a95aecbfd400166daa4748185d"
         }
     },
+    "extract_dir": "PFiles\\authme",
     "bin": "Authme.exe",
     "shortcuts": [
         [
