@@ -6,10 +6,10 @@
     "changelog": "https://www.arduino.cc/en/Main/ReleaseNotes",
     "url": "https://github.com/arduino/arduino-ide/releases/download/2.0.2/arduino-ide_2.0.2_Windows_64bit.zip",
     "hash": "911668f34f5ea75300395d7d35aa6cd76f9f7dce8e1ef4887b0cf7023cf8a065",
-    "bin": "arduino.exe",
+    "bin": "Arduino IDE.exe",
     "shortcuts": [
         [
-            "arduino.exe",
+            "Arduino IDE.exe",
             "Arduino IDE"
         ]
     ],
