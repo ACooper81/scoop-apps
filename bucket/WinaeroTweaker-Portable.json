@@ -14,7 +14,8 @@
         "args": [
             "/SP-",
             "/VERYSILENT",
-            "/PORTABLE"
+            "/PORTABLE",
+            "DIR=\"$dir\""
         ]
     },
     "post_install": "if (Test-Path \"$dir\\SilentSetup.cmd\") { Remove-Item \"$dir\\SilentSetup.cmd\" }",
