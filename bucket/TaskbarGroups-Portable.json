@@ -8,7 +8,7 @@
     "hash": "f9cb043d420c18f4c8567f102511ecf25ac255b3a1451257a379e5d97e7ff858",
     "extract_dir": "TaskbarGroups",
     "pre_install": [
-        "New-Item -Force -ItemType directory -Path \"$dir\\config\" | Out-Null"
+        "New-Item -Force -ItemType \"directory\" -Path \"$dir\" -Name \"config\" | Out-Null"
     ],
     "persist": [
         "config",
