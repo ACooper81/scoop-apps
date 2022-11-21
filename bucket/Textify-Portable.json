@@ -12,7 +12,6 @@
             "Textify"
         ]
     ],
-    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall*\" -Force -Recurse",
     "persist": "Textify.ini",
     "checkver": {
         "url": "https://rammichael.com/downloads/textify_setup.exe?changelog",
