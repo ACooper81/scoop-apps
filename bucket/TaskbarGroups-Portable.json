@@ -6,10 +6,18 @@
     "changelog": "https://github.com/tjackenpacken/taskbar-groups/releases",
     "url": "https://github.com/tjackenpacken/taskbar-groups/releases/download/v0.2.0.0/TaskbarGroups.zip",
     "hash": "f9cb043d420c18f4c8567f102511ecf25ac255b3a1451257a379e5d97e7ff858",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\config\")) {",
+        "   New-Item \"$dir\\config\" -ItemType Directory | Out-Null",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\Shortcuts\")) {",
+        "   New-Item \"$dir\\Shortcuts\" -ItemType Directory | Out-Null",
+        "}"
+    ],
     "extract_dir": "TaskbarGroups",
     "persist": [
-        "config\\",
-        "Shortcuts\\"
+        "config",
+        "Shortcuts"
     ],
     "bin": "TaskbarGroups.exe",
     "shortcuts": [
