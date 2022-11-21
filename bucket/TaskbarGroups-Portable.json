@@ -8,7 +8,7 @@
     "hash": "f9cb043d420c18f4c8567f102511ecf25ac255b3a1451257a379e5d97e7ff858",
     "extract_dir": "TaskbarGroups",
     "persist": [
-        "config",
+        ["config", "config_dir"],
         "Shortcuts"
     ],
     "bin": "TaskbarGroups.exe",
