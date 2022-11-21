@@ -4,7 +4,7 @@
     "homepage": "https://rammichael.com/textify",
     "license": "GPL-3.0-only",
     "changelog": "",
-    "url": "https://rammichael.com/downloads/textify_setup.exe#/dl.zip",
+    "url": "https://rammichael.com/downloads/textify_setup.exe#/setup.exe",
     "hash": "82e0d1bb7a8b81a0b35b8c031bb732a7776c6c8833b2a1637af4fa4b9ea6ad21",
     "shortcuts": [
         [
@@ -18,6 +18,6 @@
         "regex": "v([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://rammichael.com/downloads/textify_setup.exe#/dl.zip"
+        "url": "https://rammichael.com/downloads/textify_setup.exe#/setup.exe"
     }
 }
