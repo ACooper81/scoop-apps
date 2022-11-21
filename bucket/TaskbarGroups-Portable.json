@@ -7,12 +7,10 @@
     "url": "https://github.com/tjackenpacken/taskbar-groups/releases/download/v0.2.0.0/TaskbarGroups.zip",
     "hash": "f9cb043d420c18f4c8567f102511ecf25ac255b3a1451257a379e5d97e7ff858",
     "extract_dir": "TaskbarGroups",
-    "pre_install": "New-Item -Path \"$dir\\config\\\" -ItemType \"directory\" | Out-Null",
-    "installer": {
-        "script": [
-            "New-Item -Path \"$dir\\config\\\" -ItemType \"directory\" | Out-Null"
-        ]
-    },
+    "pre_install": [
+        "Remove-Item \"$dir\\config\\\"",
+        "New-Item -Path \"$dir\\config\\\" -ItemType \"directory\" | Out-Null"
+    ],
     "persist": [
         "config",
         "Shortcuts"
