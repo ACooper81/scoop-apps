@@ -8,12 +8,12 @@
     "hash": "f9cb043d420c18f4c8567f102511ecf25ac255b3a1451257a379e5d97e7ff858",
     "pre_install": [
         "if (!(Test-Path \"$dir\\config\")) {",
-        "   New-Item -Path \"$dir\" -Name \"config\" -ItemType \"Directory\" | Out-Null",
+        "   New-Item -Path \"$dir\" -Name \"config\" -ItemType Directory | Out-Null",
         "}"
     ],
     "extract_dir": "TaskbarGroups",
     "persist": [
-        "config",
+        "cobfig",
         "Shortcuts"
     ],
     "bin": "TaskbarGroups.exe",
