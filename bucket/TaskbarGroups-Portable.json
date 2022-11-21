@@ -10,7 +10,7 @@
     "pre_install": "New-Item -Path \"$dir\\config_pre\" -ItemType \"directory\" | Out-Null",
     "installer": {
         "script": [
-            "New-Item -Path \"$dir\\config_install\" -ItemType \"directory\" | Out-Null"
+            "New-Item -Path \"$dir\\config\\\" -ItemType \"directory\" | Out-Null"
         ]
     },
     "persist": [
