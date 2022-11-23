@@ -12,6 +12,7 @@
     "changelog": "https://www.zotero.org/support/changelog",
     "url": "https://download.zotero.org/client/release/6.0.18/Zotero-6.0.18_setup.exe#/setup.exe",
     "hash": "55badef23b8c60468aa4d09266aae48f4ffc972a039eb3920ad947c3ece9956e",
+    "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"Zotero\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
@@ -31,7 +32,7 @@
             "$filepath = \"$ProgramFiles\\Zotero\\Zotero.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &sudo \"$dir\\setup.exe\" /S | Out-Null",
+            "   &\"$dir\\setup.exe\" /S | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
