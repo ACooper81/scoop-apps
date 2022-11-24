@@ -35,7 +35,7 @@
             "   $ProgramFilesX86Path = [Environment]::GetFolderPath(\"ProgramFilesX86\")",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $true) -and ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
-            "       Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msi_\", '/qn') -RunAs | Out-Null",
+            "      Invoke-ExternalCommand msiexec -ArgumentList @('/p', \"$dir\\setup.msp_\", '/norestart', '/quiet') -RunAs | Out-Null",
             "   }",
             "   else",
             "   {",
