@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "changelog": "https://www.efofex.com/downloads.php#versions",
     "url": "https://www.efofex.com/downloadexe.php?&file=FXDrawTools.exe#/setup.exe",
-    "hash": "f39dbe5473de931e71c505ade9715e7ca02d45038db4f5e4b9efc2bd584ea4f5",
+    "hash": "abb9ffc9525078160e14090df53a1e5af7ddb9d46594d41e651cd3f8070bc089",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"FXDraw\"",
