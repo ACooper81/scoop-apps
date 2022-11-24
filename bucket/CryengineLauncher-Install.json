@@ -1,5 +1,5 @@
 {
-    "version": "2.1.3",
+    "version": "2.1.3.9",
     "description": "CRYENGINE Launcher. The most powerful game development platform for you and your team to create world-class entertainment experiences",
     "homepage": "https://www.cryengine.com",
     "license": "Proprietary",
@@ -21,8 +21,8 @@
     "installer": {
         "script": [
             "$programname = \"CRYENGINE Launcher*\"",
-            "$AppData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
-            "$filepath = \"$AppData\\Programs\\CRYENGINE Launcher\\CRYENGINE_Launcher.exe\"",
+            "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
+            "$filepath = \"$ProgramFiles\\CRYENGINE Launcher\\CRYENGINE Launcher.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" /S /D=\"C:\\Program Files\\CRYENGINE Launcher\" | Out-Null",
