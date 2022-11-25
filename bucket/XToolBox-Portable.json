@@ -5,7 +5,7 @@
     "license": "GPL-2.0-only",
     "changelog": "https://github.com/xemulat/XToolbox/releases",
     "notes": "If this program gets flagged as malware it's a false positive. The program is literary open-source, don't worry. Nope, this program won't run on windows 7, 8 and 8.1.",
-    "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z",
+    "url": "https://websiteurl/programname-0-win32.7z#/setup.7z",
     "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
     "bin": "XTBox.exe",
     "shortcuts": [
