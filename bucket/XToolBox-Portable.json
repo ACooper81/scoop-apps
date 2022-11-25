@@ -1,12 +1,12 @@
 {
-    "version": "0",
+    "version": "1.9",
     "description": "XToolBox. A toolbox full of Windows 11 and 10 debloating utilities! Made by xemulated#2622",
     "homepage": "https://github.com/xemulat/XToolbox",
     "license": "GPL-2.0-only",
     "changelog": "https://github.com/xemulat/XToolbox/releases",
     "notes": "If this program gets flagged as malware it's a false positive. The program is literary open-source, don't worry. Nope, this program won't run on windows 7, 8 and 8.1.",
-    "url": "https://websiteurl/programname-0-win32.7z#/setup.7z",
-    "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
+    "url": "https://github.com/xemulat/XToolbox/releases/download/v1.9/XTBox.exe",
+    "hash": "2ab8f34400610b7235b704e45a1cc07b7e099fc9405c0623d3ba50ffd5fd55a7",
     "bin": "XTBox.exe",
     "shortcuts": [
         [
