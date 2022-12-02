@@ -1,11 +1,11 @@
 {
-    "version": "1.10.3",
+    "version": "1.10.4",
     "description": "balenaEtcher. Flash OS images to SD cards & USB drives, safely and easily.",
     "homepage": "https://www.balena.io/etcher/",
     "license": "Apache-2.0",
     "changelog": "https://github.com/balena-io/etcher/blob/master/CHANGELOG.md",
-    "url": "https://github.com/balena-io/etcher/releases/download/v1.10.3/balenaEtcher-Setup-1.10.3.exe#/setup.exe",
-    "hash": "8f1f5e3dba1e8ced71181b10ebcdaeeedc3c546d7ece82c5d625b850539de40b",
+    "url": "https://github.com/balena-io/etcher/releases/download/v1.10.4/balenaEtcher-Setup-1.10.4.exe#/setup.exe",
+    "hash": "201f5b93011178c98e972b3942fd7ac79ed1e2dcbc0df31b67c071a9f5138556",
     "pre_install": [
         "$processname = \"balenaEtcher\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
