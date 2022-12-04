@@ -17,7 +17,6 @@
             "hash": "0f59f8963144a74ffa442e74627b23555d04a4f826a02f00643a65b97f7a5db2"
         }
     },
-    "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"Brave\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
