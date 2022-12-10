@@ -27,7 +27,7 @@
     "persist": "Portable Settings",
     "checkver": {
         "url": "https://fossies.org/windows/misc/",
-        "regex": "[Aa]udacity-win-([\\d.]+)-64bit\\.zip\""
+        "regex": "[Aa]udacity-win-([\\d.]+)-x64\\.zip\""
     },
     "autoupdate": {
         "architecture": {
