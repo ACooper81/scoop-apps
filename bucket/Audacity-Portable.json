@@ -32,7 +32,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://fossies.org/windows/misc/audacity-win-$version-64bit.zip",
+                "url": "https://fossies.org/windows/misc/audacity-win-$version-x64.zip",
                 "extract_dir": "audacity-win-$version-x64"
             }
         },
