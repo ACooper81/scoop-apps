@@ -26,8 +26,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://forums.plex.tv/t/plexamp-release-notes/",
-        "regex": "</a>Version v([\\d.]+)",
+        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/Plexamp",
+        "regex": "js-navigation-open Link--primary\" title=\"([\\d.]+)",
         "reverse": true
     },
     "autoupdate": {
