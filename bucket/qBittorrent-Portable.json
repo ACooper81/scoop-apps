@@ -29,7 +29,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_x64_setup.exe#/dl.7z",
+                "url": "https://ixpeering.dl.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_x64_setup.exe#/dl.7z",
                 "hash": {
                     "url": "https://www.qbittorrent.org/download.php",
                     "regex": "64-bit.*\\s+.*<code>$checksum</code>"
