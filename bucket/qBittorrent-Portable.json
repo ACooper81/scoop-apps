@@ -11,10 +11,6 @@
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_x64_setup.exe#/cosi.7z",
             "hash": "efb0298fae1578033a334ba3adbe0e93ea15239d623a26ce11f230eb0af8654a"
-        },
-        "32bit": {
-            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_setup.exe#/cosi.7z",
-            "hash": "fec32f28bd20c917298bc774d206b8b7d7c2b7b1645bf1742b0ef8477c0866ab"
         }
     },
     "pre_install": "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
