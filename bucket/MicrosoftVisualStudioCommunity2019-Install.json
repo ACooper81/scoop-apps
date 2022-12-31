@@ -11,7 +11,7 @@
     "installer": {
         "script": [
             "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--quiet', '--wait') -RunAs | Out-Null",
-            "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--quiet', '--update', '--wait') -RunAs | Out-Null",
+            "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('--update', '--quiet') -RunAs | Out-Null",
             "Invoke-ExternalCommand -FilePath \"$dir\\vs_community.exe\" -Args @('update', '--wait', '--quiet', '--norestart', '--installPath \"C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Community\"') -RunAs | Out-Null"
         ]
     },
