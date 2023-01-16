@@ -21,26 +21,6 @@
             "Start-Process \"$dir\\installer\\AutoHotkey32.exe\" -ArgumentList $ahk -Wait"
         ]
     },
-	"architecture": {
-        "64bit": {
-            "bin": [
-                [
-                    "UX\\AutohotkeyUX.exe",
-                    "autohotkey"
-                ],
-                [
-                    "v2\\AutoHotkey32.exe",
-                    "autohotkey32"
-                ]
-            ]
-        },
-        "32bit": {
-            "bin": [
-                "UX\\AutohotkeyUX.exe",
-                "autohotkey"
-            ]
-        }
-    },
     "checkver": {
         "url": "https://www.autohotkey.com/download/2.0/version.txt",
         "regex": "([\\d.]+)"
