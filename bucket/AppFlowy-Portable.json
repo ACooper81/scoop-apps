@@ -15,7 +15,7 @@
     ],
     "checkver": {
         "url": "https://github.com/AppFlowy-IO/appflowy/releases/latest",
-        "re": "/tag/(?<version>[\\d.]+(_(beta|alpha).\\d+)?)"
+        "regex": "/tag/(?<version>[\\d.]+(_(beta|alpha).\\d+)?)"
     },
     "autoupdate": {
         "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/$version/AppFlowy-Windows-x86_64.zip"
