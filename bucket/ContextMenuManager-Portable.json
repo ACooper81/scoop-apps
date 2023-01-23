@@ -1,6 +1,6 @@
 {
     "version": "3.3.3.1",
-    "description": "Context Menu Manager. A program to manage the Windows right-click context menu.",
+    "description": "ContextMenuManager. A program to manage the Windows right-click context menu.",
     "homepage": "https://bluepointlilac.github.io/ContextMenuManager/",
     "license": "MIT",
 	"changelog": "https://github.com/BluePointLilac/ContextMenuManager/releases",
@@ -9,7 +9,7 @@
     "shortcuts": [
         [
             "ContextMenuManager.NET.4.0.exe",
-            "Context Menu Manager"
+            "ContextMenuManager"
         ]
     ],
     "checkver": {
