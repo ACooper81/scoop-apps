@@ -10,27 +10,20 @@
             "hash": "0037e63d25fd3af195b9d7eb42c27b95158b438c6b701b4fb40b3ca3ea844da2"
         }
     },
+	"extract_dir": "SpleeterGUI",
     "shortcuts": [
         [
             "SpleeterGui.exe",
             "SpleeterGUI"
         ]
     ],
-    "pre_install": [
-        "if (Test-Path \"$dir\\APPDIR\") { Move-Item -Path \"$dir\\APPDIR\\*\" -Destination \"$dir\\\" ; Remove-Item \"$dir\\APPDIR\" -Force -Recurse }",
-        "Move-Item -Path \"$dir\\AppDataFolder\\SpleeterGUI\\*\" -Destination \"$dir\\\" ",
-        "Remove-Item \"$dir\\AppDataFolder\" -Force -Recurse",
-        "[xml]$execonfig= Get-Content \"$dir\\SpleeterGui.exe.config\"",
-        "$execonfig.configuration.userSettings.'SpleeterGui.Properties.Settings'.setting | Where-Object {$_.name -eq 'path_python'} | ForEach-Object {$_.value = '.'}",
-        "$execonfig.Save(\"$dir\\SpleeterGui.exe.config\")"
-    ],
     "checkver": {
-        "regex": "SpleeterGUI_V([\\d.]+).msi"
+        "regex": "SpleeterGUI_([\\d.]+).zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://makenweb.com/downloads/SpleeterGUI_V$version.msi"
+                "url": "https://makenweb.com/downloads/SpleeterGUI_$version.zip"
             }
         }
     }
