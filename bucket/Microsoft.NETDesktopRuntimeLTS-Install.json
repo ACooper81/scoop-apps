@@ -23,7 +23,7 @@
             "$filepath = \"$ProgramFiles\\dotnet\\shared\\Microsoft.NETCore.App\\$version\\\"",
             "if((Test-Path -Path $filepath) -eq $false)",
             "{",
-            "   &\"$dir\\setup.exe\" /quiet | Out-Null",
+            "   &\"$dir\\setup.exe\" /install /quiet /norestart | Out-Null",
             "   if((Test-Path -Path $filepath) -eq $false)",
             "   {",
             "       exit 1",
