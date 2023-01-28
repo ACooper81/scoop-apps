@@ -4,7 +4,7 @@
     "description": "Microsoft .NET Core Runtime. The .NET Runtime contains just the components needed to run a console app.",
     "homepage": "https://dotnet.microsoft.com/",
     "license": "Freeware",
-    "changelog": "https://github.com/dotnet/core/blob/master/release-notes/5.0/5.0.6/5.0.6.md",
+    "changelog": "https://github.com/dotnet/core/tree/main/release-notes",
     "architecture": {
         "64bit": {
             "url": "https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-6.0.13-windows-x64-installer#/setup.exe",
