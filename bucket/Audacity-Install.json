@@ -49,7 +49,8 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "github": "https://github.com/audacity/audacity"
+        "url": "https://github.com/audacity/audacity/releases",
+		"regex": "\">Audacity ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
