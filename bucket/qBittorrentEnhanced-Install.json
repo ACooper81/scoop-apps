@@ -57,10 +57,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_Qt6_setup.exe#/setup.exe"
+                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_X64_setup.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_Qt6_setup.exe#/setup.exe"
+                "url": "https://github.com/c0re100/qBittorrent-Enhanced-Edition/releases/download/release-$version/qbittorrent_enhanced_$version_setup.exe#/setup.exe"
             }
         }
     }
