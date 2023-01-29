@@ -1,5 +1,5 @@
 {
-    "version": "7.0.2",
+    "version": "7.0.0",
     "description": "Microsoft .NET Desktop Runtime. The .NET Desktop Runtime enables you to run existing Windows desktop applications.",
     "homepage": "https://dotnet.microsoft.com/",
     "license": "MIT",
@@ -39,10 +39,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x64.exe#/setup.exe"
+                "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x64.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://dotnetcli.blob.core.windows.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x86.exe#/setup.exe"
+                "url": "https://dotnetcli.azureedge.net/dotnet/WindowsDesktop/$version/windowsdesktop-runtime-$version-win-x86.exe#/setup.exe"
             }
         }
     }
