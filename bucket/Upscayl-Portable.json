@@ -27,7 +27,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/upscayl/upscayl/releases/download/v$version/Upscayl-Setup-$version.exe#/dl.7z",
+                "url": "https://github.com/upscayl/upscayl/releases/download/v$version/Upscayl-$version-win.exe#/dl.7z",
                 "hash": {
                     "url": "$baseurl/latest.yml",
                     "mode": "extract",
