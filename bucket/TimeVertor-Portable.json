@@ -1,5 +1,5 @@
 {
-    "version": "1.4.0",
+    "version": "1.4.3",
     "description": "TimeVertor. A tiny application for datetime conversion to human-readable, RFC 822, ISO 8601, UNIX Timestamp, Mac Timestamp, Microsoft Timestamp and FILETIME.",
     "homepage": "https://www.henrypp.org/product/timevertor",
     "license": "GPL-3.0-only",
@@ -25,7 +25,7 @@
     ],
     "checkver": {
         "url": "https://github.com/henrypp/timevertor/releases",
-		"regex": "/tree/v.([\\d.]+)"
+        "regex": "/tree/v.([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/henrypp/timevertor/releases/download/v.$version/timevertor-$version-bin.zip"
