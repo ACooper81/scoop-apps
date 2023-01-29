@@ -36,7 +36,7 @@
                 }
             },
             "32bit": {
-                "url": "https://dorado-api.deno.dev/edge?arch=86&channel=canary&version=$version&dl#/MicrosoftEdge-$version-x86.7#/dl.7zz",
+                "url": "https://dorado-api.deno.dev/edge?arch=86&channel=canary&version=$version&dl#/MicrosoftEdge-$version-x86.7z#/dl.7z",
                 "hash": {
                     "url": "https://dorado-api.deno.dev/edge?arch=86&channel=canary&version=$version",
                     "jsonpath": "$.Hashes.Sha256"
