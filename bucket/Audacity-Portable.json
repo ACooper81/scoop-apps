@@ -9,6 +9,11 @@
             "url": "https://fossies.org/windows/misc/audacity-win-3.2.3-x64.zip",
             "hash": "7a093f98a4695172f6994f1af8e10802ac4c46279f0b765337e68f71c2632295",
             "extract_dir": "audacity-win-3.2.3-x64"
+        },
+		"32bit": {
+            "url": "https://fossies.org/windows/misc/audacity-win-3.2.3-x64.zip",
+            "hash": "7a093f98a4695172f6994f1af8e10802ac4c46279f0b765337e68f71c2632295",
+            "extract_dir": "audacity-win-3.2.3-x64"
         }
     },
     "pre_install": [
@@ -32,12 +37,13 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://fossies.org/windows/misc/audacity-win-$version-x64.zip",
+                "url": "https://github.com/audacity/audacity/releases/download/Audacity-$version/audacity-win-$version-x64-msvc2022.zip",
                 "extract_dir": "audacity-win-$version-x64"
+            },
+			"32bit": {
+                "url": "https://github.com/audacity/audacity/releases/download/Audacity-$version/audacity-win-$version-x32-msvc2022.zip",
+                "extract_dir": "audacity-win-$version-x32"
             }
-        },
-        "hash": {
-            "url": "$url_fossies.sha256"
         }
     }
 }
