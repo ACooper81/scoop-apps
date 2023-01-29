@@ -1,15 +1,17 @@
 {
-    "version": "106.0.1370.30",
+    "version": "0",
     "description": "Microsoft Edge Beta. The chromium based Microsoft Edge browser (Beta Channel)",
     "homepage": "https://www.microsoftedgeinsider.com/en-us/welcome?channel=beta",
     "license": "Freeware",
     "changelog": "https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-beta-channel",
     "architecture": {
         "64bit": {
-            "url": "https://dorado-api.deno.dev/edge?arch=64&channel=beta&version=106.0.1370.30&dl#/MicrosoftEdge-106.0.1370.30-x64.7z"
+            "url": "https://dorado-api.deno.dev/edge?arch=64&channel=beta&version=106.0.1370.30&dl#/MicrosoftEdge-106.0.1370.30-x64.7z",
+            "hash": "1eac3c71483d1c48d317fd7ebc6a749454fc4252440dabe45da9b44ad87e4bac"
         },
         "32bit": {
-            "url": "https://dorado-api.deno.dev/edge?arch=86&channel=beta&version=106.0.1370.30&dl#/MicrosoftEdge-106.0.1370.30-x86.7z"
+            "url": "https://dorado-api.deno.dev/edge?arch=86&channel=beta&version=106.0.1370.30&dl#/MicrosoftEdge-106.0.1370.30-x86.7z",
+            "hash": "1eac3c71483d1c48d317fd7ebc6a749454fc4252440dabe45da9b44ad87e4bac"
         }
     },
     "installer": {
@@ -30,18 +32,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dorado-api.deno.dev/edge?arch=64&channel=beta&version=$version&dl#/MicrosoftEdge-$version-x64.7z",
-                "hash": {
-                    "url": "https://dorado-api.deno.dev/edge?arch=64&channel=beta&version=$version",
-                    "jsonpath": "$.Hashes.Sha256"
-                }
+                "url": "https://dorado-api.deno.dev/edge?arch=64&channel=beta&version=$version&dl#/dl.7z"
             },
             "32bit": {
-                "url": "https://dorado-api.deno.dev/edge?arch=86&channel=beta&version=$version&dl#/MicrosoftEdge-$version-x86.7z",
-                "hash": {
-                    "url": "https://dorado-api.deno.dev/edge?arch=86&channel=beta&version=$version",
-                    "jsonpath": "$.Hashes.Sha256"
-                }
+                "url": "https://dorado-api.deno.dev/edge?arch=86&channel=beta&version=$version&dl#/dl.7z"
             }
         }
     }
