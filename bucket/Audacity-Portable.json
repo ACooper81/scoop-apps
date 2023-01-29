@@ -26,8 +26,8 @@
     ],
     "persist": "Portable Settings",
     "checkver": {
-        "url": "https://fossies.org/windows/misc/",
-        "regex": "[Aa]udacity-win-([\\d.]+)-x64\\.zip\""
+        "url": "https://github.com/audacity/audacity/releases",
+		"regex": "\">Audacity ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
