@@ -30,10 +30,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://mirrors.kodi.tv/releases/windows/win64/kodi-$version-Matrix-x64.exe#/cosi.7z"
+                "url": "https://mirrors.kodi.tv/releases/windows/win64/kodi-$version-Nexus-x64.exe#/cosi.7z"
             },
             "32bit": {
-                "url": "https://mirrors.kodi.tv/releases/windows/win32/kodi-$version-Matrix-x86.exe#/cosi.7z"
+                "url": "https://mirrors.kodi.tv/releases/windows/win32/kodi-$version-Nexus-x86.exe#/cosi.7z"
             }
         }
     }
