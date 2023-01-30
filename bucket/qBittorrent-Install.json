@@ -11,10 +11,6 @@
         "64bit": {
             "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_x64_setup.exe#/setup.exe",
             "hash": "efb0298fae1578033a334ba3adbe0e93ea15239d623a26ce11f230eb0af8654a"
-        },
-        "32bit": {
-            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_setup.exe#/setup.exe",
-            "hash": "fec32f28bd20c917298bc774d206b8b7d7c2b7b1645bf1742b0ef8477c0866ab"
         }
     },
     "pre_download": "Assert-Administrator",
@@ -61,13 +57,6 @@
                 "hash": {
                     "url": "https://www.qbittorrent.org/download.php",
                     "regex": "(?sm)td>64-bit Installer.*?<code>$sha256</code>"
-                }
-            },
-            "32bit": {
-                "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-$version/qbittorrent_$version_setup.exe#/setup.exe",
-                "hash": {
-                    "url": "https://www.qbittorrent.org/download.php",
-                    "regex": "(?sm)td>32-bit Installer.*?<code>$sha256</code>"
                 }
             }
         }
