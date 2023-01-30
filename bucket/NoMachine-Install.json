@@ -45,8 +45,8 @@
         "if (Test-Path \"$CommonDesktopPath\\$programname.lnk\") {Remove-Item \"$CommonDesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://kb.nomachine.com/software-updates",
-        "regex": "NoMachine ([\\d.]+) now available for download"
+        "url": "https://downloads.nomachine.com/download/?id=9",
+        "regex": "/Windows/nomachine_([\\d.]+)_(?<revision>[\\d]+)_x64.exe"
     },
     "autoupdate": {
         "architecture": {
