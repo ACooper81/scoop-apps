@@ -1,6 +1,6 @@
 {
     "##": "Inspect if any of PDB files need to be persisted",
-    "version": "6.5.0.0",
+    "version": "6.5.0",
     "description": "SoundSwitch. SoundSwitch offers you the opportunity to switch your playback and recording devices using simple hotkeys",
     "homepage": "https://soundswitch.aaflalo.me",
     "license": {
