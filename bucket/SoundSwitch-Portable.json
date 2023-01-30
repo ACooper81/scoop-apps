@@ -17,8 +17,8 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/Belphemur/SoundSwitch",
-        "regex": "_v([\\d.]+)_Release"
+        "github": "https://github.com/Belphemur/SoundSwitch/releases",
+        "regex": "SoundSwitch_v([\\d.]+)_Release"
     },
     "autoupdate": {
         "url": "https://github.com/Belphemur/SoundSwitch/releases/download/v$matchHead/SoundSwitch_v$version_Release_Installer.exe",
