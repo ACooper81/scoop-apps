@@ -1,5 +1,5 @@
 {
-    "version": "4.4.5",
+    "version": "4.5.0",
     "description": "qBittorrent. Free and reliable P2P Bittorent client",
     "homepage": "https://www.qbittorrent.org",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "Web UI Theme https://github.com/WDaan/VueTorrent",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.4.5/qbittorrent_4.4.5_x64_setup.exe#/setup.exe",
-            "hash": "efb0298fae1578033a334ba3adbe0e93ea15239d623a26ce11f230eb0af8654a"
+            "url": "https://downloads.sourceforge.net/project/qbittorrent/qbittorrent-win32/qbittorrent-4.5.0/qbittorrent_4.5.0_x64_setup.exe#/setup.exe",
+            "hash": "14ceeccc4473e02417726cd01614b6c1cc9556ab3aa899118552af82d69db22a"
         }
     },
     "pre_download": "Assert-Administrator",
