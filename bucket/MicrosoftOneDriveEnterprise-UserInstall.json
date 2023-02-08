@@ -37,10 +37,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://oneclient.sfx.ms/Win/Enterprise/$version/amd64/OneDriveSetup.exe#/setup.exe"
+                "url": "https://oneclient.sfx.ms/Win/Prod/$version/amd64/OneDriveSetup.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://oneclient.sfx.ms/Win/Enterprise/$version/OneDriveSetup.exe#/setup.exe"
+                "url": "https://oneclient.sfx.ms/Win/prod/$version/OneDriveSetup.exe#/setup.exe"
             }
         }
     }
