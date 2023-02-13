@@ -1,16 +1,16 @@
 {
-    "version": "1.7.0",
+    "version": "1.8.0",
     "description": "Jellyfin Media Player. Jellyfin Desktop Client based on Plex Media Player",
     "homepage": "https://github.com/jellyfin/jellyfin-media-player",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "32bit": {
-            "hash": "d80e9dba488e0d461f2f7c97e66bc4783354167dcb092062f8d043570a2b4bbc",
-            "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.7.0/JellyfinMediaPlayer-1.7.0-windows-x86.exe"
+            "hash": "e362193d3789882d07f941ca98f99d7c9e628aa0d0b9bb06b1aca7eab56aa11c",
+            "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.8.0/JellyfinMediaPlayer-1.8.0-windows-x86.exe"
         },
         "64bit": {
-            "hash": "ffe42f3b47f2e6220a3345d6fbe0eecfa102deccf509c6c3696bd1fc8d8efedd",
-            "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.7.0/JellyfinMediaPlayer-1.7.0-windows-x64.exe"
+            "hash": "9d339212b330995db04439b138d99e865ae422d9f58f3bc180c95c5c48d8c45f",
+            "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.8.0/JellyfinMediaPlayer-1.8.0-windows-x64.exe"
         }
     },
     "installer": {
