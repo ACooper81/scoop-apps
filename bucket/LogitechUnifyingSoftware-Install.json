@@ -1,14 +1,12 @@
 {
-    "version": "0",
+    "version": "2.52.33",
     "description": "Logitech Unifying Software. Lets you add and remove devices that use a Unifying receiver",
     "homepage": "https://support.logi.com/hc/en-us/articles/360025297913",
     "license": "Proprietary",
     "changelog": "",
-    "url": "https://websiteurl/programname-$version-win32.7z#/setup.exe",
-    "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
-    "pre_download":[
-        "Assert-Administrator"
-    ],
+    "url": "https://download01.logi.com/web/ftp/pub/techsupport/unifying/unifying252.exe#/setup.exe",
+    "hash": "bea2ca4c9d9abd1ff214166d638792be974ffad7907a8a8ed0370acba800e815",
+    "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"processname\"",
         "$process = Get-Process $processname -ErrorAction SilentlyContinue",
