@@ -25,4 +25,5 @@
         "url": "https://ghproxy.com/https://github.com/amorphobia/scoop-hook/releases/download/v$version/scoop-hook-i686-pc-windows-msvc.zip"
       }
     }
+  }
 }
