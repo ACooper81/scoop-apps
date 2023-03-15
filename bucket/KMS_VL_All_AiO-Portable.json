@@ -1,10 +1,10 @@
 {
-    "version": "48",
+    "version": "49",
     "description": "KMS_VL_ALL_AIO. Smart Activation Script, maintained by abbodi1406.",
     "homepage": "https://github.com/abbodi1406/KMS_VL_ALL_AIO",
     "license": "GPL-3.0-only",
     "changelog": "https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases",
-    "url": "https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases/download/v0.48.0/KMS_VL_ALL_AIO-48.7z#dl.7z_",
+    "url": "https://github.com/abbodi1406/KMS_VL_ALL_AIO/releases/download/v0.49.0/KMS_VL_ALL_AIO-49.7z#dl.7z_",
     "hash": "e0f0ed33f805a9ebe4b8b77e88b6d1a7801e6ddcc7165b95d37b4bfd41fad22e",
     "pre_install": [
         "$7z=(Get-ChildItem $dir\\KMS_VL_ALL_AIO*).Name",
