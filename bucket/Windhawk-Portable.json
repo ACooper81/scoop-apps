@@ -12,6 +12,9 @@
             "Start-Process -Wait \"$dir\\setup.exe\" -ArgumentList '/S /portable /d=$dir' -Verb RunAs"
         ]
     },
+    "post_install": [
+        "if (Test-Path -Path \"$dir\\setup.exe\") { Remove-Item \"$dir\\setup.exe\" -Force }"
+    ],
     "shortcuts": [
         [
             "windhawk\\windhawk.exe",
