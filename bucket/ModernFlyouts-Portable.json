@@ -1,12 +1,12 @@
 {
     "##": "Github release tag (e.g. 0.9.3) != full version (e.g. 0.9.3.0), which can cause error during extraction, thus 'checkver->regex' is needed.",
-    "version": "0.9.1.0",
+    "version": "0.9.3.0",
     "description": "ModernFlyouts. A replacement for the built-in audio flyout UI, with a Modern Fluent Design.",
     "homepage": "https://modernflyouts-community.github.io/",
     "license": "MIT",
     "changelog": "https://github.com/ModernFlyouts-Community/ModernFlyouts/releases",
-    "url": "https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/download/0.9.1/32669SamG.ModernFlyouts_0.9.1.0_neutral___pcy8vm99wrpcg.Msixbundle#/dl.7z",
-    "hash": "f0e68856f771e399640871b3655c45f648e023cdcf27e09d7da8aa7883822e8a",
+    "url": "https://github.com/ModernFlyouts-Community/ModernFlyouts/releases/download/0.9.3/32669SamG.ModernFlyouts_0.9.3.0_neutral___pcy8vm99wrpcg.Msixbundle#/dl.7z",
+    "hash": "c91b2903945709fb598aef5d8205dee96fa1a2ce7ade3f033517cfc5777a1e33",
     "architecture": {
         "64bit": {
             "pre_install": [
