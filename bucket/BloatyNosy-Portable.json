@@ -12,7 +12,9 @@
             "Debloos"
         ]
     ],
-    "checkver": "github",
+    "checkver": {
+        "github": "https://github.com/builtbybel/BloatyNosy"
+    },
     "autoupdate": {
         "url": "https://github.com/builtbybel/BloatyNosy/releases/download/$version/BloatyNosyApp.zip"
     }
