@@ -21,7 +21,8 @@
     ],
     "persist": ".kangaroo",
     "checkver": {
-        "github": "https://github.com/dbkangaroo/kangaroo"
+        "url": "https://github.com/dbkangaroo/kangaroo/releases",
+        "regex": "\">Kangaroo v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
