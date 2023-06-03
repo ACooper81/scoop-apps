@@ -20,10 +20,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/iawia002/lux/releases/download/v$version/lux_$version_Windows_64-bit.zip"
+                "url": "https://github.com/iawia002/lux/releases/download/v$version/lux_$version_Windows_x86_64.zip"
             },
             "32bit": {
-                "url": "https://github.com/iawia002/lux/releases/download/v$version/lux_$version_Windows_32-bit.zip"
+                "url": "https://github.com/iawia002/lux/releases/download/v$version/lux_$version_Windows_x86_64.zip"
             }
         },
         "hash": {
