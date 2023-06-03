@@ -31,8 +31,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://sites.google.com/site/awggproject",
-        "regex": "sites-page-title.+?AWGG ([\\d.]+)"
+        "url": "https://raw.githubusercontent.com/Nenirey/AWGG/master/version",
+        "regex": "([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
