@@ -11,6 +11,10 @@
         "64bit": {
             "url": "https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-7.5.1-Windows.exe",
             "hash": "f94f3f777aa83ce3cdde6b02e8cdfe5a53f34cbb54c6418b0a22ce268e4637f3"
+        },
+        "32bit": {
+            "url": "https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-7.5.1-Windows.exe",
+            "hash": "f94f3f777aa83ce3cdde6b02e8cdfe5a53f34cbb54c6418b0a22ce268e4637f3"
         }
     },
     "bin": "vncviewer.exe",
@@ -28,6 +32,9 @@
         "architecture": {
             "64bit": {
                 "url": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-$version-Windows-64bit.exe"
+            },
+            "32bit": {
+                "url": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-$version-Windows-32bit.exe"
             }
         },
         "hash": {
