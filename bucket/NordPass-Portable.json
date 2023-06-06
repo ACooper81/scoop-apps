@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://downloads.npass.app/windows/NordPassSetup.exe#/dl.7z",
-            "hash": "sha512:4fa7f213cb034515406d4d50d5571e15dc7291a5fb21281b36cb60d4cf487c0b72054eb6cd829f0e00baa6eab0e769ee178c48013890f748fe20a098a4217a25",
+            "hash": "sha512:8c04235fbb55c1ee2b43bdc53312bf81767d4eab470fe3b311d5cb215ef4d6ed3259d9567c375fda4288689b33f70bf5db17c0b3e424727690b99a800e2b44fc",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
         },
         "32bit": {
