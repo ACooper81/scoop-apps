@@ -22,7 +22,7 @@
     "persist": ".kangaroo",
     "checkver": {
         "url": "https://github.com/dbkangaroo/kangaroo/releases",
-        "regex": "\">Kangaroo v([\\d.]+)"
+        "regex": "/dbkangaroo/kangaroo/tree/v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
