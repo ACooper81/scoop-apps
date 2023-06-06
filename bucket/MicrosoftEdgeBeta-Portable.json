@@ -40,7 +40,7 @@
     "persist": "User Data",
     "checkver": {
         "url": "https://dorado-api.deno.dev/edge?arch=64&channel=beta",
-        "regex": "\"Version\":\"([\\d.]+)\""
+        "jsonpath": "$.Version"
     },
     "autoupdate": {
         "architecture": {
