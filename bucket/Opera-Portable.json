@@ -36,7 +36,7 @@
     "persist": "profile",
     "checkver": {
         "url": "https://community.chocolatey.org/packages/opera",
-        "regex": "Chocolatey Software | Opera ([\\d.]+)"
+        "regex": "Opera ([\\d.]+)<"
     },
     "autoupdate": {
         "architecture": {
