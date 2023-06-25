@@ -5,7 +5,7 @@
     "license": "MIT",
     "changelog": "https://rammerlabs.alidml.ru/changelog-eng.html",
     "url": "https://web.archive.org/web/20420121101836/https://rammerlabs.alidml.ru/files/0000-0002-29CD-0000/PEAnatomist-0.2.zip",
-    "hash": "c8c8625494bf49d1ad1ce87453f43c26e8e759305b9192b819a240454b7ea4b6",
+    "hash": "3b0bf737c4040d94e5c598175d43b01a41d654dbb6a9de69561f4ba5fa30195f",
     "pre_install": "if (!(Test-Path \"$persist_dir\\PEAnatomist.cfg\")) { Set-Content -Encoding ASCII -Path \"$dir\\PEAnatomist.cfg\" -Value $null }",
     "persist": "PEAnatomist.cfg",
     "shortcuts": [
