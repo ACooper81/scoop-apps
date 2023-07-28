@@ -1,21 +1,21 @@
 {
-    "version": "1.37.54",
+    "version": "1.37.56",
     "description": "ChatALL. Concurrently chat with ChatGPT, Bing Chat, bard, Alpaca, Vincuna, Claude, ChatGLM, MOSS, iFlytek Spark, ERNIE and more, discover the best answers",
     "homepage": "http://chatall.ai",
     "license": "Apache-2.0",
     "changelog": "https://github.com/sunner/ChatALL/releases/",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sunner/ChatALL/releases/download/v1.37.54/ChatALL-1.37.54-win-x64.exe#/dl.7z",
-            "hash": "sha512:5c5d7053e6a351bf30ad7807238563cacccf13db9b4552099d7c5714b27d4885f99d7de6130ce41f778134217c0bbcaf4dd4ffb2f462ec6f1c868b6682275cc2",
+            "url": "https://github.com/sunner/ChatALL/releases/download/v1.37.56/ChatALL-1.37.56-win-x64.exe#/dl.7z",
+            "hash": "sha512:fb4c3161fc7db425055872a403061fa93afa089083433fd40ffcb836d8840daed21d282127882181b2c7cc87b48da951e960dfacbeba635be07a926d25820d7e",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/sunner/ChatALL/releases/download/v1.37.54/ChatALL-1.37.54-win-arm64.exe#/dl.7z",
-            "hash": "sha512:01ae448b2e0e2e13e32e8bacdb83789d1bb090c13c3e6019938db4bd9b678fd9f32a9e87114def6e52f14088a8ca092b188dd0f4f000c5557ea2bfdfb9dbf1e0",
+            "url": "https://github.com/sunner/ChatALL/releases/download/v1.37.56/ChatALL-1.37.56-win-arm64.exe#/dl.7z",
+            "hash": "sha512:c93d489155c7947fa69c872e47e284e3339d7dae9e113bd71f94709cb6c92dcad5d41ba8e684f7589d6d005fa323a78f289cf5d2f4c5d86ec08c950a88f8fa14",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\" -Removal",
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Uninst*\" -Recurse"

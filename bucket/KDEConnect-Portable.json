@@ -1,11 +1,11 @@
 {
-    "version": "23.04.3-1408",
+    "version": "23.04.3-1410",
     "description": "KDE Connect. Enabling communication between all your devices. Made for people like you.",
     "homepage": "https://kdeconnect.kde.org",
     "license": "GPL-2.0-or-later",
     "changelog": "",
-    "url": "https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/1408/artifact/kdeconnect-kde-23.04.3-1408-windows-cl-msvc2019-x86_64.7z",
-    "hash": "13313bc9c8207e7ef85718a0564721ef3d4111ed08eb422b6d5610e4ce8d6dbd",
+    "url": "https://binary-factory.kde.org/job/kdeconnect-kde_Release_win64/1410/artifact/kdeconnect-kde-23.04.3-1410-windows-cl-msvc2019-x86_64.7z",
+    "hash": "8677ef1897f0f9cbd3d011423a966c07a082d9ba47869aed86fb27d350b67ef1",
     "bin": "bin\\kdeconnect-cli.exe",
     "shortcuts": [
         [
