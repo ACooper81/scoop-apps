@@ -50,8 +50,8 @@
         "if (Test-Path \"$CommonDesktopPath\\4K Video Downloader.lnk\") {Remove-Item \"$CommonDesktopPath\\4K Video Downloader.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://www.4kdownload.com/products/product-videodownloader",
-        "regex": "\"videodownloader_([\\d.]+)"
+        "url": "https://www.4kdownload.com/downloads/",
+        "regex": "4kvideodownloader_([\\d.]+)_x64.zip"
     },
     "autoupdate": {
         "architecture": {
