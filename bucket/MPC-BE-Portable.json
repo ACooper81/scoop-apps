@@ -52,11 +52,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://ixpeering.dl.sourceforge.net/project/mpcbe/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$version.x64.7z",
+                "url": "https://ixpeering.dl.sourceforge.net/project/mpcbe/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion.$buildVersion/MPC-BE.$version.x64.7z",
                 "extract_dir": "MPC-BE.$version.x64"
             },
             "32bit": {
-                "url": "https://ixpeering.dl.sourceforge.net/project/mpcbe/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion/MPC-BE.$version.x86.7z",
+                "url": "https://ixpeering.dl.sourceforge.net/project/mpcbe/MPC-BE/Release%20builds/$majorVersion.$minorVersion.$patchVersion.$buildVersion/MPC-BE.$version.x86.7z",
                 "extract_dir": "MPC-BE.$version.x86"
             }
         }
