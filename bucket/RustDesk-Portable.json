@@ -26,10 +26,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/rustdesk/rustdesk/releases/download/$version/rustdesk-$version-windows_x64.zip"
+                "url": "https://github.com/rustdesk/rustdesk/releases/download/$version/rustdesk-$version-x86_64.exe"
             },
             "32bit": {
-                "url": "https://github.com/rustdesk/rustdesk/releases/download/$version/rustdesk-$version-windows_x32.zip"
+                "url": "https://github.com/rustdesk/rustdesk/releases/download/$version/rustdesk-$version-x86-sciter.exe"
             }
         }
     }
