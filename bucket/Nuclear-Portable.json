@@ -22,13 +22,13 @@
         ]
     ],
     "checkver": {
-        "url": "https://github.com/nukeop/nuclear/tags",
-        "regex": "/releases/tag/v(.+?)\""
+        "url": "https://api.github.com/repos/nukeop/nuclear/releases",
+        "regex": "/nuclear\\.Setup\\.([\\d.]+)\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/nukeop/nuclear/releases/download/$version/nuclear-$version.exe#/dl.7z"
+                "url": "https://github.com/nukeop/nuclear/releases/download/v$version/nuclear.Setup.$version.exe#/dl.7z"
             }
         }
     }
