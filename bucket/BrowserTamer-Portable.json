@@ -23,7 +23,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.aloneguid.uk/projects/bt/bin/bt-$version.zip"
+                "url": "https://github.com/aloneguid/bt/releases/download/$version/bt-$version.zip"
             }
         }
     }
