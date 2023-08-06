@@ -19,6 +19,6 @@
         "regex": "/releases/tag/v([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/Bin-Huang/chatbox/releases/download/v$version/chatbox_$version_x64_en-US.msi#/setup.msi"
+        "url": "https://github.com/Bin-Huang/chatbox/releases/download/v$version/Chatbox-$version-Setup.exe#/setup.exe"
     }
 }
