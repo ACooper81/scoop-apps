@@ -27,7 +27,7 @@
     ],
     "checkver": {
         "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/p/Plex/Plexamp",
-        "regex": "js-navigation-open Link--primary\" title=\"([\\d.]+)",
+        "regex": "manifests/p/Plex/Plexamp/([\\d.]+)",
         "reverse": true
     },
     "autoupdate": {
