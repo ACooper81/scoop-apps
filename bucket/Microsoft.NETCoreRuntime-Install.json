@@ -1,5 +1,5 @@
 {
-    "##": "Download URL https://dotnet.microsoft.com/download/dotnet/7.0/runtime",
+    "##": "Download URL https://dotnet.microsoft.com/en-us/download/dotnet/7.0",
     "version": "7.0.10",
     "description": "Microsoft .NET Core Runtime. The .NET Runtime contains just the components needed to run a console app.",
     "homepage": "https://dotnet.microsoft.com/",
