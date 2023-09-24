@@ -54,10 +54,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://statics.teams.cdn.office.net/production-windows-x64/$version/Teams_windows_x64.exe#/setup.exe"
+                "url": "https://statics.teams.cdn.office.net/production-windows/$version/TeamsSetup.exe#/setup.exe"
             },
             "32bit": {
-                "url": "https://statics.teams.cdn.office.net/production-windows/$version/Teams_windows.exe#/setup.exe"
+                "url": "https://statics.teams.cdn.office.net/production-windows/$version/TeamsSetup.exe#/setup.exe"
             }
         }
     }
