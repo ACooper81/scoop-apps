@@ -48,8 +48,8 @@
         "if (Test-Path \"$DesktopPath\\$programname.lnk\") {Remove-Item \"$DesktopPath\\$programname.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://chocolatey.org/packages/microsoft-teams",
-        "regex": "Microsoft Teams Desktop App ([\\d.]+)"
+        "url": "https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&download=false",
+        "regex": "/([\\d.]+)/Teams_windows_x64\\.exe"
     },
     "autoupdate": {
         "architecture": {
