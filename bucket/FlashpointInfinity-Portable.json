@@ -1,0 +1,24 @@
+{
+    "version": "12",
+    "description": "Flashpoint Infinity. Archive of old flashpoint games/animations",
+    "homepage": "https://flashpointarchive.org/",
+    "license": {
+        "identifier": "MIT",
+        "url": "https://github.com/FlashpointProject/launcher/blob/master/LICENSE"
+    },
+    "changelog": "",
+    "url": "https://download.unstable.life/static/fp1211072023.7z#/cosi.7z",
+    "hash": "74b65667549472ec0a989ea88c21c6998fd33d92",
+    "extract_dir": "Flashpoint 12 Infinity",
+    "shortcuts": [
+        [
+            "Launcher\\Flashpoint.exe",
+            "Flashpoint Infinity"
+        ]
+    ],
+    "persist": [
+        "Data\\Playlists",
+        "Flash Save Backup",
+        "Launcher\\config.json"
+    ]
+}
