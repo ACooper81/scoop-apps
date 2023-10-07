@@ -17,8 +17,7 @@
         "}",
         "elseif ($architecture -eq '32bit') {",
         "    (Get-Content \"$scriptdir\\install-office-365-apps.xml\").Replace('64', '32') | Set-Content -Path \"$dir\\install-office-365-apps.xml\"",
-        "}",
-        "Copy-Item \"$scriptdir\\uninstall-office-365-apps.xml\" \"$dir\\\""
+        "}"
     ],
     "installer": {
         "script": [
