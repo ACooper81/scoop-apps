@@ -26,7 +26,7 @@
     "installer": {
         "script": [
             "$ProgramFiles = [Environment]::GetFolderPath(\"ProgramFiles\")",
-            "$filepath = \"$ProgramFiles\\GameMaker Studio 2\\GameMaker.exe\"",
+            "$filepath = \"$ProgramFiles\\GameMaker\\GameMaker.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
             "   &\"$dir\\setup.exe\" | Out-Null",
