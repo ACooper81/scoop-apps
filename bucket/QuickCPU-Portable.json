@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://coderbag.com/assets/downloads/cpm/currentversion/QuickCpuSetup64.zip",
-            "hash": "0e8053866c65cd9b8eef3aa26510da024423696e94a76a14e913f9e03ed9c4e6"
+            "hash": "7e54c3612ecdadc92d976c061bcd51a972208557c6f5c8bf1e84f841e72f34f0"
         },
         "32bit": {
             "url": "https://coderbag.com/assets/downloads/cpm/currentversion/QuickCpuSetup32.zip",
-            "hash": "f8c3fefc4df3d3383d925433bcc1856b45f7eb5e05c9ae4e62d0d8cd6b95de3d"
+            "hash": "999b36d46b4b957a84e019062544472355345c49b0a9700d7d02e378905788a2"
         }
     },
     "pre_install": [
