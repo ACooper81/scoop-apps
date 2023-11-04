@@ -3,7 +3,7 @@
     "description": "Spline. Easily create and publish 3D web experiences. Build and iterate fast with production-ready results.",
     "homepage": "https://spline.design/",
     "license": "Unknown",
-    "changelog": "",
+    "changelog": "https://docs.spline.design/52160ab183cc44fab4430bd1f7e4fe77",
     "architecture": {
         "64bit": {
             "url": "https://cdn.spline.design/_assets/Spline-0.11.0.win.exe#/dl.7z",
