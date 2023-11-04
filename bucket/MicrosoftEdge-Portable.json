@@ -7,11 +7,11 @@
     "architecture": {
         "64bit": {
             "url": "https://dorado-api.deno.dev/edge?arch=64&channel=stable&dl#/MicrosoftEdge-114.0.1823.37-x64.7z",
-            "hash": "8f3ff19fde3bf8c813fc202823183f2ff8c5d347d3557ebeaaa5fb86938595e2"
+            "hash": "f4b31f78ee52f222f42bf340e3367098f8ba8366b485a194b8ab0e0975b85c42"
         },
         "32bit": {
             "url": "https://dorado-api.deno.dev/edge?arch=86&channel=stable&dl#/MicrosoftEdge-114.0.1823.37-x86.7z",
-            "hash": "652711f73c2e117b31dc71df79b96ff5d392f5576a4c4ce41d591a36aa1ba638"
+            "hash": "f777852f8400355ed6c7c4d4e3df80ce0f58fb7e9ae839f1cc7565b6da3790a9"
         }
     },
     "installer": {
