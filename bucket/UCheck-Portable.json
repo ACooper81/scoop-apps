@@ -1,11 +1,11 @@
 {
-    "version": "0",
+    "version": "5.0.4",
     "description": "UCheck. Update your software in 2 clicks. Stay away from malware.",
     "homepage": "https://www.adlice.com/ucheck/",
     "license": "Freemium",
     "changelog": "https://www.adlice.com/docs/ucheck/release-notes/changelog/",
-    "url": "https://websiteurl/programname-$version-win32.7z#/setup.7z",
-    "hash": "ab144e1aa6e6d95ae543aba4e7723051e1827749af773e3951610e49df78428c",
+    "url": "https://www.adlice.com/download-start/?app=ucheck&type=setup#/setup.7z",
+    "hash": "73141edfc25e20a1f3941310b3ff65ccbfe88fbe17a83205774000373dc913c7",
     "architecture": {
         "64bit": {
             "shortcuts": [
