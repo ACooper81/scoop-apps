@@ -6,7 +6,7 @@
     "changelog": "https://www.adlice.com/docs/ucheck/release-notes/changelog/",
     "architecture": {
         "64bit": {
-            "url": "https://cloud.adlice.com/owncloud/index.php/s/zhvgtK8oXyJ6Gru/download?path=5.0.4&files=UCheck_portable64.exe#/UCheck_portable64.exe",
+            "url": "https://cloud.adlice.com/owncloud/index.php/s/zhvgtK8oXyJ6Gru/download?path=5.0.4&files=UCheck_portable64.exe",
             "hash": "b716aabed456918535000c41239079913a4b4dd6840502a4ba0d0bfc6bee4cd7",
             "shortcuts": [
                 [
@@ -35,10 +35,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://www.adlice.com/download-start/?app=ucheck&type=x64#/UCheck_portable64.exe"
+                "url": "https://cloud.adlice.com/owncloud/index.php/s/zhvgtK8oXyJ6Gru/download?path=$version&files=UCheck_portable64.exe"
             },
             "32bit": {
-                "url": "https://www.adlice.com/download-start/?app=ucheck&type=x86#/UCheck_portable32.exe"
+                "url": "https://cloud.adlice.com/owncloud/index.php/s/zhvgtK8oXyJ6Gru/download?path=$version&files=UCheck_portable32.exe"
             }
         }
     }
