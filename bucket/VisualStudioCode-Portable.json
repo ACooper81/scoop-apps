@@ -26,18 +26,6 @@
                 "8ef94c82319b69754bdae0099af266d184d179a37af8b8beb11334c6ab639752",
                 "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f"
             ]
-        },
-        "32bit": {
-            "url": [
-                "https://update.code.visualstudio.com/1.83.1/win32-archive/stable#/dl.7z",
-                "https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/vscode-install-context.reg",
-                "https://raw.githubusercontent.com/ScoopInstaller/Extras/master/scripts/vscode-uninstall-context.reg"
-            ],
-            "hash": [
-                "91f1e91dfc17caaa23d7c0bdf889581b79621362eb10bda00ed0a9bb0c13ff77",
-                "8ef94c82319b69754bdae0099af266d184d179a37af8b8beb11334c6ab639752",
-                "df2a5162e72e2518e2b75b4337c8e7b46c136554872af90fa0de1cf6ebef376f"
-            ]
         }
     },
     "bin": [
@@ -82,13 +70,6 @@
                 "hash": {
                     "url": "https://code.visualstudio.com/sha?build=stable",
                     "jsonpath": "$.products[?(@.platform.os == 'win32-x64-archive')].sha256hash"
-                }
-            },
-            "32bit": {
-                "url": "https://update.code.visualstudio.com/$version/win32-archive/stable#/dl.7z",
-                "hash": {
-                    "url": "https://code.visualstudio.com/sha?build=stable",
-                    "jsonpath": "$.products[?(@.platform.os == 'win32-archive')].sha256hash"
                 }
             }
         }
