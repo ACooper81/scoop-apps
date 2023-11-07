@@ -20,7 +20,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Jacalz/wormhole-gui/releases/download/v$version/rymdport-$version-windows-amd64.zip"
+                "url": "https://github.com/Jacalz/wormhole-gui/releases/download/v$version/rymdport-v$version-windows-amd64.zip"
             }
         }
     }
