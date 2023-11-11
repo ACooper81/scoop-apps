@@ -4,14 +4,14 @@
     "homepage": "https://github.com/YerongAI/Office-Tool",
     "license": "GPL-3.0-only",
     "changelog": "https://github.com/YerongAI/Office-Tool/releases",
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/YerongAI/Office-Tool/releases/download/v$version/Office_Tool_with_runtime_v$version_x64.7z"
-            },
-            "32bit": {
-                "url": "https://github.com/YerongAI/Office-Tool/releases/download/v$version/Office_Tool_with_runtime_v$version_x86.7z"
-            }
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/YerongAI/Office-Tool/releases/download/vversion/Office_Tool_with_runtime_v$version_x64.7z",
+            "hash": ""
+        },
+        "32bit": {
+            "url": "https://github.com/YerongAI/Office-Tool/releases/download/vversion/Office_Tool_with_runtime_v$version_x86.7z",
+            "hash": ""
         }
     },
     "extract_dir": "Office Tool",
@@ -22,5 +22,15 @@
         ]
     ],
     "persist": "Office",
-    "checkver": "github"
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/YerongAI/Office-Tool/releases/download/v$version/Office_Tool_with_runtime_v$version_x64.7z"
+            },
+            "32bit": {
+                "url": "https://github.com/YerongAI/Office-Tool/releases/download/v$version/Office_Tool_with_runtime_v$version_x86.7z"
+            }
+        }
+    }
 }
