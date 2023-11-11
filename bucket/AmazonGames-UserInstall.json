@@ -1,4 +1,5 @@
 {
+    "##": "https://www.amazongames.com/en-us/support/prime-gaming/articles/download-and-install-the-amazon-games-app?",
     "version": "2.3.8425.2",
     "description": "Amazon Games. Explore all games, loot, and more for Prime members",
     "homepage": "https://www.amazon.com/b?node=21211466011",
@@ -27,8 +28,7 @@
         ]
     },
     "checkver": {
-        "url": "https://www.kcsoftwares.com/sumo/view.php?uid=312543986&ProductName=Amazon%20Games&Company=Amazon&prot=2",
-        "regex": "Amazon Games<small>    v([\\d.]+)"
+        "script": "return 2.3.8855.3"
     },
     "autoupdate": {
         "url": "https://download.amazongames.com/AmazonGamesSetup.exe#/setup.exe"
