@@ -4,7 +4,7 @@
     "homepage": "https://idriveonlinebackup.com/",
     "license": "Proprietary",
     "changelog": "https://idriveonlinebackup.com/release-info#win",
-    "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe",
+    "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe#/setup.exe",
     "hash": "10603d554167ab890c94aae1afc0144c83b1e3e57c135d942895562ead745a7f",
     "pre_download": "Assert-Administrator",
     "pre_install": [
@@ -26,7 +26,7 @@
             "$filepath = \"$ProgramFiles\\IDriveWindows\\id_win.exe\"",
             "if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "{",
-            "   &\"$dir\\setup.exe\" /S | Out-Null",
+            "   &\"$dir\\setup.exe\" /VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- | Out-Null",
             "   if(((Test-Path -Path $filepath -PathType Leaf) -eq $false) -or ((Get-Command $filepath).Version -lt [System.Version]\"$version\"))",
             "   {",
             "       exit 1",
@@ -40,6 +40,6 @@
         "regex": "Downloads of v ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe"
+        "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe#/setup.exe"
     }
 }
