@@ -47,7 +47,7 @@
     ],
     "checkver": {
         "url": "https://www.philips-hue.com/en-au/support/release-notes/hue-sync",
-        "regex": "Hue Sync desktop app ([\\d.]+)"
+        "regex": "Hue PC desktop app ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
