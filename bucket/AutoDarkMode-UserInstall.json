@@ -32,6 +32,7 @@
             "{",
             "   &\"$AppData\\Programs\\AutoDarkMode\\unins000.exe\" /VERYSILENT /NORESTART",
             "}",
+            "if ((Test-Path -Path \"$AppData\\Programs\\AutoDarkMode\\unins001.exe\") -eq $true)",
             "{",
             "   &\"$AppData\\Programs\\AutoDarkMode\\unins001.exe\" /VERYSILENT /NORESTART",
             "}",
