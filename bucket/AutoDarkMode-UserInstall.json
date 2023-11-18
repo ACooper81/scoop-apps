@@ -28,7 +28,7 @@
             "$programname = \"Auto Dark Mode*\"",
             "$AppData = [Environment]::GetFolderPath(\"LocalApplicationData\")",
             "$filepath = \"$AppData\\Programs\\AutoDarkMode\\adm-app\\AutoDarkModeSvc.exe\"",
-            "if ((Test-Path -Path $filepath -PathType Leaf) -eq $false)",
+            "if ((Test-Path -Path \"$AppData\\Programs\\AutoDarkMode\\unins001.exe\") -eq $true)",
             "{",
             "   &\"$AppData\\Programs\\AutoDarkMode\\unins001.exe\" /VERYSILENT /NORESTART",
             "}",
