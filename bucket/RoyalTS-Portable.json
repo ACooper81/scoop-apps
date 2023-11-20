@@ -26,8 +26,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://support.royalapps.com/support/solutions/articles/17000128633",
-        "regex": "/RoyalTS/royalts_([\\d.]+).0_x64.zip"
+        "github": "https://github.com/PeterStrick/ViVeTool-GUI"
     },
     "autoupdate": {
         "architecture": {
