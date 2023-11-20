@@ -28,10 +28,10 @@
         "if (Test-Path \"$DesktopPath\\Customize Fences.lnk\") {Remove-Item \"$DesktopPath\\Customize Fences.lnk\" -Force}"
     ],
     "checkver": {
-        "url": "https://www.stardock.com/products/fences/update",
-        "regex": "Update to Version ([\\d.]+)"
+        "url": "https://www.stardock.com/products/fences/history",
+        "regex": "<h1>Fences ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://cdn.stardock.us/downloads/public/software/fences/Fences4-sd-setup.exe#/setup.exe"
+        "url": "https://cdn.stardock.us/downloads/public/software/fences/v$majorVersion/Fences$majorVersion-sd-setup.exe#/setup.exe"
     }
 }
