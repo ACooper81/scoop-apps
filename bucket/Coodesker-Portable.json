@@ -42,15 +42,16 @@
         ]
     },
     "checkver": {
-        "github": "https://github.com/coodesker/coodesker-desktop"
+        "url": "https://discussion.coodesker.com/t/update?sort=newest",
+        "regex": "     v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/coodesker/coodesker-desktop/releases/download/v$version/Coodesker-x64_$version.exe"
+                "url": "https://www.coodesker.com/coodesker-desktop/Coodesker-x64_$version.exe"
             },
             "32bit": {
-                "url": "https://github.com/coodesker/coodesker-desktop/releases/download/v$version/Coodesker-x86_$version.exe"
+                "url": "https://www.coodesker.com/coodesker-desktop/Coodesker-x86_$version.exe"
             }
         }
     }
