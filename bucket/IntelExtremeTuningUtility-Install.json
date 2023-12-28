@@ -4,7 +4,7 @@
     "homepage": "https://downloadcenter.intel.com/search?keyword=Intel%C2%AE+Extreme+Tuning+Utility",
     "notes": "Sorry, Intel® Extreme Tuning Utility is 64 bit only.",
     "license": "",
-    "changelog": "chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://downloadmirror.intel.com/29183/XTU-7.9.0.24-ReleaseNotes.pdf",
+    "changelog": "https://downloadmirror.intel.com/29183/XTU-7.9.0.24-ReleaseNotes.pdf",
     "architecture": {
         "64bit": {
             "url": "https://downloadmirror.intel.com/29183/XTUSetup.exe#/setup.exe",
@@ -42,5 +42,13 @@
     "checkver": {
         "url": "https://www.majorgeeks.com/files/details/intel_extreme_tuning_utility.html",
         "regex": ">Intel Extreme Tuning Utility ([\\d\\.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://downloadmirror.intel.com/29183/XTUSetup_$version.exe#/setup.exe"
+            }
+        },
+        "changelog": "https://downloadmirror.intel.com/29183/XTU-$version-ReleaseNotes.pdf"
     }
 }
