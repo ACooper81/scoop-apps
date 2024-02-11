@@ -1,9 +1,9 @@
 {
     "version": "5.0.1.1",
     "description": "WinContig. Is an easy-to-use stand-alone defragmentation tool that doesn't create any installation directories or Registry entries on your computer.",
-    "homepage": "https://wincontig.mdtzone.it/en/index.html",
+    "homepage": "https://www.mdtzone.it/sw/wincontig/en/index.html",
     "license": "Freeware",
-    "changelog": "https://wincontig.mdtzone.it/en/history.html",
+    "changelog": "https://www.mdtzone.it/sw/wincontig/en/history.html",
     "architecture": {
         "64bit": {
             "installer": {
@@ -30,7 +30,7 @@
         ]
     ],
     "checkver": {
-        "url": "https://wincontig.mdtzone.it/en/history.html",
+        "url": "https://www.mdtzone.it/sw/wincontig/en/history.html",
         "regex": "Version ([\\d.]+)"
     },
     "autoupdate": {
