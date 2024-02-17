@@ -43,6 +43,6 @@
         "github": "https://github.com/ytmdesktop/ytmdesktop"
     },
     "autoupdate": {
-        "url": "https://github.com/ytmdesktop/ytmdesktop/releases/download/v$version/YouTube-Music-Desktop-App-Setup-$version.exe#/setup.exe"
+        "url": "https://github.com/ytmdesktop/ytmdesktop/releases/download/v$version/YouTube-Music-Desktop-App-$version-Setup.exe#/setup.exe"
     }
 }
