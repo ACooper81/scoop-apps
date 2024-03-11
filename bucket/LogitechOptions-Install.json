@@ -37,7 +37,7 @@
     },
     "checkver": {
         "url": "https://www.majorgeeks.com/files/details/logitech_options.html",
-        "regex": "\">Logitech Options([\\d.]+)"
+        "regex": "\">Logitech Options ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.exe#/setup.exe"
