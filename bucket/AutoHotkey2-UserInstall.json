@@ -23,7 +23,7 @@
     },
     "checkver": {
         "url": "https://www.autohotkey.com/download/",
-        "regex": "ahk-v2.zip\">v<span class=\"curver\">([\\d.]+)"
+        "regex": "Latest Stable Version: <span class=\"curver\">([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://www.autohotkey.com/download/2.0/AutoHotkey_$version.zip",
