@@ -28,13 +28,13 @@
         ]
     },
     "checkver": {
-        "url": "https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/Microsoft/OneDrive",
-        "regex": "manifests/m/Microsoft/OneDrive/Enterprise/([\\d.]+)"
+        "url": "https://www.majorgeeks.com/files/details/microsoft_skydrive.html",
+        "regex": ".html\">Microsoft OneDrive ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://oneclient.sfx.ms/Win/Prod/$version/amd64/OneDriveSetup.exe#/setup.exe"
+                "url": "https://oneclient.sfx.ms/Win/Installers/$version/amd64/OneDriveSetup.exe#/setup.exe"
             }
         }
     }
