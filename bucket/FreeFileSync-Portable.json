@@ -1,5 +1,5 @@
 {
-    "version": "6.2",
+    "version": "0",
     "description": "FreeFileSync. File and folder synchronization",
     "homepage": "https://portableapps.com/apps/utilities/freefilesync-portable",
     "license": "",
@@ -18,7 +18,7 @@
         "regex": "Version ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://ayera.dl.sourceforge.net/project/portableapps/FreeFileSync%20Portable/FreeFileSyncPortable_$version.paf.exe",
+        "url": "https://portableapps.com/redir2/?a=FreeFileSyncPortable&s=s&d=pa&f=FreeFileSyncPortable_$version.paf.exe",
         "hash": {
             "url": "https://portableapps.com/apps/utilities/freefilesync-portable",
             "regex": "MD5 Hash: +[\\w]{32}"
