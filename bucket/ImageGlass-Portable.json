@@ -7,19 +7,17 @@
         "64bit": {
             "url": "https://github.com/d2phap/ImageGlass/releases/download/9.0.11.502/ImageGlass_9.0.11.502_x64.zip",
             "hash": "ed9c0a3616d262dd1c094ae7205c6833bdfbc962d99d4c8ddb8f4a792a7ab882",
-            "extract_dir": "ImageGlass_Kobe_9.0.11.502_x64"
+            "extract_dir": "ImageGlass_9.0.11.502_x64"
         }
     },
     "pre_install": [
-        "if (!(Test-Path \"$persist_dir\\igconfig.xml\")) {",
-        "    Add-Content \"$dir\\igconfig.xml\" '<ImageGlass><Configuration><Info/><Content><Item key=\"AutoUpdate\" value=\"0\" /></Content></Configuration></ImageGlass>' -Encoding Ascii",
+        "if (!(Test-Path \"$persist_dir\\igconfig.json\")) {",
+        "    Add-Content \"$dir\\igconfig.json\" '{\"AutoUpdate\": \"0\"}' -Encoding utf8",
         "}"
     ],
     "bin": [
         "ImageGlass.exe",
-        "igcmd.exe",
-        "igcmdWin10.exe",
-        "igtasks.exe"
+        "igcmd.exe"
     ],
     "shortcuts": [
         [
@@ -29,7 +27,7 @@
     ],
     "persist": [
         "Themes",
-        "igconfig.xml"
+        "igconfig.json"
     ],
     "checkver": {
         "github": "https://github.com/d2phap/ImageGlass/"
@@ -42,7 +40,7 @@
                     "url": "https://imageglass.org/download",
                     "regex": "(?sm)Download portable x64 version.*?$sha1"
                 },
-                "extract_dir": "ImageGlass_Kobe_$version_x64"
+                "extract_dir": "ImageGlass_$version_x64"
             }
         }
     },
