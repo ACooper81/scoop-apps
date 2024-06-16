@@ -41,7 +41,7 @@
     "persist": "Speccy.ini",
     "checkver": {
         "url": "https://www.ccleaner.com/speccy/release-notes",
-        "regex": ">v([\\d.]+)"
+        "regex": "Speccy v([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download.ccleaner.com/spsetup$majorVersion$minorVersion.exe#/dl.7z"
