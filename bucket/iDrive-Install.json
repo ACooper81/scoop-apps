@@ -36,8 +36,8 @@
         ]
     },
     "checkver": {
-        "url": "https://community.chocolatey.org/packages/idrive",
-        "regex": "Downloads of v ([\\d.]+)"
+        "url": "https://www.majorgeeks.com/files/details/idrive.html",
+        "regex": "files/details/idrive.html\">iDrive ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe#/setup.exe"
