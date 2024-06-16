@@ -42,6 +42,6 @@
         "github": "https://github.com/balena-io/etcher"
     },
     "autoupdate": {
-        "url": "https://github.com/balena-io/etcher/releases/download/v$version/balenaEtcher-Setup-$version.exe#/setup.exe"
+        "url": "https://github.com/balena-io/etcher/releases/download/v$version/balenaEtcher-$version.Setup.exe#/setup.exe"
     }
 }
