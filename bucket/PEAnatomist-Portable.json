@@ -16,10 +16,10 @@
     ],
     "checkver": {
         "url": "https://web.archive.org/web/20420121101836/https://rammerlabs.alidml.ru/index-eng.html",
-        "regex": "files/(?<id>[\\d\\w-]+)/PEAnatomist-([\\d.]+).zip"
+        "regex": "Current version of the program: ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://web.archive.org/web/20420121101836/https://rammerlabs.alidml.ru/files/$matchId/PEAnatomist-$version.zip",
+        "url": "https://web.archive.org/web/20240515203016if_/https://rammerlabs.alidml.ru/download/peanatomist/current",
         "hash": {
             "url": "https://web.archive.org/web/20420121101836/https://rammerlabs.alidml.ru/index-eng.html",
             "regex": "$sha256"
