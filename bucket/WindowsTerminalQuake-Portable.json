@@ -1,5 +1,5 @@
 {
-    "version": "2.0.10-202407151511",
+    "version": "2.0.10-202407151953",
     "description": "Windows Terminal Quake. Companion program for the new Windows Terminal that enables Quake-style drop down",
     "homepage": "https://wtq.flyingpie.nl/",
     "license": "MIT",
@@ -7,7 +7,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/flyingpie/windows-terminal-quake/releases/download/v2.0.10/win-x64_self-contained.zip",
-            "hash": "98fd6c01084396d27d79c9d7ab682e64e3e3247f8d74b8ec972434f7808f4f3c"
+            "hash": "0c9244ca87aab23e66e3dcec9f0b7fb1ed0a7974e46e4a8a2bea91ab07ad3c42"
         }
     },
     "bin": "wtq.exe",
