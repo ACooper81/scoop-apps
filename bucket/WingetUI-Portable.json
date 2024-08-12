@@ -1,9 +1,9 @@
 {
-    "version": "3.1.1",
-    "description": "WingetUI. A GUI Store for the most common cli package managers, sych as Winget and Scoop.",
-    "homepage": "https://github.com/martinet101/WinGetUI",
+    "version": "3.1.0",
+    "description": "UniGetUI. A GUI Store for the most common cli package managers, sych as Winget and Scoop.",
+    "homepage": "https://github.com/martinet101/UniGetUI",
     "license": "LGPL-2.1-only",
-    "changelog": "https://github.com/martinet101/WinGetUI/releases",
+    "changelog": "https://github.com/martinet101/UniGetUI/releases",
     "architecture": {
         "64bit": {
             "url": "https://github.com/martinet101/WinGetUI/releases/download/3.1.1/WingetUI.Installer.exe",
@@ -13,21 +13,21 @@
     "innosetup": true,
     "bin": [
         [
-            "WingetUI.exe",
-            "WingetUI"
+            "UniGetUI.exe",
+            "UniGetUI"
         ]
     ],
     "shortcuts": [
         [
-            "WingetUI.exe",
-            "WingetUI"
+            "UniGetUI.exe",
+            "UniGetUI"
         ]
     ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/martinet101/WinGetUI/releases/download/$version/WingetUI.Installer.exe"
+                "url": "https://github.com/martinet101/UniGetUI/releases/download/$version/UniGetUI.Installer.exe"
             }
         }
     }
