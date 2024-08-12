@@ -1,6 +1,6 @@
 {
     "version": "3.1.0-beta2",
-    "description": "UniGetUI Beta. A GUI Store for the most common cli package managers, sych as Winget and Scoop.",
+    "description": "UniGetUI Beta. The main goal of this project is to create an intuitive GUI for the most common CLI package managers for Windows.",
     "homepage": "https://github.com/martinet101/UniGetUI",
     "license": "LGPL-2.1-only",
     "changelog": "https://github.com/martinet101/UniGetUI/releases",
