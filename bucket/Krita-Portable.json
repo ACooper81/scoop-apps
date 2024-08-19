@@ -22,8 +22,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://krita.org/en/download/krita-desktop/",
-        "regex": "Download Krita\\s+([\\d.]+)"
+        "url": "https://krita.org/en/download/",
+        "regex": ">Download Krita ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
