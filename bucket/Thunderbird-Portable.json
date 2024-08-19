@@ -32,7 +32,7 @@
     "persist": "profile",
     "checkver": {
         "url": "https://www.thunderbird.net/thunderbird/all/",
-        "regex": "?product=thunderbird-([\\d.]+)esr-SSL&os=win64&lang=en-US"
+        "regex": "?product=thunderbird-([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
