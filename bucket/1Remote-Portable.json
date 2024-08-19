@@ -26,7 +26,7 @@
     ],
     "checkver": {
         "url": "http://1remote.org/download/",
-        "regex": "Latest Version:([\\d.]+)"
+        "regex": "Latest Version: ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://github.com/1Remote/1Remote/releases/download/Nightly/1Remote-1.0.0.0-beta.07-net6-x64-nightly-20240608-049eb1.zip"
