@@ -29,12 +29,12 @@
     },
     "checkver": {
         "url": "https://www.virtualbox.org/wiki/Downloads",
-        "regex": "VirtualBox</a> (?<version>[\\d.]+) Oracle VirtualBox Extension Pack"
+        "regex": "Oracle_VirtualBox_Extension_Pack-(?<version>[\\d.]+).vbox-extpack"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.virtualbox.org/virtualbox/$version/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack#/Oracle_VM_VirtualBox_Extension_Pack-$version.vbox-extpack"
+                "url": "https://download.virtualbox.org/virtualbox/$version/Oracle_VirtualBox_Extension_Pack-$version.vbox-extpack"
             }
         },
         "hash": {
