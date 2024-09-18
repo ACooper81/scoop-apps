@@ -18,7 +18,7 @@
         ]
     ],
     "checkver": {
-        "regex": "Shutter Encoder ([\\d.]+) Windows 64bits.zip"
+        "github": "https://github.com/paulpacifico/shutter-encoder"
     },
     "autoupdate": {
         "architecture": {
