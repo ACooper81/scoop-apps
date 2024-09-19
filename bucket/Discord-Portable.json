@@ -24,7 +24,7 @@
         "regex": "/releases/tag/(?:v|V)?([\\d.-]+)"
     },
     "autoupdate": {
-        "url": "https://github.com/portapps/discord-portable/releases/download/$version/discord-portable-win32-$version.7z",
+        "url": "https://github.com/portapps/discord-portable/releases/download/$version/discord-portable-win64-$version.7z",
         "hash": {
             "url": "$baseurl/checksums.txt"
         }
