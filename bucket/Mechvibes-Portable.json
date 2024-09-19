@@ -13,6 +13,6 @@
     "shortcuts": [["Mechvibes.exe", "Mechvibes"]],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/hainguyents13/mechvibes/releases/download/v$version/Mechvibes.Setup.$version.zip"
+        "url": "https://github.com/hainguyents13/mechvibes/releases/download/v$version/Mechvibes.Setup.$version.exe"
     }
 }
