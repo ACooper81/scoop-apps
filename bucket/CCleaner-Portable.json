@@ -46,8 +46,8 @@
         "winsys.ini"
     ],
     "checkver": {
-        "url": "https://www.ccleaner.com/ccleaner/release-notes",
-        "regex": "CCleaner v([\\d.]+)"
+        "url": "https://www.ccleaner.com/ccleaner/version-history",
+        "regex": "latest-version\">v([\\d.]+)</span>"
     },
     "autoupdate": {
         "url": "https://download.ccleaner.com/portable/ccsetup$majorVersion$minorVersion.zip"
