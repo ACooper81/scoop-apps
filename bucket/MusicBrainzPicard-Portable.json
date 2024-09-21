@@ -18,7 +18,7 @@
     ],
     "persist": "MusicBrainz-Picard",
     "checkver": {
-        "github": "https://picard.musicbrainz.org",
+        "url": "https://picard.musicbrainz.org",
         "regex": "\"softwareVersion\": \"([\\d.]+)"
     },
     "autoupdate": {
