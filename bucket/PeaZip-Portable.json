@@ -41,11 +41,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://dotsrc.dl.osdn.net/osdn/peazip/$matchRelease/peazip_portable-$version.WIN64.zip",
+                "url": "https://github.com/peazip/PeaZip/releases/download/$version/peazip_portable-$version.WIN64.zip",
                 "extract_dir": "peazip_portable-$version.WIN64"
             },
             "32bit": {
-                "url": "https://dotsrc.dl.osdn.net/osdn/peazip/$matchRelease/peazip_portable-$version.WINDOWS.zip",
+                "url": "https://github.com/peazip/PeaZip/releases/download/$version/peazip_portable-$version.WINDOWS.zip",
                 "extract_dir": "peazip_portable-$version.WINDOWS"
             }
         },
