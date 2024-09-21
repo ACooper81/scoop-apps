@@ -1,5 +1,5 @@
 {
-    "version": "1.8.7",
+    "version": "1.14.0",
     "description": "Stupid Fast Scoop Utilities. Incredibly fast replacements for commonly used Scoop commands, written in Rust.",
     "homepage": "https://github.com/jewlexx/sfsu",
     "license": "Apache-2.0",
