@@ -26,13 +26,13 @@
         ]
     ],
     "checkver": {
-        "url": "https://support.royalapps.com/support/solutions/articles/17000128633",
-        "regex": "/RoyalTS/royalts_([\\d.]+).0_x64.zip"
+        "url": "https://royalapps.com/go/kb-ts-win-previousversions-current",
+        "regex": "/royalts/royalts_([\\d.]+).0_x64.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download.royalapps.com/RoyalTS/RoyalTS_$version_x64.zip"
+                "url": "https://download.royalapps.com/royalts/royalts_$version.0_x64.zip"
             }
         }
     }
