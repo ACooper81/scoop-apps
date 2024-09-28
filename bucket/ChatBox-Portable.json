@@ -8,7 +8,7 @@
     },
     "changelog": "https://github.com/Bin-Huang/chatbox/releases",
     "url": "https://github.com/Bin-Huang/chatbox/releases/download/v0.10.0/Chatbox-CE-0.10.0-Setup.exe#/dl.7z",
-    "hash": "sha512:36f2ad5c4f1a58f7cd3cd4bffc02a9e7c4309eef966d5de3982c74ecd8219e2db856876156f825bceae23fbff184fa3b744864b66e19673133818181b2426564",
+    "hash": "7f63c1196384be444014bae93e6b1b9b5144b950d447f7f9ed4409f31d75e2b2",
     "extract_dir": "PFiles\\chatbox",
     "bin": "chatbox.exe",
     "shortcuts": [
@@ -21,10 +21,6 @@
         "github": "https://github.com/Bin-Huang/chatbox"
     },
     "autoupdate": {
-        "url": "https://github.com/Bin-Huang/chatbox/releases/download/v$version/Chatbox-CE-$version-Setup.exe#/dl.7z",
-        "hash": {
-            "url": "$baseurl/latest.yml",
-            "regex": "sha512: $base64"
-        }
+        "url": "https://github.com/Bin-Huang/chatbox/releases/download/v$version/Chatbox-CE-$version-Setup.exe#/dl.7z"
     }
 }
