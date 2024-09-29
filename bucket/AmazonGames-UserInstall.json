@@ -28,7 +28,8 @@
         ]
     },
     "checkver": {
-        "script": "return 2.3.8855.3"
+        "url": "https://winstall.app/apps/Amazon.Games",
+        "regex": "\"latestVersion\":\"([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://download.amazongames.com/AmazonGamesSetup.exe#/setup.exe"
