@@ -36,19 +36,16 @@
     "persist": "profile",
     "checkver": {
         "url": "https://fossies.org/windows/www/",
-        "regex": "<TR><TD VALIGN=\"top\"><A HREF=\"Opera_Beta_([\\d.]+)_"
+        "regex": "Opera_beta_([\\d.]+)_Setup"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://download1.operacdn.com/pub/opera-beta/$version/win/Opera_Beta_$version_Setup_x64.exe#/dl.7z"
+                "url": "https://download1.operacdn.com/pub/opera-beta/$version/win/Opera_beta_$version_Setup_x64.exe#/dl.7z"
             },
-            "32bit": {
-                "url": "https://download1.operacdn.com/pub/opera-beta/$version/win/Opera_Beta_$version_Setup.exe#/dl.7z"
+            "hash": {
+                "url": "$url.sha256sum"
             }
-        },
-        "hash": {
-            "url": "$url.sha256sum"
         }
     }
 }
