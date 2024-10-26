@@ -1,11 +1,11 @@
 {
-    "version": "5.13.1.9378",
+    "version": "5.14.0.9383",
     "description": "Radarr. is a movie collection manager for Usenet and BitTorrent users",
     "homepage": "https://github.com/Radarr/Radarr",
     "license": "MIT",
     "changelog": "https://github.com/Radarr/Radarr/releases",
-    "url": "https://github.com/Radarr/Radarr/releases/download/v5.13.1.9378/Radarr.master.5.13.1.9378.windows-core-x64.zip",
-    "hash": "9d376114e2c5d0fc368afe9948f6c7f525eaa3527b7090cb19c4d6a6b7483009",
+    "url": "https://github.com/Radarr/Radarr/releases/download/v5.14.0.9383/Radarr.master.5.14.0.9383.windows-core-x64.zip",
+    "hash": "39c475803fa88a225fb36d552ca071c3da83a409333ab2839e1198a964e4e38b",
     "extract_dir": "Radarr",
     "shortcuts": [
         [
