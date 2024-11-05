@@ -1,11 +1,11 @@
 {
-    "version": "7.0.0.13",
+    "version": "7.0.0.14",
     "description": "iDrive. Online cloud backup for your PC's, Macs and Mobile devices",
     "homepage": "https://idriveonlinebackup.com/",
     "license": "Proprietary",
     "changelog": "https://idriveonlinebackup.com/release-info#win",
     "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe#/setup.exe",
-    "hash": "779f7faddacd7c4ef9f5fdd0a55191a638bca14d371f05e35250915fff556603",
+    "hash": "14bb94ef17e423e2edf8f58f866f679cd1bc840574c9f5d8b694220d39529619",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"id_win\"",
