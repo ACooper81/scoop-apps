@@ -8,7 +8,7 @@
     "changelog": "https://github.com/massgravel/Microsoft-Activation-Scripts/releases",
     "notes": "For more details, check Homepage: <https://massgrave.dev>",
     "url": "https://github.com/massgravel/Microsoft-Activation-Scripts/archive/refs/heads/master.zip#/dl.7z_",
-    "hash": "0866295c73d9f644cd610dd87c689a26ae41642ba9e391c8cd13740297f9cd8f",
+    "hash": "f798b0790fd6e62fb0ff0195c06f7c655ae0a55e1b3c9d6b4c28b7d5483ce6f6",
     "pre_install": "Expand-7zipArchive \"$dir\\$fname\" -Switches '-p1234' -ExtractDir \"MAS_$version\" -Removal",
     "bin": [
         [
