@@ -14,7 +14,7 @@
         [
             "powershell.exe",
             "Winhance - Windows Enhancement Utility",
-            "-Command irm \"https://github.com/memstechtips/Winhance/raw/main/Winhance.ps1\" | iex"
+            "-Command irm https://github.com/memstechtips/Winhance/raw/main/Winhance.ps1 | iex"
         ]
     ]
 }
