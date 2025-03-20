@@ -1,18 +1,18 @@
 {
-    "version": "4.0.14",
+    "version": "4.0.15",
     "description": "Tockler. An application that tracks your time by monitoring your active window title and idle time.",
     "homepage": "https://github.com/MayGo/tockler",
     "license": "GPL-2.0-only",
     "changelog": "https://github.com/MayGo/tockler/releases",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MayGo/tockler/releases/download/v4.0.14/tockler-4.0.14-setup-win-x64.exe#/dl.7z",
-            "hash": "sha512:83d7f435d5533fa78af43550b65dcf322c8f65ec649c94d834e23cfa9a1f1cfe7b6e88a52a046e88cfcc07bee26e6a0fd4c320a2717f79ffe3af5a27cac4888c",
+            "url": "https://github.com/MayGo/tockler/releases/download/v4.0.15/tockler-4.0.15-setup-win-x64.exe#/dl.7z",
+            "hash": "sha512:039fed2751e2ab4392c83544646ad1ce649e178b2fdb24ac279d94b7c0aebdacb5655840fb77f8845f675bcfc9a1fc249dfc673421fda7202c47f18b94be587f",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
         },
         "32bit": {
-            "url": "https://github.com/MayGo/tockler/releases/download/v4.0.14/tockler-4.0.14-setup-win-ia32.exe#/dl.7z",
-            "hash": "sha512:3ca639d49afea3c2e9946f781788768e976f6eab796993ca70b0df639bd78877b037bf31d7a7495aba1dc309c99ec874f205bbe52c1d4bc77ecfd9b7fe1f82b1",
+            "url": "https://github.com/MayGo/tockler/releases/download/v4.0.15/tockler-4.0.15-setup-win-ia32.exe#/dl.7z",
+            "hash": "sha512:1cca9fce1c043487a6c35b446a919e1bc7842ac3cf10afdafbc30e778e44c671e14326eb5fd51a59cb92d923f382dedf8e8f1785167482a0086be9f8e189302a",
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
         }
     },
