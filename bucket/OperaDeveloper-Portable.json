@@ -36,7 +36,7 @@
     "persist": "profile",
     "checkver": {
         "url": "https://fossies.org/windows/www/",
-        "regex": "<TR><TD VALIGN=\"top\"><A HREF=\"Opera_Developer_([\\d.]+)_"
+        "regex": "class=\"bin_a\"><a href=\"Opera_Developer_([\\d.]+)_"
     },
     "autoupdate": {
         "architecture": {
