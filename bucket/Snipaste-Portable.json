@@ -30,7 +30,7 @@
     },
     "checkver": {
         "url": "https://bitbucket.org/liule/snipaste/downloads/",
-        "regex": "Snipaste-(([\\d.]+)-Beta[\\d]*?)-x64.zip"
+        "regex": "Snipaste-([\\d.]+)-x64.zip"
     },
     "autoupdate": {
         "architecture": {
