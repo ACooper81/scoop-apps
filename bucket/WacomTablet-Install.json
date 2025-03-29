@@ -37,7 +37,7 @@
     },
     "checkver": {
         "url": "https://www.wacom.com/en-au/support/product-support/drivers",
-        "regex": "Driver ([\\d.]+)-([\\d]) \\(Windows",
+        "regex": "Driver ([\\d.]+)-([\\d]) Windows",
         "replace": "$1.$2"
     },
     "autoupdate": {
