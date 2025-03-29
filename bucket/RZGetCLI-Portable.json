@@ -8,8 +8,7 @@
     "hash": "e6cc7f1f885535413cd186d8683352bbdf5b1f4888ac0b2330516eb3df3bf00d",
     "bin": "RZGet.exe",
     "checkver": {
-        "url": "https://ruckzuck.tools/",
-        "regex": "/download/([\\d.]+)/RZGet.exe"
+        "github": "https://github.com/rzander/ruckzuck"
     },
     "autoupdate": {
         "url": "https://github.com/rzander/ruckzuck/releases/download/$version/RZGet.exe#/RZGet.exe"
