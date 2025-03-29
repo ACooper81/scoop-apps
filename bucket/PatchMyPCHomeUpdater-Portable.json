@@ -26,7 +26,10 @@
         "PatchMyPC.ini",
         "PatchMyPC.log"
     ],
-    "checkver": "Download\\sPatch\\sMy\\sPC\\sHome\\sUpdater\\s([\\d.]+)",
+    "checkver": {
+        "url": "https://patchmypc.com/category/releases/production-releases",
+        "regex": "Patch My PC Publisher Production Version ([\\d.]+)"
+    },
     "autoupdate": {
         "url": "https://patchmypc.com/freeupdater/PatchMyPC.exe"
     }
