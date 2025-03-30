@@ -1,0 +1,31 @@
+{
+    "version": "0",
+    "description": "TidyOS. The TidyOS app brings together the best of many of my apps, all wrapped in the simplest UI you'll find on Windows 11",
+    "homepage": "https://github.com/builtbybel/TidyOS",
+    "license": "MIT",
+    "changelog": "https://github.com/builtbybel/TidyOS/releases",
+    "architecture": {
+        "64bit": {
+            "hash": "e909cb4e5e86f7c4544dadf82fbc3a9655ac47a62a61b0be182041b7c62e9161",
+            "url": "https://github.com/builtbybel/TidyOS/releases/download/0.30/TidyOS.zip"
+        }
+    },
+    "bin": "TidyOS.exe",
+    "shortcuts": [
+        [
+            "TidyOS.exe",
+            "TidyOS"
+        ]
+    ],
+    "persist": " OverrideCompanion1.txt ",
+    "checkver": {
+        "github": "https://github.com/builtbybel/TidyOS"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/builtbybel/TidyOS/releases/download/$version/TidyOS.zip"
+            }
+        }
+    }
+}
