@@ -148,7 +148,7 @@ Checkver Scripts
             "$dl_url = 'download_url'",
             "$dl = cache_path 'app_name' 'unknown' $dl_url",
             "Start-BitsTransfer $dl_url $dl",
-            "$version = (Get-Item $dl).VersionInfo.FileVersion",
+            "$version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($dl).FileVersion",
             "return $version"
         ],
         "regex": "([\\d.]+)"
