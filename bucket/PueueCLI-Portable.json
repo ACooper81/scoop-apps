@@ -18,7 +18,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Nukesor/pueue/releases/download/v$version/pueue-windows-x86_64.exe#/pueue.exe"
+                "url": "https://github.com/Nukesor/pueue/releases/download/v$version/pueue-x86_64-pc-windows-msvc.exe#/pueue.exe"
             }
         }
     }
