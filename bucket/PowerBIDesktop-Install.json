@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup_x64.exe#/setup.exe",
-            "hash": "0caa13e3f1d68b296ee38b34d8fee634a209252fff46ae08baa6e74d541692e7"
+            "hash": "b65b77ef5e10a2f1c67cbdb3a90aa28095453882b501fc294d8cc424ca2261f6"
         }
     },
     "pre_download": "Assert-Administrator",
