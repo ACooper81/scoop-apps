@@ -1,6 +1,6 @@
 {
     "homepage": "https://brave.com/download-nightly/",
-    "version": "1.80.85",
+    "version": "1.80.88",
     "description": "Brave Nightly. Secure, Fast & Private Web Browser with Adblocker (nightly release)",
     "license": {
         "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
@@ -9,8 +9,8 @@
     "changelog": "",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/brave/brave-browser/releases/download/v1.80.85/brave-v1.80.85-win32-x64.zip",
-            "hash": "bd17598dcf9387d25dd226fb042fe0765e1afbd0a4a1804f758363395611c853"
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.80.88/brave-v1.80.88-win32-x64.zip",
+            "hash": "4394a6d1c7129a48efdcd1ca2f1ca9fd4feb953afa464a5a9cf7a2d9bc06fb47"
         }
     },
     "bin": [
