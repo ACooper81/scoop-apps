@@ -1,11 +1,11 @@
 {
-    "version": "6.5.8",
+    "version": "6.5.9",
     "description": "Waterfox. The 100% fresh, free-range, ethical browser (portable classic branch).",
     "homepage": "https://www.waterfox.net",
     "license": "MPL-2.0",
     "changelog": "https://github.com/WaterfoxCo/Waterfox/releases",
-    "url": "https://cdn1.waterfox.net/waterfox/releases/6.5.8/WINNT_x86_64/Waterfox%20Setup%206.5.8.exe#/dl.7z",
-    "hash": "30e641aa3420e3f236867254d30365917785cc79c9c7101b609fd5b45054e493",
+    "url": "https://cdn1.waterfox.net/waterfox/releases/6.5.9/WINNT_x86_64/Waterfox%20Setup%206.5.9.exe#/dl.7z",
+    "hash": "04be3d96a2b9a19cf2f185721535382aeadccd58d684aeb8e634a16eb28ecb23",
     "extract_dir": "core",
     "bin": [
         [
