@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "changelog": "https://idriveonlinebackup.com/release-info#win",
     "url": "https://static.idriveonlinebackup.com/downloads/IDriveWinSetup.exe#/setup.exe",
-    "hash": "d73eab1626b8c829813b760c5de37ddef0a3114438bc6d762e8b20a578d4204e",
+    "hash": "038c4ebfc36edb29bf7ef13ff0a322a1a5ce17e88d6ab22935bbd40277d1fdad",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"id_win\"",
