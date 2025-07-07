@@ -155,6 +155,31 @@ Checkver Scripts
     },
 
 ==================================================
+Autoupdate Scripts
+==================================================
+
+Autoupdate Hash Extraction Methods
+
+Method	Example Snippet	Description
+
+Extract (Regex)	
+json { "extract": { "url": "...", "regex": "sha256: ([a-f0-9]{64})" } }	
+Parses a hash from a plain text file
+
+JSONPath	
+json { "jsonpath": "$.assets[0].hash" }	
+Extracts from JSON API responses
+
+XPath	
+json { "xpath": "//hash/text()" }	
+Extracts from XML documents
+
+Direct Download	
+Scoop can download the file and compute the hash locally if no extraction method is defined
+
+These methods are typically used in the autoupdate block:
+
+==================================================
 Uninstall Scripts
 ==================================================
     "uninstaller": {
