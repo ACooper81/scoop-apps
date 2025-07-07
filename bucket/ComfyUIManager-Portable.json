@@ -5,7 +5,7 @@
     "license": "GPL-3.0",
     "depends": "ComfyUI-Portable",
     "url": "https://github.com/ltdrdata/ComfyUI-Manager/archive/refs/heads/main.zip",
-    "hash": "7f328ea187eafacf9290f8c2ec960ef0a700ba8425a461d444a11820d2132494",
+    "hash": "5422fc6ca4dcd51bd562ee432c2e1985765331ccb985af9741accb35f70bcc42",
     "installer": {
         "script": [
             "$ComfyUIDir = \"$(appdir ComfyUI-Portable)\"",
