@@ -22,7 +22,7 @@
         "url": "https://www.videohelp.com/download/1by1_$cleanVersion.exe#/dl.7z",
         "hash": {
             "url": "https://www.fosshub.com/1by1.html",
-            "regex": "(?sm)$basename.*?\"sha256\":\"([a-f0-9]{64})\""
+            "regex": "(?sm)$basename.*?\"sha256\":\"$sha256\""
         }
     }
 }
