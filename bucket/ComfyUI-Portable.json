@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z",
-            "hash": "5422fc6ca4dcd51bd562ee432c2e1985765331ccb985af9741accb35f70bcc42"
+            "hash": "ac8139832da868124092cf0d49a553af0fc6cb20a187f8826f4c12cf828eec8f"
         }
     },
     "extract_dir": "ComfyUI_windows_portable",
