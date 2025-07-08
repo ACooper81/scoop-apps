@@ -17,7 +17,7 @@
         "url": "https://github.com/Jackett/Jackett/releases/download/v$version/Jackett.Binaries.Windows.zip",
         "hash": {
             "url": "https://github.com/Jackett/Jackett/releases",
-            "regex": "Jackett\\.Binaries\\.Windows\\.zip.*?sha256:\\s*([a-f0-9]{64})"
+            "regex": "Jackett\\.Binaries\\.Windows\\.zip.*?sha256:\\s*$sha256"
         }
     }
 }
