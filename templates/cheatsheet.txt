@@ -167,6 +167,11 @@ Method	Example Snippet	Description
   "regex": "Jackett\\.Binaries\\.Windows\\.zip.*?sha256:\\s*$sha256"
 }
 
+"hash": {
+  "url": "$baseurl/CHECKSUMS.txt",
+  "regex": "$basename.*?$sha256"
+}
+
 Extract (Regex)	
 json { "extract": { "url": "...", "regex": "sha256: ([a-f0-9]{64})" } }	
 Parses a hash from a plain text file
