@@ -1,5 +1,5 @@
 {
-    "version": "5.4",
+    "version": "6.4",
     "description": "AnyBurn. AnyBurn is a light weight but professional CD / DVD / Blu-ray burning software that everyone must have",
     "homepage": "https://www.anyburn.com/index.htm",
     "license": "Freeware",
@@ -25,7 +25,7 @@
     ],
     "checkver": {
         "url": "https://www.anyburn.com/tutorials/history.htm",
-        "regex": "<b> AnyBurn ([\\d.]+)"
+        "regex": "<b> AnyBurn \\(Pro\\) ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
