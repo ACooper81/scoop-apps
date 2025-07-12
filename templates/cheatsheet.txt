@@ -168,6 +168,11 @@ Method	Example Snippet	Description
 }
 
 "hash": {
+  "url": "https://www.fosshub.com/Bulk-Crap-Uninstaller.html",
+  "regex": "$basename.*?$sha256"
+}
+
+"hash": {
   "url": "$baseurl/CHECKSUMS.txt",
   "regex": "$basename.*?$sha256"
 }
