@@ -162,6 +162,11 @@ Autoupdate Hash Extraction Methods
 
 Method	Example Snippet	Description
 
+GitHub Release checksums.txt
+"hash": {
+  "url": "$baseurl/checksums.txt"
+}
+
 "hash": {
   "url": "https://github.com/Jackett/Jackett/releases",
   "regex": "Jackett\\.Binaries\\.Windows\\.zip.*?sha256:\\s*$sha256"
