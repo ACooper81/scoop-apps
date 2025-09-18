@@ -1,11 +1,11 @@
 {
-    "version": "238",
+    "version": "239",
     "description": "Fan Control. A focused and highly customizable fan controlling software for Windows",
     "homepage": "https://github.com/Rem0o/FanControl.Releases",
     "license": "Unknown",
     "changelog": "https://github.com/Rem0o/FanControl.Releases/releases",
-    "url": "https://github.com/Rem0o/FanControl.Releases/raw/V238/FanControl.zip",
-    "hash": "42744d6b411f31c12d412696f8703f57669ea19dcffced5d69c2e7d7221c92f6",
+    "url": "https://github.com/Rem0o/FanControl.Releases/raw/V239/FanControl.zip",
+    "hash": "5cdb6a5b3408d370b4e3801c0417a28890676f618e2e0f3ee70a3787a5a999ac",
     "pre_install": "if(!(Test-Path \"$dir/userConfig.json\")) { Add-Content \"$dir/userConfig.json\" $null }",
     "shortcuts": [
         [
