@@ -1,12 +1,12 @@
 {
-    "version": "0.3.60",
+    "version": "0.3.61",
     "description": "Comfy UI. The most powerful and modular stable diffusion GUI, api and backend with a graph/nodes interface.",
     "homepage": "https://github.com/comfyanonymous/ComfyUI",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
             "url": "https://github.com/comfyanonymous/ComfyUI/releases/latest/download/ComfyUI_windows_portable_nvidia.7z",
-            "hash": "bd649263b5d29cabd9c9ae7c445863c97d8a8373397b2710dfb8c012ad428ee6"
+            "hash": "8e1751bfb8d2a6e144fa74331917ec28a322b5d4565db548485657956a149bc6"
         }
     },
     "extract_dir": "ComfyUI_windows_portable",
