@@ -36,6 +36,6 @@
         "github": "https://github.com/Bin-Huang/chatbox"
     },
     "autoupdate": {
-        "url": "https://github.com/chatboxai/chatbox/releases/download/v$version/Chatbox.CE-$version-Setup.exe#/dl.7z"
+        "url": "https://download.chatboxai.app/releases/Chatbox-$version-Setup.exe#/dl.7z"
     }
 }
