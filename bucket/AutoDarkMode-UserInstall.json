@@ -53,9 +53,9 @@
         "github": "https://github.com/Armin2208/Windows-Auto-Night-Mode"
     },
     "autoupdate": {
-        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version_x86.exe#/setup.exe",
+        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_$version_x86.exe#/setup.exe",
         "hash": {
-            "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version_x86.exe.sha256",
+            "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkMode_$version_x86.exe.sha256",
             "mode": "extract"
         }
     }
