@@ -1,11 +1,11 @@
 {
-    "version": "1.2.3.0",
+    "version": "1.2.3.1",
     "description": "DLSS Swapper. A tool to swap DLSS dlls",
     "homepage": "https://github.com/beeradmoore/dlss-swapper/",
     "license": "GPL-3.0-only",
     "changelog": "https://github.com/beeradmoore/dlss-swapper/releases",
-    "url": "https://github.com/beeradmoore/dlss-swapper/releases/download/v1.2.3.0/DLSS.Swapper-1.2.3.0-portable.zip",
-    "hash": "bec0757dcb78948a23d3652f027b977a4cb9773e2e6ad7ce2a9ee826b309bc06",
+    "url": "https://github.com/beeradmoore/dlss-swapper/releases/download/v1.2.3.1/DLSS.Swapper-1.2.3.1-portable.zip",
+    "hash": "b355e0cb77e205e01d1b55131953cf9f55eabec3998c5e1bf1f5c5a9d6fbe4fe",
     "shortcuts": [
         [
             "DLSS Swapper.exe",
