@@ -5,7 +5,7 @@
     "license": "Proprietary",
     "changelog": "https://support.logi.com/hc/en-us/articles/1500005516462",
     "url": "https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.exe#/setup.exe",
-    "hash": "f5cf612c8c66e15bc056b2cf0b6cdaa3d90bb54ea0a3185e8ed812294798784c",
+    "hash": "226b864f6d85245b7754efb3234937df56f34cd140f592ae2911d9d834734611",
     "pre_download": "Assert-Administrator",
     "pre_install": [
         "$processname = \"logioptionsplus\"",
