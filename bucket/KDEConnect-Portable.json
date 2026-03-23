@@ -1,13 +1,13 @@
 {
-    "version": "26.04-6057",
+    "version": "26.04-6064",
     "description": "KDE Connect. Enabling communication between all your devices. Made for people like you.",
     "homepage": "https://kdeconnect.kde.org",
     "license": "GPL-2.0-or-later",
     "changelog": "",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-26.04/windows/kdeconnect-kde-release_26.04-6057-windows-cl-msvc2022-x86_64.7z",
-            "hash": "da7382e634e54d5ebdf0b001afc6168d32ad3294fce8d4938d681345ff50b309"
+            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/release-26.04/windows/kdeconnect-kde-release_26.04-6064-windows-cl-msvc2022-x86_64.7z",
+            "hash": "e6ffd8eef01c02971c5e8a81868e577373d18c9bda6da826d3c422297c9eabd0"
         }
     },
     "pre_install": [
