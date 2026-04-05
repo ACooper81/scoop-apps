@@ -20,9 +20,10 @@
             "LM Studio"
         ]
     ],
-    "checkver": {
-        "url": "https://lmstudio.ai/",
-        "regex": "LM-Studio-([\\d.-]+)-x64.exe"
+   "checkver": {
+        "url": "https://lmstudio.ai/download",
+        "regex": "\\\\\"version\\\\\":\\\\\"(?<ver>[\\d.]+)\\\\\",\\\\\"build\\\\\":\\\\\"(?<build>\\d+)\\\\\"",
+        "replace": "${ver}-${build}"
     },
     "autoupdate": {
         "url": "https://installers.lmstudio.ai/win32/x64/$version/LM-Studio-$version-x64.exe#/dl.7z"
