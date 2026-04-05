@@ -30,7 +30,7 @@
     ],
     "checkver": {
         "url": "https://www.ldplayer.net/other/version-history-and-release-notes.html",
-        "regex": "version:\"([\\d.]+)\""
+        "regex": ">Version: ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://encdn.ldmnq.com/download/package/LDPlayer_$version.exe#/dl.7z"
