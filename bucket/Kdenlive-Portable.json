@@ -19,8 +19,8 @@
         ]
     ],
     "checkver": {
-        "url": "https://kdenlive.org/en/download/",
-        "regex": "kdenlive-([\\d.\\-]+)_standalone\\.exe"
+        "url": "https://kdenlive.org/download/",
+        "regex": "Download the latest version</h1><h2 class=mb-4>([\\d.-]+)"
     },
     "autoupdate": {
         "architecture": {
