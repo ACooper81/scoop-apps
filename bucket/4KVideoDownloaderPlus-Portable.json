@@ -1,5 +1,5 @@
 {
-    "version": "25.0.4",
+    "version": "26.0.8",
     "description": "4K Video Downloader+. Download videos from all popular websites including YouTube, Vimeo, TikTok, SoundCloud, Facebook, Twitch, Bilibili and more in high-quality",
     "homepage": "https://www.4kdownload.com/products/videodownloader",
     "license": {
@@ -9,8 +9,8 @@
     "changelog": "",
     "architecture": {
         "64bit": {
-            "url": "https://dl.4kdownload.com/app/4kvideodownloaderplus_25.0.4_x64.zip?source=website#/setup.7z",
-            "hash": "a68b836c5f3a1e6870033e5c89b307758dd75ec8dc5110fde65a7c3ec75611d0"
+            "url": "https://dl.4kdownload.com/app/4kvideodownloaderplus_26.0.8_x64.zip?source=website#/setup.7z",
+            "hash": "75ec12e74e442bc7669ac8ad4724c4d25239738c60c964d3c6256dbb040c6d38"
         }
     },
     "extract_dir": "4kvideodownloaderplus",
