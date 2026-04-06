@@ -29,16 +29,16 @@
         "vcredist": "extras/vcredist2015"
     },
     "checkver": {
-        "url": "https://bitbucket.org/liule/snipaste/downloads/",
+        "url": "https://www.snipaste.com/download.html",
         "regex": "Snipaste-([\\d.]+)-x64.zip"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-$version-x64.zip"
+                "url": "https://download.snipaste.com/archives/Snipaste-2.11.3-x64.zip"
             },
             "32bit": {
-                "url": "https://bitbucket.org/liule/snipaste/downloads/Snipaste-$version-x86.zip"
+                "url": "https://download.snipaste.com/archives/Snipaste-2.11.3-x86.zip"
             }
         },
         "hash": {
