@@ -23,7 +23,7 @@
     ],
     "checkver": {
         "url": "https://kurtzimmermann.com/downtp_en.html",
-        "regex": "<br>Version ([\\d.]+)"
+        "regex": "<br>V<strong>ersion ([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
