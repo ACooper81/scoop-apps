@@ -1,5 +1,5 @@
 {
-    "version": "25.0.4",
+    "version": "26.0.8",
     "description": "4K Video Downloader+. Download videos from all popular websites including YouTube, Vimeo, TikTok, SoundCloud, Facebook, Twitch, Bilibili and more in high-quality",
     "homepage": "https://www.4kdownload.com/products/videodownloader",
     "notes": "This manifest only installs and updates 4K Video Downloader+",
@@ -9,8 +9,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.4kdownload.com/app/4kvideodownloaderplus_25.0.4_x64.msi?source=website#/setup.msi_",
-            "hash": "d953e077d40d042d1afbaa03e601a494bd54f92895a3c29aa3a89c986d84d489"
+            "url": "https://dl.4kdownload.com/app/4kvideodownloaderplus_26.0.8_x64_offline.exe?source=website#/setup.exe",
+            "hash": "d24ece7f06c56b95de046be731a51ae28e148eda6a49e7b67f486b0b51f678d3"
         }
     },
     "pre_download": "Assert-Administrator",
