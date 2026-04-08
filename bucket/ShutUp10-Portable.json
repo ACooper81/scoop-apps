@@ -1,6 +1,6 @@
 {
     "version": "2.1.1015",
-    "description": "ShutUp10. Free antispy tool for Windows 10",
+    "description": "ShutUp10++. Free antispy tool for Windows 10",
     "homepage": "https://www.oo-software.com/en/shutup10",
     "license": {
         "identifier": "Freeware",
@@ -25,7 +25,7 @@
     "shortcuts": [
         [
             "OOSU10.exe",
-            "O&O ShutUp10"
+            "O&O ShutUp10++"
         ]
     ],
     "persist": "OOSU10.ini",
