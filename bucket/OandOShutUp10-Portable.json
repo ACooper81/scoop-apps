@@ -7,8 +7,20 @@
         "url": "https://www.oo-software.com/en/shutup10/eula"
     },
     "changelog": "https://www.oo-software.com/en/shutup10/changelog",
-    "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe",
-    "hash": "279293b451442aea08f181e7ac80d304b1c4150305a05c22a2e3ee0e9c57ddea",
+    "architecture": {
+        "64bit": {
+            "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe",
+            "hash": "279293b451442aea08f181e7ac80d304b1c4150305a05c22a2e3ee0e9c57ddea"
+        },
+        "32bit": {
+            "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10-x86.exe",
+            "hash": "279293b451442aea08f181e7ac80d304b1c4150305a05c22a2e3ee0e9c57ddea"
+        },
+        "arm64": {
+            "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10-arm64.exe",
+            "hash": "279293b451442aea08f181e7ac80d304b1c4150305a05c22a2e3ee0e9c57ddea"
+        }
+    },
     "pre_install": "if (!(Test-Path \"$persist_dir\\OOSU10.ini\")) { New-Item \"$dir\\OOSU10.ini\" | Out-Null }",
     "shortcuts": [
         [
@@ -17,8 +29,21 @@
         ]
     ],
     "persist": "OOSU10.ini",
-    "checkver": "Version ([\\d.]+),",
+    "checkver": {
+        "url": "https://www.oo-software.com/en/shutup10/changelog",
+        "regex": "<h4>([\\d.]+)"
+    },
     "autoupdate": {
-        "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe"
+        "architecture": {
+            "64bit": {
+                "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10.exe"
+            },
+            "32bit": {
+                "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10-x86.exe"
+            },
+            "arm64": {
+                "url": "https://dl5.oo-software.com/files/ooshutup10/OOSU10-arm64.exe"
+            }
+        }
     }
 }
