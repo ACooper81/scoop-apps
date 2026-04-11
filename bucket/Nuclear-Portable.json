@@ -22,8 +22,9 @@
             "nuclear"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/nukeop/nuclear"
+     "checkver": {
+        "url": "https://github.com/nukeop/nuclear/releases/latest",
+        "regex": "Nuclear_([\\d.]+)_x64-setup.exe"
     },
     "autoupdate": {
         "architecture": {
