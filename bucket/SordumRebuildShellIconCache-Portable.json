@@ -1,5 +1,5 @@
 {
-    "version": "1.3",
+    "version": "4",
     "description": "Sordum's Rebuild Shell Icon Cache. A Portable freeware and have ability to Refresh the Windows’s icon cache",
     "homepage": "https://www.sordum.org/rebuild-shell-icon-cache",
     "license": {
@@ -7,8 +7,8 @@
         "url": "https://www.sordum.org/eula/"
     },
     "url": "https://www.sordum.org/files/small-tools/ReIconCache.zip",
-    "hash": "83116b4cf9dff85f6ddd844753fba77a98fa632accd3955b42a09daee71384d5",
-    "extract_dir": "ReIconCache_v1.3",
+    "hash": "0e222eb9f158a3fb8103c75d140433f4b33dfef8e1d6b387c2a8ddebd532bd5f",
+    "extract_dir": "ReIconCache_v4",
     "architecture": {
         "64bit": {
             "bin": [
