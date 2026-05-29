@@ -1,13 +1,13 @@
 {
-    "version": "ReFocus-202605031130",
+    "version": "Nsis-202605291710",
     "description": "Windows Terminal Quake. Companion program for the new Windows Terminal that enables Quake-style drop down",
     "homepage": "https://wtq.flyingpie.nl/",
     "license": "MIT",
     "changelog": "https://github.com/flyingpie/windows-terminal-quake/releases",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/flyingpie/windows-terminal-quake/releases/download/vReFocus/win-x64_self-contained.zip",
-            "hash": "4cd4e0049b5ed9c0e69069924ab434f6fd4b292d6aeb6d6149a1492a0a2af080"
+            "url": "https://github.com/flyingpie/windows-terminal-quake/releases/download/vNsis/win-x64_self-contained.zip",
+            "hash": "befb6174852b868a680711ec3e145ff14a6d91baf0a046e63d91b7696d0c9ed5"
         }
     },
     "bin": "wtq.exe",
