@@ -1,6 +1,6 @@
 {
     "##": "Checkver URL https://docs.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-    "version": "149.0.4022.96",
+    "version": "149.0.4022.98",
     "description": "Microsoft Edge. The chromium based Microsoft Edge browser.",
     "homepage": "https://www.microsoft.com/en-us/edge/business",
     "license": {
