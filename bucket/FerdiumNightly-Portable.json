@@ -1,20 +1,20 @@
 {
-    "version": "7.1.3-nightly.14",
+    "version": "7.1.3-nightly.15",
     "description": "Ferdium. All-in-one messaging apps for various services",
     "homepage": "https://github.com/ferdium/ferdium-app",
     "license": "Apache-2.0",
     "changelog": "https://github.com/ferdium/ferdium-app/releases",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.1.3-nightly.14/Ferdium-win-Portable-7.1.3-nightly.14-x64.exe#/dl.7z",
-            "hash": "3ac2855668ed3a323d42190a2892ce3fb97c52d9fdc04b3484b3009049e2d8d6",
+            "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.1.3-nightly.15/Ferdium-win-Portable-7.1.3-nightly.15-x64.exe#/dl.7z",
+            "hash": "c9725b42e0b448f3bffed883a9f118cc0ac549f00432308cbcc6a4691521f20b",
             "installer": {
                 "script": "Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
             }
         },
         "32bit": {
-            "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.1.3-nightly.14/Ferdium-win-Portable-7.1.3-nightly.14.exe#/dl.7z",
-            "hash": "89cb00516e5306d7f22c6def4ac53a5f690986966ff07f75fc92d4bfe567c3c9",
+            "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.1.3-nightly.15/Ferdium-win-Portable-7.1.3-nightly.15.exe#/dl.7z",
+            "hash": "be64ab98206ed2b836378ab7185a43296de193f4f673cad5f2c0c5bf0632d6bf",
             "installer": {
                 "script": "Expand-7zipArchive -Path \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
             }
