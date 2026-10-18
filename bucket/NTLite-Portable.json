@@ -26,8 +26,8 @@
         "Updates"
     ],
     "checkver": {
-        "url": "https://www.ntlite.com/download/",
-        "regex": "<span.+>v([\\d.]+)<\\/span>"
+        "url": "https://ntlite.com/changelog/",
+        "regex": "changelog-([\\d.]+)-panel"
     },
     "autoupdate": {
         "url": "http://downloads.ntlite.com/files/NTLite_setup_x64.exe"
