@@ -1,16 +1,28 @@
+name: Excavator
+
 on:
   schedule:
-  - cron: '0 * * * *'
-name: Excavator
+    - cron: '0 */4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: excavator
+
 jobs:
   excavate:
-    name: Excavator
     runs-on: windows-latest
+
     steps:
-    - uses: actions/checkout@main
-    - name: Excavator
-      uses: shovel-org/GithubActions@main
-      env:
-        GITH_EMAIL: adriancooper81@hotmail.com
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        SKIP_UPDATED: '1'
+      - uses: actions/checkout@v4
+
+      - name: Excavator
+        uses: shovel-org/GithubActions@main
+        env:
+          GITH_EMAIL: adriancooper81@hotmail.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SKIP_UPDATED: '1'
+``
