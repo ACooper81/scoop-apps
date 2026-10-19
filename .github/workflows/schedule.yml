@@ -20,7 +20,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Excavator
-        uses: shovel-org/GithubActions@main
+        uses: ScoopInstaller/GithubActions@main
         env:
           GITH_EMAIL: adriancooper81@hotmail.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
