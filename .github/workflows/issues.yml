@@ -1,16 +1,27 @@
+name: Issue
+
 on:
   issues:
-    types: [ opened, labeled ]
-name: Issue
+    types:
+      - opened
+      - labeled
+
+permissions:
+  contents: write
+  issues: write
+
 jobs:
   issueHandler:
     name: Issue Handler
     runs-on: windows-latest
+
     steps:
-    - uses: actions/checkout@main
-    - name: Issue Handler
-      uses: shovel-org/GithubActions@main
-      if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
-      env:
-        GITH_EMAIL: youremail@mail.com # Not needed, but recommended
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Issue Handler
+        uses: shovel-org/GithubActions@main
+        if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
+        env:
+          GITH_EMAIL: adrian@example.com
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
