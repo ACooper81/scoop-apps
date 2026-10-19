@@ -20,7 +20,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Issue Handler
-        uses: shovel-org/GithubActions@main
+        uses: ScoopInstaller/Scoop-GithubActions@main
         if: github.event.action == 'opened' || (github.event.action == 'labeled' && contains(github.event.issue.labels.*.name, 'verify'))
         env:
           GITH_EMAIL: adriancooper81@hotmail.com
