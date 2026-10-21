@@ -25,4 +25,3 @@ jobs:
           GITH_EMAIL: adriancooper81@hotmail.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SKIP_UPDATED: '1'
-``
