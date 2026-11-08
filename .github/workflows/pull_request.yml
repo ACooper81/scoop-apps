@@ -7,7 +7,7 @@ jobs:
     name: Pull Request Validator
     runs-on: windows-latest
     steps:
-    - uses: actions/checkout@main
+    - uses: actions/checkout@v4
     - name: Pull Request Validator
       uses: shovel-org/GithubActions@main
       env:
