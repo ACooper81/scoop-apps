@@ -2,6 +2,8 @@ on:
   pull_request:
     types: [ opened ]
 name: Pull Requests
+permissions:
+  contents: read
 jobs:
   pullRequestHandler:
     name: Pull Request Validator
